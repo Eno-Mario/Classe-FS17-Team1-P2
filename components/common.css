@@ -1,0 +1,113 @@
+:root {
+  --header: rgb(255, 207, 0);
+  --footer: rgb(32, 29, 72);
+  --water-green: rgb(37, 129, 128);
+  --red: rgb(120, 27, 29);
+  --orange: rgb(253, 128, 36);
+  --water-green-button: rgb(0, 113, 112);
+  --red-button: rgb(161, 13, 29);
+  --black: black;
+  --white: white;
+  --dimension-max-width: 100rem; /* 1600px */
+  --dimension-max-width-medium: 80rem; /* 1280px */
+  --dimension-max-width-narrow: 43.75rem; /* 700 */
+  --dimension-content-max-width: 82.5rem; /* 1320px */
+  --font-size-sm2: 0.75rem; /* 12px */
+  --font-size-sm1: 0.875rem; /* 14px */
+  --font-size-s0: 1rem; /* 16px */
+  --font-size-s1: 1.125rem; /* 18px */
+  --font-size-s2: 1.25rem; /* 20px */
+  --font-size-s3: 1.5rem; /* 24px */
+  --font-size-s4: 2rem; /* 32px */
+  --font-size-s5: 2.5rem; /* 40px */
+  --line-height-sm2: 1.1875rem; /* 19px */
+  --line-height-sm1: 1.1875rem; /* 19px */
+  --line-height-s0: 1.5625rem; /* 25px */
+  --line-height-s1: 1.75rem; /* 28px */
+  --line-height-s2: 1.9375rem; /* 31px */
+  --line-height-s3: 2.3125rem; /* 37px */
+  --line-height-s4: 2.6875rem; /* 43px */
+  --line-height-s5: 3.125rem; /* 50px */
+  --font-weight-normal: 400;
+  --font-weight-semi-bold: 500;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+  --icon-sizing-4xs: 0.3125rem; /* 5px Ant 🐜 */
+  --icon-sizing-3xs: 0.625rem; /* 10px Bee 🐝 */
+  --icon-sizing-xxs: 0.75rem; /* 12px Frog 🐸 */
+  --icon-sizing-xs: 0.9375rem; /* 15px Mouse 🐭 */
+  --icon-sizing-sm: 1.125rem; /* 18px Hedgehog 🦔 */
+  --icon-sizing-ms: 1.25rem; /* 20px Rabbit 🐰 */
+  --icon-sizing-md: 1.5625rem; /* 25px Fox 🦊 */
+  --icon-sizing-lg: 1.875rem; /* 30px Wolf 🐺 */
+  --icon-sizing-xl: 2.55rem; /* 40px Tiger 🐯 */
+  --icon-sizing-xxl: 3.755rem; /* 60px Hippo 🦛 */
+  --icon-sizing-3xl: 5rem; /* 80px Elephant 🐘 */
+  --icon-sizing-4xl: 6.25rem; /* 100px Whale 🐋 */
+}
+
+html {
+  min-height: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  /*   -webkit-overflow-scrolling: touch; */
+}
+
+body {
+  all: unset;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  /*   -webkit-overflow-scrolling: touch; */
+  background: var(--white);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: #006db7;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  /*   -ms-interpolation-mode: bicubic; */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+hr {
+  height: 1px;
+  background-color: #e0e0e0;
+  border: none;
+}
+
+button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+strong {
+  font-weight: 500;
+}
+
+em {
+  font-weight: 500;
+}
