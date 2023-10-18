@@ -26,6 +26,7 @@ Clonare pagina ufficiale della LEGO.
 - docu/”nome file modificato”
 - style/”nome componente”
 - feature/”nome componente JS”
+- refactor/"nome componente"
 
 # Commit Naming:
 
@@ -34,6 +35,7 @@ Clonare pagina ufficiale della LEGO.
 - fix: - per bug fixing
 - docs: - in caso di modifica documentazione
 - feat: - in caso di creazione feature
+- refactor: - in caso di refactor del codice quando non c'è un bug
 
 # Class Naming:
 
