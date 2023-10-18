@@ -117,3 +117,9 @@ strong {
 em {
   font-weight: 500;
 }
+
+/* classe hidden */
+
+.hidden {
+  display: none;
+}
