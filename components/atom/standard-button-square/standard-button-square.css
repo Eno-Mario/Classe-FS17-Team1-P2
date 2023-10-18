@@ -72,9 +72,3 @@
     transform: rotate(360deg);
   }
 }
-
-/* classe hidden */
-
-.hidden {
-  display: none;
-}
