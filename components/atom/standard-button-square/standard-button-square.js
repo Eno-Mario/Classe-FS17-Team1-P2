@@ -2,11 +2,9 @@
     FASE DI PREPARAZIONE
 -------------------------- */
 
-//lista bottoni standard-button-square
+//lista bottoni standard-button
 
-const standardButtonSquare = document.querySelectorAll(
-  ".standard-button-square"
-);
+const standardButton = document.querySelectorAll(".standard-button");
 
 /* -----------------------
         LOGICA
@@ -16,19 +14,22 @@ const standardButtonSquare = document.querySelectorAll(
         FUNZIONI
 -------------------------*/
 
-//funzione di comparsa e scomparsa dello spinner sul standard-button-square
+//funzione di comparsa e scomparsa dello spinner sul standard-button
 
 function switchHiddenClassButton(bottone) {
-  const testoButtonSquare = bottone.querySelector(".testo");
-  const spinnerButtonSquare = bottone.querySelector(".spinner-container");
-  const listaClassiTesto = testoButtonSquare.classList;
+  const testoButton = bottone.querySelector(
+    ".container-content-standard-button"
+  );
+  console.log(testoButton);
+  const spinnerButton = bottone.querySelector(".spinner-container");
+  const listaClassiTesto = testoButton.classList;
 
   if (listaClassiTesto.contains("hidden")) {
-    testoButtonSquare.classList.remove("hidden");
-    spinnerButtonSquare.classList.add("hidden");
+    testoButton.classList.remove("hidden");
+    spinnerButton.classList.add("hidden");
   } else {
-    spinnerButtonSquare.classList.remove("hidden");
-    testoButtonSquare.classList.add("hidden");
+    spinnerButton.classList.remove("hidden");
+    testoButton.classList.add("hidden");
   }
 }
 
@@ -38,8 +39,8 @@ function switchHiddenClassButton(bottone) {
 
 //event listener sul bottone per comparsa e scomparsa dello spinner
 
-for (let i = 0; i < standardButtonSquare.length; i++) {
-  standardButtonSquare[i].addEventListener("click", () =>
-    switchHiddenClassButton(standardButtonSquare[i])
+for (let i = 0; i < standardButton.length; i++) {
+  standardButton[i].addEventListener("click", () =>
+    switchHiddenClassButton(standardButton[i])
   );
 }
