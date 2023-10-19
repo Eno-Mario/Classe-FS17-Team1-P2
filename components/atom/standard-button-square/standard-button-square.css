@@ -4,7 +4,7 @@
 
 .standard-button-square {
   display: block;
-  width: 100%;
+  max-width: 100%;
   padding: var(--icon-sizing-xs);
   border: 2px solid;
   border-radius: 4px;

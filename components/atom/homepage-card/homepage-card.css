@@ -1,4 +1,5 @@
 @import url(/components/common.css);
+@import url(/components/atom/standard-button-square/standard-button-square.css);
 
 .atom-homepage-card {
   display: flex;
@@ -7,16 +8,20 @@
 
 .atom-homepage-card-img {
   padding-bottom: 20px;
+  transform: scale(0.909) translateZ(0px);
 }
-.atom-homepage-card-img:hover {
+
+.atom-homepage-card-img:hover,
+.atom-homepage-card-img {
   transition: transform 600ms cubic-bezier(0, 0, 0.2, 1) 0s;
-  /*   transition-behavior: normal;
- */
   transition-duration: 600ms;
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   transition-delay: 0s;
   transition-property: transform;
-  transform: scale(0.909) translateZ(0px);
+}
+
+.atom-homepage-card-img:hover {
+  transform: scale(1) translateZ(0px);
 }
 
 .atom-homepage-card-content {
