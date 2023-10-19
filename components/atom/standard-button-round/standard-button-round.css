@@ -2,12 +2,14 @@
 
 /* Stile Base bottone */
 
-.standard-button-square {
+.standard-button-round {
   display: block;
   width: 100%;
-  min-height: var(--icon-sizing-xxl);
-  border: 2px solid;
-  border-radius: 4px;
+  min-height: var(--line-height-s5);
+  padding: 0;
+  border: 0;
+  border-radius: 50px;
+  /* differenza tra button-square e round*/
   border-collapse: collapse;
   text-align: center;
   font-weight: var(--font-weight-semi-bold);
@@ -17,35 +19,51 @@
   overflow-x: hidden;
 }
 
-.standard-button-square:hover {
-  background-color: var(--white);
+/*flex per immagine e testo*/
+
+.container-content-standard-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* dimensioni degli elementi all'interno del bottone */
+/*proprietà elementi*/
 
-.standard-button-square .testo,
-.standard-button-square .spinner {
+.bag-icon {
+  margin-right: 1.5625rem;
+  width: var(--icon-sizing-md);
+  height: var(--icon-sizing-md);
+}
+
+.standard-button-round .testo {
+  font-weight: 600;
+}
+
+.standard-button-round .testo,
+.standard-button-round .spinner {
   font-size: var(--font-size-s0);
   line-height: var(--line-height-s0);
 }
 
-/* stile classe bottone rosso */
-
-.button-red {
-  background-color: var(--red-button);
-  border-color: var(--red-button);
+/* colore bottone arancione*/
+.button-orange {
+  background-color: var(--orange);
 }
 
-/* dimensioni SVG */
+.button-orange:hover {
+  background-color: var(--orange-hover);
+}
 
-.standard-button-square .spinner {
+/* dimensioni spinner SVG */
+
+.standard-button-round .spinner {
   width: var(--line-height-s0);
   height: var(--line-height-s0);
 }
 
 /* effetto di spinning all'SVG */
 
-.standard-button-square .spinner .spinner-circle {
+.standard-button-round .spinner .spinner-circle {
   stroke-width: 5.5px;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -71,4 +89,10 @@
     stroke-dashoffset: 183;
     transform: rotate(360deg);
   }
+}
+
+/* classe hidden */
+
+.hidden {
+  display: none;
 }
