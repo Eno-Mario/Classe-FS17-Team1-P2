@@ -1,8 +1,6 @@
 /* COINTAINER GENERALE CHE CONTIENE TUTTO */
 
 .container {
-  margin-left: 250px;
-  margin-top: 280px;
   position: relative;
   display: inline-flex;
 }
