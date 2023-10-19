@@ -1,0 +1,48 @@
+@import url(/components/common.css);
+@import url(/components/atom/standard-button-square/standard-button-square.css);
+
+.atom-homepage-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.atom-homepage-card-img {
+  padding-bottom: 20px;
+  transform: scale(0.909) translateZ(0px);
+}
+
+.atom-homepage-card-img:hover,
+.atom-homepage-card-img {
+  transition: transform 600ms cubic-bezier(0, 0, 0.2, 1) 0s;
+  transition-duration: 600ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-delay: 0s;
+  transition-property: transform;
+}
+
+.atom-homepage-card-img:hover {
+  transform: scale(1) translateZ(0px);
+}
+
+.atom-homepage-card-content {
+  display: flex;
+  flex-direction: column;
+}
+.atom-homepage-card-title {
+  font-weight: var(--font-weight-semi-bold);
+  padding-left: 20px; /* to be done */
+
+  text-align: left;
+}
+.atom-homepage-card-title:hover {
+  text-decoration: underline;
+}
+.atom-homepage-card-icons {
+  justify-content: left;
+  padding-left: 20px; /* to be done */
+}
+.atom-homepage-card-price {
+  justify-content: left;
+  padding-left: 20px; /* to be done */
+  font-weight: var(--font-weight-bold);
+}
