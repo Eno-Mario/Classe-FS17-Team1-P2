@@ -29,10 +29,10 @@
   --line-height-s3: 2.3125rem; /* 37px */
   --line-height-s4: 2.6875rem; /* 43px */
   --line-height-s5: 3.125rem; /* 50px */
-  --font-weight-normal: 400;
-  --font-weight-semi-bold: 500;
-  --font-weight-bold: 700;
-  --font-weight-black: 900;
+  --font-weight-normal: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 800;
+  --font-weight-black: 1000;
   --icon-sizing-4xs: 0.3125rem; /* 5px Ant 🐜 */
   --icon-sizing-3xs: 0.625rem; /* 10px Bee 🐝 */
   --icon-sizing-xxs: 0.75rem; /* 12px Frog 🐸 */
