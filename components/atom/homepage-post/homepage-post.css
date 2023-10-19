@@ -1,0 +1,33 @@
+@import url(/components/common.css);
+
+.atom-homepage-post{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.atom-homepage-post-img{
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.atom-homepage-post-p{
+  flex-wrap: wrap;
+  font-weight: var(--font-weight-normal);
+}
+
+.atom-homepage-post-buy-now-arrow{
+  display: flex;
+  align-items: end;
+}
+.atom-homepage-post-buy-now{
+  font-weight: var(--font-weight-bold);
+  padding-right: 10px;
+}
+
+.atom-homepage-post-arrow{
+  width: var(--icon-sizing-3xs);
+
+}
