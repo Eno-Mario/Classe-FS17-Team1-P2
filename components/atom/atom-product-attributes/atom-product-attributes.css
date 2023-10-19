@@ -1,0 +1,50 @@
+@import url(/components/common.css);
+
+.product-attributes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 16%;
+    text-align: center;
+    max-width: 11.5rem;
+    border-left: 1px solid rgb(224, 224, 224);
+    border-left: none;
+    /*da togliere, serve solo per la prima card*/
+}
+
+.slot-icon-container {
+    height: 2.5rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 0.3125rem;
+}
+
+.icon-attributes-product {
+    color: rgb(117, 117, 117);
+}
+
+.slot-info-container {
+        display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            margin: 0.625rem 0px;
+}
+
+.info-techniques-product{
+        color: rgb(44, 44, 44);
+            font-size: 1.5rem;
+            line-height: 2.3125rem;
+            font-weight: 500;
+            text-transform: inherit;
+}
+
+.name-info-product{
+color: rgb(44, 44, 44);
+font-size: 0.75rem;
+line-height: 1.1875rem;
+font-weight: 500;
+text-transform: inherit;
+}
