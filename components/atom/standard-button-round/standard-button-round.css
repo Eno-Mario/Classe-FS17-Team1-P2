@@ -3,92 +3,96 @@
 /* Stile Base bottone */
 
 .standard-button-round {
-    display: block;
-    width: 100%;
-    min-height: 3.125rem;
-    padding: 0;
-    border: 0;
-    border-radius: 50px;
-    /* differenza tra button-square e round*/
-    border-collapse: collapse;
-    text-align: center;
-    font-weight: var(--font-weight-semi-bold);
-    font-size: var(--font-size-sm1);
-    line-height: var(--line-height-sm1);
-    position: relative;
-    overflow-x: hidden;
+  display: block;
+  width: 100%;
+  min-height: var(--line-height-s5);
+  padding: 0;
+  border: 0;
+  border-radius: 50px;
+  /* differenza tra button-square e round*/
+  border-collapse: collapse;
+  text-align: center;
+  font-weight: var(--font-weight-semi-bold);
+  font-size: var(--font-size-sm1);
+  line-height: var(--line-height-sm1);
+  position: relative;
+  overflow-x: hidden;
 }
 
 /*flex per immagine e testo*/
 
-.container-content-standard-button-round {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container-content-standard-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 /*proprietà elementi*/
 
 .bag-icon {
-    margin-right: 1.5625rem;
-    width: var(--icon-sizing-md);
-    height: var(--icon-sizing-md);
+  margin-right: 1.5625rem;
+  width: var(--icon-sizing-md);
+  height: var(--icon-sizing-md);
 }
 
-.standard-button-round .testo{
-    font-weight: 600;
+.standard-button-round .testo {
+  font-weight: 600;
 }
 
 .standard-button-round .testo,
 .standard-button-round .spinner {
-    font-size: var(--font-size-s0);
-    line-height: var(--line-height-s0);
+  font-size: var(--font-size-s0);
+  line-height: var(--line-height-s0);
 }
-
 
 /* colore bottone arancione*/
 .button-orange {
-    background-color: var(--orange);
+  background-color: var(--orange);
 }
 
-.button-orange:hover{
-    background-color: var(--orange-hover);
+.button-orange:hover {
+  background-color: var(--orange-hover);
 }
 
 /* dimensioni spinner SVG */
 
 .standard-button-round .spinner {
-    width: var(--line-height-s0);
-    height: var(--line-height-s0);
+  width: var(--line-height-s0);
+  height: var(--line-height-s0);
 }
 
 /* effetto di spinning all'SVG */
 
 .standard-button-round .spinner .spinner-circle {
-    stroke-width: 5.5px;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-dasharray: 190, 120;
-    stroke-dashoffset: 0;
-    transform-origin: center center;
-    animation: 1.15s cubic-bezier(0.67, 0.22, 0.43, 0.79) 0s infinite normal none running spin;
+  stroke-width: 5.5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 190, 120;
+  stroke-dashoffset: 0;
+  transform-origin: center center;
+  animation: 1.15s cubic-bezier(0.67, 0.22, 0.43, 0.79) 0s infinite normal none
+    running spin;
 }
 
 @keyframes spin {
+  0%,
+  20% {
+    stroke-dashoffset: 183;
+    transform: rotate(0deg);
+  }
 
-    0%,
-    20% {
-        stroke-dashoffset: 183;
-        transform: rotate(0deg);
-    }
+  60% {
+    stroke-dashoffset: 160;
+  }
 
-    60% {
-        stroke-dashoffset: 160;
-    }
+  100% {
+    stroke-dashoffset: 183;
+    transform: rotate(360deg);
+  }
+}
 
-    100% {
-        stroke-dashoffset: 183;
-        transform: rotate(360deg);
-    }
+/* classe hidden */
+
+.hidden {
+  display: none;
 }
