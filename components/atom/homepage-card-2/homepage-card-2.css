@@ -1,0 +1,33 @@
+@import url(/components/common.css);
+
+/* CARD DELLE NOVITA */
+.newArticle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 4.625rem;
+  width: 100%;
+  box-sizing: inherit;
+  list-style-type: disc;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* DIV CONTENENTE LA SCRITTA "NOVITA" */
+  .markup-container{
+  letter-spacing: .01em;
+  font-size: .75rem;
+  line-height: 1.6;
+  display: block;
+  padding-top: 10PX;
+}
+
+/* SCRITTA "NOVITA */
+.markup{
+  color: #2c2c2c;
+}
+
+/* HOOVER DI "NOVITA" */
+.newArticle:hover{
+  text-decoration: underline;
+}
