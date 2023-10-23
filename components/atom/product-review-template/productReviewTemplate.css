@@ -1,0 +1,199 @@
+@import url(/components/common.css);
+
+.container-review{
+  border-top: 1px solid #ccc;
+  box-sizing: inherit;
+  width: 100%;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.markup-date{
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  font-weight: 400;
+  text-transform: inherit;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0.9375rem;
+  margin-left:0px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end:1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.date{
+  box-sizing: inherit;
+  color:inherit;
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  font-weight: 400;
+  text-transform: inherit;
+}
+
+.container-stars{
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  box-sizing: inherit;
+}
+
+.markup-star{
+  width: 1.5625rem;
+  height: 1.5625rem;
+  margin-right: 0.0625rem;
+  display: block;
+  text-align: left;
+}
+.star{
+  height: 15px;
+  width: 15px;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  border-style: none;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.vote{
+  font-size: 0.875rem;
+  line-height: 15px;
+  font-weight: 500;
+  margin-left: 0.9375rem;
+  box-sizing: inherit;
+}
+
+.markup-title{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  text-transform: inherit;
+  margin-top:0px;
+  margin-right:0px;
+  margin-bottom: 0.9375;
+  margin-left: 0px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.title{
+  text-align: left;
+}
+
+.userID{
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0.9375rem;
+  margin-left: 0px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.ID{
+  text-align: left;
+}
+
+.first-comment{
+  color: rgb(0, 133, 55);
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  font-weight: 700;
+  text-transform: inherit;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0.9375rem;
+  margin-left: 0px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.gift{
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-top: 10px;
+  background-color: rgb(231, 244, 253);
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: left;
+}
+
+.gift-svg{
+  line-height: 0;
+  height: 30px;
+  width: 26px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  overflow-clip-margin: content-box;
+  overflow: hidden;
+  text-align: left;
+}
+.gift-text{
+  color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  font-weight: 400;
+  text-transform: inherit;
+  margin-top:0px;
+  margin-right:0px;
+  margin-bottom:0.9375rem;
+  margin-left:0px;
+  text-align: left;
+}
+
+.container-reviewText{
+  display: block;
+  text-align: left;
+}
+
+.review-text{
+  color: inherit;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  text-transform: inherit;
+  text-align: left;
+  -webkit-text-size-adjust: 100%;
+  --header-height: 3.375rem;
+}
+
+.more-info{
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  margin-bottom: 1.125rem;
+  display: inline-block;
+  width: auto;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-style:solid;
+  border-radius: 4px;
+  border-collapse: collapse;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+  
+
+}
