@@ -8,3 +8,5 @@
 @import url(/components/homepage/homepage-post/homepage-post.css);
 @import url(/components/design-system/color-section/index.css);
 @import url(/components/design-system/typography-section/index.css);
+@import url(/components/atom/button-info/buttonInfo.css);
+@import url(/components/atom/atom-generic-field/atom-generic-field.css);
