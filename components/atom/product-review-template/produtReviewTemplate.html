@@ -9,8 +9,8 @@
 <body>
 
   <div class="container-review">
-    <p class="markuup-date">
-      <span class="date">July 26th, 2023</span>
+    <p class="markup-date">
+      <span class="date">December 6th, 2022</span>
     </p>
   <div class="container-stars">
     <div class="markup-star"><img src="https://www.lego.com/_next/static/images/starActive-8f24279ea4ef0bb5bb5e8af9fbab2aab.svg" class="star"></div>
@@ -31,43 +31,48 @@
     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="39" viewBox="0 0 26 39" aria-hidden="true" class="gift-svg"><g fill="#FFF" stroke="#006DB7" stroke-width="1.339" fill-rule="evenodd"><path d="M11.644 5.478l-.735 3.21-3.232-.634-.493.32-.342 1.49.282.433 5.53 1.085.001-.004h.004l1.239-5.405-.35-.54-1.41-.276zM5.358 18.307l-.097.597 2.014 3.1.554.16.61-.39 6.564-4.263-2.498-3.845zM14.752 12.207l2.497 3.845 7.18-4.663.113-.5L22.5 7.743l-.58-.19zM17.964 25.676v11.92h6.577l.566-.553V25.676zM8.143 25.676V37.09l.534.506h6.609V25.676z"></path></g></svg>
     <span class="gift-text">Prodotto ricevuto in omaggio da LEGO Group</span>
   </p>
+  <div class="comment">
+  <div class="text-photo">
   <div class="container-reviewText">
     <span class="review-text">Sono molto contento di avere questo pezzo da collezione tra le mie mani! Per gli appasionati di videogiochi questo può essere un regalo bellissimo! É così bello che non voglio ne anche tirarlo fuori dalla scatola. Lo consiglio vivamente</span>
   </div>
-  <button class="more-info"> Leggi di più</button>
-  <button class="first-photo">
-  <div class="image-one">
-    <img src="https://photos-eu.bazaarvoice.com/photo/2/cGhvdG86bGVnby1nbG9iYWw/86922092-a710-5107-9c44-71b833f9e414">
+  <div class="container-photo">
+  <button class="photo-button">
+  <div class="photo-div">
+    <img src="https://photos-eu.bazaarvoice.com/photo/2/cGhvdG86bGVnby1nbG9iYWw/86922092-a710-5107-9c44-71b833f9e414" class="photo">
   </div>
   </button>
-  <button class="second-photo">
-    <div class="image-two">
-      <img src="https://photos-eu.bazaarvoice.com/photo/2/cGhvdG86bGVnby1nbG9iYWw/adf907d6-c203-53b7-8bb4-996dd0eade93">
+  <button class="photo-button">
+    <div class="photo-div">
+      <img src="https://photos-eu.bazaarvoice.com/photo/2/cGhvdG86bGVnby1nbG9iYWw/adf907d6-c203-53b7-8bb4-996dd0eade93" class="photo">
     </div>
-    <button class="third-photo">
-      <div class="image-three">
-        <img src="https://photos-eu.bazaarvoice.com/photo/2/cGhvdG86bGVnby1nbG9iYWw/81794f24-d3f2-576d-9b7d-168b44e59b10" alt="" class="Imagestyles__Img-sc-1qqdbhr-0 ckQZCr LazyImagestyles__Image-sc-1tvq490-2 enJGXi">
-      </div>
-    </button>
   </button>
+    <button class="photo-button">
+      <div class="photo-div">
+        <img src="https://photos-eu.bazaarvoice.com/photo/2/cGhvdG86bGVnby1nbG9iYWw/81794f24-d3f2-576d-9b7d-168b44e59b10" class="photo">
+        </div>
+      </button>
+    </div>
+  </div>
+  <div class="space"></div>
+</div>
   <p class="answer">É stato utile?</p>
   <div class="opinion">
     <div class="container-like">
-      <button class="like">
-        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M.993 20h4V8H0l.993 12zm18.928-8.645l-1.737 6.535A2.727 2.727 0 0 1 15.519 20H5.993V8.021l1.719-6.196a2.152 2.152 0 0 1 4.28.328V8h5.264a2.739 2.739 0 0 1 2.665 3.355z" fill="#CACACA" fill-rule="evenodd"></path></svg>
-        <span class="num-like">
-          2
-        </span>
+      <button class="like" onclick="pushLike()">
+        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="likeSvg"><path d="M.993 20h4V8H0l.993 12zm18.928-8.645l-1.737 6.535A2.727 2.727 0 0 1 15.519 20H5.993V8.021l1.719-6.196a2.152 2.152 0 0 1 4.28.328V8h5.264a2.739 2.739 0 0 1 2.665 3.355z" fill-rule="evenodd"></path></svg>
+        <span class="numLike"> 1</span>
       </button>
       <div class="container-dislike">
-        <button class="dislike">
-          <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M.993 0h4v12H0L.993 0zM19.92 8.645L18.184 2.11A2.727 2.727 0 0 0 15.519 0H5.993v11.979l1.719 6.196a2.152 2.152 0 0 0 4.28-.328V12h5.264a2.739 2.739 0 0 0 2.665-3.355z" fill="#CACACA"></path></g></svg>
-          <span class="num-dislike">
-            0
+        <button class="dislike"  onclick="pushDislike()">
+          <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="dislikeSvg"><g fill="none" fill-rule="evenodd"><path d="M.993 0h4v12H0L.993 0zM19.92 8.645L18.184 2.11A2.727 2.727 0 0 0 15.519 0H5.993v11.979l1.719 6.196a2.152 2.152 0 0 0 4.28-.328V12h5.264a2.739 2.739 0 0 0 2.665-3.355z"></path></g></svg>
+          <span class="numDislike">
+            2
             </span>
           </button>
         </div>
       </div>
+      <script src="productReviewTemplate.js"></script>
     </div>
   </div>
 </body>
