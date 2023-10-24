@@ -1,19 +1,19 @@
-@import url(/components/common.css);
+@import url(/assets/CSS/style.css);
 
-.atom-product-tag{
+.atom-product-tag {
   width: 50%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   font-size: var(--font-size-sm1);
 }
-.atom-product-tag-yellow{
+.atom-product-tag-yellow {
   display: inline-block;
   background-color: var(--header);
-  padding: 3.040px 10px;
-  margin: 0 4.320px 5px 0;
+  padding: 3.04px 10px;
+  margin: 0 4.32px 5px 0;
 }
-.atom-product-tag-red{
+.atom-product-tag-red {
   display: inline-block;
   padding: 0 10px;
   background-color: var(--red);
