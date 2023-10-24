@@ -1,0 +1,30 @@
+@import url(/components/common.css);
+
+.container-typography-section {
+  padding: 1rem;
+  background-color: var(--white);
+}
+
+.header-typography-section {
+  text-decoration: underline;
+  margin: 0;
+}
+
+.typography-header {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  gap: 1rem;
+}
+
+.typographys * {
+  margin: 0;
+}
+
+.typographys p:last-child {
+  font-size: var(--font-size-sm2);
+}
+
+.typographys p:first-of-type {
+  font-size: var(--font-size-sm1);
+  color: var(--black);
+}
