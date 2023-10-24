@@ -1,0 +1,57 @@
+@import url(/components/common.css);
+
+/* The component gets resized by the Div that contains the field, avg padding for 900px is : 0px 1.25rem 1.875rem
+ */
+
+.tester {
+  background-color: purple;
+  padding: 0px 1.25rem 1.875rem;
+}
+.generic-field-container {
+  padding-top: 10px;
+  display: flex;
+  width: 100%;
+  flex: 1 1 0%;
+}
+.generic-field-text-wrapper {
+  height: auto;
+}
+.generic-field-text {
+  font-size: var(--font-size-sm1);
+  border: 1px solid rgb(224, 224, 224);
+  top: 1.25rem;
+  left: 1.25rem;
+  color: rgb(117, 117, 117);
+  padding: 1.125rem 1.25rem 0px;
+}
+.generic-field-text text {
+  color: blue;
+}
+.generic-field-text:focus {
+  appearance: none;
+  display: block;
+  /* position: absolute; */
+  top: 0.9375rem;
+  left: 1.25rem;
+  transform-origin: left top;
+  transition: all 0.1s ease-in-out 0s;
+  transform: translate(0px, 0px);
+  color: rgb(117, 117, 117);
+  font-size: 1em;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.generic-field-button-wrapper {
+  display: flex;
+  border-radius: 0px 0.3125rem 0.3125rem 0px;
+  background-color: var(--orange);
+}
+.generic-field-button {
+  padding: 0.9375rem;
+}
+.generic-field-button-svg {
+  line-height: 0;
+  height: 16px;
+  width: 16px;
+}
