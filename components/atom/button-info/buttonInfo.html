@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="buttonInfo.css">
+<script src="buttonInfo.js"></script>
+<title>Document</title>
+</head>
+<body>
+
+  <!-- CREAZIONE CONTAINER CHE CONTIENTE INFO BUTTON E VIGNETTA -->
+  <div class="container">
+  
+  <!-- CRRAEZIONE INFO BUTTON -->
+    <button class="info-button" onclick="toggleVignetta()"><span>i</span></button>
+
+  <!-- CREAZIONE DIV "VIGNETTA" CHE CONTIENE IL DIV DEL TITOLO E DEL TESTO DELLA VIGNETTA-->
+    <div id="vignetta" class="vignetta">
+      <div class="textContainer">
+      <div class="title"><p class="description">Limite</p></div>
+      <div class="exit"></div>
+      <div class="text"><p>È previsto un limite per gli acquisti per ogni famiglia per garantire un'adeguata disponibilità per tutti i clienti. Se è già stato raggiunto tale limite con gli ordini precedenti, l'ordine potrebbe essere annullato.</p></div>
+    </div>
+
+  <!-- CRAZIONE BUTTON CONTENENTE SVG PER LA CHIUSURA DELLA VIGNETTA -->
+    <button class="exit" onclick="closeVignetta()"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" aria-hidden="true" class="exitButton"><path d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z" fill="currentColor" fill-rule="evenodd"></path></svg></button>
+    </div>
+  </div>
+</html>
