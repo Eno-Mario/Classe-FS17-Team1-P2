@@ -1,6 +1,6 @@
 @import url(/components/common.css);
 
-.container-review{
+.container-review {
   border-top: 1px solid #ccc;
   box-sizing: inherit;
   width: 100%;
@@ -8,7 +8,7 @@
   text-align: left;
 }
 
-.markup-date{
+.markup-date {
   color: inherit;
   font-size: var(--font-size-s0);
   line-height: var(--icon-sizing-md);
@@ -20,23 +20,23 @@
   margin-bottom: var(--icon-sizing-xs);
 }
 
-.date{
+.date {
   box-sizing: inherit;
-  color:inherit;
+  color: inherit;
   font-size: var(--font-size-s0);
   line-height: var(--icon-sizing-md);
   font-weight: var(--font-weight-normal);
   text-transform: inherit;
 }
 
-.container-stars{
+.container-stars {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
   box-sizing: inherit;
 }
 
-.markup-star{
+.markup-star {
   width: var(--line-height-s0);
   height: var(--line-height-s0);
   margin-right: var(--icon-sizing-3xs);
@@ -45,9 +45,9 @@
   margin-right: 1px !important;
 }
 
-.star{
+.star {
   height: var(--icon-sizing-xs);
-  width:  var(--icon-sizing-xs);
+  width: var(--icon-sizing-xs);
   max-width: 100%;
   display: inline-block;
   vertical-align: middle;
@@ -56,30 +56,30 @@
   overflow: clip;
 }
 
-.vote{
+.vote {
   font-size: var(--font-size-sm1);
-  line-height:  var(--icon-sizing-xs);
-  font-weight: var( --font-weight-semi-bold);
+  line-height: var(--icon-sizing-xs);
+  font-weight: var(--font-weight-semi-bold);
   margin-left: var(--icon-sizing-xs);
   box-sizing: inherit;
 }
 
-.markup-title{
+.markup-title {
   font-size: var(--icon-sizing-sm);
   line-height: var(--line-height-s1);
-  font-weight: var( --font-weight-semi-bold);
+  font-weight: var(--font-weight-semi-bold);
   text-transform: inherit;
-  margin-bottom: var( --icon-sizing-xs);
+  margin-bottom: var(--icon-sizing-xs);
   display: block;
   margin-top: 0px !important;
   margin-bottom: var(--icon-sizing-xs);
 }
 
-.title{
+.title {
   text-align: left;
 }
 
-.userID{
+.userID {
   font-size: var(--font-size-sm1);
   line-height: var(--line-height-sm2);
   font-weight: var(--font-weight-normal);
@@ -87,13 +87,13 @@
   display: block;
 }
 
-.ID{
+.ID {
   text-align: left;
   margin-top: 0px;
   margin-bottom: var(--icon-sizing-xs);
 }
 
-.first-comment{
+.first-comment {
   color: rgb(0, 133, 55);
   font-size: var(--font-size-s0);
   line-height: var(--icon-sizing-md);
@@ -105,11 +105,11 @@
   margin-bottom: var(--icon-sizing-xs);
 }
 
-.gift{
+.gift {
   margin-bottom: var(--icon-sizing-xxs);
   padding-bottom: var(--icon-sizing-xxs);
   padding-left: var(--icon-sizing-3xs);
-  padding-right:  var(--icon-sizing-xs);;
+  padding-right: var(--icon-sizing-xs);
   padding-top: var(--icon-sizing-3xs);
   background-color: rgb(231, 244, 253);
   display: block;
@@ -118,7 +118,7 @@
   text-align: left;
 }
 
-.gift-svg{
+.gift-svg {
   line-height: 0;
   height: var(--icon-sizing-lg);
   width: 26px;
@@ -129,49 +129,47 @@
   overflow: hidden;
   text-align: left;
 }
-.gift-text{
+.gift-text {
   color: inherit;
   font-size: var(--font-size-sm1);
   line-height: var(--line-height-sm2);
   font-weight: var(--font-weight-normal);
   text-transform: inherit;
-  margin-bottom:var(--icon-sizing-xs);
+  margin-bottom: var(--icon-sizing-xs);
   text-align: left;
 }
 
-.comment{
+.comment {
   display: flex;
   box-sizing: inherit;
 }
 
-.container-reviewText{
+.container-reviewText {
   box-sizing: inherit;
   display: block;
   text-align: left;
   margin-bottom: var(--icon-sizing-xs);
 }
 
-.review-text{
+.review-text {
   box-sizing: border-box !important;
   color: rgb(44, 44, 44);
-  font-size: var(--icon-sizing-sm);
+  font-size: var(--font-size-s1);
   line-height: var(--line-height-s1);
   font-weight: var(--font-weight-normal);
   text-transform: none;
   text-align: left;
-
-
 }
 
-.text-photo{
-  overflow:hidden;
+.text-photo {
+  overflow: hidden;
   box-sizing: inherit;
   display: block;
   margin-right: 2.5rem;
   flex: 1;
 }
 
-.container-photo{
+.container-photo {
   padding-bottom: var(--icon-sizing-xs);
   margin-bottom: var(--icon-sizing-xs);
   width: 100%;
@@ -180,7 +178,7 @@
   overflow-y: scroll;
 }
 
-.photo-button{
+.photo-button {
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: auto;
@@ -216,7 +214,7 @@
   text-align: left;
 }
 
-.photo-div{
+.photo-div {
   border: 1px solid rgb(224, 224, 224);
   height: 3.75rem;
   display: inline-block;
@@ -233,7 +231,7 @@
   text-align: left;
 }
 
-.photo{
+.photo {
   display: inline-block;
   vertical-align: middle;
   max-width: 100%;
@@ -245,10 +243,9 @@
   overflow-clip-margin: content-box;
   overflow: clip;
   text-align: left;
-
 }
 
-.space{
+.space {
   width: 16.97rem;
   height: 100%;
   overflow: hidden;
@@ -258,7 +255,7 @@
   line-height: var(--font-size-s3);
 }
 
-.answer{
+.answer {
   color: inherit;
   font-size: var(--font-size-s0);
   line-height: var(--line-height-s0);
@@ -276,7 +273,7 @@
   text-align: left;
 }
 
-.opinion{
+.opinion {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -285,7 +282,7 @@
   text-align: left;
 }
 
-.container-like{
+.container-like {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -304,7 +301,7 @@
   writing-mode: horizontal-tb !important;
 }
 
-.container-dislike{
+.container-dislike {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -323,7 +320,7 @@
   writing-mode: horizontal-tb !important;
 }
 
-.like{
+.like {
   padding: var(--icon-sizing-xxs);
   border: 0;
   background: transparent;
@@ -347,7 +344,7 @@
   padding: 12px;
 }
 
-.dislike{
+.dislike {
   padding: var(--icon-sizing-xxs);
   border: 0;
   background: transparent;
@@ -371,7 +368,7 @@
   padding: 12px;
 }
 
-.numLike{
+.numLike {
   color: rgb(44, 44, 44);
   font-size: var(--icon-sizing-xxs);
   line-height: var(--icon-sizing-lg);
@@ -383,7 +380,7 @@
   background: transparent;
   box-shadow: none;
   cursor: pointer;
-  font:inherit;
+  font: inherit;
   margin: 0;
   text-rendering: auto;
   letter-spacing: normal;
@@ -396,7 +393,7 @@
   writing-mode: horizontal-tb !important;
 }
 
-.numDislike{
+.numDislike {
   color: rgb(44, 44, 44);
   font-size: var(--icon-sizing-xxs);
   line-height: var(--icon-sizing-lg);
@@ -408,7 +405,7 @@
   background: transparent;
   box-shadow: none;
   cursor: pointer;
-  font:inherit;
+  font: inherit;
   margin: 0;
   text-rendering: auto;
   letter-spacing: normal;
@@ -421,7 +418,11 @@
   writing-mode: horizontal-tb !important;
 }
 
-.active{
-  fill:blue;
+.likeSvg,
+.dislikeSvg {
+  fill: grey;
 }
 
+.active {
+  fill: blue;
+}
