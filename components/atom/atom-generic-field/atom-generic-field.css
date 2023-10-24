@@ -3,7 +3,7 @@
 /* The component gets resized by the Div that contains the field, avg padding for 900px is : 0px 1.25rem 1.875rem
  */
 
-.tester {
+.fake-background {
   background-color: purple;
   padding: 0px 1.25rem 1.875rem;
 }
@@ -13,25 +13,40 @@
   width: 100%;
   flex: 1 1 0%;
 }
-.generic-field-text-wrapper {
-  height: auto;
+.generic-field-label-wrap {
+  position: relative;
+  width: 100%;
+}
+.generic-field-label {
+  appearance: none;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  width: 100%;
+  position: relative;
+}
+
+.generic-field-input {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  background: rgb(255, 255, 255);
+  color: rgb(44, 44, 44);
+  height: 2rem;
+  padding: 18px 20px 0px 18px;
+  border: 1px solid rgb(224, 224, 224);
+}
+.generic-field-input:focus {
+  outline: rgb(255, 255, 255) solid 1px;
+  box-shadow: rgb(255, 255, 255) 0px 0px 12px;
 }
 .generic-field-text {
-  font-size: var(--font-size-sm1);
-  border: 1px solid rgb(224, 224, 224);
-  top: 1.25rem;
-  left: 1.25rem;
-  color: rgb(117, 117, 117);
-  padding: 1.125rem 1.25rem 0px;
-}
-.generic-field-text text {
-  color: blue;
-}
-.generic-field-text:focus {
   appearance: none;
   display: block;
-  /* position: absolute; */
-  top: 0.9375rem;
+  position: absolute;
+  top: 1.25rem;
   left: 1.25rem;
   transform-origin: left top;
   transition: all 0.1s ease-in-out 0s;
@@ -42,7 +57,22 @@
   pointer-events: none;
 }
 
+.generic-field-input:focus + .generic-field-text {
+  transform: translate(1px, -0.4375rem);
+  font-size: 0.8em;
+  transition: all 0.1s ease-in-out;
+  top: 1rem;
+}
+/* Button stuff */
+
 .generic-field-button-wrapper {
+  transform: translateX(-1px);
+  margin-right: -1px;
+  border-radius: 0px 0.3125rem 0.3125rem 0px;
+  box-shadow: none;
+  max-height: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
   display: flex;
   border-radius: 0px 0.3125rem 0.3125rem 0px;
   background-color: var(--orange);

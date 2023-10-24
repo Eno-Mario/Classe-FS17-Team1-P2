@@ -8,14 +8,22 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="tester">
+    <div class="fake-background">
       <div class="generic-field-container">
-        <div class="generic-field-text-wrapper">
-          <input
-            type="field"
-            class="generic-field-text"
-            placeholder="Il tuo indirizzo email"
-          />
+        <div class="generic-field-label-wrap">
+          <label type="text" tabindex="-1" class="generic-field-label">
+            <input
+              type="text"
+              name="subscribe"
+              aria-invalid="false"
+              aria-disabled="false"
+              data-test="input-with-button-input"
+              class="generic-field-input"
+              value=""
+            /><span type="text" tabindex="-1" class="generic-field-text"
+              >Il tuo indirizzo e-mail</span
+            ></label
+          >
         </div>
         <div class="generic-field-button-wrapper">
           <button class="generic-field-button">
