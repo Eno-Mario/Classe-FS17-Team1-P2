@@ -420,9 +420,9 @@
 
 .likeSvg,
 .dislikeSvg {
-  fill: grey;
+  fill: #CACACA;
 }
 
 .active {
-  fill: blue;
+  fill: #006db7;
 }
