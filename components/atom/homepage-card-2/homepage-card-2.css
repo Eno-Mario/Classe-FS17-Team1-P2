@@ -16,10 +16,10 @@
 /* DIV CONTENENTE LA SCRITTA "NOVITA" */
   .markup-container{
   letter-spacing: .01em;
-  font-size: .75rem;
+  font-size: var(--font-size-sm2);
   line-height: 1.6;
   display: block;
-  padding-top: 10PX;
+  padding-top: 10px;
 }
 
 /* SCRITTA "NOVITA */
