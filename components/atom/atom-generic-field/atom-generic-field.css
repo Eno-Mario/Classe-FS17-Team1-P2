@@ -37,8 +37,8 @@
   border: 1px solid rgb(224, 224, 224);
 }
 .generic-field-input:focus {
-  outline: rgb(255, 255, 255) solid 1px;
-  box-shadow: rgb(255, 255, 255) 0px 0px 12px;
+  outline: rgb(72, 194, 255) solid 1px;
+  box-shadow: rgb(72, 194, 255) 0px 0px 12px;
 }
 .generic-field-text {
   appearance: none;
