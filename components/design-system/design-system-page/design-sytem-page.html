@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/components/common.css" />
+    <link rel="stylesheet" href="design-system-page.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="div-container">
+      <div class="logo-div">
+        <div class="logo-div-title"><h2>LOGOS</h2></div>
+        <hr />
+        <div class="logo-div-container">
+          <div><h3>PRIMARY</h3></div>
+          <div class="logo-div-img">
+            <img
+              src="https://assets.lego.com/logos/v4.5.0/brand-lego.svg"
+              alt="logo lego"
+              width="125px"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container-color-section">
+        <h2 class="header-color-section">BRAND COLORS</h2>
+        <div class="primary-colors">
+          <h3>PRIMARY</h3>
+          <div class="colors">
+            <div class="color yellow"></div>
+            <h4>Yellow</h4>
+            <p>rgb(255, 207, 0)</p>
+            <p>Header</p>
+          </div>
+          <div class="colors">
+            <div class="color dark-blue"></div>
+            <h4>Dark-blue</h4>
+            <p>rgb(32, 29, 72)</p>
+            <p>Footer</p>
+          </div>
+          <div class="colors">
+            <div class="color water-green"></div>
+            <h4>Water-green</h4>
+            <p>rgb(37, 129, 128)</p>
+            <p>Main Homepage</p>
+          </div>
+          <div class="colors">
+            <div class="color red"></div>
+            <h4>Red</h4>
+            <p>rgb(120, 27, 29)</p>
+            <p>Main Homepage</p>
+          </div>
+        </div>
+        <div class="secondary-colors">
+          <h3>SECONDARY</h3>
+          <div class="colors">
+            <div class="color orange"></div>
+            <h4>Orange</h4>
+            <p>rgb(255, 207, 0)</p>
+            <p>Button</p>
+          </div>
+          <div class="colors">
+            <div class="color water-green-button"></div>
+            <h4>Dark-Water</h4>
+            <p>rgb(255, 207, 0)</p>
+            <p>Button</p>
+          </div>
+          <div class="colors">
+            <div class="color red-button"></div>
+            <h4>Light-Red</h4>
+            <p>rgb(255, 207, 0)</p>
+            <p>Button</p>
+          </div>
+        </div>
+      </div>
+      <div class="button-style-div">
+        <div class="button-style-div-title"><h2>BUTTON STYLES</h2></div>
+        <hr />
+        <div class="button-style-div-container">
+          <div>
+            <div class="standard-button-grid">
+              <h4>STANDARD BUTTON</h4>
+              <button
+                class="standard-button standard-button-round button-orange"
+              >
+                <div class="spinner-container hidden">
+                  <svg class="spinner" viewBox="0 0 66 66">
+                    <circle
+                      cx="33"
+                      cy="33"
+                      r="20"
+                      fill="none"
+                      stroke="#000000"
+                      class="spinner-circle"
+                    ></circle>
+                  </svg>
+                </div>
+                <div class="container-content-standard-button">
+                  <img class="bag-icon" src="bag.svg" alt="bag-icon" />
+                  <div class="testo">Aggiungi al Carrello</div>
+                </div>
+              </button>
+            </div>
+            <!-- SECOND BUTTON STARTS HERE -->
+            <div class="standard-button-grid">
+              <h4>STANDARD BUTTON SQUARE</h4>
+              <button class="standard-button standard-button-square button-red">
+                <div class="spinner-container hidden">
+                  <svg class="spinner" viewBox="0 0 66 66">
+                    <circle
+                      cx="33"
+                      cy="33"
+                      r="20"
+                      fill="none"
+                      stroke="#000000"
+                      class="spinner-circle"
+                    ></circle>
+                  </svg>
+                </div>
+                <div class="container-content-standard-button">
+                  <div class="testo">Su ordinazione</div>
+                </div>
+              </button>
+            </div>
+            <!-- EXTRA BUTTONS START HERE -->
+            <div class="product-button-grid"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/components/atom/standard-button-square/standard-button-square.js"></script>
+    <script src="standard-button-square.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

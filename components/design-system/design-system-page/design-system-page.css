@@ -1,0 +1,41 @@
+@import url(/assets/CSS/style.css);
+
+.div-container {
+  background-color: grey;
+  display: grid;
+  padding: 1rem;
+}
+.logo-div {
+  padding: 1rem;
+  width: auto;
+  margin-bottom: 10px;
+  background-color: var(--white);
+}
+.logo-div h2 {
+  text-decoration: underline;
+}
+
+.button-style-div {
+  margin-top: 10px;
+  gap: 1rem;
+  width: auto;
+  margin-bottom: 10px;
+  background-color: var(--white);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.button-style-div-title {
+  text-decoration: underline;
+  grid-column: 1;
+  margin: 0;
+}
+.button-style-div-container {
+  display: grid;
+}
+.standard-button-grid {
+  display: grid;
+  grid-column: 1;
+}
+.product-button-grid {
+}
