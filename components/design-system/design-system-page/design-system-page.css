@@ -68,7 +68,16 @@
   width: auto;
   margin-bottom: 10px;
   background-color: var(--white);
-  display: grid;
+  /*   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 50% 25% 15%;
+  gap: 1rem; */
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+}
+
+.components-div > * {
+  max-width: 30%;
 }
