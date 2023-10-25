@@ -1,7 +1,5 @@
-@import url(/components/common.css);
-
 /* CARD DELLE NOVITA */
-.newArticle{
+.newArticle {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,8 +12,8 @@
 }
 
 /* DIV CONTENENTE LA SCRITTA "NOVITA" */
-  .markup-container{
-  letter-spacing: .01em;
+.markup-container {
+  letter-spacing: 0.01em;
   font-size: var(--font-size-sm2);
   line-height: 1.6;
   display: block;
@@ -23,11 +21,11 @@
 }
 
 /* SCRITTA "NOVITA */
-.markup{
+.markup {
   color: #2c2c2c;
 }
 
 /* HOOVER DI "NOVITA" */
-.newArticle:hover{
+.newArticle:hover {
   text-decoration: underline;
 }
