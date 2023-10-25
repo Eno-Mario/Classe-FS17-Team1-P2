@@ -1,9 +1,17 @@
 @import url(/assets/CSS/style.css);
 
 .div-container {
+  height: auto;
   background-color: grey;
   display: grid;
+  grid-template-columns: 30% 30% 41%;
   padding: 1rem;
+}
+.div-container-col1,
+.div-container-col2,
+.div-container-col3 {
+  margin-right: 10px;
+  gap: 10px;
 }
 .logo-div {
   padding: 1rem;
@@ -14,28 +22,53 @@
 .logo-div h2 {
   text-decoration: underline;
 }
-
+.container-color-section {
+  grid-row: 2;
+}
 .button-style-div {
-  margin-top: 10px;
+  padding: 1rem;
   gap: 1rem;
   width: auto;
-  margin-bottom: 10px;
+  margin-block: 10px;
   background-color: var(--white);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-row: 3;
+  grid-template-columns: 48% 60%;
 }
 
 .button-style-div-title {
   text-decoration: underline;
   grid-column: 1;
-  margin: 0;
 }
-.button-style-div-container {
-  display: grid;
-}
+
 .standard-button-grid {
   display: grid;
-  grid-column: 1;
+  grid-template-rows: auto auto;
 }
-.product-button-grid {
+.container {
+  margin-left: 10px;
+}
+.container-typography-section {
+  margin-bottom: 10px;
+}
+.icons-div {
+  padding: 1rem;
+  width: auto;
+  margin-bottom: 10px;
+  background-color: var(--white);
+}
+.form-field-div {
+  padding: 1rem;
+  width: auto;
+  margin-bottom: 10px;
+  background-color: var(--white);
+}
+.components-div {
+  padding: 1rem;
+  width: auto;
+  margin-bottom: 10px;
+  background-color: var(--white);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50% 25% 15%;
 }
