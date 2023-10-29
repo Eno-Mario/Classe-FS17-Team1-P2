@@ -9,6 +9,8 @@ const nextButton = document.querySelectorAll(".next-button");
         LOGICA
 --------------------------*/
 
+// Funzione di scroll Left e scroll right sui caroselli
+
 for (let i = 0; i < prevButton.length; i++) {
   prevButton[i].classList.add("hidden");
   prevButton[i].addEventListener("click", function () {
