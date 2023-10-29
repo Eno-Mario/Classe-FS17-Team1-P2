@@ -3,12 +3,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 4.625rem;
-  width: 100%;
+  flex: 0 1 calc(12.5%);
+  -webkit-box-flex: 0;
+  min-width: 10rem;
+  max-width: 19.6875rem;
   box-sizing: inherit;
   list-style-type: disc;
   line-height: 1.5;
   text-align: center;
+  transition: opacity 0.15s ease-out 0s;
+  opacity: 1;
 }
 
 /* DIV CONTENENTE LA SCRITTA "NOVITA" */
