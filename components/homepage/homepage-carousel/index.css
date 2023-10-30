@@ -25,6 +25,8 @@
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   /*   max-height: 550px; */
+  transition: all 0.3s ease;
+  scroll-behavior: smooth;
   gap: 5px;
 }
 
@@ -94,11 +96,11 @@
   }
 
   .prev-button {
-    left: 7.75%;
+    left: 6%;
   }
 
   .next-button {
-    right: 7.75%;
+    right: 6%;
   }
   .atom-homepage-card {
     min-width: 40%;
