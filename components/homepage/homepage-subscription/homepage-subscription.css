@@ -34,11 +34,13 @@
   inset: 0px;
 }
 @media (max-width: 601px) {
-  .homepage-subscription-background-holder img {
+  .homepage-subscription-background-holder,
+  .donna-logo {
     content: url("https://www.lego.com/cdn/cs/set/assets/blt00bc37da77ce06a8/Holiday23-Insiders-Teal-Landing-202309-Hero-Standard-Small.jpg?fit=crop&format=webply&quality=80&width=600&height=600&dpr=2");
   }
 }
-.homepage-subscription-background-holder img {
+.homepage-subscription-background-holder,
+.donna-logo {
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -48,6 +50,21 @@
   height: 100%;
   inset: 0px;
 }
+
+/* hidden logo settings */
+.homepage-subscription-hidden-logo {
+  position: absolute;
+  right: 0.9375rem;
+  bottom: 0.9375rem;
+  display: none;
+  max-width: 9.375rem;
+}
+@media (max-width: 601px) {
+  .homepage-subscription-hidden-logo {
+    display: block;
+  }
+}
+
 /* Left side content and container */
 .homepage-subscription-main-content {
   position: absolute;
@@ -75,13 +92,14 @@
     text-align: left;
     top: 50%;
     transform: translateY(-50%);
-    left: 3.75rem;
+    left: 6.875rem;
     padding: 0px;
   }
 }
 @media screen and (min-width: 1201px) {
   .homepage-subscription-main-content {
     position: absolute;
+    max-width: 35%;
     background-color: transparent;
     color: white;
     text-align: left;
