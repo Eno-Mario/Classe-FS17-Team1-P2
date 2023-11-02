@@ -10,7 +10,6 @@ const standardButton = document.querySelectorAll(".standard-button");
 var likeClicked = false; // Variabile per tenere traccia se il pulsante Like è stato cliccato
 var dislikeClicked = false; // Variabile per tenere traccia se il pulsante Dislike è stato cliccato
 
-
 //card store
 const cardContainer = document.querySelector(".container-store-card");
 
@@ -84,7 +83,6 @@ const card2 = document.querySelectorAll(".newArticle");
 const carousel = document.querySelectorAll(".carousel");
 const prevButton = document.querySelectorAll(".prev-button");
 const nextButton = document.querySelectorAll(".next-button");
-
 
 /* -----------------------
         LOGICA
@@ -171,7 +169,6 @@ function pushDislike() {
     likeClicked = false;
   }
 }
-
 
 // funzioen create card store
 function createCard(arr) {
@@ -332,7 +329,8 @@ for (let i = 0; i < prevButtonCard.length; i++) {
       currentPosition = maxPosition;
     }
     imagesContainer[i].style.transform = `translateX(${currentPosition}px)`;
-
+  });
+}
 
 //opacity on card2 hover
 for (let i = 0; i < card2.length; i++) {
@@ -344,8 +342,9 @@ for (let i = 0; i < card2.length; i++) {
   });
   card2[i].addEventListener("mouseout", function () {
     card2.forEach((el) => el.classList.remove("lessOp"));
+  });
+}
 
-    
 // Funzione di scroll Left e scroll right sui caroselli
 
 for (let i = 0; i < prevButton.length; i++) {
@@ -397,6 +396,5 @@ for (let i = 0; i < prevButton.length; i++) {
         nextButton[i].classList.remove("hidden");
       }
     }, 700);
-
   });
 }
