@@ -117,6 +117,9 @@ const cookieButton = document.querySelector(".homepage-cookie-button");
 const body = document.querySelector("body");
 const containerCookie = document.querySelector(".homepage-cookie-container");
 
+//footer-----------
+const detailsSummary = document.querySelectorAll("details");
+
 /* -----------------------
         LOGICA
 --------------------------*/
@@ -131,6 +134,17 @@ if (element1) {
 } else {
   element1.classList.add("not-visible-element-atom-header");
   element2.classList.add("not-visible-element-atom-header");
+}
+
+//footer-----------
+if (window.innerWidth > 901) {
+  detailsSummary.forEach((el) => {
+    if (!el.hasAttribute("open")) {
+      el.setAttribute("open", "true");
+    } else {
+      el.setAttribute("open", "false");
+    }
+  });
 }
 
 //card store render
@@ -567,6 +581,19 @@ buttonXHambMenu.addEventListener("click", () => {
 });
 
 // footer ------------------------------------------------------
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 901) {
+    detailsSummary.forEach((el) => {
+      el.setAttribute("open", "true");
+    });
+  } else {
+    detailsSummary.forEach((el) => {
+      el.removeAttribute("open");
+    });
+  }
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   const inputMail = document.querySelector(".input-mail");
   const yourMail = document.querySelector(".your-mail");
@@ -593,6 +620,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//cookie------------------------------------------------------
 cookieButton.addEventListener("click", () => {
   const cookieDisabled = document.createElement("div");
   /*   cookieDisabled.className = 'homepage-cookie-displayed' */
