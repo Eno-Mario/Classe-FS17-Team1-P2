@@ -68,3 +68,8 @@ main > * {
   background-color: rgb(20, 165, 163);
   padding: 0.75rem 1.25rem 1.25rem;
 }
+
+.homepage-cookie-container {
+  display: flex;
+  justify-content: center;
+}
