@@ -98,87 +98,108 @@ createCard(cardData);
 //funzione di comparsa e scomparsa dello spinner sul standard-button
 
 function switchHiddenClassButton(bottone) {
-  const testoButton = bottone.querySelector(
-    ".container-content-standard-button"
-  );
-  console.log(testoButton);
-  const spinnerButton = bottone.querySelector(".spinner-container");
-  const listaClassiTesto = testoButton.classList;
+  try {
+    const testoButton = bottone.querySelector(
+      ".container-content-standard-button"
+    );
+    console.log(testoButton);
+    const spinnerButton = bottone.querySelector(".spinner-container");
+    const listaClassiTesto = testoButton.classList;
 
-  if (listaClassiTesto.contains("hidden")) {
-    testoButton.classList.remove("hidden");
-    spinnerButton.classList.add("hidden");
-  } else {
-    spinnerButton.classList.remove("hidden");
-    testoButton.classList.add("hidden");
+    if (listaClassiTesto.contains("hidden")) {
+      testoButton.classList.remove("hidden");
+      spinnerButton.classList.add("hidden");
+    } else {
+      spinnerButton.classList.remove("hidden");
+      testoButton.classList.add("hidden");
+    }
+  } catch (err) {
+    console.error(err);
   }
 }
 
 //button info codice
 
 function toggleVignetta() {
-  var vignetta = document.getElementById("vignetta");
-  vignetta.style.display =
-    vignetta.style.display === "block" ? "none" : "block";
+  try {
+    var vignetta = document.getElementById("vignetta");
+    vignetta.style.display =
+      vignetta.style.display === "block" ? "none" : "block";
+  } catch (err) {
+    console.error(err);
+  }
 }
 
 function closeVignetta() {
-  document.getElementById("vignetta").style.display = "none";
+  try {
+    document.getElementById("vignetta").style.display = "none";
+  } catch (err) {
+    console.error(err);
+  }
 }
 
 function pushLike() {
-  var numLikeElement = document.getElementsByClassName("numLike")[0];
-  var numLike = parseInt(numLikeElement.textContent);
-  var likeSvg = document.querySelector(".likeSvg");
+  try {
+    var numLikeElement = document.getElementsByClassName("numLike")[0];
+    var numLike = parseInt(numLikeElement.textContent);
+    var likeSvg = document.querySelector(".likeSvg");
 
-  if (!likeClicked) {
-    numLikeElement.textContent = numLike + 1;
-    likeClicked = true;
-    likeSvg.classList.add("active");
-  } else {
-    numLikeElement.textContent = numLike - 1;
-    likeClicked = false;
-    likeSvg.classList.remove("active");
-  }
+    if (!likeClicked) {
+      numLikeElement.textContent = numLike + 1;
+      likeClicked = true;
+      likeSvg.classList.add("active");
+    } else {
+      numLikeElement.textContent = numLike - 1;
+      likeClicked = false;
+      likeSvg.classList.remove("active");
+    }
 
-  // Resetta dislikeClicked dopo un clic su Like
-  if (dislikeClicked) {
-    dislikeClicked = false;
+    // Resetta dislikeClicked dopo un clic su Like
+    if (dislikeClicked) {
+      dislikeClicked = false;
+    }
+  } catch (error) {
+    console.error(error);
   }
 }
 
 //Product Review
 
 function pushDislike() {
-  var numDislikeElement = document.getElementsByClassName("numDislike")[0];
-  var numDislike = parseInt(numDislikeElement.textContent);
-  var dislikeSvg = document.querySelector(".dislikeSvg");
+  try {
+    var numDislikeElement = document.getElementsByClassName("numDislike")[0];
+    var numDislike = parseInt(numDislikeElement.textContent);
+    var dislikeSvg = document.querySelector(".dislikeSvg");
 
-  if (!dislikeClicked) {
-    numDislikeElement.textContent = numDislike + 1;
-    dislikeClicked = true;
-    dislikeSvg.classList.add("active");
-  } else {
-    numDislikeElement.textContent = numDislike - 1;
-    dislikeClicked = false;
-    dislikeSvg.classList.remove("active");
-  }
+    if (!dislikeClicked) {
+      numDislikeElement.textContent = numDislike + 1;
+      dislikeClicked = true;
+      dislikeSvg.classList.add("active");
+    } else {
+      numDislikeElement.textContent = numDislike - 1;
+      dislikeClicked = false;
+      dislikeSvg.classList.remove("active");
+    }
 
-  // Resetta likeClicked dopo un clic su Dislike
-  if (likeClicked) {
-    likeClicked = false;
+    // Resetta likeClicked dopo un clic su Dislike
+    if (likeClicked) {
+      likeClicked = false;
+    }
+  } catch (error) {
+    console.error(error);
   }
 }
 
 // funzioen create card store
 function createCard(arr) {
-  const ul = document.createElement("ul");
-  arr.forEach((el) => {
-    const li = document.createElement("li");
-    const card = document.createElement("article");
-    card.classList.add("store-card");
+  try {
+    const ul = document.createElement("ul");
+    arr.forEach((el) => {
+      const li = document.createElement("li");
+      const card = document.createElement("article");
+      card.classList.add("store-card");
 
-    card.innerHTML = `
+      card.innerHTML = `
         <div class="container-img-store-card">
           <div class="images-store-card">
             <div class="store-card-image">
@@ -284,16 +305,19 @@ function createCard(arr) {
           </div>
         </button>`;
 
-    li.append(card);
+      li.append(card);
 
-    ul.append(li);
-  });
+      ul.append(li);
+    });
 
-  cardContainer.append(ul);
+    cardContainer.append(ul);
 
-  prevButtonCard = document.querySelectorAll("#prevButton");
-  nextButtonCard = document.querySelectorAll("#nextButton");
-  imagesContainer = document.querySelectorAll(".images-store-card");
+    prevButtonCard = document.querySelectorAll("#prevButton");
+    nextButtonCard = document.querySelectorAll("#nextButton");
+    imagesContainer = document.querySelectorAll(".images-store-card");
+  } catch (error) {
+    console.error(error);
+  }
 }
 
 /* ---------------------
@@ -311,34 +335,46 @@ for (let i = 0; i < standardButton.length; i++) {
 // bottoni nex e prev sulle foto delle card
 for (let i = 0; i < prevButtonCard.length; i++) {
   prevButtonCard[i].addEventListener("click", function () {
-    const imageWidth = imagesContainer[i].clientWidth;
-    currentPosition += imageWidth;
-    if (currentPosition > 0) {
-      currentPosition = 0;
+    try {
+      const imageWidth = imagesContainer[i].clientWidth;
+      currentPosition += imageWidth;
+      if (currentPosition > 0) {
+        currentPosition = 0;
+      }
+      imagesContainer[i].style.transform = `translateX(${currentPosition}px)`;
+    } catch (error) {
+      console.error(error);
     }
-    imagesContainer[i].style.transform = `translateX(${currentPosition}px)`;
   });
 
   nextButtonCard[i].addEventListener("click", function () {
-    const imageWidth = imagesContainer[i].clientWidth;
-    currentPosition -= imageWidth;
-    const maxPosition = -(
-      imagesContainer[i].scrollWidth - imagesContainer[i].offsetWidth
-    );
-    if (currentPosition < maxPosition) {
-      currentPosition = maxPosition;
+    try {
+      const imageWidth = imagesContainer[i].clientWidth;
+      currentPosition -= imageWidth;
+      const maxPosition = -(
+        imagesContainer[i].scrollWidth - imagesContainer[i].offsetWidth
+      );
+      if (currentPosition < maxPosition) {
+        currentPosition = maxPosition;
+      }
+      imagesContainer[i].style.transform = `translateX(${currentPosition}px)`;
+    } catch (error) {
+      console.error(error);
     }
-    imagesContainer[i].style.transform = `translateX(${currentPosition}px)`;
   });
 }
 
 //opacity on card2 hover
 for (let i = 0; i < card2.length; i++) {
   card2[i].addEventListener("mouseover", function () {
-    card2.forEach((el) => {
-      el.classList.add("lessOp");
-      card2[i].classList.remove("lessOp");
-    });
+    try {
+      card2.forEach((el) => {
+        el.classList.add("lessOp");
+        card2[i].classList.remove("lessOp");
+      });
+    } catch (error) {
+      console.error(error);
+    }
   });
   card2[i].addEventListener("mouseout", function () {
     card2.forEach((el) => el.classList.remove("lessOp"));
