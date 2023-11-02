@@ -6,8 +6,12 @@
 
 const standardButton = document.querySelectorAll(".standard-button");
 
+//product review
 var likeClicked = false; // Variabile per tenere traccia se il pulsante Like è stato cliccato
 var dislikeClicked = false; // Variabile per tenere traccia se il pulsante Dislike è stato cliccato
+
+//card2 container
+const card2 = document.querySelectorAll(".newArticle");
 
 /* -----------------------
         LOGICA
@@ -102,4 +106,17 @@ for (let i = 0; i < standardButton.length; i++) {
   standardButton[i].addEventListener("click", () =>
     switchHiddenClassButton(standardButton[i])
   );
+}
+
+//opacity on card2 hover
+for (let i = 0; i < card2.length; i++) {
+  card2[i].addEventListener("mouseover", function () {
+    card2.forEach((el) => {
+      el.classList.add("lessOp");
+      card2[i].classList.remove("lessOp");
+    });
+  });
+  card2[i].addEventListener("mouseout", function () {
+    card2.forEach((el) => el.classList.remove("lessOp"));
+  });
 }
