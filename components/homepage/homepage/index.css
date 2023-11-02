@@ -32,6 +32,11 @@ main {
     display: block;
   }
 }
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .green-background {
+    display: block;
+  }
+}
 
 .green-carousel .container-total-carousel .carousel-container {
   height: 90%;
