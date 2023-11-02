@@ -208,7 +208,7 @@ function createCard(arr) {
             </svg>
           </div>
           <div class="container-content-standard-button">
-            <img class="bag-icon" src="/assets/icons/bag.svg" alt="bag-icon"></img>
+            <img class="bag-icon" src="/assets/icons/bag.svg" alt="bag-icon">
             <div class="testo">Aggiungi al Carrello</div>
           </div>
         </button>`;
