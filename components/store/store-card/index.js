@@ -62,8 +62,8 @@ const cardData = [
   },
 ];
 
-let prevButton = document.querySelectorAll("#prevButton");
-let nextButton = document.querySelectorAll("#nextButton");
+let prevButtonCard = document.querySelectorAll("#prevButton");
+let nextButtonCard = document.querySelectorAll("#nextButton");
 let imagesContainer = document.querySelectorAll(".images-store-card");
 let currentPosition = 0;
 
@@ -73,8 +73,8 @@ let currentPosition = 0;
 
 createCard(cardData);
 
-for (let i = 0; i < prevButton.length; i++) {
-  prevButton[i].addEventListener("click", function () {
+for (let i = 0; i < prevButtonCard.length; i++) {
+  prevButtonCard[i].addEventListener("click", function () {
     const imageWidth = imagesContainer[i].clientWidth;
     currentPosition += imageWidth;
     if (currentPosition > 0) {
@@ -83,7 +83,7 @@ for (let i = 0; i < prevButton.length; i++) {
     imagesContainer[i].style.transform = `translateX(${currentPosition}px)`;
   });
 
-  nextButton[i].addEventListener("click", function () {
+  nextButtonCard[i].addEventListener("click", function () {
     const imageWidth = imagesContainer[i].clientWidth;
     currentPosition -= imageWidth;
     const maxPosition = -(
@@ -220,8 +220,8 @@ function createCard(arr) {
 
   cardContainer.append(ul);
 
-  prevButton = document.querySelectorAll("#prevButton");
-  nextButton = document.querySelectorAll("#nextButton");
+  prevButtonCard = document.querySelectorAll("#prevButton");
+  nextButtonCard = document.querySelectorAll("#nextButton");
   imagesContainer = document.querySelectorAll(".images-store-card");
 }
 
