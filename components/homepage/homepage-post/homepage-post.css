@@ -4,6 +4,10 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  cursor: pointer;
+}
+.atom-homepage-post:hover .atom-homepage-post-buy-now {
+text-decoration:underline ;
 }
 
 .atom-homepage-post-img {
