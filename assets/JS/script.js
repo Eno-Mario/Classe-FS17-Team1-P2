@@ -349,6 +349,12 @@ for (let i = 0; i < card2.length; i++) {
 
 for (let i = 0; i < prevButton.length; i++) {
   prevButton[i].classList.add("hidden");
+  if (
+    Math.ceil(carousel[i].scrollLeft) >=
+    carousel[i].scrollWidth - carousel[i].offsetWidth
+  ) {
+    nextButton[i].classList.add("hidden");
+  }
 
   //funzionamento prevButton
   prevButton[i].addEventListener("click", function () {
