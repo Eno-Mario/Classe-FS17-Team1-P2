@@ -3,18 +3,20 @@
 .homepage-cookie-container {
   width: 100%;
   margin-bottom: 30px;
+
 }
 .homepage-cookie-banner {
   display: inline-flex;
   background-color: rgb(230, 243, 255);
-  border-radius: 100px;
   padding: var(--icon-sizing-4xs);
   position: relative;
+  border-radius: 46px;
 }
 .homepage-cookie-img-circle {
   border: 3px solid var(--white);
   border-radius: 100px;
   margin-right: 15px;
+  max-height: 6.25rem;
 }
 .homepage-cookie-img-circle img {
   max-width: 6.25rem;
@@ -24,8 +26,9 @@
   display: flex;
 }
 .homepage-cookie-text-img img {
-  height: 6.25rem;
+  height: 8.25rem;
   margin-left: 0.9375rem;
+
 }
 .homepage-cookie-text-title {
   font-size: var(--font-size-s1);
@@ -109,4 +112,13 @@ color: var(--white);
 }
 .homepage-cookie-displayed-none{
   display: none;
+}
+
+@media screen and (max-width: 601px) {
+  .homepage-cookie-banner {
+    border-radius: 0px;
+  }
+  .homepage-cookie-text-img img {
+    display: none;
+  }
 }
