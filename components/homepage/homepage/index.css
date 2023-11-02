@@ -1,1 +1,57 @@
 @import url(/assets/CSS/style.css);
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  max-width: 100rem;
+}
+
+.green-carousel {
+  box-sizing: border-box;
+  max-width: 82.5rem;
+}
+
+.green-background {
+  display: flex;
+  justify-content: center;
+  background-color: var(--water-green);
+  width: 100%;
+}
+
+@media (max-width: 901px) {
+  .green-background {
+    display: block;
+  }
+}
+
+.green-carousel .container-total-carousel .carousel-container {
+  height: 90%;
+}
+
+.green-carousel
+  .container-total-carousel
+  .carousel-container
+  .carousel
+  .atom-homepage-card
+  .img-container-card {
+  background-color: var(--white);
+}
+
+.green-carousel
+  .container-total-carousel
+  .carousel-container
+  .carousel
+  .atom-homepage-card
+  .atom-homepage-card-content {
+  background-color: rgb(20, 165, 163);
+  padding: 0.75rem 1.25rem 1.25rem;
+}

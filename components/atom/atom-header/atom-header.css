@@ -12,6 +12,7 @@
   justify-content: space-between;
   padding: 0px var(--line-height-sm2);
   position: relative;
+  margin: auto;
 }
 
 /*///////////////////////////////////////// bottone area giochi //////////////////////////////////////*/
@@ -274,6 +275,10 @@
 
 /* ///////////////////////// regole per la parte inferiore dell'header ///////////////////////////////////*/
 
+.yellow-background {
+  background-color: var(--header);
+}
+
 .lower-container-atom-header {
   height: 4.6875rem;
   margin: 0px auto;
@@ -283,7 +288,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--header);
+
   display: flex;
 }
 
