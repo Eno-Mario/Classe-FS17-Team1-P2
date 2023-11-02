@@ -1,0 +1,118 @@
+@import url(/assets/CSS/style.css);
+
+.header-carousel {
+  display: flex;
+
+  padding-left: 7%;
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 100rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  gap: 10px;
+
+  height: 100%;
+}
+
+.carousel {
+  width: 87.5%;
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  /*   max-height: 550px; */
+  transition: all 0.3s ease;
+  scroll-behavior: smooth;
+  gap: 5px;
+}
+
+.carousel::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.carousel::-webkit-scrollbar-track {
+  background-color: lightgrey;
+  border-radius: 20px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 20px;
+}
+
+.prev-button,
+.next-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 2%;
+  transform: rotate(180deg);
+}
+.next-button {
+  right: 2%;
+}
+
+.next,
+.roundbutt {
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 1px solid grey;
+  border-radius: 50%;
+}
+
+.round-butt {
+  background-color: var(--white);
+}
+
+.prev-button:hover .round-butt,
+.next-button:hover .round-butt {
+  background-color: rgb(224, 224, 224);
+}
+
+.next {
+  fill: rgb(44, 44, 44);
+}
+
+.button-padding {
+  padding-top: 50%;
+  padding-bottom: 50%;
+}
+
+@media (max-width: 1201px) {
+  .prev-button,
+  .next-button {
+    position: absolute;
+  }
+
+  .prev-button {
+    left: 6%;
+  }
+
+  .next-button {
+    right: 6%;
+  }
+  .atom-homepage-post {
+    min-width: 40%;
+  }
+}
+
+@media (max-width: 601px) {
+  .atom-homepage-post {
+    min-width: 75%;
+  }
+}
+
+.hidden {
+  display: none;
+}

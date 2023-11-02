@@ -5,9 +5,10 @@
   justify-content: center;
   text-align: center;
   cursor: pointer;
+  scroll-snap-align: start; /* Imposta l'allineamento snap sulla parte iniziale dell'elemento */
 }
 .atom-homepage-post:hover .atom-homepage-post-buy-now {
-text-decoration:underline ;
+  text-decoration: underline;
 }
 
 .atom-homepage-post-img {
