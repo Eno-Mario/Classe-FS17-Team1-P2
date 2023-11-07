@@ -310,6 +310,7 @@
     height: 100%;
     display: flex;
     align-items: center;
+    z-index: 6;
 }
 
 .lego-logo-header {
@@ -317,6 +318,7 @@
     height: 55px;
     margin-right: 4.0625rem;
     cursor: pointer;
+    z-index: 6;
 }
 
 .slot-button-container-lower-header {
@@ -346,6 +348,7 @@
     font-size: 1rem;
     line-height: 1.1875rem;
     border-bottom: 3px solid transparent;
+    z-index: 6;
 }
 
 .button-lower-header:hover {
@@ -359,6 +362,10 @@
     color: rgb(208, 2, 27);
     background: rgb(255, 255, 255);
     cursor: pointer;
+}
+
+.button-xmas-header span {
+    z-index: 6;
 }
 
 .button-xmas-header:hover {
@@ -441,9 +448,10 @@
         align-items: center;
         position: absolute;
         left: 0;
-        z-index: 4;
+        z-index: 7;
         margin-left: 10px;
     }
+
 
     .hamb-title-header {
         display: flex;
@@ -456,7 +464,7 @@
         left: 0px;
         width: 100%;
         height: 100%;
-        z-index: 5;
+        z-index: 7;
         background-color: hsl(0, 0%, 0%, 0.5);
     }
 
@@ -474,28 +482,70 @@
     }
 
     .container-delete-button-x-hamb-menu {
-        display:flex;
+        display: flex;
         height: 100%;
         border-left: 1px solid rgb(224, 224, 224);
     }
 
     .delete-button-x-hamb-menu {
-        padding-left:20px;
+        padding-left: 20px;
         padding-right: 20px;
     }
 
     .aside-nav-hamb-menu {
-        z-index: 6;
+        z-index: 3;
         background: rgb(255, 255, 255);
-        position: fixed;
+        position: absolute;
         top: 0px;
         bottom: 0px;
         left: 0px;
         height: 100%;
         width: 100%;
         max-width: 23.4375rem;
-        animation: 0.3s ease 0s 1 normal forwards running kloRKO;
+        transition: transform 500ms ease 0s;
+        transform: translateZ(0);
+        animation: custom 0.3s ease 0s 1 normal forwards;
+    }
 
+    @keyframes custom {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+
+    .aside-nav-hamb-menu a {
+        color: black;
+    }
+
+    .area-giochi-container-hamb-menu {
+        margin: 1.25rem;
+    }
+
+    .area-giochi-content-hamb-menu {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        text-align: center;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-image: initial;
+        border-bottom: 2px solid rgba(48, 85, 181, 0.25);
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px;
+        border-radius: 3px;
+        background: rgb(171, 217, 255);
+        color: rgb(0, 0, 0);
+        font-size: 0.75rem;
+        line-height: 1.75rem;
+        text-transform: uppercase;
+        padding: 0.3125rem 0.625rem;
     }
 
     .aside-nav-hamb-menu ul {
@@ -506,20 +556,35 @@
     .aside-nav-hamb-menu ul li {
         list-style: none;
         padding: 0;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
         padding-left: 15px;
         border-bottom: 1px solid rgb(224, 224, 224);
     }
 
-
-    .aside-nav-hamb-menu div:last-child {
-        border-bottom: none;
+    .button-natale-hamb-menu {
+        color: rgb(208, 2, 27);
     }
 
-    .button-hamb-menu-desideri,
-    .button-hamb-menu-mio-carrello,
-    .button-hamb-menu-italia {
+    .all-button-upperCase-humb-menu {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 0.875rem;
+    }
+
+    .arrow-header-humb-menu {
+        height: 14px;
+        width: 9px;
+    }
+
+    .all-arrow-flex-button {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 20px;
+        align-items: center;
+    }
+
+    .button-hamb-menu {
         display: flex;
         -webkit-box-align: center;
         align-items: center;
@@ -529,7 +594,7 @@
         color: rgb(0, 0, 0);
         font-weight: 500;
         cursor: pointer;
-        
+
     }
 
 
@@ -540,10 +605,141 @@
     }
 }
 
+/* /////////////////////////////////////////regole per menu pop-up menu /////////////////////////////*/
+
+@media screen and (max-width:901px) {
+    .general-container-pop-up-menu {
+        display: none;
+    }
+}
+
+
+.general-container-pop-up-menu {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    background-color: hsl(0, 0%, 0%, 0.5);
+}
+
+.container-for-menu-pop-up-header {
+    z-index: 5;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    max-width: 40.4375rem;
+    transition: transform 500ms ease 0s;
+    transform: translateZ(0);
+    animation: custom 0.3s ease 0s 1 normal forwards;
+}
+
+@keyframes custom {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.delete-button-pop-up-menu {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    top: 20px;
+    bottom: 0px;
+    left: 0px;
+    width:100%;
+    height: 40px;
+
+}
+
+.delete-button-pop-up-menu button {
+    
+    display:flex;
+padding-right: 20px;
+}
+
+.delete-button-pop-up-menu button img {
+    width: 17px;
+    height: 17px;
+
+}
 
 
 
+.content-pop-up-menu {
+    padding-top: 110px;
+    padding-left: 110px;
+}
 
+/*bottoni con freccia*/
+
+.content-pop-up-menu ul li {
+    width: 14.375rem;
+    white-space: normal;
+    margin-bottom: 1.25rem;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.content-pop-up-menu ul li button {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content-pop-up-menu ul li button div {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.span-arrow-button-pop-up-menu {
+    border-bottom: 1px solid transparent;
+    color: rgb(0, 0, 0);
+    line-height: 1.1875rem;
+    word-break: break-word;
+}
+
+.arrow-header-pop-up-menu {
+    height: 14px;
+    width: 9px;
+}
+
+/* bottoni senza freccia */
+
+.content-pop-up-menu ul li div {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content-pop-up-menu ul li div a {
+    display: block;
+    line-height: 1.1875rem;
+    color: rgb(0, 0, 0);
+    word-break: break-word;
+    text-align: left;
+}
 
 
 /*/////////////////////////////regola per scomparsa elemento del carosello //////////////////////////////////*/
