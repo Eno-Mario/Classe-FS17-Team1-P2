@@ -13,9 +13,10 @@
 @import url(/components/design-system/design-system-page/design-system-page.css);
 @import url(/components/homepage/homepage-card-2/homepage-card-2.css);
 @import url(/components/product/product-review-template/productReviewTemplate.css);
-@import url(/components/atom/atom-header/atom-header.css)
-@import url(/components/homepage/homepage-subscription/homepage-subscription.css);
+@import url(/components/atom/atom-header/atom-header.css) @import
+  url(/components/homepage/homepage-subscription/homepage-subscription.css);
 @import url(/components/store/store-card/index.css);
 @import url(/components/homepage/homepage-card-2-container/index.css);
 @import url(/components/homepage/homepage-carousel/index.css);
 @import url(/components/homepage/homepage-carousel-posts/index.css);
+@import url(/components/homepage/homepage-featured-post/homepage-featured-post.css);
