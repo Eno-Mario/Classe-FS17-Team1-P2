@@ -84,9 +84,71 @@ const carousel = document.querySelectorAll(".carousel");
 const prevButton = document.querySelectorAll(".prev-button");
 const nextButton = document.querySelectorAll(".next-button");
 
+//header
+const container = document.querySelector(".carousel-atom-header");
+const element1 = document.getElementById("first-element-atom-header");
+const element2 = document.getElementById("second-element-atom-header");
+const element3 = document.getElementById("third-element-atom-header");
+const allElement = document.querySelectorAll(".carousel-element-atom-header");
+const previous = document.querySelector(".arrow-previous-atom-header");
+const next = document.querySelector(".arrow-next-atom-header");
+const xButton = document.querySelector(".delete-button-x");
+const upperHeader = document.querySelector(".upper-container-atom-header");
+
+let counter = 0;
+
+const menu = document.querySelector(".hamb-menu-container");
+const titleMenu = document.querySelector(".hamb-title-header");
+const areaGiochi = document.querySelector(".button-header-area-giochi");
+const legoHead = document.querySelector(".lego-head-button-icon");
+const blueBlock = document.querySelector(".lego-block-button-icon");
+
+const acquista = document.getElementById("button-acquista-hamb");
+const scopri = document.getElementById("button-scopri-hamb");
+const aiuto = document.getElementById("button-aiuto-hamb");
+const natale = document.querySelector(
+  "#button-xmas-hamb.button-xmas-header span"
+);
+
+const bodyHeader = document.querySelector("body");
+
+let menuPopUpCreated = false;
+
+//cookie
+
+const cookieButton = document.querySelector(".homepage-cookie-button");
+const body = document.querySelector("body");
+const containerCookie = document.querySelector(".homepage-cookie-container");
+
+//footer-----------
+const detailsSummary = document.querySelectorAll("details");
+
 /* -----------------------
         LOGICA
 --------------------------*/
+
+// occultamento per parte degli elementi del carosello
+if (element1) {
+  element2.classList.add("not-visible-element-atom-header");
+  element3.classList.add("not-visible-element-atom-header");
+} else if (element2) {
+  element1.classList.add("not-visible-element-atom-header");
+  element3.classList.add("not-visible-element-atom-header");
+} else {
+  element1.classList.add("not-visible-element-atom-header");
+  element2.classList.add("not-visible-element-atom-header");
+}
+
+//footer-----------
+if (window.innerWidth > 901) {
+  detailsSummary.forEach((el) => {
+    if (!el.hasAttribute("open")) {
+      el.setAttribute("open", "true");
+    } else {
+      el.setAttribute("open", "false");
+    }
+  });
+}
 
 //card store render
 createCard(cardData);
@@ -440,3 +502,360 @@ for (let i = 0; i < prevButton.length; i++) {
     }, 700);
   });
 }
+
+//evento per togliere l'upperHeader
+
+xButton.addEventListener("click", () => {
+  upperHeader.classList.add("not-visible-element-atom-header");
+});
+
+next.addEventListener("click", () => {
+  allElement[counter].classList.add("not-visible-element-atom-header");
+  counter = (counter + 1) % allElement.length;
+  allElement[counter].classList.remove("not-visible-element-atom-header");
+});
+
+previous.addEventListener("click", () => {
+  allElement[counter].classList.add("not-visible-element-atom-header");
+  counter = (counter - 1) % allElement.length;
+  allElement[counter].classList.remove("not-visible-element-atom-header");
+});
+
+/*///////////////////////////// creazione tasto x per hamburgher menu //////////////////// */
+const buttonXHambMenu = document.createElement("button");
+buttonXHambMenu.innerHTML = `<button aria-label="Close" data-test="mobile-global-banner-close-btn" class="delete-button-x-hamb-menu"><svg
+          xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" aria-hidden="true"
+          class="Icon__StyledSVG-lm07h6-0 dHKzVM">
+          <path
+            d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
+            fill="currentColor" fill-rule="evenodd"></path>
+        </svg></button>`;
+
+/* evento per hamburger menu */
+const containerAside = document.createElement("div");
+menu.addEventListener("click", () => {
+  // Controlla la larghezza della finestra
+  if (window.innerWidth <= 901) {
+    const aside = document.createElement("div");
+    containerAside.classList.add("general-container-hamb-menu");
+    containerAside.classList.remove("not-visible-element-atom-header");
+    aside.className = "aside-nav-hamb-menu";
+    aside.innerHTML = `<div class="container-title-e-x-hamb-menu"><div class="title-hamb-menu">${titleMenu.innerHTML}</div>
+       <div class="container-delete-button-x-hamb-menu">${buttonXHambMenu.innerHTML}</div></div>
+        <div class="container-content-hamb-menu">
+            <ul>
+                <li><div><a href="#">${areaGiochi.textContent}</a></div></li> 
+                <li><div>${natale.textContent}</div></li>
+                <li><div><a href="#"><span>HOME</span></a></div></li>
+                <li><div>${acquista.textContent}</div></li>
+                <li><div>${scopri.textContent}</div></li>
+                <li><div>${aiuto.textContent}</div></li>
+                <li><div>${legoHead.innerHTML}</div></li>
+                <li><div>${blueBlock.innerHTML}</div></li>
+                <li><div><a href="#" class="button-hamb-menu-desideri"><span>La mia lista dei desideri</span></a></div></li>
+                <li><div><a href="#" class="button-hamb-menu-mio-carrello"><span>Il mio carrello (0)</span></a></div></li>
+                <li><div><a href="#" class="button-hamb-menu-italia"><img class="icon-hamb-menu-italia" src="icon_maps.png"><span>Italia</span></a></div></li>
+            </ul>
+        </div>`;
+    containerAside.append(aside);
+    bodyHeader.append(containerAside);
+  }
+});
+
+// Aggiungi un listener per controllare le dimensioni della finestra quando la finestra viene ridimensionata
+window.addEventListener("resize", () => {
+  const containerAside = document.querySelector(".general-container-hamb-menu");
+
+  // Controlla nuovamente la larghezza della finestra e rimuovi l'elemento se necessario
+  if (window.innerWidth > 901 && containerAside) {
+    containerAside.remove();
+  }
+});
+containerAside.addEventListener("click", () => {
+  if (containerAside) {
+    containerAside.classList.add("not-visible-element-atom-header");
+  }
+});
+
+buttonXHambMenu.addEventListener("click", () => {
+  if (buttonXHambMenu) {
+    containerAside.classList.add("not-visible-element-atom-header");
+  }
+});
+
+/*/////////evento per tasto acquista /////////////////////// */
+
+const divForButton2 = document.createElement("div");
+divForButton2.setAttribute("class", "delete-button-pop-up-menu");
+const buttonXPopUpMenu2 = document.createElement("button");
+const image2 = document.createElement("img");
+image2.src = "close.png";
+image2.alt = "";
+buttonXPopUpMenu2.appendChild(image2);
+divForButton2.appendChild(buttonXPopUpMenu2);
+
+const containerPopMenu = document.createElement("div");
+const containerForMenuPopUp = document.createElement("div");
+containerForMenuPopUp.innerHTML = "";
+// Crea il contenuto di containerForMenuPopUp
+acquista.addEventListener("click", () => {
+  if (!menuPopUpCreated) {
+    // Crea il container per il menu pop-up
+    containerPopMenu.classList.add("not-visible-element-atom-header");
+
+    // Crea il container per il contenuto del menu pop-up
+
+    containerForMenuPopUp.className = "container-for-menu-pop-up-header";
+    containerPopMenu.classList.add("general-container-pop-up-menu");
+    containerPopMenu.classList.remove("not-visible-element-atom-header");
+    containerForMenuPopUp.innerHTML = `
+    <div class="content-pop-up-menu">
+        <ul>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Set per tema</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Età</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Prezzi</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Merchandising LEGO</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Interessi</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Pick and Build</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><div><a href="#">Set Esclusivi</a></div></li>
+            <li><div><a href="#">Novità</a></div></li>
+            <li><div><a href="#">I più venduti</a></div></li>
+            <li><div><a href="#">Home decor</a></div></li>
+            <li><div><a href="#">Sconti e offerte</a></div></li>
+            <li><div><a href="#">Buoni regalo</a></div></li>
+            <li><div><a href="#">Disponibile a breve</a></div></li>
+            <li><div><a href="#">Ultima occasione per acquistarli</a></div></li>
+        </ul>
+    </div>
+`;
+    containerForMenuPopUp.appendChild(divForButton2);
+    containerPopMenu.append(containerForMenuPopUp);
+    bodyHeader.append(containerPopMenu);
+    // Gestisci la chiusura del menu quando "buttonXHambMenu" viene cliccato
+
+    menuPopUpCreated = true;
+  }
+
+  buttonXPopUpMenu2.addEventListener("click", () => {
+    containerPopMenu.remove();
+    menuPopUpCreated = false;
+  });
+  // Gestisci la chiusura del menu quando containerPopMenu viene cliccato
+  containerPopMenu.addEventListener("click", (event) => {
+    if (event.target === containerPopMenu) {
+      containerPopMenu.remove();
+      menuPopUpCreated = false;
+    }
+  });
+
+  // Rimuovi il menu quando la finestra viene ridimensionata
+  window.addEventListener("resize", () => {
+    const containerPopMenu = document.querySelector(
+      ".general-container-pop-up-menu"
+    );
+    if (window.innerWidth < 901) {
+      containerPopMenu.remove();
+      menuPopUpCreated = false;
+    }
+  });
+});
+
+/*/////////evento per tasto scopri /////////////////////// */
+
+// Crea il contenuto di containerForMenuPopUp
+scopri.addEventListener("click", () => {
+  if (!menuPopUpCreated) {
+    // Crea il container per il menu pop-up
+    containerPopMenu.classList.add("not-visible-element-atom-header");
+
+    // Crea il container per il contenuto del menu pop-up
+
+    containerForMenuPopUp.className = "container-for-menu-pop-up-header";
+    containerPopMenu.classList.add("general-container-pop-up-menu");
+    containerPopMenu.classList.remove("not-visible-element-atom-header");
+    containerForMenuPopUp.innerHTML = `
+    <div class="content-pop-up-menu">
+        <ul>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">I nostri valori</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Le nostre app</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Le nostre riviste</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><div><a href="#">Tutti i temi LEGO</a></div></li>
+            <li><div><a href="#">Tutti gli interessi LEGO</a></div></li>
+            <li><div><a href="#">Per gli adulti</a></div></li>
+            <li><div><a href="#">Per le famiglie</a></div></li>
+            <li><div><a href="#">LEGO® Insiders</a></div></li>
+            <li><div><a href="#">LEGO® Mosaic Maker</a></div></li>
+            <li><div><a href="#">Idee regalo LEGO®</a></div></li>
+        </ul>
+    </div>
+`;
+    containerForMenuPopUp.appendChild(divForButton2);
+    containerPopMenu.append(containerForMenuPopUp);
+    bodyHeader.append(containerPopMenu);
+    // Gestisci la chiusura del menu quando "buttonXHambMenu" viene cliccato
+
+    menuPopUpCreated = true;
+  }
+
+  buttonXPopUpMenu2.addEventListener("click", () => {
+    containerPopMenu.remove();
+    menuPopUpCreated = false;
+  });
+  // Gestisci la chiusura del menu quando containerPopMenu viene cliccato
+  containerPopMenu.addEventListener("click", (event) => {
+    if (event.target === containerPopMenu) {
+      containerPopMenu.remove();
+      menuPopUpCreated = false;
+    }
+  });
+
+  // Rimuovi il menu quando la finestra viene ridimensionata
+  window.addEventListener("resize", () => {
+    const containerPopMenu = document.querySelector(
+      ".general-container-pop-up-menu"
+    );
+    if (window.innerWidth < 901) {
+      containerPopMenu.remove();
+      menuPopUpCreated = false;
+    }
+  });
+});
+
+/*/////////evento per tasto aiuto /////////////////////// */
+
+// Crea il contenuto di containerForMenuPopUp
+aiuto.addEventListener("click", () => {
+  if (!menuPopUpCreated) {
+    // Crea il container per il menu pop-up
+    containerPopMenu.classList.add("not-visible-element-atom-header");
+
+    // Crea il container per il contenuto del menu pop-up
+
+    containerForMenuPopUp.className = "container-for-menu-pop-up-header";
+    containerPopMenu.classList.add("general-container-pop-up-menu");
+    containerPopMenu.classList.remove("not-visible-element-atom-header");
+    containerForMenuPopUp.innerHTML = `
+    <div class="content-pop-up-menu">
+        <ul>
+            <li><div><a href="#">Verifica stato ordine</a></div></li>
+            <li><div><a href="#">Consegne e resi</a></div></li>
+            <li><div><a href="#">Trova uno store</a></div></li>
+            <li><div><a href="#">Istruzioni per la costruzione</a></div></li>
+            <li><div><a href="#">Domande frequenti</a></div></li>
+            <li><div><a href="#">Contattaci</a></div></li>
+            <li><div><a href="#">Pezzi di ricambio</a></div></li>
+        </ul>
+    </div>
+`;
+    containerForMenuPopUp.appendChild(divForButton2);
+    containerPopMenu.append(containerForMenuPopUp);
+    bodyHeader.append(containerPopMenu);
+    // Gestisci la chiusura del menu quando "buttonXHambMenu" viene cliccato
+
+    menuPopUpCreated = true;
+  }
+
+  buttonXPopUpMenu2.addEventListener("click", () => {
+    containerPopMenu.remove();
+    menuPopUpCreated = false;
+  });
+  // Gestisci la chiusura del menu quando containerPopMenu viene cliccato
+  containerPopMenu.addEventListener("click", (event) => {
+    if (event.target === containerPopMenu) {
+      containerPopMenu.remove();
+      menuPopUpCreated = false;
+    }
+  });
+
+  // Rimuovi il menu quando la finestra viene ridimensionata
+  window.addEventListener("resize", () => {
+    const containerPopMenu = document.querySelector(
+      ".general-container-pop-up-menu"
+    );
+    if (window.innerWidth < 901) {
+      containerPopMenu.remove();
+      menuPopUpCreated = false;
+    }
+  });
+});
+
+// footer ------------------------------------------------------
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 901) {
+    detailsSummary.forEach((el) => {
+      el.setAttribute("open", "true");
+    });
+  } else {
+    detailsSummary.forEach((el) => {
+      el.removeAttribute("open");
+    });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const inputMail = document.querySelector(".input-mail");
+  const yourMail = document.querySelector(".your-mail");
+
+  inputMail.addEventListener("focus", function () {
+    yourMail.style.transform = "translate(0px, -8px)";
+    yourMail.style.fontSize = "12px";
+  });
+
+  inputMail.addEventListener("blur", function () {
+    if (inputMail.value === "") {
+      yourMail.style.transform = "none";
+      yourMail.style.fontSize = "16px";
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const emailInput = document.getElementById("email-input");
+  const sendButton = document.getElementById("send-button");
+
+  sendButton.addEventListener("click", function () {
+    emailInput.value = "";
+  });
+});
+
+//cookie------------------------------------------------------
+cookieButton.addEventListener("click", () => {
+  const cookieDisabled = document.createElement("div");
+  /*   cookieDisabled.className = 'homepage-cookie-displayed' */
+  body.append(cookieDisabled);
+  cookieDisabled.innerHTML = `
+  <div class = 'homepage-cookie-disabled'>
+    <div class = 'homepage-cookie-disabled-container'>
+      <div class ='homepage-cookie-disabled-container-text'>
+        <h2>Preferenze per la privacy: i cookie sono nostri. Il controllo è dell'utente.</h2>
+        <p>LEGO System A/S (e le terze parti elencate di seguito) impostano e utilizzano cookie e tecnologie simili (“cookie”) su questo sito web per offrire un’esperienza migliore e più user-friendly, per scopi statistici e analitici e per fornire un marketing mirato e pertinente. Ulteriori informazioni sulle categorie di cookie sono riportate di seguito; utilizzare i pulsanti per decidere quali categorie si desidera attivare.</p>
+        <p>Facendo clic su "Solo necessari", verranno impostati solo i cookie necessari per consentire il funzionamento del sito Web. Questi cookie non possono essere disabilitati. Selezionando "Accetta tutti" si impostano tutti i cookie. Questo ci consente di ottimizzare l'esperienza dell'utente e di pubblicizzare i nostri prodotti e servizi. In alternativa, è possibile selezionarne solo alcuni. È sufficiente fare clic su "Impostazioni dei cookie" e usare i pulsanti di attivazione/disattivazione per scegliere le categorie preferite.</p>
+        <p>Ricordare che è sempre possibile revocare il proprio consenso o modificare le impostazioni semplicemente premendo il tasto “Impostazioni dei cookie” sul nostro sito. Per ulteriori informazioni, vedere anche la nostra Informativa sui cookie e la nostra Informativa sulla privacy Informativa sui cookie e Informativa sulla privacy</p>
+        <p>Si noti che in questo sito rispettiamo il Global Privacy Control (GPC) per i cookie e quando viene rilevata l'impostazione GPC escludiamo automaticamente tutti i cookie, eccetto i cookie “Strettamente necessari”. Per ulteriori informazioni, visitare globalprivacycontrol.org.</p>
+      </div>
+      <div class = 'homepage-cookie-disabled-container-button'>
+      <button class ='homepage-cookie-disabled-button-required'><span>Solo necessari</span></button>
+      <button class ='homepage-cookie-disabled-button-all'><span>Accetta tutti</span></button>
+      <p class = 'homepage-cookie-disabled-container-button-impostation'>Impostazioni dei cookie</p>
+      </div>
+    </div>
+  </div>
+  `;
+
+  /* al click di solo necessari va in display none la card */
+  const btnFewCookie = document.querySelector(
+    ".homepage-cookie-disabled-button-required"
+  );
+  btnFewCookie.addEventListener("click", () => {
+    cookieDisabled.style.display = "none";
+  });
+
+  const btnAllCookie = document.querySelector(
+    ".homepage-cookie-disabled-button-all"
+  );
+  btnAllCookie.addEventListener("click", () => {
+    cookieDisabled.style.display = "none";
+    containerCookie.style.display = "none";
+  });
+});

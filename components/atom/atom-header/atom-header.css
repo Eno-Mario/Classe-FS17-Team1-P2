@@ -1,756 +1,549 @@
-@import url(/assets/CSS/style.css);
-
-
 .container-primary-atom-header {
-    width: 100%;
+  width: 100%;
 }
 
 /*/////////////////////////////////////regole css per la parte superiore dell'header///////////////////////////*/
 
 .upper-container-atom-header {
-    width: auto;
-    max-width: 100rem;
-    background-color: #f8f8f8;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px var(--line-height-sm2);
-    position: relative;
+  width: auto;
+  max-width: 100rem;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px var(--line-height-sm2);
+  position: relative;
+  margin: auto;
 }
 
 /*///////////////////////////////////////// bottone area giochi //////////////////////////////////////*/
 .container-button-header-area-giochi {
-    flex: 0 1 33.3333%;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    margin-top: var(--icon-sizing-xs);
-    margin-bottom: var(--icon-sizing-xs);
+  flex: 0 1 33.3333%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-top: var(--icon-sizing-xs);
+  margin-bottom: var(--icon-sizing-xs);
 }
 
 .button-header-area-giochi {
-    display: inline-flex;
-    -webkit-box-align: center;
-    align-items: center;
-    border-radius: 3px;
-    border: none;
-    background: rgb(171, 217, 255);
-    font-size: var(--font-size-sm2);
-    line-height: var(--line-height-s0);
-    text-transform: uppercase;
-    padding: 0px var(--icon-sizing-3xs);
-    box-shadow: rgba(48, 85, 181, 0.44) 0px 1px 4px 0px;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 3px;
+  border: none;
+  background: rgb(171, 217, 255);
+  font-size: var(--font-size-sm2);
+  line-height: var(--line-height-s0);
+  text-transform: uppercase;
+  padding: 0px var(--icon-sizing-3xs);
+  box-shadow: rgba(48, 85, 181, 0.44) 0px 1px 4px 0px;
 }
 
 .button-header-area-giochi a {
-    color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 .button-header-area-giochi:hover {
-    background-color: white;
+  background-color: white;
 }
 
 .arrow-header {
-    width: 15px;
-    height: 16px;
-    margin-bottom: 5%;
-    margin-right: var(--icon-sizing-3xs);
-    transform: rotate(180deg);
+  width: 15px;
+  height: 16px;
+  margin-bottom: 5%;
+  margin-right: var(--icon-sizing-3xs);
+  transform: rotate(180deg);
 }
 
-@media screen and (max-width:901px) {
-
-    .container-button-header-area-giochi,
-    .button-header-area-giochi {
-        display: none;
-    }
+@media screen and (max-width: 901px) {
+  .container-button-header-area-giochi,
+  .button-header-area-giochi {
+    display: none;
+  }
 }
 
 /*/////////////////////////////////////////////////mini carosello centrale /////////////////////////////////*/
 
 .carousel-atom-header {
-    height: 3.1875rem;
-    display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
+  height: 3.1875rem;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 601px) and (max-width: 1200px) {
-    .carousel-atom-header {
-        width: 65%;
-    }
+  .carousel-atom-header {
+    width: 65%;
+  }
 }
 
 @media screen and (min-width: 1201px) {
-    .carousel-atom-header {
-        max-width: 34.6875rem;
-    }
+  .carousel-atom-header {
+    max-width: 34.6875rem;
+  }
 }
 
 @media screen and (min-width: 901px) {
-    .carousel-atom-header {
-        margin: 0px auto;
-        justify-content: center;
-    }
+  .carousel-atom-header {
+    margin: 0px auto;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 601px) {
-    .carousel-atom-header {
-        margin: 0px auto;
-        justify-content: space-evenly;
-        max-width: none;
-    }
+  .carousel-atom-header {
+    margin: 0px auto;
+    justify-content: space-evenly;
+    max-width: none;
+  }
 }
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
-    .carousel-atom-header {
-        padding: 0px 3.4375rem;
-    }
+  .carousel-atom-header {
+    padding: 0px 3.4375rem;
+  }
 }
 
 .all-button-carousel {
-    width: 18px;
-    height: 18px;
-    border: 0;
-    padding: 0.75rem;
-    margin-top: 5px;
-    vertical-align: middle;
-    background: transparent;
-    box-shadow: none;
-    cursor: pointer;
-    color: rgb(44, 44, 44);
-    padding: 0.75rem;
-    z-index: 1;
+  width: 18px;
+  height: 18px;
+  border: 0;
+  padding: 0.75rem;
+  margin-top: 5px;
+  vertical-align: middle;
+  background: transparent;
+  box-shadow: none;
+  cursor: pointer;
+  color: rgb(44, 44, 44);
+  padding: 0.75rem;
+  z-index: 1;
 }
 
 .arrow-previous-atom-header {
-    transition: transform 0.1s linear 0s;
-    display: block;
-    flex: 0 0 auto;
-    transform: rotate(180deg);
+  transition: transform 0.1s linear 0s;
+  display: block;
+  flex: 0 0 auto;
+  transform: rotate(180deg);
 }
 
 .arrow-next-atom-header {
-    transition: transform 0.1s linear 0s;
-    display: block;
-    flex: 0 0 auto;
+  transition: transform 0.1s linear 0s;
+  display: block;
+  flex: 0 0 auto;
 }
 
 .carousel-element-atom-header {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    width: auto;
-    width: 100%;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    flex-shrink: 0;
-    transform: translateX(0%);
-    transition-duration: 0.3s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    will-change: transform;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width: auto;
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-shrink: 0;
+  transform: translateX(0%);
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
 }
 
-@media screen and (max-width:601px) {
-    .carousel-element-atom-header {
-        flex-shrink: 1;
-    }
+@media screen and (max-width: 601px) {
+  .carousel-element-atom-header {
+    flex-shrink: 1;
+  }
 }
 
 .carousel-element-atom-header p {
-    pointer-events: none;
-    margin: 0px;
-    text-align: center;
-    z-index: 2;
-    color: rgb(0, 0, 0);
-    font-size: 0.75rem;
-    line-height: 1.1875rem;
-    font-weight: 400;
-    text-transform: inherit;
+  pointer-events: none;
+  margin: 0px;
+  text-align: center;
+  z-index: 2;
+  color: rgb(0, 0, 0);
+  font-size: 0.75rem;
+  line-height: 1.1875rem;
+  font-weight: 400;
+  text-transform: inherit;
 }
 
 .carousel-element-atom-header a {
-    pointer-events: all;
-    font-size: 0.75rem;
-    margin-left: 1.25rem;
-    white-space: nowrap;
+  pointer-events: all;
+  font-size: 0.75rem;
+  margin-left: 1.25rem;
+  white-space: nowrap;
 }
 
 .carousel-element-atom-header a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 901px) {
-    .carousel-element-atom-header p {
-        margin-left: 0.75rem;
-    }
+  .carousel-element-atom-header p {
+    margin-left: 0.75rem;
+  }
 }
 
 /*/////////////////////////////////////////////////zona finale con icone e separatore /////////////////////////*/
 
 .container-icon-atom-header {
-    flex: 0 1 33.3333%;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: end;
-    justify-content: flex-end;
+  flex: 0 1 33.3333%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
 }
 
 .lego-head-button-icon {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    font-size: 0.75rem;
-    line-height: 1.1875rem;
-    border: 0;
-    padding: 0;
-    background: transparent;
-    box-shadow: none;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 0.75rem;
+  line-height: 1.1875rem;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1260px) {
-    .lego-head-button-icon img {
-        margin: 0;
-    }
-
+  .lego-head-button-icon img {
+    margin: 0;
+  }
 }
 
 .lego-head-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 0.625rem;
+  width: 20px;
+  height: 20px;
+  margin-right: 0.625rem;
 }
 
-
 .separator {
-    margin: 0px 1.25rem;
-    width: 0.0625rem;
-    /*non cambiare, non è nelle root*/
-    height: var(--icon-sizing-ms);
-    background: rgb(117, 117, 117);
+  margin: 0px 1.25rem;
+  width: 0.0625rem;
+  /*non cambiare, non è nelle root*/
+  height: var(--icon-sizing-ms);
+  background: rgb(117, 117, 117);
 }
 
 .lego-block-button-icon {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    height: 100%;
-    font-size: 0.75rem;
-    line-height: 1.1875rem;
-    color: rgb(0, 0, 0);
-    font-weight: 500;
-    cursor: pointer;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 100%;
+  font-size: 0.75rem;
+  line-height: 1.1875rem;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1260px) {
-
-    .lego-head-button-icon span,
-    .lego-block-button-icon span {
-        display: none;
-    }
+  .lego-head-button-icon span,
+  .lego-block-button-icon span {
+    display: none;
+  }
 }
 
 .lego-blue-block-icon {
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-right: 0.625rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.625rem;
 }
 
-@media screen and (max-width:901px) {
-    .container-icon-atom-header {
-        display: none;
-    }
+@media screen and (max-width: 901px) {
+  .container-icon-atom-header {
+    display: none;
+  }
 }
 
 /*///////////////////////////// x per togliere l'upper header ///////////////////////////////////////////*/
 
 .delete-button-x {
-    display: none;
+  display: none;
 }
 
-@media screen and (max-width:901px) {
-    .delete-button-x {
-        display: block;
-        padding: 15px;
-    }
+@media screen and (max-width: 901px) {
+  .delete-button-x {
+    display: block;
+    padding: 15px;
+  }
 }
-
-
 
 /* ///////////////////////// regole per la parte inferiore dell'header ///////////////////////////////////*/
 
+.yellow-background {
+  background-color: var(--header);
+}
+
 .lower-container-atom-header {
-    height: 4.6875rem;
-    margin: 0px auto;
-    padding: 0px 1.875rem;
-    width: auto;
-    max-width: 100rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--header);
-    display: flex;
+  height: 4.6875rem;
+  margin: 0px auto;
+  padding: 0px 1.875rem;
+  width: auto;
+  max-width: 100rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  display: flex;
 }
 
-@media screen and (max-width:901px) {
-    .lower-container-atom-header {
-        height: 3.6875rem;
-        background-color: white;
-        border-bottom: 2px solid rgb(255, 207, 0);
-    }
-
+@media screen and (max-width: 901px) {
+  .lower-container-atom-header {
+    height: 3.6875rem;
+    background-color: white;
+    border-bottom: 2px solid rgb(255, 207, 0);
+  }
 }
-
 
 .container-logo-e-ul {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    z-index: 6;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 6;
 }
 
 .lego-logo-header {
-    width: 55px;
-    height: 55px;
-    margin-right: 4.0625rem;
-    cursor: pointer;
-    z-index: 6;
+  width: 55px;
+  height: 55px;
+  margin-right: 4.0625rem;
+  cursor: pointer;
+  z-index: 6;
 }
 
 .slot-button-container-lower-header {
-    height: 3.4375rem;
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin: 0;
+  height: 3.4375rem;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 .button-container-lower-header {
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-    margin-right: 3.125rem;
-    z-index: 4;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  margin-right: 3.125rem;
+  z-index: 4;
 }
 
 .button-container-lower-header:last-child {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 
 .button-lower-header {
-    text-transform: uppercase;
-    color: rgb(0, 0, 0);
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.1875rem;
-    border-bottom: 3px solid transparent;
-    z-index: 6;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  border-bottom: 3px solid transparent;
+  z-index: 6;
 }
 
 .button-lower-header:hover {
-    text-decoration: underline 2.5px solid black;
+  text-decoration: underline 2.5px solid black;
 }
 
 .button-xmas-header {
-    text-transform: uppercase;
-    padding: 0.3125rem 1.25rem;
-    border-radius: 4px;
-    color: rgb(208, 2, 27);
-    background: rgb(255, 255, 255);
-    cursor: pointer;
+  text-transform: uppercase;
+  padding: 0.3125rem 1.25rem;
+  border-radius: 4px;
+  color: rgb(208, 2, 27);
+  background: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 .button-xmas-header span {
-    z-index: 6;
+  z-index: 6;
 }
 
 .button-xmas-header:hover {
-    color: white;
-    background-color: black;
+  color: white;
+  background-color: black;
 }
 
 .container-icon-lower-header {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 .lens-button-icon-lower-header {
-    margin-right: 1.875rem;
-    cursor: pointer;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    background: rgb(255, 255, 255);
+  margin-right: 1.875rem;
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
 }
 
 .heart-button-icon-lower-header {
-    display: flex;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    height: 100%;
-    margin-right: 1.25rem;
-    color: rgb(0, 0, 0);
-    font-size: 0.75rem;
-    line-height: 1.1875rem;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 100%;
+  margin-right: 1.25rem;
+  color: rgb(0, 0, 0);
+  font-size: 0.75rem;
+  line-height: 1.1875rem;
 }
 
 .bag-button-icon-lower-header {
-    margin-right: 1.25rem;
-    display: inline-flex;
-    -webkit-box-align: center;
-    align-items: center;
-    color: rgb(0, 0, 0);
-    font-size: 0.75rem;
-    line-height: 1.1875rem;
-    cursor: pointer;
+  margin-right: 1.25rem;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-size: 0.75rem;
+  line-height: 1.1875rem;
+  cursor: pointer;
 }
 
 .bag-icon-lower-header {
-    margin-right: 0.3125rem;
+  margin-right: 0.3125rem;
 }
-
 
 /*///////////////////////////////// regola per hamburger menu ///////////////////////////////////////////////*/
 
 .hamb-menu-container {
-    display: none;
+  display: none;
 }
 
 .hamb-title-header {
+  display: none;
+}
+
+@media screen and (max-width: 901px) {
+  .button-container-lower-header {
     display: none;
-}
+  }
 
-@media screen and (max-width:901px) {
-    .button-container-lower-header {
-        display: none;
-    }
+  .lego-logo-header {
+    margin-left: 55px;
+    width: 40px;
+    height: 40px;
+  }
 
-    .lego-logo-header {
-        margin-left: 55px;
-        width: 40px;
-        height: 40px;
-    }
+  .hamb-menu-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 4rem;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    z-index: 4;
+    margin-left: 10px;
+  }
 
-    .hamb-menu-container {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        width: 4rem;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        left: 0;
-        z-index: 7;
-        margin-left: 10px;
-    }
+  .hamb-title-header {
+    display: flex;
+  }
 
+  .general-container-hamb-menu {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: hsl(0, 0%, 0%, 0.5);
+  }
 
-    .hamb-title-header {
-        display: flex;
-    }
+  .container-title-e-x-hamb-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5rem;
+    border-bottom: 2px solid rgb(255, 207, 0);
+  }
 
-    .general-container-hamb-menu {
-        position: absolute;
-        top: 0px;
-        bottom: 0px;
-        left: 0px;
-        width: 100%;
-        height: 100%;
-        z-index: 7;
-        background-color: hsl(0, 0%, 0%, 0.5);
-    }
+  .title-hamb-menu {
+    padding: 5px;
+    border: none;
+  }
 
-    .container-title-e-x-hamb-menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 3.5rem;
-        border-bottom: 2px solid rgb(255, 207, 0);
-    }
+  .container-delete-button-x-hamb-menu {
+    display: flex;
+    height: 100%;
+    border-left: 1px solid rgb(224, 224, 224);
+  }
 
-    .title-hamb-menu {
-        padding: 5px;
-        border: none;
-    }
+  .delete-button-x-hamb-menu {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-    .container-delete-button-x-hamb-menu {
-        display: flex;
-        height: 100%;
-        border-left: 1px solid rgb(224, 224, 224);
-    }
-
-    .delete-button-x-hamb-menu {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .aside-nav-hamb-menu {
-        z-index: 3;
-        background: rgb(255, 255, 255);
-        position: absolute;
-        top: 0px;
-        bottom: 0px;
-        left: 0px;
-        height: 100%;
-        width: 100%;
-        max-width: 23.4375rem;
-        transition: transform 500ms ease 0s;
-        transform: translateZ(0);
-        animation: custom 0.3s ease 0s 1 normal forwards;
-    }
-
-    @keyframes custom {
-        from {
-            transform: translateX(-100%);
-        }
-
-        to {
-            transform: translateX(0);
-        }
-    }
-
-
-    .aside-nav-hamb-menu a {
-        color: black;
-    }
-
-    .area-giochi-container-hamb-menu {
-        margin: 1.25rem;
-    }
-
-    .area-giochi-content-hamb-menu {
-        display: flex;
-        -webkit-box-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        justify-content: center;
-        text-align: center;
-        border-top: none;
-        border-right: none;
-        border-left: none;
-        border-image: initial;
-        border-bottom: 2px solid rgba(48, 85, 181, 0.25);
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px;
-        border-radius: 3px;
-        background: rgb(171, 217, 255);
-        color: rgb(0, 0, 0);
-        font-size: 0.75rem;
-        line-height: 1.75rem;
-        text-transform: uppercase;
-        padding: 0.3125rem 0.625rem;
-    }
-
-    .aside-nav-hamb-menu ul {
-        padding: 0;
-        margin: 0;
-    }
-
-    .aside-nav-hamb-menu ul li {
-        list-style: none;
-        padding: 0;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        padding-left: 15px;
-        border-bottom: 1px solid rgb(224, 224, 224);
-    }
-
-    .button-natale-hamb-menu {
-        color: rgb(208, 2, 27);
-    }
-
-    .all-button-upperCase-humb-menu {
-        text-transform: uppercase;
-        font-weight: 500;
-        font-size: 0.875rem;
-    }
-
-    .arrow-header-humb-menu {
-        height: 14px;
-        width: 9px;
-    }
-
-    .all-arrow-flex-button {
-        display: flex;
-        justify-content: space-between;
-        padding-right: 20px;
-        align-items: center;
-    }
-
-    .button-hamb-menu {
-        display: flex;
-        -webkit-box-align: center;
-        align-items: center;
-        height: 100%;
-        font-size: 0.75rem;
-        line-height: 1.1875rem;
-        color: rgb(0, 0, 0);
-        font-weight: 500;
-        cursor: pointer;
-
-    }
-
-
-    .icon-hamb-menu-italia {
-        width: 20px;
-        height: 20px;
-        margin-right: 0.625rem;
-    }
-}
-
-/* /////////////////////////////////////////regole per menu pop-up menu /////////////////////////////*/
-
-@media screen and (max-width:901px) {
-    .general-container-pop-up-menu {
-        display: none;
-    }
-}
-
-
-.general-container-pop-up-menu {
+  .aside-nav-hamb-menu {
+    z-index: 6;
+    background: rgb(255, 255, 255);
     position: fixed;
     top: 0px;
     bottom: 0px;
     left: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 4;
-    background-color: hsl(0, 0%, 0%, 0.5);
-}
-
-.container-for-menu-pop-up-header {
-    z-index: 5;
-    background: rgb(255, 255, 255);
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
     height: 100%;
     width: 100%;
-    max-width: 40.4375rem;
-    transition: transform 500ms ease 0s;
-    transform: translateZ(0);
-    animation: custom 0.3s ease 0s 1 normal forwards;
-}
+    max-width: 23.4375rem;
+    animation: 0.3s ease 0s 1 normal forwards running kloRKO;
+  }
 
-@keyframes custom {
-    from {
-        transform: translateX(-100%);
-    }
+  .aside-nav-hamb-menu ul {
+    padding: 0;
+    margin: 0;
+  }
 
-    to {
-        transform: translateX(0);
-    }
-}
+  .aside-nav-hamb-menu ul li {
+    list-style: none;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+  }
 
-.delete-button-pop-up-menu {
-    position: absolute;
-    display: flex;
-    justify-content: flex-end;
-    top: 20px;
-    bottom: 0px;
-    left: 0px;
-    width:100%;
-    height: 40px;
+  .aside-nav-hamb-menu div:last-child {
+    border-bottom: none;
+  }
 
-}
-
-.delete-button-pop-up-menu button {
-    
-    display:flex;
-padding-right: 20px;
-}
-
-.delete-button-pop-up-menu button img {
-    width: 17px;
-    height: 17px;
-
-}
-
-
-
-.content-pop-up-menu {
-    padding-top: 110px;
-    padding-left: 110px;
-}
-
-/*bottoni con freccia*/
-
-.content-pop-up-menu ul li {
-    width: 14.375rem;
-    white-space: normal;
-    margin-bottom: 1.25rem;
-    display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-}
-
-.content-pop-up-menu ul li button {
+  .button-hamb-menu-desideri,
+  .button-hamb-menu-mio-carrello,
+  .button-hamb-menu-italia {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.content-pop-up-menu ul li button div {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.span-arrow-button-pop-up-menu {
-    border-bottom: 1px solid transparent;
-    color: rgb(0, 0, 0);
-    line-height: 1.1875rem;
-    word-break: break-word;
-}
-
-.arrow-header-pop-up-menu {
-    height: 14px;
-    width: 9px;
-}
-
-/* bottoni senza freccia */
-
-.content-pop-up-menu ul li div {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.content-pop-up-menu ul li div a {
-    display: block;
+    height: 100%;
+    font-size: 0.75rem;
     line-height: 1.1875rem;
     color: rgb(0, 0, 0);
-    word-break: break-word;
-    text-align: left;
-}
+    font-weight: 500;
+    cursor: pointer;
+  }
 
+  .icon-hamb-menu-italia {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.625rem;
+  }
+}
 
 /*/////////////////////////////regola per scomparsa elemento del carosello //////////////////////////////////*/
 .not-visible-element-atom-header {
-    display: none;
-
+  display: none;
 }
 
 /* /////////////////////////////// regola per transizione carosello ///////////////////////////////////////////*/
 
 .carousel-transition-header {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }

@@ -1,9 +1,5 @@
-@import url(/assets/CSS/style.css);
-
 .homepage-cookie-container {
-  width: 100%;
   margin-bottom: 30px;
-
 }
 .homepage-cookie-banner {
   display: inline-flex;
@@ -28,7 +24,6 @@
 .homepage-cookie-text-img img {
   height: 8.25rem;
   margin-left: 0.9375rem;
-
 }
 .homepage-cookie-text-title {
   font-size: var(--font-size-s1);
@@ -76,41 +71,41 @@
   margin: 1em 0px;
   font-size: 0.75rem;
 }
-.homepage-cookie-disabled-container-button{
+.homepage-cookie-disabled-container-button {
   width: 100%;
   text-align: center;
 }
-.homepage-cookie-disabled-button-required{
-    width: 42%;
-    padding: 0.9375rem;
-    border-radius: 4px;
-    border: 1px solid rgb(0, 109, 183);
+.homepage-cookie-disabled-button-required {
+  width: 42%;
+  padding: 0.9375rem;
+  border-radius: 4px;
+  border: 1px solid rgb(0, 109, 183);
 }
-.homepage-cookie-disabled-button-required:hover{
+.homepage-cookie-disabled-button-required:hover {
   background-color: rgb(230, 243, 255);
 }
-.homepage-cookie-disabled-button-all{
-    width: 42%;
-    padding: 0.9375rem;
-    border: 1px solid rgb(0, 109, 183);
-    background-color: rgb(0, 109, 183);;
-    border-radius: 4px;
-color: var(--white);
-    margin-left: 25px;
+.homepage-cookie-disabled-button-all {
+  width: 42%;
+  padding: 0.9375rem;
+  border: 1px solid rgb(0, 109, 183);
+  background-color: rgb(0, 109, 183);
+  border-radius: 4px;
+  color: var(--white);
+  margin-left: 25px;
 }
-.homepage-cookie-disabled-button-all:hover{
+.homepage-cookie-disabled-button-all:hover {
   color: black;
   background-color: white;
 }
 .homepage-cookie-disabled-container-button-impostation {
-  font-size: .875rem;
+  font-size: 0.875rem;
   color: rgb(0, 109, 183);
   cursor: pointer;
 }
-.homepage-cookie-disabled-container-button-impostation:hover{
+.homepage-cookie-disabled-container-button-impostation:hover {
   text-decoration: underline;
 }
-.homepage-cookie-displayed-none{
+.homepage-cookie-displayed-none {
   display: none;
 }
 

@@ -1,9 +1,11 @@
-@import url(/assets/CSS/style.css);
-
 .header-carousel {
   display: flex;
 
   padding-left: 7%;
+}
+
+.container-total-carousel {
+  width: 100%;
 }
 
 .carousel-container {
@@ -16,7 +18,9 @@
   position: relative;
   gap: 10px;
 
-  height: 100%;
+  height: 85%;
+
+  padding-bottom: 3rem;
 }
 
 .carousel {

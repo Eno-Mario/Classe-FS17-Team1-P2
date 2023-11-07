@@ -1,5 +1,10 @@
-@import url(/assets/CSS/style.css);
-/* DIV main container */
+/* DIV and main container */
+@media (min-width: 1201px) {
+  .homepage-subscription-container {
+    max-width: 100rem;
+    margin: 0px auto;
+  }
+}
 
 .homepage-subscription-container {
   padding: 0px;
@@ -62,6 +67,10 @@
     padding: 1.25rem 1.875rem;
     top: 100%;
     transform: none;
+  }
+
+  .homepage-subscription-container + * {
+    margin-top: 27vh;
   }
 }
 
