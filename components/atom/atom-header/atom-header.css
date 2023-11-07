@@ -301,18 +301,18 @@
 }
 
 .container-logo-e-ul {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    z-index: 6;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 6;
 }
 
 .lego-logo-header {
-    width: 55px;
-    height: 55px;
-    margin-right: 4.0625rem;
-    cursor: pointer;
-    z-index: 6;
+  width: 55px;
+  height: 55px;
+  margin-right: 4.0625rem;
+  cursor: pointer;
+  z-index: 6;
 }
 
 .slot-button-container-lower-header {
@@ -336,13 +336,13 @@
 }
 
 .button-lower-header {
-    text-transform: uppercase;
-    color: rgb(0, 0, 0);
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.1875rem;
-    border-bottom: 3px solid transparent;
-    z-index: 6;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  border-bottom: 3px solid transparent;
+  z-index: 6;
 }
 
 .button-lower-header:hover {
@@ -359,7 +359,7 @@
 }
 
 .button-xmas-header span {
-    z-index: 6;
+  z-index: 6;
 }
 
 .button-xmas-header:hover {
@@ -421,123 +421,119 @@
   display: none;
 }
 
-@media screen and (max-width:901px) {
-    .button-container-lower-header {
-        display: none;
-    }
+@media screen and (max-width: 901px) {
+  .button-container-lower-header {
+    display: none;
+  }
 
-    .lego-logo-header {
-        margin-left: 55px;
-        width: 40px;
-        height: 40px;
-    }
+  .lego-logo-header {
+    margin-left: 55px;
+    width: 40px;
+    height: 40px;
+  }
 
-    .hamb-menu-container {
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        width: 4rem;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        left: 0;
-        z-index: 4;
-        margin-left: 10px;
-    }
+  .hamb-menu-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 4rem;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    z-index: 4;
+    margin-left: 10px;
+  }
 
-    .hamb-title-header {
-        display: flex;
-    }
+  .hamb-title-header {
+    display: flex;
+  }
 
-    .general-container-hamb-menu {
-        position: absolute;
-        top: 0px;
-        bottom: 0px;
-        left: 0px;
-        width: 100%;
-        height: 100%;
-        z-index: 5;
-        background-color: hsl(0, 0%, 0%, 0.5);
-    }
+  .general-container-hamb-menu {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: hsl(0, 0%, 0%, 0.5);
+  }
 
-    .container-title-e-x-hamb-menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 3.5rem;
-        border-bottom: 2px solid rgb(255, 207, 0);
-    }
+  .container-title-e-x-hamb-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5rem;
+    border-bottom: 2px solid rgb(255, 207, 0);
+  }
 
-    .title-hamb-menu {
-        padding: 5px;
-        border: none;
-    }
+  .title-hamb-menu {
+    padding: 5px;
+    border: none;
+  }
 
-    .container-delete-button-x-hamb-menu {
-        display:flex;
-        height: 100%;
-        border-left: 1px solid rgb(224, 224, 224);
-    }
+  .container-delete-button-x-hamb-menu {
+    display: flex;
+    height: 100%;
+    border-left: 1px solid rgb(224, 224, 224);
+  }
 
-    .delete-button-x-hamb-menu {
-        padding-left:20px;
-        padding-right: 20px;
-    }
+  .delete-button-x-hamb-menu {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-    .aside-nav-hamb-menu {
-        z-index: 6;
-        background: rgb(255, 255, 255);
-        position: fixed;
-        top: 0px;
-        bottom: 0px;
-        left: 0px;
-        height: 100%;
-        width: 100%;
-        max-width: 23.4375rem;
-        animation: 0.3s ease 0s 1 normal forwards running kloRKO;
+  .aside-nav-hamb-menu {
+    z-index: 6;
+    background: rgb(255, 255, 255);
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    max-width: 23.4375rem;
+    animation: 0.3s ease 0s 1 normal forwards running kloRKO;
+  }
 
-    }
+  .aside-nav-hamb-menu ul {
+    padding: 0;
+    margin: 0;
+  }
 
-    .aside-nav-hamb-menu ul {
-        padding: 0;
-        margin: 0;
-    }
+  .aside-nav-hamb-menu ul li {
+    list-style: none;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+  }
 
-    .aside-nav-hamb-menu ul li {
-        list-style: none;
-        padding: 0;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 15px;
-        border-bottom: 1px solid rgb(224, 224, 224);
-    }
+  .aside-nav-hamb-menu div:last-child {
+    border-bottom: none;
+  }
 
+  .button-hamb-menu-desideri,
+  .button-hamb-menu-mio-carrello,
+  .button-hamb-menu-italia {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100%;
+    font-size: 0.75rem;
+    line-height: 1.1875rem;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    cursor: pointer;
+  }
 
-    .aside-nav-hamb-menu div:last-child {
-        border-bottom: none;
-    }
-
-    .button-hamb-menu-desideri,
-    .button-hamb-menu-mio-carrello,
-    .button-hamb-menu-italia {
-        display: flex;
-        -webkit-box-align: center;
-        align-items: center;
-        height: 100%;
-        font-size: 0.75rem;
-        line-height: 1.1875rem;
-        color: rgb(0, 0, 0);
-        font-weight: 500;
-        cursor: pointer;
-
-    }
-
-
-    .icon-hamb-menu-italia {
-        width: 20px;
-        height: 20px;
-        margin-right: 0.625rem;
-    }
+  .icon-hamb-menu-italia {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.625rem;
+  }
 }
 
 /*/////////////////////////////regola per scomparsa elemento del carosello //////////////////////////////////*/

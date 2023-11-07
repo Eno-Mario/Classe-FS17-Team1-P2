@@ -68,6 +68,10 @@
     top: 100%;
     transform: none;
   }
+
+  .homepage-subscription-container + * {
+    margin-top: 27vh;
+  }
 }
 
 @media screen and (min-width: 601px) {

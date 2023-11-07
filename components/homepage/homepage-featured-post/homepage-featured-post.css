@@ -63,6 +63,10 @@
     top: 100%;
     transform: none;
   }
+
+  .homepage-featured-post-container + * {
+    margin-top: 40vh;
+  }
 }
 
 @media screen and (min-width: 601px) {
