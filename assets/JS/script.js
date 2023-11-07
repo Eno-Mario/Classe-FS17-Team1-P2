@@ -120,6 +120,11 @@ const containerCookie = document.querySelector(".homepage-cookie-container");
 //footer-----------
 const detailsSummary = document.querySelectorAll("details");
 
+/////atom-store-checkbox//////////////////////////////////////////
+const inputCheck = document.querySelector(".atom-label-for-click");
+const checkImage = document.querySelector(".svg-checkbox-V ");
+const realInput = document.querySelector(".atom-input-checkbox");
+const squareSlot = document.querySelector(".container-image-checkbox");
 /* -----------------------
         LOGICA
 --------------------------*/
@@ -659,4 +664,16 @@ cookieButton.addEventListener("click", () => {
     cookieDisabled.style.display = "none";
     containerCookie.style.display = "none";
   });
+});
+////////atom-store-checkbox eventi/////////////////////////
+inputCheck.addEventListener("click", () => {
+  if (realInput.checked) {
+    realInput.checked = false;
+    squareSlot.classList.remove("slot-square-checkbox-shadow");
+    checkImage.classList.add("checkbox-image-not-visible");
+  } else {
+    realInput.checked = true;
+    squareSlot.classList.add("slot-square-checkbox-shadow");
+    checkImage.classList.remove("checkbox-image-not-visible");
+  }
 });
