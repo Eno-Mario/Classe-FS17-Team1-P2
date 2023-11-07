@@ -1,12 +1,7 @@
-/* DIV and main container */
-@media (min-width: 1201px) {
-  .homepage-subscription-container {
-    max-width: 100rem;
-    margin: 0px auto;
-  }
-}
+@import url(/assets/CSS/style.css);
+/* DIV main container */
 
-.homepage-subscription-container {
+.homepage-featured-post-container {
   padding: 0px;
   max-width: 100rem;
   position: relative;
@@ -14,7 +9,7 @@
 }
 
 /* Background image properties */
-.homepage-subscription-left-content {
+.homepage-featured-post-left-content {
   cursor: pointer;
   display: block;
   width: 100%;
@@ -22,17 +17,17 @@
 }
 
 /* hidden logo settings */
-.homepage-subscription-hidden-logo {
+.homepage-featured-post-hidden-logo {
   position: absolute;
-  left: 0.9375rem;
+  right: 0.9375rem;
   bottom: 0.9375rem;
   display: none;
   max-width: 9.375rem;
 }
 
-/* Media query for mobile to get the left images and fix the size */
+/* Media query for mobile to get the right images and fix the size */
 @media (max-width: 601px) {
-  .homepage-subscription-left-content {
+  .homepage-featured-post-left-content {
     display: inline-block;
     vertical-align: middle;
     max-width: 100%;
@@ -41,16 +36,16 @@
     height: 100%;
     inset: 0px;
   }
-  .donna-logo {
-    content: url("https://www.lego.com/cdn/cs/set/assets/blt00bc37da77ce06a8/Holiday23-Insiders-Teal-Landing-202309-Hero-Standard-Small.jpg?fit=crop&format=webply&quality=80&width=600&height=600&dpr=2");
+  .castello-img {
+    content: url("https://www.lego.com/cdn/cs/set/assets/blte3400869c7bbb4cd/Holiday23-GroupedAssets-202311-Hero-Standard-Small-10326.jpg?fit=crop&format=webply&quality=80&width=600&height=600&dpr=1");
   }
-  .homepage-subscription-hidden-logo {
+  .homepage-featured-post-hidden-logo {
     display: block;
   }
 }
 
-/* Left side content and container */
-.homepage-subscription-main-content {
+/* Right side content and container */
+.homepage-featured-post-main-content {
   position: absolute;
   background-color: transparent;
   color: white;
@@ -61,8 +56,8 @@
 
 /* Media query to fix the content in mobile */
 @media screen and (max-width: 601px) {
-  .homepage-subscription-main-content {
-    background-color: rgb(0, 131, 129);
+  .homepage-featured-post-main-content {
+    background-color: rgb(124, 19, 27);
     text-align: center;
     padding: 1.25rem 1.875rem;
     top: 100%;
@@ -71,46 +66,46 @@
 }
 
 @media screen and (min-width: 601px) {
-  .homepage-subscription-main-content {
+  .homepage-featured-post-main-content {
     max-width: 45%;
-    left: 3.75rem;
+    right: 3.75rem;
   }
 }
 
 @media screen and (min-width: 901px) {
-  .homepage-subscription-main-content {
+  .homepage-featured-post-main-content {
     max-width: 35%;
   }
 }
 
 @media screen and (min-width: 1201px) {
-  .homepage-subscription-main-content {
+  .homepage-featured-post-main-content {
     max-width: 35%;
-    left: 6.875rem;
+    right: 6.875rem;
     top: 50%;
   }
 }
 
 /* Logo properties*/
-.homepage-subscription-main-content img {
+.homepage-featured-post-main-content img {
   max-height: 3.125rem;
   max-width: 9.375rem;
   margin-bottom: 15px;
 }
 @media (max-width: 601px) {
-  .homepage-subscription-main-content img {
+  .homepage-featured-post-main-content img {
     display: none;
   }
 }
 /* Property for H2 */
-.homepage-subscription-main-content h2 {
+.homepage-featured-post-main-content h2 {
   margin-block: 0px;
   font-size: var(--font-size-s5);
   line-height: var(--line-height-s5);
 }
 
 /* roperty for p */
-.homepage-subscription-main-content p {
+.homepage-featured-post-main-content p {
   font-size: var(--font-size-s1);
   line-height: var(--line-height-s1);
   margin-top: 0.9375rem;
@@ -119,52 +114,53 @@
 
 /* Media queries to manage font size on H2&p */
 @media (max-width: 1201px) {
-  .homepage-subscription-main-content h2 {
+  .homepage-featured-post-main-content h2 {
     font-size: var(--font-size-s4);
     line-height: var(--line-height-s4);
   }
-  .homepage-subscription-main-content p {
+  .homepage-featured-post-main-content p {
     font-size: var(--font-size-s1);
     line-height: var(--line-height-s1);
     margin-top: 0.9375rem;
   }
 }
 @media (max-width: 901px) {
-  .homepage-subscription-main-content h2 {
+  .homepage-featured-post-main-content h2 {
     font-size: var(--font-size-s2);
     line-height: var(--line-height-s2);
   }
-  .homepage-v-main-content p {
+  .homepage-featured-post-main-content p {
     font-size: var(--font-size-sm1);
     line-height: var(--line-height-sm1);
     margin-top: 10px;
   }
 }
 @media (max-width: 601px) {
-  .homepage-subscription-main-content h2 {
+  .homepage-featured-post-main-content h2 {
     font-size: var(--font-size-s1);
     line-height: var(--line-height-s1);
   }
-  .homepage-subscription-main-content p {
+  .homepage-featured-post-main-content p {
     font-size: var(--font-size-sm1);
     line-height: var(--line-height-sm1);
+    padding-inline: 55px;
   }
 }
 
 /* Buttons DIV */
-.homepage-subscription-left-buttons {
+.homepage-featured-post-right-buttons {
   display: flex;
   flex-wrap: wrap;
   margin: 0px -0.625rem;
 }
 @media (max-width: 601px) {
-  .homepage-subscription-left-buttons {
+  .homepage-featured-post-right-buttons {
     justify-content: center;
   }
 }
 
 /* Button properties */
-.homepage-subscription-button {
+.homepage-featured-post-button {
   width: auto;
   /* margin/padding-button */
   margin-top: 1.25rem;
@@ -186,18 +182,18 @@
   align-items: center;
 }
 @media (max-width: 901px) {
-  .homepage-subscription-button {
+  .homepage-featured-post-button {
     font-size: var(--font-size-sm1);
     margin-top: 15px;
   }
 }
 
-.homepage-subscription-button:hover {
+.homepage-featured-post-button:hover {
   background-color: var(--black);
   color: var(--white);
 }
 
 /* SVG property */
-.homepage-subscription-button-svg {
+.homepage-featured-post-button-svg {
   margin-left: 0.75rem;
 }
