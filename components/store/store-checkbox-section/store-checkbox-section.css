@@ -1,0 +1,65 @@
+@import url(/assets/CSS/style.css);
+
+.store-container-checkbox-section {
+    width: calc(100% - 1.875rem);
+    border-top: 1px solid rgb(224, 224, 224);
+    margin: 0px 0.9375rem;
+}
+
+.store-h3-checkbox-section {
+    margin: 0.75rem 0px px;
+    font-size: 1rem;
+}
+
+.store-button-checkbox-section {
+    width: 100%;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    font: inherit;
+}
+
+.store-slot-content-checkbox-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.store-icon-checkbox-section {
+    transition: transform 0.1s linear 0s;
+    display: block;
+    flex: 0 0 auto;
+    transform: rotate(270deg);
+    line-height: 0;
+    height: 14px;
+    width: 14px;
+}
+
+.store-container-ul-checkbox-section-effect {
+    height: auto;
+    transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    overflow: hidden;
+}
+
+.store-container-ul-checkbox-section-effect-visible {
+    height: auto;
+    transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    overflow: visible;
+}
+
+/* effetti checkbox//////////////// */
+.displayNoneUlCheckbox {
+    display: none;
+}
+
+.effect-to-change-state {
+    transition: transform 0.1s linear 0s;
+    display: block;
+    flex: 0 0 auto;
+    transform: rotate(90deg);
+    line-height: 0;
+    height: 14px;
+    width: 14px;
+}
