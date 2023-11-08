@@ -1,10 +1,10 @@
 /* -----------------------
     FASE DI PREPARAZIONE
 -------------------------- */
-const inputCheck = document.querySelector(".atom-label-for-click");
-const checkImage = document.querySelector(".svg-checkbox-V ");
-const realInput = document.querySelector(".atom-input-checkbox");
-const squareSlot = document.querySelector(".container-image-checkbox");
+const inputCheck = document.querySelectorAll(".atom-label-for-click");
+const checkImage = document.querySelectorAll(".svg-checkbox-V ");
+const realInput = document.querySelectorAll(".atom-input-checkbox");
+const squareSlot = document.querySelectorAll(".container-image-checkbox");
 
 
 /* -----------------------
@@ -18,14 +18,20 @@ const squareSlot = document.querySelector(".container-image-checkbox");
 EVENTI
 -----------------------*/
 
-inputCheck.addEventListener("click", () => {
-        if (realInput.checked) {
-                realInput.checked = false;
-                squareSlot.classList.remove("slot-square-checkbox-shadow");
-                checkImage.classList.add("checkbox-image-not-visible");
+function handleItemClick(index) {
+        if (realInput[index].checked) {
+                realInput[index].checked = false;
+                squareSlot[index].classList.remove("slot-square-checkbox-shadow");
+                checkImage[index].classList.add("checkbox-image-not-visible");
         } else {
-                realInput.checked = true;
-                squareSlot.classList.add("slot-square-checkbox-shadow");
-                checkImage.classList.remove("checkbox-image-not-visible");
+                realInput[index].checked = true;
+                squareSlot[index].classList.add("slot-square-checkbox-shadow");
+                checkImage[index].classList.remove("checkbox-image-not-visible");
         }
+}
+
+inputCheck.forEach((element, index) => {
+        element.addEventListener("click", () => {
+                handleItemClick(index);
+        });
 });

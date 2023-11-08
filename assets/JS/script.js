@@ -124,10 +124,15 @@ const containerCookie = document.querySelector(".homepage-cookie-container");
 const detailsSummary = document.querySelectorAll("details");
 
 /////atom-store-checkbox//////////////////////////////////////////
-const inputCheck = document.querySelector(".atom-label-for-click");
-const checkImage = document.querySelector(".svg-checkbox-V ");
-const realInput = document.querySelector(".atom-input-checkbox");
-const squareSlot = document.querySelector(".container-image-checkbox");
+const inputCheck = document.querySelectorAll(".atom-label-for-click");
+const checkImage = document.querySelectorAll(".svg-checkbox-V ");
+const realInput = document.querySelectorAll(".atom-input-checkbox");
+const squareSlot = document.querySelectorAll(".container-image-checkbox");
+
+//store-checkbox-section////////
+const storeButtonCheckboxSection = document.querySelectorAll(".store-button-checkbox-section");
+const storeContainerUlCheckboxSectionEffect = document.querySelectorAll(".store-container-ul-checkbox-section-effect");
+const storeIconCheckboxSection = document.querySelectorAll(".store-icon-checkbox-section");
 /* -----------------------
         LOGICA
 --------------------------*/
@@ -865,14 +870,46 @@ cookieButton.addEventListener("click", () => {
   });
 });
 ////////atom-store-checkbox eventi/////////////////////////
-inputCheck.addEventListener("click", () => {
-  if (realInput.checked) {
-    realInput.checked = false;
-    squareSlot.classList.remove("slot-square-checkbox-shadow");
-    checkImage.classList.add("checkbox-image-not-visible");
+function handleItemClick(index) {
+  if (realInput[index].checked) {
+    realInput[index].checked = false;
+    squareSlot[index].classList.remove("slot-square-checkbox-shadow");
+    checkImage[index].classList.add("checkbox-image-not-visible");
   } else {
-    realInput.checked = true;
-    squareSlot.classList.add("slot-square-checkbox-shadow");
-    checkImage.classList.remove("checkbox-image-not-visible");
+    realInput[index].checked = true;
+    squareSlot[index].classList.add("slot-square-checkbox-shadow");
+    checkImage[index].classList.remove("checkbox-image-not-visible");
   }
+}
+
+inputCheck.forEach((element, index) => {
+  element.addEventListener("click", () => {
+    handleItemClick(index);
+  });
+});
+
+//store-checkbox-section//////////////////////
+function displayNoneUl(index) {
+  if (storeButtonCheckboxSection[index].checked) {
+    storeButtonCheckboxSection[index].checked = false;
+    storeContainerUlCheckboxSectionEffect[index].classList.remove("displayNoneUlCheckbox");
+    storeContainerUlCheckboxSectionEffect[index].classList.add("store-container-ul-checkbox-section-effect-visible");
+    storeIconCheckboxSection[index].classList.add("effect-to-change-state");
+
+
+
+  } else {
+    storeButtonCheckboxSection[index].checked = true;
+    storeContainerUlCheckboxSectionEffect[index].classList.add("displayNoneUlCheckbox");
+    storeContainerUlCheckboxSectionEffect[index].classList.remove("store-container-ul-checkbox-section-effect-visible");
+    storeIconCheckboxSection[index].classList.remove("effect-to-change-state");
+  }
+}
+/* ---------------------
+        EVENTI
+-----------------------*/
+storeButtonCheckboxSection.forEach((element, index) => {
+  element.addEventListener("click", () => {
+    displayNoneUl(index);
+  });
 });

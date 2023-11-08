@@ -76,12 +76,12 @@
     height: 60%;
 }
 /*/////////////////////////// effetti checkbox //////////////////////*/
-.checkbox-image-not-visible{
+.checkbox-image-not-visible {
     opacity: 0;
 }
 
-.slot-square-checkbox-shadow{
-box-shadow: 0 0 10px rgba(22, 100, 209, 1);
+.slot-square-checkbox-shadow {
+    box-shadow: 0 0 10px rgba(22, 100, 209, 1);
 }
 
 .span-number-check {
