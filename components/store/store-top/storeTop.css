@@ -1,0 +1,152 @@
+.top-links{
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 0.68rem;
+  padding-bottom: 0.68rem;
+  box-sizing: inherit;
+  display: block;
+}
+
+.top-links nav{
+  box-sizing: inherit;
+  display: block;
+
+}
+.links{
+  box-sizing: inherit;
+  display: block;
+  list-style-type: decimal;
+}
+
+.home,
+.news,
+.new-set{
+  align-items: center;
+  display: inline-flex;
+  list-style-type: none;
+  box-sizing: inherit;
+  text-align: left;
+}
+
+.markup-home,
+.markup-news,
+.markup-newSet{
+  box-sizing: inherit;
+  color: #006db7;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 0;
+  font-size: 0.845rem;
+}
+
+.markup-newSet{
+  color: #616161 ;
+  cursor: default;
+  pointer-events: none;
+  text-decoration: none !important;
+  padding-left: 0.125rem;
+  padding-right: 0.125rem;
+  font-weight: 500;
+}
+
+.icon-container{
+  color: #b1b1b1;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: 0.845rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  box-sizing: inherit;
+}
+
+.icon.arrow{
+  width: 100%;
+  box-sizing: inherit;
+  fill: currentColor;
+  overflow-clip-margin: content-box;
+  overflow: hidden;
+  color: rgb(177, 177, 177);
+}
+
+.news-title{
+  background-color: #000;
+  width: 100%;
+  height: 90px;
+  padding: 0.69rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position-x: 50%;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+}
+
+.news-title h1{
+  color: #fff;
+  text-align: center;
+  letter-spacing: -0.016rem;
+  font-weight: 700;
+  line-height: 1.4;
+  display: block;
+}
+
+.legoNews{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  box-sizing: inherit;
+  display: block;
+}
+
+.container-legoNews{
+  padding: 1.25rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: #f2f2f2;
+}
+
+.container-legoNews h1{
+  letter-spacing: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 0.749rem;
+  margin-top: 0.749rem;
+}
+
+.container-legoNews p{
+  letter-spacing: 0;
+  font-size: 0.845rem;
+  line-height: 1.5;
+  font-weight: 400;
+  display: block;
+}
+
+.text-news{
+  /* max-height: 40px; 
+  overflow: hidden; */
+  display: inline-block;
+  box-sizing: inherit;
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+}
+
+.toggle-button-container{
+  box-sizing: inherit;
+  align-items: end;
+  justify-content: end;
+}
+
+.toggle-button{
+  color: #006db7;
+}
+
+.toggle-button:hover{
+  text-decoration: underline;
+}
+
+.text-link:hover{
+  text-decoration: underline;
+}
