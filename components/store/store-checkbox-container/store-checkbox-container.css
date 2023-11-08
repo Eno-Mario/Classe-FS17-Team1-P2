@@ -1,5 +1,11 @@
 @import url(/assets/CSS/style.css);
 
+@media screen and (max-width:901px){
+    .store-checkbox-primary-container{
+        display:none;
+    }
+}
+
 @media screen and (min-width: 901px) {
     .store-checkbox-primary-container {
         margin-left: 1.25rem;
