@@ -1,9 +1,13 @@
 @import url(/assets/CSS/style.css);
 
-@media screen and (max-width:901px){
-    .store-checkbox-primary-container{
-        display:none;
+@media screen and (max-width:901px) {
+    .store-checkbox-primary-container {
+        display: none;
     }
+}
+
+.store-checkbox-primary-container{
+    max-width: 100%;
 }
 
 @media screen and (min-width: 901px) {
