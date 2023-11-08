@@ -24,4 +24,6 @@
 @import url(/components/homepage/homepage-featured-post/homepage-featured-post.css);
 @import url(/components/atom/atom-store-checkbox/atom-store-checkbox.css);
 @import url(/components/store/store-checkbox-section/store-checkbox-section.css);
-@import url(/components/store/store-checkbox-container/store-checkbox-container.css)
+@import url(/components/store/store-checkbox-container/store-checkbox-container.css);
+@import url(/components/store/store-top/storeTop.css);
+@import url(/components/store/store/index.css);

@@ -1,5 +1,9 @@
 @import url(/assets/CSS/style.css);
 
+.container-store-card {
+  width: 100%;
+}
+
 .container-store-card ul {
   width: 100%;
   display: flex;
