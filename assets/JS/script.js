@@ -10,72 +10,6 @@ const standardButton = document.querySelectorAll(".standard-button");
 var likeClicked = false; // Variabile per tenere traccia se il pulsante Like è stato cliccato
 var dislikeClicked = false; // Variabile per tenere traccia se il pulsante Dislike è stato cliccato
 
-//card store
-const cardContainer = document.querySelector(".container-store-card");
-
-const cardData = [
-  {
-    title: "Calendario dell’Avvento 2023 LEGO® ",
-    price: 37.99,
-    rating: 4.0,
-    pieces: 320,
-    age: "6+",
-    img1: "https://www.lego.com/cdn/cs/set/assets/blt8345f6a8fc46d84b/75366_alt1.png?format=webply&fit=bounds&quality=90&width=320&height=320&dpr=1.5",
-    img2: "https://www.lego.com/cdn/cs/set/assets/bltff8d93722741aaec/75366.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-  },
-
-  {
-    title: "Calendario dell’Avvento 2023 LEGO® ",
-    price: 37.99,
-    rating: 4.0,
-    pieces: 320,
-    age: "6+",
-    img1: "https://www.lego.com/cdn/cs/set/assets/blt8345f6a8fc46d84b/75366_alt1.png?format=webply&fit=bounds&quality=90&width=320&height=320&dpr=1.5",
-    img2: "https://www.lego.com/cdn/cs/set/assets/bltff8d93722741aaec/75366.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-  },
-  {
-    title: "Calendario dell’Avvento 2023 LEGO® ",
-    price: 37.99,
-    rating: 4.0,
-    pieces: 320,
-    age: "6+",
-    img1: "https://www.lego.com/cdn/cs/set/assets/blt8345f6a8fc46d84b/75366_alt1.png?format=webply&fit=bounds&quality=90&width=320&height=320&dpr=1.5",
-    img2: "https://www.lego.com/cdn/cs/set/assets/bltff8d93722741aaec/75366.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-  },
-  {
-    title: "Calendario dell’Avvento 2023 LEGO® ",
-    price: 37.99,
-    rating: 4.0,
-    pieces: 320,
-    age: "6+",
-    img1: "https://www.lego.com/cdn/cs/set/assets/blt8345f6a8fc46d84b/75366_alt1.png?format=webply&fit=bounds&quality=90&width=320&height=320&dpr=1.5",
-    img2: "https://www.lego.com/cdn/cs/set/assets/bltff8d93722741aaec/75366.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-  },
-  {
-    title: "Calendario dell’Avvento 2023 LEGO® ",
-    price: 37.99,
-    rating: 4.0,
-    pieces: 320,
-    age: "6+",
-    img1: "https://www.lego.com/cdn/cs/set/assets/blt8345f6a8fc46d84b/75366_alt1.png?format=webply&fit=bounds&quality=90&width=320&height=320&dpr=1.5",
-    img2: "https://www.lego.com/cdn/cs/set/assets/bltff8d93722741aaec/75366.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-  },
-  {
-    title: "Calendario dell’Avvento 2023 LEGO® ",
-    price: 37.99,
-    rating: 4.0,
-    pieces: 320,
-    age: "6+",
-    img1: "https://www.lego.com/cdn/cs/set/assets/blt8345f6a8fc46d84b/75366_alt1.png?format=webply&fit=bounds&quality=90&width=320&height=320&dpr=1.5",
-    img2: "https://www.lego.com/cdn/cs/set/assets/bltff8d93722741aaec/75366.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-  },
-];
-
-let prevButtonCard = document.querySelectorAll("#prevButton");
-let nextButtonCard = document.querySelectorAll("#nextButton");
-let imagesContainer = document.querySelectorAll(".images-store-card");
-let currentPosition = 0;
-
 //card2 container
 const card2 = document.querySelectorAll(".newArticle");
 
@@ -123,30 +57,24 @@ const containerCookie = document.querySelector(".homepage-cookie-container");
 //footer-----------
 const detailsSummary = document.querySelectorAll("details");
 
-/////atom-store-checkbox//////////////////////////////////////////
-const inputCheck = document.querySelectorAll(".atom-label-for-click");
-const checkImage = document.querySelectorAll(".svg-checkbox-V ");
-const realInput = document.querySelectorAll(".atom-input-checkbox");
-const squareSlot = document.querySelectorAll(".container-image-checkbox");
-
-//store-checkbox-section////////
-const storeButtonCheckboxSection = document.querySelectorAll(".store-button-checkbox-section");
-const storeContainerUlCheckboxSectionEffect = document.querySelectorAll(".store-container-ul-checkbox-section-effect");
-const storeIconCheckboxSection = document.querySelectorAll(".store-icon-checkbox-section");
 /* -----------------------
         LOGICA
 --------------------------*/
 
 // occultamento per parte degli elementi del carosello
-if (element1) {
-  element2.classList.add("not-visible-element-atom-header");
-  element3.classList.add("not-visible-element-atom-header");
-} else if (element2) {
-  element1.classList.add("not-visible-element-atom-header");
-  element3.classList.add("not-visible-element-atom-header");
-} else {
-  element1.classList.add("not-visible-element-atom-header");
-  element2.classList.add("not-visible-element-atom-header");
+try {
+  if (element1) {
+    element2.classList.add("not-visible-element-atom-header");
+    element3.classList.add("not-visible-element-atom-header");
+  } else if (element2) {
+    element1.classList.add("not-visible-element-atom-header");
+    element3.classList.add("not-visible-element-atom-header");
+  } else {
+    element1.classList.add("not-visible-element-atom-header");
+    element2.classList.add("not-visible-element-atom-header");
+  }
+} catch (error) {
+  console.error(error);
 }
 
 //footer-----------
@@ -159,9 +87,6 @@ if (window.innerWidth > 901) {
     }
   });
 }
-
-//card store render
-createCard(cardData);
 
 /* ----------------------
         FUNZIONI
@@ -262,16 +187,223 @@ function pushDislike() {
   }
 }
 
-// funzioen create card store
-function createCard(arr) {
-  try {
-    const ul = document.createElement("ul");
-    arr.forEach((el) => {
-      const li = document.createElement("li");
-      const card = document.createElement("article");
-      card.classList.add("store-card");
+//store
 
-      card.innerHTML = `
+function openStore() {
+  const main = document.querySelector("main");
+
+  main.innerHTML = `      <!-- store top -->
+      <div class="top-store">
+        <div class="top-links">
+          <nav>
+            <ol class="links">
+              <li class="home">
+                <span class="markup-home">
+                  <a href="">Home</a>
+                </span>
+                <div class="icon-container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 40 40"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="m13.357 37.587 16.845-16.303A2.489 2.489 0 0 0 31 19.473c0-.679-.287-1.33-.798-1.811L13.26 2.373A1.42 1.42 0 0 0 12.293 2c-.362 0-.71.134-.967.374L9.406 4.21c-.129.12-.23.261-.3.418a1.214 1.214 0 0 0 0 .988c.07.156.171.299.3.418l14.952 13.553-14.952 14.44c-.256.241-.4.567-.4.906 0 .34.144.665.4.906l1.975 1.786c.13.122.287.218.458.282a1.454 1.454 0 0 0 1.073-.021 1.36 1.36 0 0 0 .444-.3Z"
+                      class="icon-arrow"
+                    ></path>
+                  </svg>
+                </div>
+              </li>
+              <li class="news">
+                <span class="markup-news">
+                  <a href="">Novità</a>
+                </span>
+                <div class="icon-container">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 40 40"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="m13.357 37.587 16.845-16.303A2.489 2.489 0 0 0 31 19.473c0-.679-.287-1.33-.798-1.811L13.26 2.373A1.42 1.42 0 0 0 12.293 2c-.362 0-.71.134-.967.374L9.406 4.21c-.129.12-.23.261-.3.418a1.214 1.214 0 0 0 0 .988c.07.156.171.299.3.418l14.952 13.553-14.952 14.44c-.256.241-.4.567-.4.906 0 .34.144.665.4.906l1.975 1.786c.13.122.287.218.458.282a1.454 1.454 0 0 0 1.073-.021 1.36 1.36 0 0 0 .444-.3Z"
+                      class="icon-arrow"
+                    ></path>
+                  </svg>
+                </div>
+              </li>
+              <li class="new-set">
+                <span class="markup-newSet"> Nuovi set LEGO </span>
+              </li>
+            </ol>
+          </nav>
+        </div>
+        <div class="news-title">
+          <h1>Novità</h1>
+        </div>
+        <section class="legoNews">
+          <div class="container-legoNews">
+            <h1>Nuovi set LEGO®</h1>
+            <p>
+              <span class="text-news">
+                Avviso per tutti gli appassionati LEGO®! Se ti interessa
+                conoscere gli ultimi set da costruire, salva questa pagina. Qui
+                puoi trovare ogni nuovo set LEGO uscito negli ultimi 2 mesi. Da
+                giocattoli da costruzione a complessi articoli da collezione,
+                c'è un'ampia gamma di prodotti da scoprire. Esplora un vasto
+                assortimento LEGO e filtra per
+                <a href="" class="text-link">fascia d'età</a>,<a
+                  href=""
+                  class="text-link"
+                  >prezzo</a
+                >,<a href="" class="text-link">tipo di interesse</a> e altro
+                ancora. Puoi anche trovare tutti i
+                <a href="" class="text-link">set in arrivo</a>, i
+                <a href="" class="text-link">set esclusivi LEGO</a> e i
+                <a href="" class="text-link">set LEGO più popolari</a>
+                <br />
+                <span class="toggle-button-container">
+                  <button class="toggle-button">Leggi di più</button>
+                </span>
+              </span>
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <!-- store -->
+      <div class="store">
+        <!-- aside -->
+        <aside class="store-checkbox-primary-container">
+          <div class="store-checkbox-total-container">
+            <div class="store-checkbox-container">
+              <div class="store-checkbox-container-content"></div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- card container -->
+        <div class="container-store-card"></div>
+      </div>`;
+  /* -----------------------
+    FASE DI PREPARAZIONE
+-------------------------- */
+
+  //card store
+  const cardContainer = document.querySelector(".container-store-card");
+
+  const cardData = [
+    {
+      title: "Calendario dell’Avvento 2023 LEGO® ",
+      price: 37.99,
+      rating: 4.0,
+      pieces: 700,
+      age: 6,
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt8345f6a8fc46d84b/75366_alt1.png?format=webply&fit=bounds&quality=90&width=320&height=320&dpr=1.5",
+      img2: "https://www.lego.com/cdn/cs/set/assets/bltff8d93722741aaec/75366.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+    },
+
+    {
+      title: "Calendario dell’Avvento 2023 LEGO® ",
+      price: 55,
+      rating: 4.0,
+      pieces: 50,
+      age: 6,
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt8345f6a8fc46d84b/75366_alt1.png?format=webply&fit=bounds&quality=90&width=320&height=320&dpr=1.5",
+      img2: "https://www.lego.com/cdn/cs/set/assets/bltff8d93722741aaec/75366.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+    },
+    {
+      title: "Calendario dell’Avvento 2023 LEGO® ",
+      price: 100,
+      rating: 4.0,
+      pieces: 320,
+      age: 6,
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt8345f6a8fc46d84b/75366_alt1.png?format=webply&fit=bounds&quality=90&width=320&height=320&dpr=1.5",
+      img2: "https://www.lego.com/cdn/cs/set/assets/bltff8d93722741aaec/75366.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+    },
+    {
+      title: "Calendario dell’Avvento 2023 LEGO® ",
+      price: 500,
+      rating: 4.0,
+      pieces: 320,
+      age: 6,
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt8345f6a8fc46d84b/75366_alt1.png?format=webply&fit=bounds&quality=90&width=320&height=320&dpr=1.5",
+      img2: "https://www.lego.com/cdn/cs/set/assets/bltff8d93722741aaec/75366.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+    },
+    {
+      title: "Calendario dell’Avvento 2023 LEGO® ",
+      price: 37.99,
+      rating: 4.0,
+      pieces: 320,
+      age: 6,
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt8345f6a8fc46d84b/75366_alt1.png?format=webply&fit=bounds&quality=90&width=320&height=320&dpr=1.5",
+      img2: "https://www.lego.com/cdn/cs/set/assets/bltff8d93722741aaec/75366.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+    },
+    {
+      title: "Calendario dell’Avvento 2023 LEGO® ",
+      price: 37.99,
+      rating: 4.0,
+      pieces: 320,
+      age: 6,
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt8345f6a8fc46d84b/75366_alt1.png?format=webply&fit=bounds&quality=90&width=320&height=320&dpr=1.5",
+      img2: "https://www.lego.com/cdn/cs/set/assets/bltff8d93722741aaec/75366.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+    },
+  ];
+
+  const checkboxData = {
+    price: [
+      [0, 20],
+      [20, 50],
+      [50, 100],
+      [100, 99999],
+    ],
+    age: [
+      [6, 9999],
+      [9, 9999],
+      [18, 9999],
+    ],
+    pieces: [
+      [1, 99],
+      [100, 250],
+      [250, 499],
+      [500, 999],
+      [1000, 9999999],
+    ],
+  };
+
+  let prevButtonCard = document.querySelectorAll("#prevButton");
+  let nextButtonCard = document.querySelectorAll("#nextButton");
+  let imagesContainer = document.querySelectorAll(".images-store-card");
+  let currentPosition = 0;
+
+  /////atom-store-checkbox//////////////////////////////////////////
+
+  const checkboxContainer = document.querySelector(
+    ".store-checkbox-container-content"
+  );
+
+  /* -----------------------
+        LOGICA
+--------------------------*/
+
+  //card store render
+  createCard(cardData);
+
+  createCheckbox(checkboxData, cardData);
+
+  /* ----------------------
+        FUNZIONI
+-------------------------*/
+
+  // funzioen create card store
+  function createCard(arr) {
+    try {
+      const ul = document.createElement("ul");
+      arr.forEach((el) => {
+        const li = document.createElement("li");
+        const card = document.createElement("article");
+        card.classList.add("store-card");
+
+        card.innerHTML = `
         <div class="container-img-store-card">
           <div class="images-store-card">
             <div class="store-card-image">
@@ -377,18 +509,466 @@ function createCard(arr) {
           </div>
         </button>`;
 
-      li.append(card);
+        li.append(card);
 
-      ul.append(li);
+        ul.append(li);
+      });
+
+      cardContainer.append(ul);
+
+      prevButtonCard = document.querySelectorAll("#prevButton");
+      nextButtonCard = document.querySelectorAll("#nextButton");
+      imagesContainer = document.querySelectorAll(".images-store-card");
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  function createCheckbox(obj, arr) {
+    checkboxContainer.innerHTML = `                <!-- assemblaggio checkbox section -->
+                <div class="store-container-checkbox-section">
+                  <h3 class="store-h3-checkbox-section">
+                    <button class="store-button-checkbox-section">
+                      <span class="store-slot-content-checkbox-section">
+                        <span>Prezzo</span>
+                        <svg
+                          width="18"
+                          height="28"
+                          viewBox="0 0 18 28"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="store-icon-checkbox-section"
+                        >
+                          <path
+                            d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </span>
+                    </button>
+                  </h3>
+                  <div
+                    class="store-container-ul-checkbox-section-effect displayNoneUlCheckbox "
+                  >
+
+                  </div>
+                </div>
+                <!-- fine assemblaggio checkbox section -->
+
+                <!-- assemblaggio checkbox section -->
+                <div class="store-container-checkbox-section">
+                  <h3 class="store-h3-checkbox-section">
+                    <button class="store-button-checkbox-section">
+                      <span class="store-slot-content-checkbox-section">
+                        <span>Età</span>
+                        <svg
+                          width="18"
+                          height="28"
+                          viewBox="0 0 18 28"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="store-icon-checkbox-section"
+                        >
+                          <path
+                            d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </span>
+                    </button>
+                  </h3>
+                  <div
+                    class="store-container-ul-checkbox-section-effect displayNoneUlCheckbox"
+                  >
+
+                  </div>
+                </div>
+                <!-- fine assemblaggio checkbox section -->
+
+                <!-- assemblaggio checkbox section -->
+                <div class="store-container-checkbox-section">
+                  <h3 class="store-h3-checkbox-section">
+                    <button class="store-button-checkbox-section">
+                      <span class="store-slot-content-checkbox-section">
+                        <span>Numero Di Pezzi</span>
+                        <svg
+                          width="18"
+                          height="28"
+                          viewBox="0 0 18 28"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="store-icon-checkbox-section"
+                        >
+                          <path
+                            d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </span>
+                    </button>
+                  </h3>
+                  <div
+                    class="store-container-ul-checkbox-section-effect displayNoneUlCheckbox"
+                  >
+
+                  </div>
+                </div>
+                <!-- fine assemblaggio checkbox section -->`;
+
+    const storeContainerUlCheckboxSectionEffect = document.querySelectorAll(
+      ".store-container-ul-checkbox-section-effect"
+    );
+
+    let arrConta = conta(obj, arr);
+
+    console.log(arrConta);
+
+    createSingleCheckbox(obj);
+
+    const inputCheck = document.querySelectorAll(".atom-label-for-click");
+    const checkImage = document.querySelectorAll(".svg-checkbox-V ");
+    const realInput = document.querySelectorAll(".atom-input-checkbox");
+    const squareSlot = document.querySelectorAll(".container-image-checkbox");
+
+    //store-checkbox-section////////
+    const storeButtonCheckboxSection = document.querySelectorAll(
+      ".store-button-checkbox-section"
+    );
+
+    const storeIconCheckboxSection = document.querySelectorAll(
+      ".store-icon-checkbox-section"
+    );
+    ////////atom-store-checkbox eventi/////////////////////////
+
+    function handleItemClick(index) {
+      if (realInput[index].checked) {
+        realInput[index].checked = false;
+        squareSlot[index].classList.remove("slot-square-checkbox-shadow");
+        checkImage[index].classList.add("checkbox-image-not-visible");
+      } else {
+        realInput[index].checked = true;
+        squareSlot[index].classList.add("slot-square-checkbox-shadow");
+        checkImage[index].classList.remove("checkbox-image-not-visible");
+      }
+    }
+
+    inputCheck.forEach((element, index) => {
+      element.addEventListener("click", () => {
+        handleItemClick(index);
+        filterCard();
+      });
     });
 
-    cardContainer.append(ul);
+    //store-checkbox-section//////////////////////
+    function displayNoneUl(index) {
+      console.log(index);
+      if (
+        storeContainerUlCheckboxSectionEffect[index].classList.contains(
+          "displayNoneUlCheckbox"
+        )
+      ) {
+        storeContainerUlCheckboxSectionEffect[index].classList.remove(
+          "displayNoneUlCheckbox"
+        );
+        storeContainerUlCheckboxSectionEffect[index].classList.add(
+          "store-container-ul-checkbox-section-effect-visible"
+        );
+        storeIconCheckboxSection[index].classList.add("effect-to-change-state");
+        console.log("if");
+      } else {
+        storeContainerUlCheckboxSectionEffect[index].classList.add(
+          "displayNoneUlCheckbox"
+        );
+        storeContainerUlCheckboxSectionEffect[index].classList.remove(
+          "store-container-ul-checkbox-section-effect-visible"
+        );
+        storeIconCheckboxSection[index].classList.remove(
+          "effect-to-change-state"
+        );
+        console.log("else");
+      }
+    }
 
-    prevButtonCard = document.querySelectorAll("#prevButton");
-    nextButtonCard = document.querySelectorAll("#nextButton");
-    imagesContainer = document.querySelectorAll(".images-store-card");
-  } catch (error) {
-    console.error(error);
+    storeButtonCheckboxSection.forEach((element, index) => {
+      element.addEventListener("click", () => {
+        displayNoneUl(index);
+      });
+    });
+
+    function createSingleCheckbox(obj) {
+      let i = 0;
+      arrConta.forEach((el) => {
+        let stringa = ``;
+        let j = 0;
+        const arrDaContare = ["price", "age", "pieces"];
+        el.forEach((ele) => {
+          if (arrDaContare[i] === "price") {
+            stringa =
+              stringa +
+              `                    <!-- assemblaggio atom/store-checkbox -->
+                    <div class="container-atom-store-checkbox">
+                      <ul class="list-container-atom-store-checkbox">
+                        <li class="li-atom-store-checkbox">
+                          <label for="" class="atom-label-for-click" >
+                            <div class="atom-container-space-to-check">
+                              <input
+                                type="checkbox"
+                                class="atom-input-checkbox"
+                              />
+                              <div class="container-image-checkbox">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 -25 100 100"
+                                  xml:space="preserve"
+                                  class="svg-checkbox-V checkbox-image-not-visible"
+                                >
+                                  <polygon
+                                    fill="currentColor"
+                                    points="0.4,23.9 36,59.6 99.6,-4 88.5,-4 77.4,-4 36,37.3 22.6,24 11.5,24 "
+                                  ></polygon>
+                                </svg>
+                              </div>
+                            </div>
+                            <span class="container-span-content-check">
+                              <span class="span-content-check">${
+                                obj[arrDaContare[i]][j][0]
+                              }€ - ${obj[arrDaContare[i]][j][1]}€</span>
+                              <span class="span-number-check"
+                                >[<!-- -->${
+                                  arrConta[i][j].length
+                                }<!-- -->]</span
+                              >
+                            </span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- fine assemblaggio -->`;
+            j++;
+          } else if (arrDaContare[i] === "age") {
+            stringa =
+              stringa +
+              `                    <!-- assemblaggio atom/store-checkbox -->
+                    <div class="container-atom-store-checkbox">
+                      <ul class="list-container-atom-store-checkbox">
+                        <li class="li-atom-store-checkbox">
+                          <label for="" class="atom-label-for-click" >
+                            <div class="atom-container-space-to-check">
+                              <input
+                                type="checkbox"
+                                class="atom-input-checkbox"
+                                onchange="filterCard()"
+                              />
+                              <div class="container-image-checkbox">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 -25 100 100"
+                                  xml:space="preserve"
+                                  class="svg-checkbox-V checkbox-image-not-visible"
+                                >
+                                  <polygon
+                                    fill="currentColor"
+                                    points="0.4,23.9 36,59.6 99.6,-4 88.5,-4 77.4,-4 36,37.3 22.6,24 11.5,24 "
+                                  ></polygon>
+                                </svg>
+                              </div>
+                            </div>
+                            <span class="container-span-content-check">
+                              <span class="span-content-check">${
+                                obj[arrDaContare[i]][j][0]
+                              }+</span>
+                              <span class="span-number-check"
+                                >[<!-- -->${
+                                  arrConta[i][j].length
+                                }<!-- -->]</span
+                              >
+                            </span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- fine assemblaggio -->`;
+            j++;
+          } else {
+            stringa =
+              stringa +
+              `                    <!-- assemblaggio atom/store-checkbox -->
+                    <div class="container-atom-store-checkbox">
+                      <ul class="list-container-atom-store-checkbox">
+                        <li class="li-atom-store-checkbox">
+                          <label for="" class="atom-label-for-click" >
+                            <div class="atom-container-space-to-check">
+                              <input
+                                type="checkbox"
+                                class="atom-input-checkbox"
+                                onchange="filterCard()"
+
+                              />
+                              <div class="container-image-checkbox">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 -25 100 100"
+                                  xml:space="preserve"
+                                  class="svg-checkbox-V checkbox-image-not-visible"
+                                >
+                                  <polygon
+                                    fill="currentColor"
+                                    points="0.4,23.9 36,59.6 99.6,-4 88.5,-4 77.4,-4 36,37.3 22.6,24 11.5,24 "
+                                  ></polygon>
+                                </svg>
+                              </div>
+                            </div>
+                            <span class="container-span-content-check">
+                              <span class="span-content-check">${
+                                obj[arrDaContare[i]][j][0]
+                              } - ${obj[arrDaContare[i]][j][1]}</span>
+                              <span class="span-number-check"
+                                >[<!-- -->${
+                                  arrConta[i][j].length
+                                }<!-- -->]</span
+                              >
+                            </span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- fine assemblaggio -->`;
+            j++;
+          }
+        });
+
+        storeContainerUlCheckboxSectionEffect[i].innerHTML = stringa;
+        i++;
+      });
+    }
+
+    function conta(obj, arr) {
+      const arrDaContare = ["price", "age", "pieces"];
+
+      const arrCount = [];
+      const singolaProprieta = [];
+
+      arrDaContare.forEach((el) => {
+        const elemento = el;
+        /* console.log(obj[el]); */
+        obj[el].forEach((el) => {
+          const min = el[0];
+          const max = el[1];
+
+          const risultato = arr.filter(
+            (el) => el[elemento] >= min && el[elemento] <= max
+          );
+
+          singolaProprieta.push(risultato);
+        });
+
+        arrCount.push([...singolaProprieta]);
+
+        singolaProprieta.length = 0;
+      });
+
+      return arrCount;
+    }
+  }
+
+  const realInput = document.querySelectorAll(".atom-input-checkbox");
+
+  const arrDaContare = ["price", "age", "pieces"];
+
+  async function filterCard() {
+    cardContainer.innerHTML = ``;
+    let arrConta = conta(checkboxData, cardData);
+    const arrChecked = [];
+    const arrToShow = [];
+    let j = 0;
+
+    for (let i = 0; i < arrConta.length; i++) {
+      for (let el of arrConta[i]) {
+        await new Promise((resolve) => {
+          setTimeout(() => {
+            if (realInput[j].checked) {
+              arrChecked.push(el);
+            }
+            j++;
+            resolve();
+          }, 10);
+        });
+      }
+    }
+
+    arrChecked.forEach((el) => {
+      el.forEach((ele) => {
+        if (!arrToShow.includes(ele)) arrToShow.push(ele);
+      });
+    });
+
+    createCard(arrToShow);
+
+    /*   createCard(el);
+     */
+    function conta(obj, arr) {
+      const arrDaContare = ["price", "age", "pieces"];
+
+      const arrCount = [];
+      const singolaProprieta = [];
+
+      arrDaContare.forEach((el) => {
+        const elemento = el;
+        /* console.log(obj[el]); */
+        obj[el].forEach((el) => {
+          const min = el[0];
+          const max = el[1];
+
+          const risultato = arr.filter(
+            (el) => el[elemento] >= min && el[elemento] <= max
+          );
+
+          singolaProprieta.push(risultato);
+        });
+
+        arrCount.push([...singolaProprieta]);
+
+        singolaProprieta.length = 0;
+      });
+
+      return arrCount;
+    }
+  }
+
+  /* ---------------------
+        EVENTI
+-----------------------*/
+
+  // bottoni nex e prev sulle foto delle card
+  for (let i = 0; i < prevButtonCard.length; i++) {
+    prevButtonCard[i].addEventListener("click", function () {
+      try {
+        const imageWidth = imagesContainer[i].clientWidth;
+        currentPosition += imageWidth;
+        if (currentPosition > 0) {
+          currentPosition = 0;
+        }
+        imagesContainer[i].style.transform = `translateX(${currentPosition}px)`;
+      } catch (error) {
+        console.error(error);
+      }
+    });
+
+    nextButtonCard[i].addEventListener("click", function () {
+      try {
+        const imageWidth = imagesContainer[i].clientWidth;
+        currentPosition -= imageWidth;
+        const maxPosition = -(
+          imagesContainer[i].scrollWidth - imagesContainer[i].offsetWidth
+        );
+        if (currentPosition < maxPosition) {
+          currentPosition = maxPosition;
+        }
+        imagesContainer[i].style.transform = `translateX(${currentPosition}px)`;
+      } catch (error) {
+        console.error(error);
+      }
+    });
   }
 }
 
@@ -402,38 +982,6 @@ for (let i = 0; i < standardButton.length; i++) {
   standardButton[i].addEventListener("click", () =>
     switchHiddenClassButton(standardButton[i])
   );
-}
-
-// bottoni nex e prev sulle foto delle card
-for (let i = 0; i < prevButtonCard.length; i++) {
-  prevButtonCard[i].addEventListener("click", function () {
-    try {
-      const imageWidth = imagesContainer[i].clientWidth;
-      currentPosition += imageWidth;
-      if (currentPosition > 0) {
-        currentPosition = 0;
-      }
-      imagesContainer[i].style.transform = `translateX(${currentPosition}px)`;
-    } catch (error) {
-      console.error(error);
-    }
-  });
-
-  nextButtonCard[i].addEventListener("click", function () {
-    try {
-      const imageWidth = imagesContainer[i].clientWidth;
-      currentPosition -= imageWidth;
-      const maxPosition = -(
-        imagesContainer[i].scrollWidth - imagesContainer[i].offsetWidth
-      );
-      if (currentPosition < maxPosition) {
-        currentPosition = maxPosition;
-      }
-      imagesContainer[i].style.transform = `translateX(${currentPosition}px)`;
-    } catch (error) {
-      console.error(error);
-    }
-  });
 }
 
 //opacity on card2 hover
@@ -599,7 +1147,7 @@ const divForButton2 = document.createElement("div");
 divForButton2.setAttribute("class", "delete-button-pop-up-menu");
 const buttonXPopUpMenu2 = document.createElement("button");
 const image2 = document.createElement("img");
-image2.src = "close.png";
+image2.src = "/components/atom/atom-header/close.png";
 image2.alt = "";
 buttonXPopUpMenu2.appendChild(image2);
 divForButton2.appendChild(buttonXPopUpMenu2);
@@ -610,6 +1158,7 @@ containerForMenuPopUp.innerHTML = "";
 // Crea il contenuto di containerForMenuPopUp
 acquista.addEventListener("click", () => {
   if (!menuPopUpCreated) {
+    console.log(acquista);
     // Crea il container per il menu pop-up
     containerPopMenu.classList.add("not-visible-element-atom-header");
 
@@ -621,12 +1170,12 @@ acquista.addEventListener("click", () => {
     containerForMenuPopUp.innerHTML = `
     <div class="content-pop-up-menu">
         <ul>
-            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Set per tema</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
-            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Età</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
-            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Prezzi</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
-            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Merchandising LEGO</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
-            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Interessi</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
-            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Pick and Build</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Set per tema</span><img src="/components/atom/atom-header/arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Età</span><img src="/components/atom/atom-header/arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Prezzi</span><img src="/components/atom/atom-header/arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Merchandising LEGO</span><img src="/components/atom/atom-header/arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Interessi</span><img src="/components/atom/atom-header/arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Pick and Build</span><img src="/components/atom/atom-header/arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
             <li><div><a href="#">Set Esclusivi</a></div></li>
             <li><div><a href="#">Novità</a></div></li>
             <li><div><a href="#">I più venduti</a></div></li>
@@ -867,49 +1416,5 @@ cookieButton.addEventListener("click", () => {
   btnAllCookie.addEventListener("click", () => {
     cookieDisabled.style.display = "none";
     containerCookie.style.display = "none";
-  });
-});
-////////atom-store-checkbox eventi/////////////////////////
-function handleItemClick(index) {
-  if (realInput[index].checked) {
-    realInput[index].checked = false;
-    squareSlot[index].classList.remove("slot-square-checkbox-shadow");
-    checkImage[index].classList.add("checkbox-image-not-visible");
-  } else {
-    realInput[index].checked = true;
-    squareSlot[index].classList.add("slot-square-checkbox-shadow");
-    checkImage[index].classList.remove("checkbox-image-not-visible");
-  }
-}
-
-inputCheck.forEach((element, index) => {
-  element.addEventListener("click", () => {
-    handleItemClick(index);
-  });
-});
-
-//store-checkbox-section//////////////////////
-function displayNoneUl(index) {
-  if (storeButtonCheckboxSection[index].checked) {
-    storeButtonCheckboxSection[index].checked = false;
-    storeContainerUlCheckboxSectionEffect[index].classList.remove("displayNoneUlCheckbox");
-    storeContainerUlCheckboxSectionEffect[index].classList.add("store-container-ul-checkbox-section-effect-visible");
-    storeIconCheckboxSection[index].classList.add("effect-to-change-state");
-
-
-
-  } else {
-    storeButtonCheckboxSection[index].checked = true;
-    storeContainerUlCheckboxSectionEffect[index].classList.add("displayNoneUlCheckbox");
-    storeContainerUlCheckboxSectionEffect[index].classList.remove("store-container-ul-checkbox-section-effect-visible");
-    storeIconCheckboxSection[index].classList.remove("effect-to-change-state");
-  }
-}
-/* ---------------------
-        EVENTI
------------------------*/
-storeButtonCheckboxSection.forEach((element, index) => {
-  element.addEventListener("click", () => {
-    displayNoneUl(index);
   });
 });
