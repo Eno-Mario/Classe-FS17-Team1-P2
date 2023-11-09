@@ -158,11 +158,8 @@ First accordion content C .product-details-accordion-panel {
 .product-details-list-container {
   padding: 1.125rem 0px;
 
-  padding-right: 2.5rem;
-  padding-left: 2.5rem;
   width: 100%;
   max-width: 100rem;
-  padding: 0px 1.25rem;
   margin: 0px auto;
   display: flex;
 }
@@ -183,6 +180,8 @@ First accordion content C .product-details-accordion-panel {
 }
 .product-list-details-image {
   width: 40%;
+  flex: 1 1 0%;
+  text-align: center;
 }
 .product-list-details-image img {
   max-width: 100%;
@@ -190,4 +189,10 @@ First accordion content C .product-details-accordion-panel {
   -ms-interpolation-mode: bicubic;
   display: inline-block;
   vertical-align: middle;
+}
+.container-review {
+  margin: 0px auto;
+  max-width: 100rem;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
 }
