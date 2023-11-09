@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="product-card.css" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Document</title>
   </head>
   <body>
@@ -18,14 +19,33 @@
       <body>
         <div class="product-card-container">
           <ul class="product-card-list">
-            <li><a href="#">Home</a><svg width="18" height="28"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg></li>
-            <li><a href="#">LEGO<sup>&reg</sup> icons</a><svg width="18" height="28"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg></li>
+            <li>
+              <a href="#">Home</a
+              ><svg width="18" height="28">
+                <path
+                  d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </li>
+            <li>
+              <a href="#">LEGO<sup>&reg</sup> icons</a
+              ><svg width="18" height="28">
+                <path
+                  d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </li>
             <li>Atari<sup>&reg</sup> 2600</li>
           </ul>
 
           <div class="product-card">
             <div class="product-card-left">
+              
               <div class="product-card-img">
+                <!-- carosello scorrevole
+              !DA CAPIRE PERCHè C'è IL MARGINE -->
                 <ul class="product-card-carrosel">
                   <li>
                     <button class="product-card-carrosel-img">
@@ -118,51 +138,94 @@ https://www.lego.com/cdn/cs/set/assets/blta04f91a122ac32d9/10306_v1_thumbnail.jp
                   </li>
                   <li>
                     <button class="product-card-carrosel-img">
-                      <img src="https://www.lego.com/cdn/cs/set/assets/blt0cab7d53c083b522/10306_alt9.png?format=webply&fit=bounds&quality=75&width=170&height=170&dpr=1 1x, https://www.lego.com/cdn/cs/set/assets/blt0cab7d53c083b522/10306_alt9.png?format=webply&fit=bounds&quality=60&width=170&height=170&dpr=2 2x, https://www.lego.com/cdn/cs/set/assets/blt0cab7d53c083b522/10306_alt9.png?format=webply&fit=bounds&quality=55&width=170&height=170&dpr=3 3x, https://www.lego.com/cdn/cs/set/assets/blt0cab7d53c083b522/10306_alt9.png?format=webply&fit=bounds&quality=70&width=170&height=170&dpr=1.5 1.5x" alt="" />
+                      <img
+                        src="https://www.lego.com/cdn/cs/set/assets/blt0cab7d53c083b522/10306_alt9.png?format=webply&fit=bounds&quality=75&width=170&height=170&dpr=1 1x, https://www.lego.com/cdn/cs/set/assets/blt0cab7d53c083b522/10306_alt9.png?format=webply&fit=bounds&quality=60&width=170&height=170&dpr=2 2x, https://www.lego.com/cdn/cs/set/assets/blt0cab7d53c083b522/10306_alt9.png?format=webply&fit=bounds&quality=55&width=170&height=170&dpr=3 3x, https://www.lego.com/cdn/cs/set/assets/blt0cab7d53c083b522/10306_alt9.png?format=webply&fit=bounds&quality=70&width=170&height=170&dpr=1.5 1.5x"
+                        alt=""
+                      />
                     </button>
                   </li>
                   <li>
                     <button class="product-card-carrosel-img">
-                      <img src="https://www.lego.com/cdn/cs/set/assets/blt3e98d6525f1a7632/10306_alt10.png?format=webply&fit=bounds&quality=75&width=170&height=170&dpr=1 1x, https://www.lego.com/cdn/cs/set/assets/blt3e98d6525f1a7632/10306_alt10.png?format=webply&fit=bounds&quality=60&width=170&height=170&dpr=2 2x, https://www.lego.com/cdn/cs/set/assets/blt3e98d6525f1a7632/10306_alt10.png?format=webply&fit=bounds&quality=55&width=170&height=170&dpr=3 3x, https://www.lego.com/cdn/cs/set/assets/blt3e98d6525f1a7632/10306_alt10.png?format=webply&fit=bounds&quality=70&width=170&height=170&dpr=1.5 1.5x" alt="" />
+                      <img
+                        src="https://www.lego.com/cdn/cs/set/assets/blt3e98d6525f1a7632/10306_alt10.png?format=webply&fit=bounds&quality=75&width=170&height=170&dpr=1 1x, https://www.lego.com/cdn/cs/set/assets/blt3e98d6525f1a7632/10306_alt10.png?format=webply&fit=bounds&quality=60&width=170&height=170&dpr=2 2x, https://www.lego.com/cdn/cs/set/assets/blt3e98d6525f1a7632/10306_alt10.png?format=webply&fit=bounds&quality=55&width=170&height=170&dpr=3 3x, https://www.lego.com/cdn/cs/set/assets/blt3e98d6525f1a7632/10306_alt10.png?format=webply&fit=bounds&quality=70&width=170&height=170&dpr=1.5 1.5x"
+                        alt=""
+                      />
                     </button>
                   </li>
                   <li>
                     <button class="product-card-carrosel-img">
-                      <img src="https://www.lego.com/cdn/cs/set/assets/blt1db31dc6ba606af7/10306_alt11.png?format=webply&fit=bounds&quality=75&width=170&height=170&dpr=1 1x, https://www.lego.com/cdn/cs/set/assets/blt1db31dc6ba606af7/10306_alt11.png?format=webply&fit=bounds&quality=60&width=170&height=170&dpr=2 2x, https://www.lego.com/cdn/cs/set/assets/blt1db31dc6ba606af7/10306_alt11.png?format=webply&fit=bounds&quality=55&width=170&height=170&dpr=3 3x, https://www.lego.com/cdn/cs/set/assets/blt1db31dc6ba606af7/10306_alt11.png?format=webply&fit=bounds&quality=70&width=170&height=170&dpr=1.5 1.5x" alt="" />
+                      <img
+                        src="https://www.lego.com/cdn/cs/set/assets/blt1db31dc6ba606af7/10306_alt11.png?format=webply&fit=bounds&quality=75&width=170&height=170&dpr=1 1x, https://www.lego.com/cdn/cs/set/assets/blt1db31dc6ba606af7/10306_alt11.png?format=webply&fit=bounds&quality=60&width=170&height=170&dpr=2 2x, https://www.lego.com/cdn/cs/set/assets/blt1db31dc6ba606af7/10306_alt11.png?format=webply&fit=bounds&quality=55&width=170&height=170&dpr=3 3x, https://www.lego.com/cdn/cs/set/assets/blt1db31dc6ba606af7/10306_alt11.png?format=webply&fit=bounds&quality=70&width=170&height=170&dpr=1.5 1.5x"
+                        alt=""
+                      />
                     </button>
                   </li>
                   <li>
                     <button class="product-card-carrosel-img">
-                      <img src="https://www.lego.com/cdn/cs/set/assets/blt15bf3af71e9e68d6/10306_alt15.jpg?format=webply&fit=bounds&quality=75&width=170&height=170&dpr=1 1x, https://www.lego.com/cdn/cs/set/assets/blt15bf3af71e9e68d6/10306_alt15.jpg?format=webply&fit=bounds&quality=60&width=170&height=170&dpr=2 2x, https://www.lego.com/cdn/cs/set/assets/blt15bf3af71e9e68d6/10306_alt15.jpg?format=webply&fit=bounds&quality=55&width=170&height=170&dpr=3 3x, https://www.lego.com/cdn/cs/set/assets/blt15bf3af71e9e68d6/10306_alt15.jpg?format=webply&fit=bounds&quality=70&width=170&height=170&dpr=1.5 1.5x" alt="" />
+                      <img
+                        src="https://www.lego.com/cdn/cs/set/assets/blt15bf3af71e9e68d6/10306_alt15.jpg?format=webply&fit=bounds&quality=75&width=170&height=170&dpr=1 1x, https://www.lego.com/cdn/cs/set/assets/blt15bf3af71e9e68d6/10306_alt15.jpg?format=webply&fit=bounds&quality=60&width=170&height=170&dpr=2 2x, https://www.lego.com/cdn/cs/set/assets/blt15bf3af71e9e68d6/10306_alt15.jpg?format=webply&fit=bounds&quality=55&width=170&height=170&dpr=3 3x, https://www.lego.com/cdn/cs/set/assets/blt15bf3af71e9e68d6/10306_alt15.jpg?format=webply&fit=bounds&quality=70&width=170&height=170&dpr=1.5 1.5x"
+                        alt=""
+                      />
                     </button>
                   </li>
                   <li>
                     <button class="product-card-carrosel-img">
-                      <img src="https://www.lego.com/cdn/cs/set/assets/bltd960c0d939a51bc3/10306_alt12.jpg?format=webply&fit=bounds&quality=75&width=170&height=170&dpr=1 1x, https://www.lego.com/cdn/cs/set/assets/bltd960c0d939a51bc3/10306_alt12.jpg?format=webply&fit=bounds&quality=60&width=170&height=170&dpr=2 2x, https://www.lego.com/cdn/cs/set/assets/bltd960c0d939a51bc3/10306_alt12.jpg?format=webply&fit=bounds&quality=55&width=170&height=170&dpr=3 3x, https://www.lego.com/cdn/cs/set/assets/bltd960c0d939a51bc3/10306_alt12.jpg?format=webply&fit=bounds&quality=70&width=170&height=170&dpr=1.5 1.5x" alt="" />
+                      <img
+                        src="https://www.lego.com/cdn/cs/set/assets/bltd960c0d939a51bc3/10306_alt12.jpg?format=webply&fit=bounds&quality=75&width=170&height=170&dpr=1 1x, https://www.lego.com/cdn/cs/set/assets/bltd960c0d939a51bc3/10306_alt12.jpg?format=webply&fit=bounds&quality=60&width=170&height=170&dpr=2 2x, https://www.lego.com/cdn/cs/set/assets/bltd960c0d939a51bc3/10306_alt12.jpg?format=webply&fit=bounds&quality=55&width=170&height=170&dpr=3 3x, https://www.lego.com/cdn/cs/set/assets/bltd960c0d939a51bc3/10306_alt12.jpg?format=webply&fit=bounds&quality=70&width=170&height=170&dpr=1.5 1.5x"
+                        alt=""
+                      />
                     </button>
                   </li>
                   <li>
                     <button class="product-card-carrosel-img">
-                      <img src="https://www.lego.com/cdn/cs/set/assets/blt0df0249d83ef31c5/10306_alt13.jpg?format=webply&fit=bounds&quality=75&width=170&height=170&dpr=1 1x, https://www.lego.com/cdn/cs/set/assets/blt0df0249d83ef31c5/10306_alt13.jpg?format=webply&fit=bounds&quality=60&width=170&height=170&dpr=2 2x, https://www.lego.com/cdn/cs/set/assets/blt0df0249d83ef31c5/10306_alt13.jpg?format=webply&fit=bounds&quality=55&width=170&height=170&dpr=3 3x, https://www.lego.com/cdn/cs/set/assets/blt0df0249d83ef31c5/10306_alt13.jpg?format=webply&fit=bounds&quality=70&width=170&height=170&dpr=1.5 1.5x" alt="" />
+                      <img
+                        src="https://www.lego.com/cdn/cs/set/assets/blt0df0249d83ef31c5/10306_alt13.jpg?format=webply&fit=bounds&quality=75&width=170&height=170&dpr=1 1x, https://www.lego.com/cdn/cs/set/assets/blt0df0249d83ef31c5/10306_alt13.jpg?format=webply&fit=bounds&quality=60&width=170&height=170&dpr=2 2x, https://www.lego.com/cdn/cs/set/assets/blt0df0249d83ef31c5/10306_alt13.jpg?format=webply&fit=bounds&quality=55&width=170&height=170&dpr=3 3x, https://www.lego.com/cdn/cs/set/assets/blt0df0249d83ef31c5/10306_alt13.jpg?format=webply&fit=bounds&quality=70&width=170&height=170&dpr=1.5 1.5x"
+                        alt=""
+                      />
                     </button>
                   </li>
                   <li>
                     <button class="product-card-carrosel-img">
-                      <img src="https://www.lego.com/cdn/cs/set/assets/bltae72eec5c8d2ed50/10306_alt14.jpg?format=webply&fit=bounds&quality=75&width=170&height=170&dpr=1 1x, https://www.lego.com/cdn/cs/set/assets/bltae72eec5c8d2ed50/10306_alt14.jpg?format=webply&fit=bounds&quality=60&width=170&height=170&dpr=2 2x, https://www.lego.com/cdn/cs/set/assets/bltae72eec5c8d2ed50/10306_alt14.jpg?format=webply&fit=bounds&quality=55&width=170&height=170&dpr=3 3x, https://www.lego.com/cdn/cs/set/assets/bltae72eec5c8d2ed50/10306_alt14.jpg?format=webply&fit=bounds&quality=70&width=170&height=170&dpr=1.5 1.5x" alt="" />
+                      <img
+                        src="https://www.lego.com/cdn/cs/set/assets/bltae72eec5c8d2ed50/10306_alt14.jpg?format=webply&fit=bounds&quality=75&width=170&height=170&dpr=1 1x, https://www.lego.com/cdn/cs/set/assets/bltae72eec5c8d2ed50/10306_alt14.jpg?format=webply&fit=bounds&quality=60&width=170&height=170&dpr=2 2x, https://www.lego.com/cdn/cs/set/assets/bltae72eec5c8d2ed50/10306_alt14.jpg?format=webply&fit=bounds&quality=55&width=170&height=170&dpr=3 3x, https://www.lego.com/cdn/cs/set/assets/bltae72eec5c8d2ed50/10306_alt14.jpg?format=webply&fit=bounds&quality=70&width=170&height=170&dpr=1.5 1.5x"
+                        alt=""
+                      />
                     </button>
                   </li>
                   <li>
                     <button class="product-card-carrosel-img">
-                      <img src="https://www.lego.com/cdn/cs/set/assets/blt2fd20c67e1437598/10306_v2_thumbnail.jpg?fit=bounds&format=webply&quality=80&width=170&height=170&dpr=1,
+                      <img
+                        src="https://www.lego.com/cdn/cs/set/assets/blt2fd20c67e1437598/10306_v2_thumbnail.jpg?fit=bounds&format=webply&quality=80&width=170&height=170&dpr=1,
 https://www.lego.com/cdn/cs/set/assets/blt2fd20c67e1437598/10306_v2_thumbnail.jpg?fit=bounds&format=webply&quality=80&width=170&height=170&dpr=1.5 1.5x,
-https://www.lego.com/cdn/cs/set/assets/blt2fd20c67e1437598/10306_v2_thumbnail.jpg?fit=bounds&format=webply&quality=80&width=170&height=170&dpr=2 2x" alt="" />
+https://www.lego.com/cdn/cs/set/assets/blt2fd20c67e1437598/10306_v2_thumbnail.jpg?fit=bounds&format=webply&quality=80&width=170&height=170&dpr=2 2x"
+                        alt=""
+                      />
                     </button>
                   </li>
                 </ul>
-                <div class="product-card-img-display">
-                  <span class="product-card-img-number"></span>
 
-                </div>
+
+                
+                <!-- Slider main container -->
+                <div class="mySwiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=75&width=528&height=528&dpr=1 1x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=60&width=528&height=528&dpr=2 2x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=55&width=528&height=528&dpr=3 3x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=70&width=528&height=528&dpr=1.5 1.5x" alt=""></div>
+                    <div class="swiper-slide"><img src="https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=75&width=528&height=528&dpr=1 1x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=60&width=528&height=528&dpr=2 2x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=55&width=528&height=528&dpr=3 3x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=70&width=528&height=528&dpr=1.5 1.5x" alt=""></div>
+                    <div class="swiper-slide"><img src="https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=75&width=528&height=528&dpr=1 1x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=60&width=528&height=528&dpr=2 2x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=55&width=528&height=528&dpr=3 3x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=70&width=528&height=528&dpr=1.5 1.5x" alt=""></div>
+                    ...
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+              </div>
+              <div class="product-card-img-display">
+                <span class="product-card-img-number"></span>
+              </div>
               </div>
               <div class="product-card-attributes"></div>
             </div>
@@ -171,6 +234,7 @@ https://www.lego.com/cdn/cs/set/assets/blt2fd20c67e1437598/10306_v2_thumbnail.jp
         </div>
       </body>
     </html>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="product-card.js"></script>
   </body>
 </html>
