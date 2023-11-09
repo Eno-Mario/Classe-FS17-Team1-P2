@@ -48,13 +48,11 @@ First accordion content C .product-details-accordion-panel {
   width: 100%;
   max-width: 100rem;
 }
+/* DIV2 CSS */
 .product-details-accordion-text-content {
-  text-align: center;
   color: var(--black);
-  margin-top: 0;
   background-color: #6eb9e7;
   margin: 0px auto;
-  width: 100%;
   max-width: 100rem;
   display: flex;
   flex-direction: column;
@@ -64,8 +62,11 @@ First accordion content C .product-details-accordion-panel {
   text-align: center;
   width: 100%;
   max-width: 50rem;
+  padding: 16px;
 }
 .product-detail-accordion-right-side-content {
+  font-size: 1.25rem;
+  line-height: 3.125rem;
   position: absolute;
   max-width: 35%;
   padding: 0px;
@@ -77,6 +78,8 @@ First accordion content C .product-details-accordion-panel {
   transform: translateY(-50%);
 }
 .product-detail-accordion-left-side-content {
+  font-size: 1.25rem;
+  line-height: 3.125rem;
   position: absolute;
   max-width: 35%;
   padding: 0px;
@@ -100,6 +103,8 @@ First accordion content C .product-details-accordion-panel {
   flex-wrap: nowrap;
 }
 .accordion-card {
+  width: 25%;
+  height: 25%;
   margin-right: 1.25rem;
   display: flex;
   flex-direction: column;
@@ -122,4 +127,67 @@ First accordion content C .product-details-accordion-panel {
 .accordion-double-div {
   display: flex;
   flex-direction: row;
+}
+
+.accordion-button {
+  width: auto;
+  /* margin/padding-button */
+  margin-top: 1.25rem;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+  padding: 0.625rem 1.125rem;
+  /* font button */
+  font-size: var(--font-size-s0);
+  text-align: center;
+  /* color and border */
+  border: 1px solid transparent;
+  border-radius: 4px;
+  border-width: 1px;
+  background: var(--white);
+  color: var(--black);
+  line-height: var(--line-height-s0);
+  /* flex-parameters */
+  display: flex;
+  align-items: center;
+}
+
+.accordion-button:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+.product-details-list-container {
+  padding: 1.125rem 0px;
+
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  width: 100%;
+  max-width: 100rem;
+  padding: 0px 1.25rem;
+  margin: 0px auto;
+  display: flex;
+}
+.detail-list-main-content {
+  width: 60%;
+}
+.detail-list-main-content p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.detail-list-main-content li {
+  list-style-type: disc;
+  padding-bottom: 1.5625rem;
+  margin-bottom: 0.75rem;
+}
+.product-list-details-image {
+  width: 40%;
+}
+.product-list-details-image img {
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+  display: inline-block;
+  vertical-align: middle;
 }
