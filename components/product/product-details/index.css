@@ -1,4 +1,6 @@
 @import url(/assets/CSS/style.css);
+
+/* Accordion menus CSS */
 .product-details-container {
   margin: 0px auto;
   overflow: hidden;
@@ -10,10 +12,8 @@
   padding: 18px;
   width: 100%;
   transition: 0.4s;
-
   line-height: 2.3125rem;
   padding: 1.875rem 1.25rem;
-
   display: flex;
   justify-content: space-between;
 }
@@ -28,11 +28,18 @@
   margin-left: 10px;
 }
 
-.product-details-accordion-panel {
+First accordion content C .product-details-accordion-panel {
   background-color: white;
 }
-
+.product-details-accordion-video-content {
+  display: flex;
+  justify-content: center;
+}
+.product-details-accordion-video-content video {
+  width: 100rem;
+}
 .product-details-accordion-content {
+  position: relative;
   text-align: center;
   color: var(--black);
   margin-top: 0;
@@ -40,13 +47,6 @@
   margin: 0px auto;
   width: 100%;
   max-width: 100rem;
-}
-.product-details-accordion-content-x {
-  display: flex;
-  justify-content: center;
-}
-.product-details-accordion-video-content video {
-  width: 100rem;
 }
 .product-details-accordion-text-content {
   text-align: center;
@@ -65,12 +65,59 @@
   width: 100%;
   max-width: 50rem;
 }
+.product-detail-accordion-right-side-content {
+  position: absolute;
+  max-width: 35%;
+  padding: 0px;
+  background-color: transparent;
+  text-align: right;
+  right: 6.75rem;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.product-detail-accordion-left-side-content {
+  position: absolute;
+  max-width: 35%;
+  padding: 0px;
+  background-color: transparent;
+  text-align: left;
+  left: 6.75rem;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .accordion-red-bg {
   background-color: rgb(161, 13, 29);
-  display: flex;
 }
-.product-details-accordion-content p {
-  margin: 0;
+.accordion-card-holder {
+  padding: 2.5rem 1.25rem;
+  max-width: 82.5rem;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.accordion-card {
+  margin-right: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  /*   position: relative;
+ */
+  color: white;
+}
+.accordion-card img {
+  aspect-ratio: 1;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  /*   position: absolute;
+ */
+  inset: 0px;
 }
 .accordion-double-div {
   display: flex;
