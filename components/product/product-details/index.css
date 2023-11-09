@@ -1,0 +1,78 @@
+@import url(/assets/CSS/style.css);
+.product-details-container {
+  margin: 0px auto;
+  overflow: hidden;
+}
+.product-details-accordion-button {
+  background-color: rgb(248, 248, 248);
+  border-top: 1px solid rgb(224, 224, 224);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  transition: 0.4s;
+
+  line-height: 2.3125rem;
+  padding: 1.875rem 1.25rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+.content-accordion-button {
+  display: flex;
+  align-items: center;
+}
+.content-accordion-button h2 {
+  margin: 0;
+}
+.content-accordion-review-extra {
+  margin-left: 10px;
+}
+
+.product-details-accordion-panel {
+  background-color: white;
+}
+
+.product-details-accordion-content {
+  text-align: center;
+  color: var(--black);
+  margin-top: 0;
+  background-color: #6eb9e7;
+  margin: 0px auto;
+  width: 100%;
+  max-width: 100rem;
+}
+.product-details-accordion-content-x {
+  display: flex;
+  justify-content: center;
+}
+.product-details-accordion-video-content video {
+  width: 100rem;
+}
+.product-details-accordion-text-content {
+  text-align: center;
+  color: var(--black);
+  margin-top: 0;
+  background-color: #6eb9e7;
+  margin: 0px auto;
+  width: 100%;
+  max-width: 100rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-detail-accordion-text {
+  text-align: center;
+  width: 100%;
+  max-width: 50rem;
+}
+.accordion-red-bg {
+  background-color: rgb(161, 13, 29);
+  display: flex;
+}
+.product-details-accordion-content p {
+  margin: 0;
+}
+.accordion-double-div {
+  display: flex;
+  flex-direction: row;
+}
