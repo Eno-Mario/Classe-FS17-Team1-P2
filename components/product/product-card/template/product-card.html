@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="product-card.css" />
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -42,7 +45,6 @@
 
           <div class="product-card">
             <div class="product-card-left">
-              
               <div class="product-card-img">
                 <!-- carosello scorrevole
               !DA CAPIRE PERCHè C'è IL MARGINE -->
@@ -204,28 +206,57 @@ https://www.lego.com/cdn/cs/set/assets/blt2fd20c67e1437598/10306_v2_thumbnail.jp
                   </li>
                 </ul>
 
-
-                
-                <!-- Slider main container -->
-                <div class="mySwiper">
-                  <!-- Additional required wrapper -->
-                  <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=75&width=528&height=528&dpr=1 1x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=60&width=528&height=528&dpr=2 2x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=55&width=528&height=528&dpr=3 3x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=70&width=528&height=528&dpr=1.5 1.5x" alt=""></div>
-                    <div class="swiper-slide"><img src="https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=75&width=528&height=528&dpr=1 1x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=60&width=528&height=528&dpr=2 2x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=55&width=528&height=528&dpr=3 3x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=70&width=528&height=528&dpr=1.5 1.5x" alt=""></div>
-                    <div class="swiper-slide"><img src="https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=75&width=528&height=528&dpr=1 1x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=60&width=528&height=528&dpr=2 2x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=55&width=528&height=528&dpr=3 3x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=70&width=528&height=528&dpr=1.5 1.5x" alt=""></div>
-                    ...
+                <div class="product-card-swiper">
+                  <div class="product-card-swiper-button">
+                    <button>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="currentColor"><path d="M33 18H23c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h10c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1Zm-16 0H7c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h10c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1Zm16 16H23c-.55 0-1-.45-1-1V23c0-.55.45-1 1-1h10c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1Zm-16 0H7c-.55 0-1-.45-1-1V23c0-.55.45-1 1-1h10c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1Z"></path></svg>
+                      <span>Visualizza tutti</span>
+                    </button>
                   </div>
-                  <!-- If we need pagination -->
-                  <div class="swiper-pagination"></div>
 
-                  <!-- If we need navigation buttons -->
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
-              </div>
-              <div class="product-card-img-display">
-                <span class="product-card-img-number"></span>
-              </div>
+                  <div class="product-card-swiper-counter">
+                    <span>
+                      1
+                      <span>/</span>
+                      18
+                    </span>
+                  </div>
+                  <!-- Slider main container -->
+                  <div class="mySwiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <img
+                          src="https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=75&width=528&height=528&dpr=1 1x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=60&width=528&height=528&dpr=2 2x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=55&width=528&height=528&dpr=3 3x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=70&width=528&height=528&dpr=1.5 1.5x"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=75&width=528&height=528&dpr=1 1x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=60&width=528&height=528&dpr=2 2x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=55&width=528&height=528&dpr=3 3x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=70&width=528&height=528&dpr=1.5 1.5x"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=75&width=528&height=528&dpr=1 1x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=60&width=528&height=528&dpr=2 2x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=55&width=528&height=528&dpr=3 3x, https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?format=webply&fit=bounds&quality=70&width=528&height=528&dpr=1.5 1.5x"
+                          alt=""
+                        />
+                      </div>
+                      ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                </div>
+                <div class="product-card-img-display">
+                  <span class="product-card-img-number"></span>
+                </div>
               </div>
               <div class="product-card-attributes"></div>
             </div>
