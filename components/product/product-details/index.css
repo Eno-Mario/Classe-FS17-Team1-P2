@@ -28,9 +28,12 @@
   margin-left: 10px;
 }
 
-First accordion content C .product-details-accordion-panel {
+/* First accordion */
+.product-details-accordion-panel {
   background-color: white;
 }
+
+/* VIDEO DIV --- DIV1*/
 .product-details-accordion-video-content {
   display: flex;
   justify-content: center;
@@ -90,7 +93,7 @@ First accordion content C .product-details-accordion-panel {
   top: 50%;
   transform: translateY(-50%);
 }
-
+/* DIV WITH CARDS --- DIV6 */
 .accordion-red-bg {
   background-color: rgb(161, 13, 29);
 }
@@ -128,6 +131,8 @@ First accordion content C .product-details-accordion-panel {
   display: flex;
   flex-direction: row;
 }
+
+/* CAROUSEL DIV */
 .carousel-accordion-container {
   max-width: 82.5rem;
   padding: 2.5rem 1.25rem;
@@ -205,4 +210,86 @@ First accordion content C .product-details-accordion-panel {
   max-width: 100rem;
   padding-right: 2.5rem;
   padding-left: 2.5rem;
+}
+.accordion-review-header {
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  width: 100%;
+  max-width: 100rem;
+  padding: 0px 1.25rem;
+  margin: 0px auto;
+
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+.full-review-content-title {
+  display: flex;
+  flex-direction: row;
+}
+.full-review-content-title img {
+  margin-right: 0.55rem;
+}
+.full-review-doublediv {
+  display: flex;
+  flex-direction: row;
+}
+
+.review-left-content {
+  display: block;
+  padding: 0px 1.25rem 0px 0px;
+}
+.left-content-button {
+  margin-bottom: 0.9375rem;
+  padding: 0px 2.5rem 0px 0.9375rem;
+  margin-left: -0.9375rem;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.left-content-buttons-bar {
+  width: 12rem;
+  height: 1.25rem;
+  border-radius: 0.99rem;
+  background-color: rgb(224, 224, 224);
+  overflow: hidden;
+  margin: 0.75rem;
+  background-color: rgb(255, 207, 0);
+}
+.full-review-message {
+  width: 100%;
+  padding: 1.25rem 0px;
+  border-top: 1px solid rgb(224, 224, 224);
+  margin-bottom: 12px;
+}
+.full-review-right {
+}
+.review.right-icons {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.review-icon-legobrick {
+  width: 1.5625rem;
+  height: 1.5625rem;
+  margin-right: 0.0625rem;
+}
+.full-review-button {
+  display: inline-block;
+  width: auto;
+  height: fit-content;
+  padding: 0.5rem;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  border-collapse: collapse;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  background-color: rgb(0, 109, 183);
+  color: rgb(255, 255, 255);
+  border-color: rgb(0, 109, 183);
 }
