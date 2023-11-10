@@ -1,7 +1,9 @@
 /* Stile Base bottone */
 
 .standard-button-round {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   min-height: var(--line-height-s5);
   padding: 0;
@@ -28,7 +30,7 @@
 /*proprietà elementi*/
 
 .bag-icon {
-  padding-left: 1.2rem;
+  padding-right: 0.758rem;
   width: var(--icon-sizing-md);
   height: var(--icon-sizing-md);
 }
@@ -93,4 +95,21 @@
 
 .hidden {
   display: none;
+}
+.info-techniques-product svg {
+  color: rgb(117, 117, 117);
+  width: 100%;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.product-card-dimenzioni{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.product-card-dimenzioni{
+      color: rgb(44, 44, 44);
+    font-size: 0.75rem;
+
 }
