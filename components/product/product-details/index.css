@@ -128,7 +128,17 @@ First accordion content C .product-details-accordion-panel {
   display: flex;
   flex-direction: row;
 }
-
+.carousel-accordion-container {
+  max-width: 82.5rem;
+  padding: 2.5rem 1.25rem;
+  margin: 0px auto;
+}
+.carousel-title {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  text-align: left;
+}
 .accordion-button {
   width: auto;
   /* margin/padding-button */
