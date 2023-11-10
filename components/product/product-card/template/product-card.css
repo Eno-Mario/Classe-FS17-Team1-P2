@@ -9,12 +9,14 @@
   align-items: center;
   list-style: none;
   font-size: 0.875rem;
+  
 }
 .product-card-list li svg {
   padding: 0 10px;
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 10px;
   color: rgb(117, 117, 117);
+  
 }
 .product-card {
   margin: 0 20px;
