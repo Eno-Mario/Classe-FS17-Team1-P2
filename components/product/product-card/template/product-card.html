@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="/components/atom/tag/tag.css" />
     <link
       rel="stylesheet"
+      href="/components/atom/standard-button-round/standard-button-round.css"
+    />
+
+    <link
+      rel="stylesheet"
       href="/components/atom/atom-product-attributes/atom-product-attributes.css"
     />
     <link
@@ -51,8 +56,7 @@
           <div class="product-card">
             <div class="product-card-left">
               <div class="product-card-img">
-                <!-- carosello scorrevole
-              !DA CAPIRE PERCHè C'è IL MARGINE -->
+                <!-- carosello scorrevole-->
                 <ul class="product-card-carrosel">
                   <li>
                     <button class="product-card-carrosel-img">
@@ -458,8 +462,146 @@ https://www.lego.com/cdn/cs/set/assets/blt2fd20c67e1437598/10306_v2_thumbnail.jp
             <div class="product-card-right">
               <div class="product-card-tag-reviews">
                 <div class="atom-product-tag">
-                  <span class="atom-product-tag-yellow">Ultima occasione</span>
+                  <span class="atom-product-tag-yellow"
+                    >Difficile da trovare</span
+                  >
                   <span class="atom-product-tag-red">-30%</span>
+                </div>
+                <div class="product-card-revies-star">
+                  <div class="product-card-revies-star-img">
+                    <img
+                      src="https://www.lego.com/_next/static/images/starActive-8f24279ea4ef0bb5bb5e8af9fbab2aab.svg"
+                    />
+                    <img
+                      src="https://www.lego.com/_next/static/images/starActive-8f24279ea4ef0bb5bb5e8af9fbab2aab.svg"
+                    />
+                    <img
+                      src="https://www.lego.com/_next/static/images/starActive-8f24279ea4ef0bb5bb5e8af9fbab2aab.svg"
+                    />
+                    <img
+                      src="https://www.lego.com/_next/static/images/starActive-8f24279ea4ef0bb5bb5e8af9fbab2aab.svg"
+                    />
+                    <img
+                      src="https://www.lego.com/_next/static/images/halfStar-9b6a3da7ddc2090ed53e3a4c39cfa182.svg"
+                    />
+                  </div>
+                  <button>7 recensioni</button>
+                </div>
+              </div>
+              <div class="product-card-right-icons">
+                <span>Atari® 2600</span>
+                <a href="#">
+                  <img
+                    src="https://www.lego.com/cdn/cs/set/assets/blt7c9332ed5ec6017d/icons-logo-pos-600w.png?format=png&height=40&dpr=1"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="product-card-price">
+                <span class="product-card-discount">239,99 €</span>
+                <span class="product-card-price">167,99 €</span>
+              </div>
+              <span class="product-card-disponibile"> Disponibile ora </span>
+              <div class="product-card-limit">
+                <div class="product-card-quantity">
+                  <button class="product-card-quantity-minus">
+                    <svg
+                      class="minus"
+                      width="14px"
+                      height="2px"
+                      viewBox="0 0 14 2"
+                      aria-hidden="true"
+                    >
+                      <polygon
+                        points="14 2 0 2 0 -6.03961325e-14 14 -6.03961325e-14"
+                      ></polygon>
+                    </svg>
+                  </button>
+                  <input type="number" />
+                  <button class="product-card-quantity-plus">
+                    <svg
+                      class="add"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14px"
+                      height="14px"
+                      viewBox="0 0 14 14"
+                      aria-hidden="true"
+                    >
+                      <polygon points="14 8 0 8 0 6 14 6"></polygon>
+                      <rect
+                        fill="black"
+                        fill-rule="nonzero"
+                        x="6"
+                        y="0"
+                        width="2"
+                        height="14"
+                      ></rect>
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-card-limit-number">
+                  <span>Limite 5</span>
+                  <button>i</button>
+                </div>
+              </div>
+              <div class="product-card-cart">
+                <button
+                  class="standard-button standard-button-round button-orange"
+                >
+                  <div class="spinner-container hidden">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="20"
+                      viewBox="0 0 16 20"
+                    >
+                      <g fill="currentColor" fill-rule="evenodd">
+                        <path
+                          d="M4 3.512v5.804c0 .377.349.684.779.684.43 0 .779-.307.779-.684V3.512C5.558 2.33 6.653 1.368 8 1.368c1.347 0 2.442.962 2.442 2.144v5.804c0 .377.35.684.78.684.43 0 .778-.307.778-.684V3.512C12 1.575 10.206 0 8 0S4 1.575 4 3.512z"
+                        ></path>
+                        <path
+                          d="M2.46 6.33c-.269 0-.489.194-.5.441L1.435 18.19a.436.436 0 00.131.332.52.52 0 00.348.149h12.151c.276 0 .501-.207.501-.462l-.525-11.436c-.011-.248-.23-.442-.5-.442H2.46zM14.448 20l-12.974-.001a1.591 1.591 0 01-1.064-.462 1.357 1.357 0 01-.408-1.03L.56 6.372C.595 5.602 1.277 5 2.11 5h11.78c.835 0 1.516.602 1.551 1.372l.56 12.197c0 .789-.697 1.431-1.553 1.431z"
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="container-content-standard-button">
+                    <img class="bag-icon" src="bag.svg" alt="bag-icon" />
+                    <div class="testo">Aggiungi al Carrello</div>
+                  </div>
+                </button>
+                <button class="product-card-like">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 40 40"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M20.767 37.673a1.104 1.104 0 0 1-1.567 0l-15.867-16A11.583 11.583 0 0 1 0 13.574c.027-2.336.744-4.61 2.058-6.53a11.591 11.591 0 0 1 5.316-4.247 11.432 11.432 0 0 1 6.751-.506A11.533 11.533 0 0 1 20 5.697a11.533 11.533 0 0 1 5.875-3.407c2.25-.517 4.601-.34 6.751.506a11.59 11.59 0 0 1 5.316 4.246A11.813 11.813 0 0 1 40 13.573a11.568 11.568 0 0 1-.871 4.38 11.453 11.453 0 0 1-2.462 3.71l-15.9 16.01ZM11.544 5.37a8.125 8.125 0 0 0-5.776 2.386 8.332 8.332 0 0 0-2.435 5.816 8.178 8.178 0 0 0 .602 3.105c.4.984.989 1.88 1.732 2.633L20 33.724 34.344 19.3a8.176 8.176 0 0 0 2.323-5.727 8.392 8.392 0 0 0-1.71-4.994 8.218 8.218 0 0 0-4.334-2.946 8.126 8.126 0 0 0-5.211.29 8.25 8.25 0 0 0-3.99 3.408L20 11.705l-1.422-2.374a8.235 8.235 0 0 0-3.003-2.915 8.109 8.109 0 0 0-4.03-1.045Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="set-tribute">
+                <div class="set-tribute-img">
+                  <img
+                    class="santa-claus"
+                    srcset="
+                      https://www.lego.com/cdn/cs/set/assets/blt7747df3460c03390/40595-GWP-202311-PDP-Promo-Badge.png?fit=bounds&amp;format=png&amp;width=120&amp;height=60&amp;dpr=1,
+                      https://www.lego.com/cdn/cs/set/assets/blt7747df3460c03390/40595-GWP-202311-PDP-Promo-Badge.png?fit=bounds&amp;format=png&amp;width=120&amp;height=60&amp;dpr=1.5 1.5x,
+                      https://www.lego.com/cdn/cs/set/assets/blt7747df3460c03390/40595-GWP-202311-PDP-Promo-Badge.png?fit=bounds&amp;format=png&amp;width=120&amp;height=60&amp;dpr=2   2x
+                    "
+                    src="https://www.lego.com/cdn/cs/set/assets/blt7747df3460c03390/40595-GWP-202311-PDP-Promo-Badge.png?fit=bounds&amp;format=png&amp;width=120&amp;height=60&amp;dpr=1"
+                    alt=""
+                    class="Imagestyles__Img-sc-1qqdbhr-0 ckQZCr TargetedPromotionstyles__StyledImage-qjzds-2 iacLSQ"
+                  />
+                </div>
+                <div class="set-tribute-text">
+                  <span>
+                    Ottieni un set Tributo a Galileo Galilei LEGO® Ideas con gli
+                    acquisti LEGO® a partire da 130 €.*
+                  </span>
+                  <a href="#">Scopri di più</a>
                 </div>
               </div>
             </div>
