@@ -9,12 +9,13 @@
   <body>
     <div class="product-details-container">
       <!-- Primo accordion tab -->
-      <button class="product-details-accordion-button">
+      <div class="product-details-accordion-holder"><button class="product-details-accordion-button">
         <div class="content-accordion-button">
           <h2>Caratteristiche</h2>
         </div>
         <div>ICONA DA CREARE</div>
-      </button>
+      </button></div>
+      
       <!-- Content inside first tab -->
       <div class="product-details-accordion-panel">
         <div class="product-details-accordion-video-content" name="DIV1">
@@ -109,9 +110,9 @@
             alt=""
           />
           <div class="product-detail-accordion-left-side-content">
-            <h1>
+            <h2>
               Un'aggiunta festosa a qualsiasi collezione Villagio invernale
-            </h1>
+            </h2>
             <button class="accordion-button">
               Compra ora
               <svg
@@ -139,7 +140,7 @@
           </div>
           <div class="right-side-accordion-content">
             <div class="product-detail-accordion-right-side-content">
-              <h1>Leggi tutto sulla collezione Villaggio invernale LEGO®</h1>
+              <h2>Leggi tutto sulla collezione Villaggio invernale LEGO®</h2>
               <button class="accordion-button">
                 Iscriviti ora
                 <svg
@@ -164,7 +165,21 @@
           <!-- Carousel space here -->
           <div class="carousel-accordion-container">
             <div class="carousel-title">
-              <h2>Scopri altri set stagionali Visualizza tutti</h2>
+              <h1>Scopri altri set stagionali </h1>
+              <p>Visualizza tutti</p>
+              <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 18 28"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="carousel-link-svg"
+                >
+                  <path
+                    d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
             </div>
             <!-- Actual Carousel component -->
             <div class="carousel-container">
@@ -1141,12 +1156,14 @@
       </div>
 
       <!-- Secondo accordion tab -->
+      <div class="product-details-accordion-holder">
       <button class="product-details-accordion-button">
         <div class="content-accordion-button">
           <h2>Dettagli del prodotto</h2>
         </div>
         <div>ICONA DA CREARE</div>
       </button>
+    </div>
       <!-- Content inside second tab -->
       <div class="product-details-accordion-panel">
         <div class="product-details-list-container">
@@ -1239,6 +1256,7 @@
       </div>
 
       <!-- Terzo accordion tab -->
+      <div class="product-details-accordion-holder">
       <button class="product-details-accordion-button">
         <div class="content-accordion-button">
           <h2>Recensioni di Prodotti</h2>
@@ -1253,6 +1271,7 @@
         </div>
         <div>ICONA DA CREARE</div>
       </button>
+    </div>
       <!-- Content inside third tab -->
       <div class="product-details-accordion-panel">
         <div class="accordion-review-header">
@@ -1269,7 +1288,7 @@
             </div>
 
             <div>
-              <span>98% degli autori consiglierebbe questo prodotto</span>
+              <span>96% degli autori consiglierebbe questo prodotto</span>
             </div>
             <div class="full-review-doublediv">
               <div class="full-review-left">
@@ -1277,27 +1296,37 @@
                 <div class="review-left-content">
                   <div class="left-content-button">
                     5 stelle
-                    <div class="left-content-buttons-bar"></div>
+                    <div class="left-content-buttons-bar">
+                      <div class="buttons-bar-100"></div>
+                    </div>
                     109 recensioni
                   </div>
                   <div class="left-content-button">
                     4 stelle
-                    <div class="left-content-buttons-bar"></div>
+                    <div class="left-content-buttons-bar">
+                      <div class="buttons-bar-100"></div>
+                    </div>
                     17 recensioni
                   </div>
                   <div class="left-content-button">
                     3 stelle
-                    <div class="left-content-buttons-bar"></div>
+                    <div class="left-content-buttons-bar">
+                      <div class="buttons-bar-44"></div>
+                    </div>
                     3 recensioni
                   </div>
                   <div class="left-content-button">
                     2 stelle
-                    <div class="left-content-buttons-bar"></div>
+                    <div class="left-content-buttons-bar">
+                      <div class="buttons-bar-11"></div>
+                    </div>
                     0 recensioni
                   </div>
                   <div class="left-content-button">
                     1 stelle
-                    <div class="left-content-buttons-bar"></div>
+                    <div class="left-content-buttons-bar">
+                      <div class="buttons-bar-0"></div>
+                    </div>
                     0 recensioni
                   </div>
                 </div>
@@ -1332,7 +1361,7 @@
                     alt=""
                     width="15px"
                   />
-                  4.6
+                  4.5
                 </div>
                 <p>Rapporto qualità prezzo</p>
                 <div class="review-right-icons">
@@ -1368,7 +1397,7 @@
             </div>
           </div>
           <div class="full-review-button">
-            <button class="full-review-button">Invia recensione</button>
+            <button class="review-button">Invia recensione</button>
           </div>
           <div class="full-review-message">
             <span

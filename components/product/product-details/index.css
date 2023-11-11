@@ -2,28 +2,35 @@
 
 /* Accordion menus CSS */
 .product-details-container {
-  margin: 0px auto;
+  margin: 0 auto;
   overflow: hidden;
 }
+
 .product-details-accordion-button {
-  background-color: rgb(248, 248, 248);
-  border-top: 1px solid rgb(224, 224, 224);
-  cursor: pointer;
-  padding: 18px;
   width: 100%;
-  transition: 0.4s;
-  line-height: 2.3125rem;
-  padding: 1.875rem 1.25rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding: 1.875rem;
+  width: 100%;
+  max-width: 100rem;
+  margin: 0px auto;
   display: flex;
   justify-content: space-between;
+}
+.product-details-accordion-holder{
+  width: 100%;
+  background: rgb(248, 248, 248);
+  border-top: 1px solid rgb(224, 224, 224);
 }
 .content-accordion-button {
   display: flex;
   align-items: center;
 }
+
 .content-accordion-button h2 {
   margin: 0;
 }
+
 .content-accordion-review-extra {
   margin-left: 10px;
 }
@@ -33,25 +40,28 @@
   background-color: white;
 }
 
-/* VIDEO DIV --- DIV1*/
+/* VIDEO DIV --- DIV1 */
 .product-details-accordion-video-content {
   display: flex;
   justify-content: center;
 }
+
 .product-details-accordion-video-content video {
   width: 100rem;
 }
+
 .product-details-accordion-content {
   position: relative;
   text-align: center;
   color: var(--black);
   margin-top: 0;
   background-color: #6eb9e7;
-  margin: 0px auto;
+  margin: 0 auto;
   width: 100%;
   max-width: 100rem;
 }
-/* DIV2 CSS */
+
+/* Accordion 2 CSS */
 .product-details-accordion-text-content {
   color: var(--black);
   background-color: #6eb9e7;
@@ -74,8 +84,8 @@
   max-width: 35%;
   padding: 0px;
   background-color: transparent;
-  text-align: right;
-  right: 6.75rem;
+  text-align: left;
+  right: 1rem;
   color: white;
   top: 50%;
   transform: translateY(-50%);
@@ -128,8 +138,12 @@
   inset: 0px;
 }
 .accordion-double-div {
+  background-color:rgb(124, 19, 27);
   display: flex;
   flex-direction: row;
+}
+
+.right-side-accordion-content{
 }
 
 /* CAROUSEL DIV */
@@ -141,8 +155,17 @@
 .carousel-title {
   display: flex;
   flex-wrap: nowrap;
-  flex-direction: column;
+  flex-direction: row;
   text-align: left;
+  gap:10px;
+  align-items: center;
+}
+.carousel-title p{
+  font-size: 14;
+  text-decoration: underline;
+}
+.carousel-link-svg{
+  margin-left: 0;
 }
 .accordion-button {
   width: auto;
@@ -166,33 +189,23 @@
   align-items: center;
 }
 
+
 .accordion-button:hover {
   background-color: var(--black);
   color: var(--white);
 }
 .product-details-list-container {
   padding: 1.125rem 0px;
-
-  width: 100%;
+  width:auto;
   max-width: 100rem;
   margin: 0px auto;
   display: flex;
+  padding-inline:1.25rem;
 }
 .detail-list-main-content {
   width: 60%;
 }
-.detail-list-main-content p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-.detail-list-main-content li {
-  list-style-type: disc;
-  padding-bottom: 1.5625rem;
-  margin-bottom: 0.75rem;
-}
+
 .product-list-details-image {
   width: 40%;
   flex: 1 1 0%;
@@ -205,6 +218,33 @@
   display: inline-block;
   vertical-align: middle;
 }
+
+@media (max-width: 901px){
+  .product-details-list-container{
+    flex-direction: column-reverse;
+  }
+  .detail-list-main-content{
+    width: 100%;
+  }
+  .product-list-details-image{
+    width: 100%;
+  }
+}
+
+.detail-list-main-content p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.detail-list-main-content li {
+  list-style-type: disc;
+  padding-bottom: 1.5625rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Terzo accordion CSS */
 .container-review {
   margin: 0px auto;
   max-width: 100rem;
@@ -222,6 +262,12 @@
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
+}
+.full-review-content p{
+margin-bottom: 0;
+}
+.full-review-content span{
+  color:green;
 }
 .full-review-content-title {
   display: flex;
@@ -248,14 +294,37 @@
   -webkit-box-align: center;
   align-items: center;
 }
-
+/* Bars and filled parts */
 .left-content-buttons-bar {
-  width: 12rem;
+  width: 12rem; /* Total width of the progress bar */
   height: 1.25rem;
   border-radius: 0.99rem;
   background-color: rgb(224, 224, 224);
   overflow: hidden;
   margin: 0.75rem;
+  position: relative;
+  
+}
+
+.buttons-bar-100 {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 207, 0);
+}
+
+.buttons-bar-44 {
+  height:100%;
+  width: 44%;
+  background-color: rgb(255, 207, 0);
+}
+.buttons-bar-11 {
+  height:100%;
+  width: 11%;
+  background-color: rgb(255, 207, 0);
+}
+
+.buttons-bar-0 {
+  width: 0;
   background-color: rgb(255, 207, 0);
 }
 .full-review-message {
@@ -265,26 +334,27 @@
   margin-bottom: 12px;
 }
 .full-review-right {
+  border-left: 1px solid rgb(224, 224, 224);
+  padding-left:1.25rem;
 }
-.review.right-icons {
+.review-right-icons {
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
 }
 .review-icon-legobrick {
-  width: 1.5625rem;
-  height: 1.5625rem;
-  margin-right: 0.0625rem;
+
+  margin: 0.0625rem;
+  padding: 0.2rem;
 }
 .full-review-button {
+  margin-top: 18px;
   display: inline-block;
   width: auto;
   height: fit-content;
-  padding: 0.5rem;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 4px;
-  border-collapse: collapse;
+  
+
+}
+.review-button{
   text-align: center;
   font-weight: 500;
   font-size: 0.875rem;
@@ -292,4 +362,8 @@
   background-color: rgb(0, 109, 183);
   color: rgb(255, 255, 255);
   border-color: rgb(0, 109, 183);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  padding:0.5rem
 }

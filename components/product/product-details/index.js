@@ -2,7 +2,7 @@
     FASE DI PREPARAZIONE
 -------------------------- */
 const accordionButtons = document.getElementsByClassName(
-  "product-details-accordion-button"
+  "product-details-accordion-holder"
 );
 /* CAROUSEL JS */
 const carousel = document.querySelectorAll(".carousel");
