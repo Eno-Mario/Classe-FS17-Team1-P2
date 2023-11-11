@@ -61,7 +61,6 @@
   max-width: 100rem;
 }
 
-/* Accordion 2 CSS */
 .product-details-accordion-text-content {
   color: var(--black);
   background-color: #6eb9e7;
@@ -77,8 +76,15 @@
   max-width: 50rem;
   padding: 16px;
 }
+.product-detail-text-holder{
+  font-size: clamp(1.25rem,.979592vw + 1.02041rem,2rem);
+}
+.product-detail-text-holder :nth-child(3){
+font-size:clamp(.875rem,.163265vw + .836735rem,1rem);
+line-height: 1.5;
+text-align: center;}
 .product-detail-accordion-right-side-content {
-  font-size: 1.25rem;
+  font-size: 1.335rem;
   line-height: 3.125rem;
   position: absolute;
   max-width: 35%;
@@ -91,7 +97,7 @@
   transform: translateY(-50%);
 }
 .product-detail-accordion-left-side-content {
-  font-size: 1.25rem;
+  font-size: 1.335rem;
   line-height: 3.125rem;
   position: absolute;
   max-width: 35%;
@@ -103,6 +109,47 @@
   top: 50%;
   transform: translateY(-50%);
 }
+@media(max-width: 901px){
+  .product-detail-accordion-left-side-content{
+    left:3.75rem;
+    font-size: 0.85rem;
+  }
+  .product-detail-accordion-right-side-content{
+    right: 3rem;
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 600px) {
+  .accordion-side-text {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(124, 19, 27);
+  }
+  .accordion-left-size-text{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(10, 50, 32);
+  }
+  .accordion-side-text img{
+    content:url("https://www.lego.com/cdn/cs/set/assets/blt292c492185648c5c/10325-202310-PDP-Hero-Standard-Small-1.jpg?fit=crop&format=webply&quality=80&width=600&height=600&dpr=2")
+  }
+    .accordion-left-side-text img{
+    content:url("https://www.lego.com/cdn/cs/set/assets/blte82aec4a23cb635f/10325-202310-PDP-Hero-Standard-Small-2.jpg?fit=crop&format=webply&quality=80&width=600&height=600&dpr=2")
+  }
+  .product-detail-accordion-right-side-content {
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+    right: 0;
+  }
+  .product-detail-accordion-left-side-content {
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+    right: 0;
+  }
+}
+
 /* DIV WITH CARDS --- DIV6 */
 .accordion-red-bg {
   background-color: rgb(161, 13, 29);
@@ -116,6 +163,7 @@
   flex-wrap: nowrap;
 }
 .accordion-card {
+  font-size: 1.25rem;
   width: 25%;
   height: 25%;
   margin-right: 1.25rem;
