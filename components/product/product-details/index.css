@@ -109,6 +109,13 @@ text-align: center;}
   top: 50%;
   transform: translateY(-50%);
 }
+
+.accordion-double-div {
+  background-color:rgb(124, 19, 27);
+  display: flex;
+  flex-direction: row;
+}
+
 @media(max-width: 901px){
   .product-detail-accordion-left-side-content{
     left:3.75rem;
@@ -130,11 +137,29 @@ text-align: center;}
     flex-direction: column;
     background-color: rgb(10, 50, 32);
   }
+  .accordion-side-button{
+    display: flex;
+    flex-direction: column;
+  }.accordion-side-button2{
+    display: flex;
+    flex-direction: column;
+  }
+  .accordion-double-div {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+  }
   .accordion-side-text img{
     content:url("https://www.lego.com/cdn/cs/set/assets/blt292c492185648c5c/10325-202310-PDP-Hero-Standard-Small-1.jpg?fit=crop&format=webply&quality=80&width=600&height=600&dpr=2")
   }
     .accordion-left-side-text img{
     content:url("https://www.lego.com/cdn/cs/set/assets/blte82aec4a23cb635f/10325-202310-PDP-Hero-Standard-Small-2.jpg?fit=crop&format=webply&quality=80&width=600&height=600&dpr=2")
+  }
+  .accordion-side-button img{
+    content:url("https://www.lego.com/cdn/cs/set/assets/blt4aaf7ef599a9d81c/10325-202310-PDP-Hero-Standard-Small-3.jpg?fit=crop&format=webply&quality=80&width=600&height=600&dpr=2")
+  }
+  .accordion-side-button2 img{
+    content: url("https://www.lego.com/cdn/cs/set/assets/blt450376755b8f5e1a/10325-PDP-202310-Sidekick-Standard.jpg?fit=crop&format=jpg&quality=80&width=800&height=426&dpr=1");
   }
   .product-detail-accordion-right-side-content {
     position: relative;
@@ -147,6 +172,12 @@ text-align: center;}
     max-width: 100%;
     text-align: center;
     right: 0;
+    left:0;
+    background-color: rgb(10, 50, 32);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -184,11 +215,6 @@ text-align: center;}
   /*   position: absolute;
  */
   inset: 0px;
-}
-.accordion-double-div {
-  background-color:rgb(124, 19, 27);
-  display: flex;
-  flex-direction: row;
 }
 
 .right-side-accordion-content{
