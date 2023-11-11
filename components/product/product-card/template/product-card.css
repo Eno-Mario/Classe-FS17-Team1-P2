@@ -253,6 +253,7 @@
   border-radius: 5px 0px 0px 5px;
   justify-content: center;
 }
+
 .product-card-quantity-plus {
   flex-grow: 1;
   height: 100%;
@@ -385,6 +386,9 @@
 }
 .product-card-consegne span {
   padding-right: 5rem;
+}
+.product-card-consegne span:hover{
+  color: rgb(0, 109, 183);
 }
 .product-card-arrow {
   color: rgb(117, 117, 117);
