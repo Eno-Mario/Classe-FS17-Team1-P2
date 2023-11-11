@@ -1,5 +1,6 @@
 .atom-product-tag {
-  width: 50%;
+  width: 100%;
+  max-width:fit-content;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -14,7 +15,7 @@
 .atom-product-tag-red {
   display: inline-block;
   padding: 0 10px;
-  background-color: var(--red);
+  background-color: rgb(208, 2, 27);;
   color: var(--white);
   font-weight: var(--font-weight-bold);
 }
