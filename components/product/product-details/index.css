@@ -228,6 +228,16 @@ text-align: center;}
 .accordion-card-holder-carousel{
   display: none;
 }
+.accordion-carousel-text{
+  color:white;
+  font-size: 20px;
+  padding-top:20px;
+  padding-bottom:15px;
+  padding-inline: 8px;
+}
+.no-border{
+  border: none;
+}
 /* Manage accordion card holder with carousel function */
 @media (max-width:901px){
   .accordion-card-holder{
@@ -236,6 +246,7 @@ text-align: center;}
   .accordion-card-holder-carousel{
     display: block;
   }
+  
 }
 .right-side-accordion-content{
 }
