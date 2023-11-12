@@ -161,11 +161,19 @@ text-align: center;}
   .accordion-side-button2 img{
     content: url("https://www.lego.com/cdn/cs/set/assets/blt450376755b8f5e1a/10325-PDP-202310-Sidekick-Standard.jpg?fit=crop&format=jpg&quality=80&width=800&height=426&dpr=1");
   }
+  .accordion-bottom-image img{
+    content: url("https://www.lego.com/cdn/cs/set/assets/bltd6cfe38870366e41/10325-202310-PDP-Hero-Short-Small.jpg?fit=crop&format=webply&quality=80&width=600&height=264&dpr=2")
+  }
   .product-detail-accordion-right-side-content {
     position: relative;
     max-width: 100%;
     text-align: center;
     right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transform: none
   }
   .product-detail-accordion-left-side-content {
     position: relative;
@@ -178,6 +186,7 @@ text-align: center;}
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    transform: none
   }
 }
 
@@ -216,7 +225,18 @@ text-align: center;}
  */
   inset: 0px;
 }
-
+.accordion-card-holder-carousel{
+  display: none;
+}
+/* Manage accordion card holder with carousel function */
+@media (max-width:901px){
+  .accordion-card-holder{
+    display: none;
+  }
+  .accordion-card-holder-carousel{
+    display: block;
+  }
+}
 .right-side-accordion-content{
 }
 
@@ -244,7 +264,7 @@ text-align: center;}
 .accordion-button {
   width: auto;
   /* margin/padding-button */
-  margin-top: 1.25rem;
+  margin-block: 1.25rem;
   margin-left: 0.625rem;
   margin-right: 0.625rem;
   padding: 0.625rem 1.125rem;
