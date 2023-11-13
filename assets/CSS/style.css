@@ -27,3 +27,5 @@
 @import url(/components/store/store-checkbox-container/store-checkbox-container.css);
 @import url(/components/store/store-top/storeTop.css);
 @import url(/components/store/store/index.css);
+@import url(/components/product/product-card/template/product-card.css);
+@import url(/components/product/product-details/index.css);
