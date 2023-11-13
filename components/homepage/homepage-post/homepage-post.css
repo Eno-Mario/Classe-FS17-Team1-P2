@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
   cursor: pointer;
   scroll-snap-align: start; /* Imposta l'allineamento snap sulla parte iniziale dell'elemento */
   margin-bottom: 1.5rem;
   width: 100%;
+  min-width: 20.5rem;
 }
 .atom-homepage-post:hover .atom-homepage-post-buy-now {
   text-decoration: underline;
