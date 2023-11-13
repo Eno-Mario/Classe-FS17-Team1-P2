@@ -1,14 +1,13 @@
 .newCategory {
   max-width: 100rem;
   margin: 0px auto;
-  background-color: var(--red);
 }
 
-.newCategory li {
+.newCategory li{
   list-style: none;
 }
 
-.markup-container .markup {
+.markup-container .markup{
   color: white;
 }
 .principalCard {
@@ -18,7 +17,6 @@
   justify-content: center;
   line-height: 1.1875rem;
   padding: 0.3125rem;
-  margin: 0;
 }
 
 .newArticle a {
