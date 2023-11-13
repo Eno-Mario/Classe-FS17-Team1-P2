@@ -2,6 +2,8 @@
   display: flex;
 
   padding-left: 7%;
+  margin-top: 0;
+  padding-top: 3vh;
 }
 
 .container-total-carousel {
