@@ -3,6 +3,13 @@
   margin: 0px auto;
 }
 
+.newCategory li{
+  list-style: none;
+}
+
+.markup-container .markup{
+  color: white;
+}
 .principalCard {
   display: flex;
   flex-wrap: wrap;
