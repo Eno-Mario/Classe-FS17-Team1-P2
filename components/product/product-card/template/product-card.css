@@ -293,17 +293,7 @@
   font-size: 0.875rem;
   width: 100%;
 }
-.product-card-limit-number button {
-  display: inline;
-  font-size: 0.75rem;
-  color: rgb(117, 117, 117);
-  border: 1px solid rgb(117, 117, 117);
-  border-radius: 1000px;
-  width: 100%;
-  max-width: 0.85rem;
-  max-height: 0.85rem;
-  margin: 0 5px;
-}
+
 .product-card-cart {
   display: flex;
   align-items: center;
