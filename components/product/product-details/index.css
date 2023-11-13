@@ -17,7 +17,7 @@
   display: flex;
   justify-content: space-between;
 }
-.product-details-accordion-holder{
+.product-details-accordion-holder {
   width: 100%;
   background: rgb(248, 248, 248);
   border-top: 1px solid rgb(224, 224, 224);
@@ -61,7 +61,6 @@
   max-width: 100rem;
 }
 
-/* Accordion 2 CSS */
 .product-details-accordion-text-content {
   color: var(--black);
   background-color: #6eb9e7;
@@ -77,8 +76,16 @@
   max-width: 50rem;
   padding: 16px;
 }
+.product-detail-text-holder {
+  font-size: clamp(1.25rem, 0.979592vw + 1.02041rem, 2rem);
+}
+.product-detail-text-holder :nth-child(3) {
+  font-size: clamp(0.875rem, 0.163265vw + 0.836735rem, 1rem);
+  line-height: 1.5;
+  text-align: center;
+}
 .product-detail-accordion-right-side-content {
-  font-size: 1.25rem;
+  font-size: 1.335rem;
   line-height: 3.125rem;
   position: absolute;
   max-width: 35%;
@@ -91,7 +98,7 @@
   transform: translateY(-50%);
 }
 .product-detail-accordion-left-side-content {
-  font-size: 1.25rem;
+  font-size: 1.335rem;
   line-height: 3.125rem;
   position: absolute;
   max-width: 35%;
@@ -103,6 +110,88 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
+.accordion-double-div {
+  background-color: rgb(124, 19, 27);
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 901px) {
+  .product-detail-accordion-left-side-content {
+    left: 3.75rem;
+    font-size: 0.85rem;
+  }
+  .product-detail-accordion-right-side-content {
+    right: 3rem;
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 600px) {
+  .accordion-side-text {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(124, 19, 27);
+  }
+  .accordion-left-size-text {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(10, 50, 32);
+  }
+  .accordion-side-button {
+    display: flex;
+    flex-direction: column;
+  }
+  .accordion-side-button2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .accordion-double-div {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+  }
+  .accordion-side-text img {
+    content: url("https://www.lego.com/cdn/cs/set/assets/blt292c492185648c5c/10325-202310-PDP-Hero-Standard-Small-1.jpg?fit=crop&format=webply&quality=80&width=600&height=600&dpr=2");
+  }
+  .accordion-left-side-text img {
+    content: url("https://www.lego.com/cdn/cs/set/assets/blte82aec4a23cb635f/10325-202310-PDP-Hero-Standard-Small-2.jpg?fit=crop&format=webply&quality=80&width=600&height=600&dpr=2");
+  }
+  .accordion-side-button img {
+    content: url("https://www.lego.com/cdn/cs/set/assets/blt4aaf7ef599a9d81c/10325-202310-PDP-Hero-Standard-Small-3.jpg?fit=crop&format=webply&quality=80&width=600&height=600&dpr=2");
+  }
+  .accordion-side-button2 img {
+    content: url("https://www.lego.com/cdn/cs/set/assets/blt450376755b8f5e1a/10325-PDP-202310-Sidekick-Standard.jpg?fit=crop&format=jpg&quality=80&width=800&height=426&dpr=1");
+  }
+  .accordion-bottom-image img {
+    content: url("https://www.lego.com/cdn/cs/set/assets/bltd6cfe38870366e41/10325-202310-PDP-Hero-Short-Small.jpg?fit=crop&format=webply&quality=80&width=600&height=264&dpr=2");
+  }
+  .product-detail-accordion-right-side-content {
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transform: none;
+  }
+  .product-detail-accordion-left-side-content {
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+    right: 0;
+    left: 0;
+    background-color: rgb(10, 50, 32);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transform: none;
+  }
+}
+
 /* DIV WITH CARDS --- DIV6 */
 .accordion-red-bg {
   background-color: rgb(161, 13, 29);
@@ -116,6 +205,7 @@
   flex-wrap: nowrap;
 }
 .accordion-card {
+  font-size: 1.25rem;
   width: 25%;
   height: 25%;
   margin-right: 1.25rem;
@@ -137,13 +227,29 @@
  */
   inset: 0px;
 }
-.accordion-double-div {
-  background-color:rgb(124, 19, 27);
-  display: flex;
-  flex-direction: row;
+.accordion-card-holder-carousel {
+  display: none;
 }
-
-.right-side-accordion-content{
+.accordion-carousel-text {
+  color: white;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-inline: 8px;
+}
+.no-border {
+  border: none;
+}
+/* Manage accordion card holder with carousel function */
+@media (max-width: 901px) {
+  .accordion-card-holder {
+    display: none;
+  }
+  .accordion-card-holder-carousel {
+    display: block;
+  }
+}
+.right-side-accordion-content {
 }
 
 /* CAROUSEL DIV */
@@ -157,20 +263,20 @@
   flex-wrap: nowrap;
   flex-direction: row;
   text-align: left;
-  gap:10px;
+  gap: 10px;
   align-items: center;
 }
-.carousel-title p{
+.carousel-title p {
   font-size: 14;
   text-decoration: underline;
 }
-.carousel-link-svg{
+.carousel-link-svg {
   margin-left: 0;
 }
 .accordion-button {
   width: auto;
   /* margin/padding-button */
-  margin-top: 1.25rem;
+  margin-block: 1.25rem;
   margin-left: 0.625rem;
   margin-right: 0.625rem;
   padding: 0.625rem 1.125rem;
@@ -189,18 +295,17 @@
   align-items: center;
 }
 
-
 .accordion-button:hover {
   background-color: var(--black);
   color: var(--white);
 }
 .product-details-list-container {
   padding: 1.125rem 0px;
-  width:auto;
+  width: auto;
   max-width: 100rem;
   margin: 0px auto;
   display: flex;
-  padding-inline:1.25rem;
+  padding-inline: 1.25rem;
 }
 .detail-list-main-content {
   width: 60%;
@@ -219,14 +324,14 @@
   vertical-align: middle;
 }
 
-@media (max-width: 901px){
-  .product-details-list-container{
+@media (max-width: 901px) {
+  .product-details-list-container {
     flex-direction: column-reverse;
   }
-  .detail-list-main-content{
+  .detail-list-main-content {
     width: 100%;
   }
-  .product-list-details-image{
+  .product-list-details-image {
     width: 100%;
   }
 }
@@ -263,11 +368,11 @@
   flex-flow: wrap;
   justify-content: space-between;
 }
-.full-review-content p{
-margin-bottom: 0;
+.full-review-content p {
+  margin-bottom: 0;
 }
-.full-review-content span{
-  color:green;
+.full-review-content span {
+  color: green;
 }
 .full-review-content-title {
   display: flex;
@@ -303,7 +408,6 @@ margin-bottom: 0;
   overflow: hidden;
   margin: 0.75rem;
   position: relative;
-  
 }
 
 .buttons-bar-100 {
@@ -313,12 +417,12 @@ margin-bottom: 0;
 }
 
 .buttons-bar-44 {
-  height:100%;
+  height: 100%;
   width: 44%;
   background-color: rgb(255, 207, 0);
 }
 .buttons-bar-11 {
-  height:100%;
+  height: 100%;
   width: 11%;
   background-color: rgb(255, 207, 0);
 }
@@ -335,14 +439,13 @@ margin-bottom: 0;
 }
 .full-review-right {
   border-left: 1px solid rgb(224, 224, 224);
-  padding-left:1.25rem;
+  padding-left: 1.25rem;
 }
 .review-right-icons {
   display: flex;
   align-items: center;
 }
 .review-icon-legobrick {
-
   margin: 0.0625rem;
   padding: 0.2rem;
 }
@@ -351,10 +454,8 @@ margin-bottom: 0;
   display: inline-block;
   width: auto;
   height: fit-content;
-  
-
 }
-.review-button{
+.review-button {
   text-align: center;
   font-weight: 500;
   font-size: 0.875rem;
@@ -365,5 +466,5 @@ margin-bottom: 0;
   border-width: 1px;
   border-style: solid;
   border-radius: 4px;
-  padding:0.5rem
+  padding: 0.5rem;
 }
