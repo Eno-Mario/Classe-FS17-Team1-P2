@@ -34,6 +34,10 @@
   gap: 5px;
 }
 
+.carousel-bigger {
+  width: 100%;
+}
+
 .carousel::-webkit-scrollbar {
   width: 10px;
   height: 10px;
