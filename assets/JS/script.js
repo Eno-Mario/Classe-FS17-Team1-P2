@@ -296,56 +296,182 @@ function openStore() {
       title: "Calendario dell’Avvento 2023 LEGO® ",
       price: 37.99,
       rating: 4.0,
-      pieces: 700,
-      age: 6,
+      pieces: 320,
+      age: "6+",
       img1: "https://www.lego.com/cdn/cs/set/assets/blt8345f6a8fc46d84b/75366_alt1.png?format=webply&fit=bounds&quality=90&width=320&height=320&dpr=1.5",
       img2: "https://www.lego.com/cdn/cs/set/assets/bltff8d93722741aaec/75366.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
     },
 
     {
-      title: "Calendario dell’Avvento 2023 LEGO® ",
-      price: 55,
-      rating: 4.0,
-      pieces: 50,
-      age: 6,
-      img1: "https://www.lego.com/cdn/cs/set/assets/blt8345f6a8fc46d84b/75366_alt1.png?format=webply&fit=bounds&quality=90&width=320&height=320&dpr=1.5",
-      img2: "https://www.lego.com/cdn/cs/set/assets/bltff8d93722741aaec/75366.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      title: "Titanic LEGO®",
+      price: 679.99,
+      rating: 4.6,
+      pieces: 9090,
+      age: "18+",
+      img1: "https://www.lego.com/cdn/cs/set/assets/bltb94632aeb971eb91/10294.jpg?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt4970f39471f38330/10294_alt1.jpg?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
     },
     {
-      title: "Calendario dell’Avvento 2023 LEGO® ",
-      price: 100,
-      rating: 4.0,
-      pieces: 320,
-      age: 6,
-      img1: "https://www.lego.com/cdn/cs/set/assets/blt8345f6a8fc46d84b/75366_alt1.png?format=webply&fit=bounds&quality=90&width=320&height=320&dpr=1.5",
-      img2: "https://www.lego.com/cdn/cs/set/assets/bltff8d93722741aaec/75366.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      title: "Baita alpina",
+      price: 99.99,
+      rating: 4.7,
+      pieces: 1517,
+      age: "18+",
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt2069f4aa0d3bb63a/10325.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt476547efc6c46393/10325_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
     },
     {
-      title: "Calendario dell’Avvento 2023 LEGO® ",
-      price: 500,
-      rating: 4.0,
-      pieces: 320,
-      age: 6,
-      img1: "https://www.lego.com/cdn/cs/set/assets/blt8345f6a8fc46d84b/75366_alt1.png?format=webply&fit=bounds&quality=90&width=320&height=320&dpr=1.5",
-      img2: "https://www.lego.com/cdn/cs/set/assets/bltff8d93722741aaec/75366.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      title: "Mamma ho perso l'aereo LEGO® Ideas",
+      price: 299.99,
+      rating: 4.8,
+      pieces: 3955,
+      age: "18+",
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt0ba2da641d7f0426/21330_prod.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt9c69d4a46c794509/21330_box1.jpg?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
     },
     {
-      title: "Calendario dell’Avvento 2023 LEGO® ",
+      title: "Diorama festivo Millennium Falcon™",
+      price: 29.99,
+      rating: 4.4,
+      pieces: 282,
+      age: "8+",
+      img1: "https://www.lego.com/cdn/cs/set/assets/blte9e3f43203ffb465/40658.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/bltb15db65de54cd0c1/40658_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+    },
+    {
+      title: "Villaggio vichingo",
+      price: 139.99,
+      rating: 5.0,
+      pieces: 2103,
+      age: "18+",
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt331198c8f34e2d7a/21343.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt0f02b0cd97117394/21343_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+    },
+    {
+      title: "Calendario dell’Avvento 2023 LEGO® Harry Potter™",
       price: 37.99,
-      rating: 4.0,
-      pieces: 320,
-      age: 6,
-      img1: "https://www.lego.com/cdn/cs/set/assets/blt8345f6a8fc46d84b/75366_alt1.png?format=webply&fit=bounds&quality=90&width=320&height=320&dpr=1.5",
-      img2: "https://www.lego.com/cdn/cs/set/assets/bltff8d93722741aaec/75366.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      rating: 4.1,
+      pieces: 227,
+      age: "7+",
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt5bee6dfe45656c70/76418.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blte0ec1fd42d23e74a/76418_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
     },
     {
-      title: "Calendario dell’Avvento 2023 LEGO® ",
-      price: 37.99,
+      title: "Ornamenti di pan di zenzero ",
+      price: 12.99,
+      rating: 5.0,
+      pieces: 190,
+      age: "6+",
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt07583839482ebcd5/40642.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt661309b4a5cff5b9/40642_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+    },
+    {
+      title: "Collezione di insetti",
+      price: 79.99,
+      rating: 5.0,
+      pieces: 1111,
+      age: "18+",
+      img1: "https://www.lego.com/cdn/cs/set/assets/blte32d946cf23b2e5c/21342.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/bltc49c2a0af0b77684/21342_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+    },
+    {
+      title: "Colosseo",
+      price: 549.99,
+      rating: 4.8,
+      pieces: 9036,
+      age: "18+",
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt7c4044f7aa529af3/10276_alt2.jpg?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt26cc4dd7f5cf656e/10276_alt1.jpg?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+    },
+    {
+      title: "Incrociatore d'attacco della Repubblica classe Venator",
+      price: 649.99,
+      rating: 4.7,
+      pieces: 5374,
+      age: "18+",
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt06c6593d8e8d1c13/75367.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt266b40dfb46ff5de/75367_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+    },
+    {
+      title: "Minifigure LEGO® a grandezza naturale",
+      price: 49.99,
+      rating: 5.0,
+      pieces: 654,
+      age: "10+",
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt742e8599eb5e8931/40649.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt78b39f5757ec88eb/40649_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1s",
+    },
+    {
+      title: "Concorde",
+      price: 199.99,
+      rating: 4.9,
+      pieces: 2083,
+      age: "18+",
+      img1: "https://www.lego.com/cdn/cs/set/assets/bltdc7097183ba14c89/10318.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/bltd56ac1c273e08f9f/10318_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+    },
+    {
+      title: "Cinepresa omaggio a Walt Disney ",
+      price: 99.99,
+      rating: 4.8,
+      pieces: 811,
+      age: "18+",
+      img1: "https://www.lego.com/cdn/cs/set/assets/blta0d2ef903df1c30c/43230.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt236dabe25eeb9c3a/43230_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+    },
+    {
+      title: "IL SIGNORE DEGLI ANELLI: GRAN BURRONE",
+      price: 499.99,
+      rating: 4.8,
+      pieces: 6167,
+      age: "18+",
+      img1: "https://www.lego.com/cdn/cs/set/assets/bltec012c948c003fba/10316_alt16.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt33d693d46b4b5858/10316_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+    },
+    {
+      title: "Fortezza di Eldorado",
+      price: 214.99,
+      rating: 4.5,
+      pieces: 2509,
+      age: "18+",
+      img1: "https://www.lego.com/cdn/cs/set/assets/bltde348ae9bd9b3de2/10320.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/bltbd0d2797d43ad684/10320_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+    },
+    {
+      title: "Banca dei Maghi Gringott™ – Edizione del Collezionista",
+      price: 429.99,
+      rating: 4.8,
+      pieces: 4803,
+      age: "18+",
+      img1: "https://www.lego.com/cdn/cs/set/assets/bltfbd377eafb67041a/76417.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt3db77dbc731f5eeb/76417_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+    },
+    {
+      title: "Castello e parco di Hogwarts™",
+      price: 169.99,
+      rating: 4.6,
+      pieces: 2660,
+      age: "18+",
+      img1: "https://www.lego.com/cdn/cs/set/assets/blte09f96efc93d5c1d/76419.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt5a988358a6267b58/76419_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+    },
+    {
+      title: "La slitta di Babbo Natale",
+      price: 39.99,
+      rating: 4.6,
+      pieces: 343,
+      age: "9+",
+      img1: "https://www.lego.com/cdn/cs/set/assets/bltb7d457aa2ce9f859/40499_Prod.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt2e970dc39af8ba0e/40499_alt1.jpg?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+    },
+    {
+      title: "LEGO® House ",
+      price: 49.99,
       rating: 4.0,
-      pieces: 320,
-      age: 6,
-      img1: "https://www.lego.com/cdn/cs/set/assets/blt8345f6a8fc46d84b/75366_alt1.png?format=webply&fit=bounds&quality=90&width=320&height=320&dpr=1.5",
-      img2: "https://www.lego.com/cdn/cs/set/assets/bltff8d93722741aaec/75366.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      pieces: 774,
+      age: "12+",
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt4ec90da36b68ebcf/21037.jpg?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/bltc5d88a7042c458d2/21037_alt1.jpg?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
     },
   ];
 
@@ -1062,7 +1188,23 @@ function openStore() {
             </div>
             <div class="product-card-limit-number">
               <span>Limite 5</span>
-              <button>i</button>
+                <div class="container">
+  
+  <!-- CRRAEZIONE INFO BUTTON -->
+    <button class="info-button" onclick="toggleVignetta()"><span>i</span></button>
+
+  <!-- CREAZIONE DIV "VIGNETTA" CHE CONTIENE IL DIV DEL TITOLO E DEL TESTO DELLA VIGNETTA-->
+    <div id="vignetta" class="vignetta">
+      <div class="textContainer">
+      <div class="title"><p class="description">Limite</p></div>
+      <div class="exit"></div>
+      <div class="text"><p>È previsto un limite per gli acquisti per ogni famiglia per garantire un'adeguata disponibilità per tutti i clienti. Se è già stato raggiunto tale limite con gli ordini precedenti, l'ordine potrebbe essere annullato.</p></div>
+    </div>
+
+  <!-- CRAZIONE BUTTON CONTENENTE SVG PER LA CHIUSURA DELLA VIGNETTA -->
+    <button class="exit" onclick="closeVignetta()"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" aria-hidden="true" class="exitButton"><path d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z" fill="currentColor" fill-rule="evenodd"></path></svg></button>
+    </div>
+  </div>
             </div>
           </div>
           <div class="product-card-cart">
@@ -1681,6 +1823,15 @@ function openStore() {
             }
           }
 
+          function toggleVignetta() {
+            var vignetta = document.getElementById("vignetta");
+            vignetta.style.display =
+              vignetta.style.display === "block" ? "none" : "block";
+          }
+
+          function closeVignetta() {
+            document.getElementById("vignetta").style.display = "none";
+          }
           /* ---------------------
         EVENTI
 -----------------------*/
