@@ -2451,18 +2451,20 @@ menu.addEventListener("click", () => {
     aside.innerHTML = `<div class="container-title-e-x-hamb-menu"><div class="title-hamb-menu">${titleMenu.innerHTML}</div>
        <div class="container-delete-button-x-hamb-menu">${buttonXHambMenu.innerHTML}</div></div>
         <div class="container-content-hamb-menu">
-            <ul>
-                <li><div><a href="#">${areaGiochi.textContent}</a></div></li> 
-                <li><div>${natale.textContent}</div></li>
-                <li><div><a href="#"><span>HOME</span></a></div></li>
-                <li><div>${acquista.textContent}</div></li>
-                <li><div>${scopri.textContent}</div></li>
-                <li><div>${aiuto.textContent}</div></li>
-                <li><div>${legoHead.innerHTML}</div></li>
-                <li><div>${blueBlock.innerHTML}</div></li>
-                <li><div><a href="#" class="button-hamb-menu-desideri"><span>La mia lista dei desideri</span></a></div></li>
-                <li><div><a href="#" class="button-hamb-menu-mio-carrello"><span>Il mio carrello (0)</span></a></div></li>
-                <li><div><a href="#" class="button-hamb-menu-italia"><img class="icon-hamb-menu-italia" src="icon_maps.png"><span>Italia</span></a></div></li>
+             <ul>
+                <li><div class="area-giochi-container-hamb-menu"><a class="area-giochi-content-hamb-menu" href="#"><img
+                src="/components/atom/atom-header/long arrow.svg"
+                class="arrow-header">${areaGiochi.textContent}</a></div></li> 
+                <li><div class="all-button-upperCase-humb-menu button-natale-hamb-menu">${natale.textContent}</div></li>
+                <li><div class="all-button-upperCase-humb-menu"><span>HOME</span></div></li>
+                <li><div class="all-button-upperCase-humb-menu all-arrow-flex-button">${acquista.textContent} <img src="/components/atom/atom-header/arrow.svg" class="arrow-header-humb-menu"></img></div></li>
+                <li><div class="all-button-upperCase-humb-menu all-arrow-flex-button">${scopri.textContent}<img src="/components/atom/atom-header/arrow.svg" class="arrow-header-humb-menu"></img></div></li>
+                <li><div class="all-button-upperCase-humb-menu all-arrow-flex-button">${aiuto.textContent}<img src="/components/atom/atom-header/arrow.svg" class="arrow-header-humb-menu"></img></div></li>
+                <li><div class="button-hamb-menu">${legoHead.innerHTML}</div></li>
+                <li><div class="button-hamb-menu">${blueBlock.innerHTML}</div></li>
+                <li><div class="button-hamb-menu"><span>La mia lista dei desideri</span></div></li>
+                <li><div class="button-hamb-menu"><span>Il mio carrello (0)</span></div></li>
+                <li><div class="button-hamb-menu"><img class="icon-hamb-menu-italia" src="/components/atom/atom-header/icon_maps.png"><span>Italia</span></div></li>
             </ul>
         </div>`;
     containerAside.append(aside);
@@ -2494,7 +2496,7 @@ buttonXHambMenu.addEventListener("click", () => {
 /*/////////evento per tasto acquista /////////////////////// */
 
 const divForButton2 = document.createElement("div");
-divForButton2.setAttribute("class", "delete-button-pop-up-menu");
+divForButton2.classList.add("delete-button-pop-up-menu");
 const buttonXPopUpMenu2 = document.createElement("button");
 const image2 = document.createElement("img");
 image2.src = "/components/atom/atom-header/close.png";
@@ -2504,17 +2506,18 @@ divForButton2.appendChild(buttonXPopUpMenu2);
 
 const containerPopMenu = document.createElement("div");
 const containerForMenuPopUp = document.createElement("div");
+containerForMenuPopUp.classList.add("container-for-menu-pop-up-header")
 containerForMenuPopUp.innerHTML = "";
 // Crea il contenuto di containerForMenuPopUp
 acquista.addEventListener("click", () => {
   if (!menuPopUpCreated) {
-    console.log(acquista);
+   
     // Crea il container per il menu pop-up
     containerPopMenu.classList.add("not-visible-element-atom-header");
 
     // Crea il container per il contenuto del menu pop-up
-
-    containerForMenuPopUp.className = "container-for-menu-pop-up-header";
+    
+    
     containerPopMenu.classList.add("general-container-pop-up-menu");
     containerPopMenu.classList.remove("not-visible-element-atom-header");
     containerForMenuPopUp.innerHTML = `
@@ -2526,14 +2529,14 @@ acquista.addEventListener("click", () => {
             <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Merchandising LEGO</span><img src="/components/atom/atom-header/arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
             <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Interessi</span><img src="/components/atom/atom-header/arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
             <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Pick and Build</span><img src="/components/atom/atom-header/arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
-            <li><div><a href="#">Set Esclusivi</a></div></li>
-            <li><div><a href="#">Novità</a></div></li>
-            <li><div><a href="#">I più venduti</a></div></li>
-            <li><div><a href="#">Home decor</a></div></li>
-            <li><div><a href="#">Sconti e offerte</a></div></li>
-            <li><div><a href="#">Buoni regalo</a></div></li>
-            <li><div><a href="#">Disponibile a breve</a></div></li>
-            <li><div><a href="#">Ultima occasione per acquistarli</a></div></li>
+            <li><div class="button-without-arrow-button"><a href="#">Set Esclusivi</a></div></li>
+            <li><div class="button-without-arrow-button"><a href="#">Novità</a></div></li>
+            <li><div class="button-without-arrow-button"><a href="#">I più venduti</a></div></li>
+            <li><div class="button-without-arrow-button"><a href="#">Home decor</a></div></li>
+            <li><div class="button-without-arrow-button"><a href="#">Sconti e offerte</a></div></li>
+            <li><div class="button-without-arrow-button"><a href="#">Buoni regalo</a></div></li>
+            <li><div class="button-without-arrow-button"><a href="#">Disponibile a breve</a></div></li>
+            <li><div class="button-without-arrow-button"><a href="#">Ultima occasione per acquistarli</a></div></li>
         </ul>
     </div>
 `;
@@ -2559,9 +2562,7 @@ acquista.addEventListener("click", () => {
 
   // Rimuovi il menu quando la finestra viene ridimensionata
   window.addEventListener("resize", () => {
-    const containerPopMenu = document.querySelector(
-      ".general-container-pop-up-menu"
-    );
+    const containerPopMenu = document.querySelector(".general-container-pop-up-menu");
     if (window.innerWidth < 901) {
       containerPopMenu.remove();
       menuPopUpCreated = false;
@@ -2579,22 +2580,22 @@ scopri.addEventListener("click", () => {
 
     // Crea il container per il contenuto del menu pop-up
 
-    containerForMenuPopUp.className = "container-for-menu-pop-up-header";
+   
     containerPopMenu.classList.add("general-container-pop-up-menu");
     containerPopMenu.classList.remove("not-visible-element-atom-header");
     containerForMenuPopUp.innerHTML = `
     <div class="content-pop-up-menu">
         <ul>
-            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">I nostri valori</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
-            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Le nostre app</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
-            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Le nostre riviste</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
-            <li><div><a href="#">Tutti i temi LEGO</a></div></li>
-            <li><div><a href="#">Tutti gli interessi LEGO</a></div></li>
-            <li><div><a href="#">Per gli adulti</a></div></li>
-            <li><div><a href="#">Per le famiglie</a></div></li>
-            <li><div><a href="#">LEGO® Insiders</a></div></li>
-            <li><div><a href="#">LEGO® Mosaic Maker</a></div></li>
-            <li><div><a href="#">Idee regalo LEGO®</a></div></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">I nostri valori</span><img src="/components/atom/atom-header/arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Le nostre app</span><img src="/components/atom/atom-header/arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Le nostre riviste</span><img src="/components/atom/atom-header/arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><div class="button-without-arrow-button"><a href="#">Tutti i temi LEGO</a></div></li>
+            <li><div class="button-without-arrow-button"><a href="#">Tutti gli interessi LEGO</a></div></li>
+            <li><div class="button-without-arrow-button"><a href="#">Per gli adulti</a></div></li>
+            <li><div class="button-without-arrow-button"><a href="#">Per le famiglie</a></div></li>
+            <li><div class="button-without-arrow-button"><a href="#">LEGO® Insiders</a></div></li>
+            <li><div class="button-without-arrow-button"><a href="#">LEGO® Mosaic Maker</a></div></li>
+            <li><div class="button-without-arrow-button"><a href="#">Idee regalo LEGO®</a></div></li>
         </ul>
     </div>
 `;
@@ -2640,19 +2641,19 @@ aiuto.addEventListener("click", () => {
 
     // Crea il container per il contenuto del menu pop-up
 
-    containerForMenuPopUp.className = "container-for-menu-pop-up-header";
+    
     containerPopMenu.classList.add("general-container-pop-up-menu");
     containerPopMenu.classList.remove("not-visible-element-atom-header");
     containerForMenuPopUp.innerHTML = `
     <div class="content-pop-up-menu">
         <ul>
-            <li><div><a href="#">Verifica stato ordine</a></div></li>
-            <li><div><a href="#">Consegne e resi</a></div></li>
-            <li><div><a href="#">Trova uno store</a></div></li>
-            <li><div><a href="#">Istruzioni per la costruzione</a></div></li>
-            <li><div><a href="#">Domande frequenti</a></div></li>
-            <li><div><a href="#">Contattaci</a></div></li>
-            <li><div><a href="#">Pezzi di ricambio</a></div></li>
+            <li><div class="button-without-arrow-button"><a href="#">Verifica stato ordine</a></div></li>
+            <li><div class="button-without-arrow-button"><a href="#">Consegne e resi</a></div></li>
+            <li><div class="button-without-arrow-button"><a href="#">Trova uno store</a></div></li>
+            <li><div class="button-without-arrow-button"><a href="#">Istruzioni per la costruzione</a></div></li>
+            <li><div class="button-without-arrow-button"><a href="#">Domande frequenti</a></div></li>
+            <li><div class="button-without-arrow-button"><a href="#">Contattaci</a></div></li>
+            <li><div class="button-without-arrow-button"><a href="#">Pezzi di ricambio</a></div></li>
         </ul>
     </div>
 `;

@@ -19,19 +19,6 @@ const bodyHeader = document.querySelector("body");
 let menuPopUpCreated = false;
 
 
-/* -----------------------
-LOGICA
---------------------------*/
-
-/* ----------------------
-FUNZIONI
--------------------------*/
-
-/* ---------------------
-EVENTI
------------------------*/
-
-
 /*///////////////////////////// creazione tasto x per hamburgher menu //////////////////// */
 
 
@@ -111,7 +98,7 @@ const divForButton2 = document.createElement("div");
 divForButton2.setAttribute("class", "delete-button-pop-up-menu");
 const buttonXPopUpMenu2 = document.createElement("button");
 const image2 = document.createElement("img");
-image2.src = "close.png"
+image2.src = "/components/atom/atom-header/close.png"
 image2.alt = "";
 buttonXPopUpMenu2.appendChild(image2);
 divForButton2.appendChild(buttonXPopUpMenu2);
@@ -136,12 +123,12 @@ acquista.addEventListener("click", () => {
             containerForMenuPopUp.innerHTML = `
     <div class="content-pop-up-menu">
         <ul>
-            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Set per tema</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
-            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Età</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
-            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Prezzi</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
-            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Merchandising LEGO</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
-            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Interessi</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
-            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Pick and Build</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Set per tema</span><img src="/components/atom/atom-header/arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Età</span><img src="/components/atom/atom-header/arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Prezzi</span><img src="/components/atom/atom-header/arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Merchandising LEGO</span><img src="/components/atom/atom-header/arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Interessi</span><img src="/components/atom/atom-header/arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Pick and Build</span><img src="/components/atom/atom-header/arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
             <li><div><a href="#">Set Esclusivi</a></div></li>
             <li><div><a href="#">Novità</a></div></li>
             <li><div><a href="#">I più venduti</a></div></li>
@@ -201,9 +188,9 @@ scopri.addEventListener("click", () => {
         containerForMenuPopUp.innerHTML = `
     <div class="content-pop-up-menu">
         <ul>
-            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">I nostri valori</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
-            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Le nostre app</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
-            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Le nostre riviste</span><img src="arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">I nostri valori</span><img src="/components/atom/atom-header/arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Le nostre app</span><img src="/components/atom/atom-header/arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
+            <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Le nostre riviste</span><img src="/components/atom/atom-header/arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
             <li><div><a href="#">Tutti i temi LEGO</a></div></li>
             <li><div><a href="#">Tutti gli interessi LEGO</a></div></li>
             <li><div><a href="#">Per gli adulti</a></div></li>
@@ -234,10 +221,6 @@ scopri.addEventListener("click", () => {
             menuPopUpCreated = false;
         }
     });
-
-
-
-
 
     // Rimuovi il menu quando la finestra viene ridimensionata
     window.addEventListener("resize", () => {
