@@ -3,6 +3,13 @@
   scroll-snap-align: start; /* Imposta l'allineamento snap sulla parte iniziale dell'elemento */
   padding-bottom: 20px;
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.green-carousel .img-container-card {
+  height: -webkit-fill-available;
 }
 
 .img-container-card {
@@ -16,6 +23,7 @@
 
 .atom-homepage-card-img {
   transform: scale(0.909) translateZ(0px);
+  max-height: 100%;
 }
 
 .atom-homepage-card-img:hover,
