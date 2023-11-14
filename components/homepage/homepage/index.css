@@ -8,12 +8,13 @@ body {
 
 main {
   position: relative;
-  width: 98.5vw;
+  width: 100%;
   max-width: 100rem;
 }
 
 main > * {
   margin: auto;
+  overflow-x: clip;
 }
 
 .green-carousel {
