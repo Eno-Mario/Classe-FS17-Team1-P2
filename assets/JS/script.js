@@ -773,8 +773,8 @@ function openStore() {
     price: [
       [0, 20],
       [20, 50],
-      [50, 100],
-      [100, 99999],
+      [50, 99],
+      [100, 9999],
     ],
     age: [
       [6, 9999],
@@ -786,7 +786,7 @@ function openStore() {
       [100, 250],
       [250, 499],
       [500, 999],
-      [1000, 9999999],
+      [1000, 99999],
     ],
   };
 
@@ -880,7 +880,7 @@ function openStore() {
                 ></path>
               </svg>
             </div>
-            ${el.age}
+            ${el.age}+
           </span>
 
           <span class="product-attribute" data-test="product-piece-label">
