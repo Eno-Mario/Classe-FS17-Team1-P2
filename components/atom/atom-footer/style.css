@@ -1,0 +1,1174 @@
+footer {
+  box-sizing: inherit;
+  display: block;
+  background-color: rgb(32, 29, 72);
+  color: #fff;
+  width: 100%;
+}
+
+.container-topFooter {
+  padding: 1.25rem;
+  padding-top: 2.5rem;
+  padding-right: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 1.25rem;
+  box-sizing: inherit;
+  display: block;
+}
+
+.top-footer {
+  display: block;
+  box-sizing: inherit;
+}
+
+.top-elements {
+  display: flex;
+  flex-direction: row;
+  max-width: 82.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: inherit;
+}
+
+.first-column {
+  display: block;
+  margin-right: 1.25rem;
+  padding: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}
+
+.img-state {
+  display: block;
+  box-sizing: inherit;
+}
+
+.logo {
+  display: flex;
+  margin-bottom: 1.25rem;
+  box-sizing: inherit;
+}
+
+.logo-immage {
+  margin-right: 0.75rem;
+  display: inline-block;
+  vertical-align: middle;
+  border-style: none;
+  box-sizing: inherit;
+  aspect-ratio: auto 97/97;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.state-button {
+  margin-bottom: 0;
+  display: flex;
+  align-items: flex-start;
+  box-sizing: inherit;
+}
+
+.btn-state {
+  padding: 0.625rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  background-color: #18152d;
+  margin-bottom: 25px;
+  border: 0;
+  box-shadow: none;
+  text-transform: none;
+  overflow: visible;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: center;
+  writing-mode: horizontal-tb !important;
+  color: white;
+}
+
+.position-svg {
+  margin-top: 0px;
+  margin-right: 0.625rem;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  vertical-align: middle;
+  line-height: 0;
+  overflow-clip-margin: content-box;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 0.875rem;
+  text-transform: none;
+}
+
+.other-elements {
+  box-sizing: inherit;
+  display: block;
+}
+
+.first-a {
+  box-align: center;
+  text-decoration: none;
+  display: block;
+  color: black;
+  padding-top: 0.625rem;
+  padding-right: 0px;
+  padding-bottom: 0.625rem;
+  cursor: pointer;
+  background-color: transparent;
+  box-sizing: inherit;
+}
+
+.first-span {
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  text-transform: inherit;
+  cursor: pointer;
+}
+
+.other-columns {
+  padding-top: 0.635rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 4;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  box-sizing: inherit;
+}
+
+.second-column,
+.third-column,
+.forth-column,
+.fifth-column {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  padding-left: 0.625rem;
+  margin-right: 1.25rem;
+  box-sizing: inherit;
+  display: block;
+}
+
+.h3-title {
+  padding-top: 0px;
+  padding-right: 0.9375rem;
+  padding-bottom: 0px;
+  padding-left: 0.9375rem;
+  margin-top: 20px !important;
+  margin-right: 0px;
+  margin-bottom: 20px !important;
+  margin-left: 0px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-sizing: inherit;
+}
+
+.markupTitle {
+  box-sizing: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.second-column ul,
+.third-column ul,
+.forth-column ul,
+.fifth-column ul {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  display: block;
+  list-style-type: disc;
+}
+
+.second-column li,
+.third-column li,
+.forth-column li,
+.fifth-column li {
+  list-style-type: none;
+  box-sizing: border-box;
+  display: list-item;
+  text-align: left;
+}
+
+.second-column a,
+.third-column a,
+.forth-column a,
+.fifth-column a {
+  display: block;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  padding-top: 0.625rem;
+  padding-right: 0.9375rem;
+  padding-bottom: 0.625rem;
+  padding-left: 0.9375rem;
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+  box-sizing: inherit;
+  text-align: left;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container-midFooter {
+  box-sizing: inherit;
+  line-height: 1.5;
+  padding-top: 40px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+.mid-footer {
+  justify-content: space-between !important;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 25rem;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  justify-content: start;
+  display: flex;
+  flex-direction: row;
+  max-width: 82.5rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: inherit;
+}
+
+.email-container {
+  display: block;
+  box-sizing: inherit;
+}
+
+.email-subscribe {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.875rem;
+  box-sizing: inherit;
+}
+
+.sub-title {
+  margin-bottom: 1.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  box-sizing: inherit;
+}
+
+.markup-title {
+  box-sizing: inherit;
+}
+
+.sub-container {
+  width: 15.625rem;
+  box-sizing: inherit;
+  display: flex;
+}
+
+.input-email {
+  display: flex;
+  box-sizing: inherit;
+}
+
+.ultimate-container {
+  position: relative;
+  box-sizing: inherit;
+  display: block;
+  font-size: 0.875rem;
+}
+
+.label-mail {
+  appearance: none;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  position: relative;
+  box-sizing: inherit;
+  cursor: default;
+  font-size: 0.875rem;
+}
+
+.input-mail {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  color: rgb(44, 44, 44);
+  height: 34.695px !important;
+  padding-top: 18px !important;
+  padding-right: 20px !important;
+  padding-bottom: 0px !important;
+  padding-left: 20px !important;
+  border: 1px solid rgb(224, 224, 224);
+  overflow: visible;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  box-sizing: inherit;
+  writing-mode: horizontal-tb !important;
+  padding-block: 1px;
+  padding-inline: 2px;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: left;
+  appearance: auto;
+  cursor: text;
+}
+
+.your-mail {
+  white-space: nowrap;
+  top: 1.2rem;
+  appearance: none;
+  display: block;
+  position: absolute;
+  left: 1.25rem;
+  transform-origin: left top;
+  transition: all 0.1s ease-in-out 0s;
+  transform: translate(0px, 0px);
+  color: rgb(117, 117, 117);
+  font-size: 1em;
+  pointer-events: none;
+  box-sizing: inherit;
+  cursor: default;
+}
+
+.email-button {
+  white-space-collapse: collapse;
+  text-wrap: nowrap;
+  transform: translateX(-1px);
+  margin-right: -1px !important;
+  border-radius: 0px 0.3125rem 0.3125rem 0px;
+  box-shadow: none;
+  max-height: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: inline-block;
+  width: auto;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+  border-style: solid;
+  border-collapse: collapse;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  background-color: rgb(253, 128, 36);
+  border-color: rgb(253, 128, 36);
+  color: rgb(0, 0, 0);
+  position: relative;
+  border-width: 2px;
+  cursor: pointer;
+  text-transform: none;
+  overflow: visible;
+  margin: 0;
+  box-sizing: inherit;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-indent: 0px;
+  text-shadow: none;
+  align-items: self-start;
+  writing-mode: horizontal-tb !important;
+}
+
+.arrow-icon {
+  display: block;
+  margin: auto;
+  line-height: 0;
+  box-sizing: inherit;
+  overflow-clip-margin: content-box;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.follow-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: inherit;
+}
+
+.follow-title {
+  margin-bottom: 1.25rem;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  box-sizing: inherit;
+}
+
+.markup-followTitle {
+  box-sizing: inherit;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.social-button {
+  display: flex;
+  height: 3.3375rem;
+  -webkit-box-align: center;
+  align-items: center;
+  box-sizing: inherit;
+}
+
+.a-immage {
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: 0px;
+  margin-right: 1.25rem;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+  box-sizing: inherit;
+}
+
+.img-social {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  border-style: none;
+  box-sizing: inherit;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.container-bottomFooter {
+  box-sizing: inherit;
+  display: block;
+  padding-top: 40px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+.bottom-footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 82.5rem;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255) !important;
+}
+
+.container-info {
+  box-sizing: inherit;
+  display: block;
+  list-style-type: disc;
+  margin: 0px;
+  padding: 0px;
+  color: rgb(255, 255, 255) !important;
+}
+
+.info {
+  display: inline-block;
+  margin-right: 1.875rem;
+  margin-bottom: 1.25rem;
+  list-style-type: none;
+  box-sizing: inherit;
+  text-align: left;
+}
+
+.info a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.termini-lego {
+  font-size: 0.75rem;
+  line-height: 1.1875rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  margin-top: 0px;
+  box-sizing: inherit;
+  display: block;
+}
+
+.first-span:hover {
+  text-decoration: underline;
+}
+
+.second-column a:hover {
+  text-decoration: underline;
+}
+
+.third-column a:hover {
+  text-decoration: underline;
+}
+
+.forth-column a:hover {
+  text-decoration: underline;
+}
+
+.fifth-column a:hover {
+  text-decoration: underline;
+}
+
+.info a:hover {
+  text-decoration: underline;
+}
+
+details summary {
+  list-style: none;
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  footer {
+    box-sizing: inherit;
+    display: block;
+    background-color: rgb(32, 29, 72);
+    color: #fff;
+    width: 100%;
+  }
+
+  details summary {
+    list-style: none;
+  }
+
+  .container-topFooter {
+    padding-top: 2.5rem;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    padding-bottom: 0px;
+    box-sizing: inherit;
+    display: block;
+  }
+
+  .top-footer {
+    display: block;
+    box-sizing: inherit;
+  }
+
+  .top-elements {
+    display: flex;
+    flex-direction: row;
+    max-width: 82.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: inherit;
+  }
+
+  .first-column {
+    padding-left: 2.5rem;
+    padding-top: 2.5rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    padding-right: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .img-state {
+    display: block;
+    box-sizing: inherit;
+  }
+
+  .logo {
+    display: flex;
+    margin-bottom: 1.25rem;
+    box-sizing: inherit;
+  }
+
+  .logo-immage {
+    margin-right: 0.75rem;
+    display: inline-block;
+    vertical-align: middle;
+    border-style: none;
+    box-sizing: inherit;
+    aspect-ratio: auto 97/97;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
+
+  .state-button {
+    margin-bottom: 0;
+    display: flex;
+    align-items: flex-start;
+    box-sizing: inherit;
+  }
+
+  .btn-state {
+    padding: 0.625rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    background-color: #18152d;
+    margin-bottom: 25px;
+    border: 0;
+    box-shadow: none;
+    text-transform: none;
+    overflow: visible;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+    writing-mode: horizontal-tb !important;
+    color: white;
+  }
+
+  .position-svg {
+    margin-top: 0px;
+    margin-right: 0.625rem;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    vertical-align: middle;
+    line-height: 0;
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 0.875rem;
+    text-transform: none;
+  }
+
+  .other-elements {
+    box-sizing: inherit;
+    display: block;
+  }
+
+  .first-a {
+    box-align: center;
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding-top: 0.625rem;
+    padding-right: 0px;
+    padding-bottom: 0.625rem;
+    cursor: pointer;
+    background-color: transparent;
+    box-sizing: inherit;
+  }
+
+  .first-span {
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-transform: inherit;
+    cursor: pointer;
+  }
+
+  .other-columns {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2.5rem;
+    padding-right: 2.5rem;
+    flex-grow: 2 !important;
+    flex-shrink: 1 !important;
+    flex-basis: 0% !important;
+    box-sizing: inherit;
+  }
+
+  .second-column {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 14.375rem;
+    max-width: 14.375rem;
+    padding-left: 0.625rem;
+    box-sizing: inherit;
+    display: block;
+    margin-bottom: 5rem;
+    margin-right: 1.5625rem;
+  }
+
+  .third-column {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 14.375rem;
+    max-width: 14.375rem;
+    margin-bottom: 5rem;
+    margin-right: 1.5625rem;
+    padding-left: 0.625rem;
+    box-sizing: inherit;
+    display: block;
+  }
+
+  .forth-column {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 14.375rem;
+    max-width: 14.375rem;
+    margin-bottom: 5rem;
+    margin-right: 1.5625rem;
+    padding-left: 0.625rem;
+    box-sizing: inherit;
+    display: block;
+  }
+
+  .fifth-column {
+    margin-right: 0px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 14.375rem;
+    max-width: 14.375rem;
+    padding-left: 0.625rem;
+    margin-bottom: 5rem;
+    box-sizing: inherit;
+    display: block;
+  }
+
+  .h3-title {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+    margin-bottom: 1.5625rem !important;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-sizing: inherit;
+    display: block;
+  }
+
+  .markupTitle {
+    box-sizing: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .second-column ul,
+  .third-column ul,
+  .forth-column ul,
+  .fifth-column ul {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    display: block;
+    list-style-type: disc;
+  }
+
+  .second-column li,
+  .third-column li,
+  .forth-column li,
+  .fifth-column li {
+    list-style-type: none;
+    box-sizing: border-box;
+    display: list-item;
+    text-align: left;
+  }
+
+  .second-column a,
+  .third-column a,
+  .forth-column a,
+  .fifth-column a {
+    display: block;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding-top: 0.625rem;
+    padding-right: 0.9375rem;
+    padding-bottom: 0.625rem;
+    padding-left: 0.9375rem;
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+    box-sizing: inherit;
+    text-align: left;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .container-midFooter {
+    box-sizing: inherit;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: start;
+    flex-direction: row;
+    display: flex;
+    max-width: 82.5rem;
+  }
+
+  .mid-footer {
+    justify-content: space-between !important;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 25rem;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    justify-content: start;
+    display: flex;
+    flex-direction: row;
+    max-width: 82.5rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: inherit;
+  }
+
+  .email-container {
+    display: block;
+    box-sizing: inherit;
+  }
+
+  .email-subscribe {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.875rem;
+    margin-right: 3.75rem;
+    box-sizing: inherit;
+  }
+
+  .sub-title {
+    margin-bottom: 1.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-sizing: inherit;
+  }
+
+  .markup-title {
+    box-sizing: inherit;
+  }
+
+  .sub-container {
+    width: 15.625rem;
+    box-sizing: inherit;
+    display: flex;
+  }
+
+  .input-email {
+    display: flex;
+    box-sizing: inherit;
+  }
+
+  .ultimate-container {
+    position: relative;
+    box-sizing: inherit;
+    display: block;
+    font-size: 0.875rem;
+  }
+
+  .label-mail {
+    appearance: none;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    position: relative;
+    box-sizing: inherit;
+    cursor: default;
+    font-size: 0.875rem;
+  }
+
+  .input-mail {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    color: rgb(44, 44, 44);
+    height: 34.695px !important;
+    padding-top: 18px !important;
+    padding-right: 20px !important;
+    padding-bottom: 0px !important;
+    padding-left: 20px !important;
+    border: 1px solid rgb(224, 224, 224);
+    overflow: visible;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    box-sizing: inherit;
+    writing-mode: horizontal-tb !important;
+    padding-block: 1px;
+    padding-inline: 2px;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: left;
+    appearance: auto;
+    cursor: text;
+  }
+
+  .your-mail {
+    white-space: nowrap;
+    top: 1.2rem;
+    appearance: none;
+    display: block;
+    position: absolute;
+    left: 1.25rem;
+    transform-origin: left top;
+    transition: all 0.1s ease-in-out 0s;
+    transform: translate(0px, 0px);
+    color: rgb(117, 117, 117);
+    font-size: 1em;
+    pointer-events: none;
+    box-sizing: inherit;
+    cursor: default;
+  }
+
+  .email-button {
+    white-space-collapse: collapse;
+    text-wrap: nowrap;
+    transform: translateX(-1px);
+    margin-right: -1px !important;
+    border-radius: 0px 0.3125rem 0.3125rem 0px;
+    box-shadow: none;
+    max-height: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: inline-block;
+    width: auto;
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+    border-style: solid;
+    border-collapse: collapse;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    background-color: rgb(253, 128, 36);
+    border-color: rgb(253, 128, 36);
+    color: rgb(0, 0, 0);
+    position: relative;
+    border-width: 2px;
+    cursor: pointer;
+    text-transform: none;
+    overflow: visible;
+    margin: 0;
+    box-sizing: inherit;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-indent: 0px;
+    text-shadow: none;
+    align-items: self-start;
+    writing-mode: horizontal-tb !important;
+  }
+
+  .arrow-icon {
+    display: block;
+    margin: auto;
+    line-height: 0;
+    box-sizing: inherit;
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .follow-container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: inherit;
+    margin-left: auto;
+    flex-basis: 21.875rem;
+  }
+
+  .follow-title {
+    margin-bottom: 1.25rem;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-sizing: inherit;
+  }
+
+  .markup-followTitle {
+    box-sizing: inherit;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .social-button {
+    display: flex;
+    height: 3.3375rem;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: inherit;
+  }
+
+  .a-immage {
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 0px;
+    margin-right: 1.25rem;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+    box-sizing: inherit;
+  }
+
+  .img-social {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    border-style: none;
+    box-sizing: inherit;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
+
+  .container-bottomFooter {
+    box-sizing: inherit;
+    display: block;
+  }
+
+  .bottom-footer {
+    display: flex;
+    flex-direction: column;
+    max-width: 82.5rem;
+    box-sizing: inherit;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .container-info {
+    box-sizing: inherit;
+    display: block;
+    list-style-type: disc;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(255, 255, 255) !important;
+  }
+
+  .info {
+    display: inline-block;
+    margin-right: 1.875rem;
+    margin-bottom: 1.25rem;
+    list-style-type: none;
+    box-sizing: inherit;
+    text-align: left;
+  }
+
+  .info a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+  }
+
+  .termini-lego {
+    font-size: 0.75rem;
+    line-height: 1.1875rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 1.25rem;
+    margin-top: 0px;
+    box-sizing: inherit;
+    display: block;
+  }
+
+  .first-span:hover {
+    text-decoration: underline;
+  }
+
+  .second-column a:hover {
+    text-decoration: underline;
+  }
+
+  .third-column a:hover {
+    text-decoration: underline;
+  }
+
+  .forth-column a:hover {
+    text-decoration: underline;
+  }
+
+  .fifth-column a:hover {
+    text-decoration: underline;
+  }
+
+  .info a:hover {
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-elements {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo {
+    order: 2;
+  }
+
+  .state-button {
+    order: 1;
+  }
+
+  .other-columns {
+    flex-direction: column;
+  }
+  .first-column {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+  .container-topFooter {
+    padding: 0rem;
+    padding-top: 2.5rem;
+    padding-right: 0rem;
+    padding-bottom: 1.25rem;
+    padding-left: 0rem;
+  }
+
+  .second-column,
+  .third-column,
+  .forth-column,
+  .fifth-column {
+    padding-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  details {
+    width: 100%;
+  }
+
+  details summary {
+    list-style: none;
+    border-bottom: 1px solid var(--white);
+    border-top: 1px solid var(--white);
+  }
+  details ul li {
+    border-top: 0.5px solid var(--white);
+  }
+}

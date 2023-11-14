@@ -1,0 +1,163 @@
+@import url(/assets/CSS/style.css);
+
+.container-store-card {
+  width: 100%;
+}
+
+.container-store-card ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: clamp(2.375rem, 0.816327vw + 2.18367rem, 3rem);
+  background: var(--white);
+  padding: 0;
+  list-style: none;
+}
+
+.container-store-card ul li {
+  border-style: solid;
+  border-color: #d9d9d9;
+  border-width: 1px;
+  width: calc(1 * 100% / 3.1);
+  height: 100%;
+}
+
+.store-card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+  gap: 0.75rem;
+  container: leaf/inline-size;
+  height: 100%;
+}
+
+.container-img-store-card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.images-store-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.images-store-card .store-card-image {
+  display: flex;
+  align-items: center;
+  min-width: 100%;
+  aspect-ratio: 1 / 1;
+  height: 100%;
+  padding-bottom: var(--spacing-static-xs);
+}
+
+.images-store-card .store-card-image img {
+  width: 100%;
+}
+
+.product-attribute {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-right: var(--spacing-static-sm);
+  gap: var(--spacing-static-2xs);
+  font-weight: var(--font-weight-normal);
+  letter-spacing: 0;
+  font-size: clamp(0.8125rem, 0.0816327vw + 0.793367rem, 0.875rem);
+  line-height: 1.5;
+}
+
+.icon-store-card {
+  width: var(--component-icon-size-md);
+}
+
+.icon-store-card svg {
+  width: 100%;
+}
+
+span[data-test="product-rating-label"] .icon-store-card svg {
+  fill: #ffc20e;
+}
+
+.product-title-card a {
+  font-size: clamp(0.875rem, 0.163265vw + 0.836735rem, 1rem);
+  letter-spacing: 0;
+  font-weight: var(--font-weight-semi-bold);
+  line-height: 1.5;
+  color: #2c2c2c;
+}
+
+.product-title-card:hover {
+  text-decoration: underline;
+}
+
+.product-price-card {
+  font-size: clamp(0.875rem, 0.163265vw + 0.836735rem, 1rem);
+  letter-spacing: 0;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.5;
+}
+
+.store-card .standard-button {
+  width: auto;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  overflow: visible;
+  --_height: calc(var(--spacing-static-5xl) + 2 * var(--spacing-static-3xs));
+  padding: 0 var(--spacing-static-md);
+  height: var(--_height);
+}
+
+.store-card .standard-button .container-content-standard-button .bag-icon {
+  margin-right: var(--spacing-static-sm);
+  height: var(--component-icon-size-md);
+  width: var(--component-icon-size-md);
+}
+
+#prevButton,
+#nextButton {
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 1px solid grey;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  background-color: var(--white);
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+#prevButton {
+  left: 2%;
+}
+
+#nextButton {
+  right: 2%;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 901px) {
+  .container-store-card ul li {
+    width: 100%;
+  }
+
+  .container-img-store-card {
+    width: 100%;
+  }
+
+  #prevButton,
+  #nextButton {
+    padding: 1%;
+  }
+}

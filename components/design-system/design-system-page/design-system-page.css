@@ -1,0 +1,88 @@
+.div-container {
+  height: auto;
+  background-color: grey;
+  display: grid;
+  grid-template-columns: 30% 30% 41%;
+  padding: 1rem;
+}
+.div-container-col1,
+.div-container-col2,
+.div-container-col3 {
+  margin-right: 10px;
+  gap: 10px;
+}
+.logo-div {
+  padding: 1rem;
+  width: auto;
+  margin-bottom: 10px;
+  background-color: var(--white);
+}
+.logo-div h2 {
+  text-decoration: underline;
+}
+.container-color-section {
+  grid-row: 2;
+}
+.button-style-div {
+  padding: 1rem;
+  gap: 1rem;
+  width: auto;
+  margin-block: 10px;
+  background-color: var(--white);
+  display: grid;
+  grid-row: 3;
+  grid-template-columns: 48% 60%;
+}
+
+.button-style-div-title {
+  text-decoration: underline;
+  grid-column: 1;
+}
+
+.standard-button-grid {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+.container {
+  margin-left: 10px;
+}
+.container-typography-section {
+  margin-bottom: 10px;
+}
+.icons-div {
+  padding: 1rem;
+  width: auto;
+  margin-bottom: 10px;
+  background-color: var(--white);
+}
+.form-field-div {
+  padding: 1rem;
+  width: auto;
+  margin-bottom: 10px;
+  background-color: var(--white);
+}
+.components-div {
+  padding: 1rem;
+  width: auto;
+  margin-bottom: 10px;
+  background-color: var(--white);
+  /*   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50% 25% 15%;
+  gap: 1rem; */
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-evenly;
+}
+
+.components-div > * {
+  max-width: 30%;
+}
+
+.spanthree {
+  grid-column: 1 / span 3;
+  background-color: var(--white);
+  padding: 2rem;
+}

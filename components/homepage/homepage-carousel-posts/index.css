@@ -1,0 +1,27 @@
+@media (max-width: 1201px) {
+  .prev-button,
+  .next-button {
+    position: absolute;
+  }
+
+  .prev-button {
+    left: 6%;
+  }
+
+  .next-button {
+    right: 6%;
+  }
+  .atom-homepage-post {
+    min-width: 40%;
+  }
+}
+
+@media (max-width: 601px) {
+  .atom-homepage-post {
+    min-width: 75%;
+  }
+}
+
+.hidden {
+  display: none;
+}

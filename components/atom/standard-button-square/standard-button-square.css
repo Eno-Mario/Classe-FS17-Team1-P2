@@ -1,0 +1,72 @@
+/* Stile Base bottone */
+
+.standard-button-square {
+  display: block;
+  max-width: 100%;
+  min-height: var(--icon-sizing-xxl);
+  border: 2px solid;
+  border-radius: 4px;
+  border-collapse: collapse;
+  text-align: center;
+  font-weight: var(--font-weight-semi-bold);
+  font-size: var(--font-size-sm1);
+  line-height: var(--line-height-sm1);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.standard-button-square:hover {
+  background-color: var(--white);
+}
+
+/* dimensioni degli elementi all'interno del bottone */
+
+.standard-button-square .testo,
+.standard-button-square .spinner {
+  font-size: var(--font-size-s0);
+  line-height: var(--line-height-s0);
+}
+
+/* stile classe bottone rosso */
+
+.button-red {
+  background-color: var(--red-button);
+  border-color: var(--red-button);
+}
+
+/* dimensioni SVG */
+
+.standard-button-square .spinner {
+  width: var(--line-height-s0);
+  height: var(--line-height-s0);
+}
+
+/* effetto di spinning all'SVG */
+
+.standard-button-square .spinner .spinner-circle {
+  stroke-width: 5.5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 190, 120;
+  stroke-dashoffset: 0;
+  transform-origin: center center;
+  animation: 1.15s cubic-bezier(0.67, 0.22, 0.43, 0.79) 0s infinite normal none
+    running spin;
+}
+
+@keyframes spin {
+  0%,
+  20% {
+    stroke-dashoffset: 183;
+    transform: rotate(0deg);
+  }
+
+  60% {
+    stroke-dashoffset: 160;
+  }
+
+  100% {
+    stroke-dashoffset: 183;
+    transform: rotate(360deg);
+  }
+}

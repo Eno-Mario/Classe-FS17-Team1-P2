@@ -1,0 +1,92 @@
+@import url(/assets/CSS/style.css);
+
+.container-atom-store-checkbox {
+    overflow: visible;
+    height: auto;
+    position: relative;
+}
+
+
+@media screen and (min-width: 901px) {
+
+    .list-container-atom-store-checkbox {
+        overflow: hidden;
+        transition: max-height 0.5s ease 0s;
+        max-height: 45px;
+    }
+
+    .li-atom-store-checkbox:first-child {
+        padding-top: 10px;
+    }
+
+    .atom-label-for-click {
+        justify-content: left;
+        background: transparent;
+        padding: 0px;
+    }
+
+    .atom-container-space-to-check {
+        margin-right: 10px;
+    }
+}
+
+.list-container-atom-store-checkbox {
+    padding: 0;
+    margin: 0;
+}
+
+.li-atom-store-checkbox {
+    margin-bottom: 10px;
+}
+
+.atom-label-for-click {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+.atom-container-space-to-check {
+    margin-right: 1.25rem;
+}
+
+.atom-input-checkbox {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    box-sizing: border-box;
+    padding: 0;
+    overflow: visible;
+}
+
+.container-image-checkbox {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 1.5625rem;
+    height: 1.5625rem;
+    border: 1px solid rgb(224, 224, 224);
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 0px;
+}
+
+.svg-checkbox-V {
+    width: 60%;
+    height: 60%;
+}
+/*/////////////////////////// effetti checkbox //////////////////////*/
+.checkbox-image-not-visible {
+    opacity: 0;
+}
+
+.slot-square-checkbox-shadow {
+    box-shadow: 0 0 10px rgba(22, 100, 209, 1);
+}
+
+.span-number-check {
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    color: rgb(117, 117, 117);
+    margin-left: 5px;
+}

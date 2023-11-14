@@ -1,0 +1,41 @@
+.newCategory {
+  max-width: 100rem;
+  margin: 0px auto;
+  background-color: var(--red);
+}
+
+.newCategory li {
+  list-style: none;
+}
+
+.markup-container .markup {
+  color: white;
+}
+.principalCard {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+  line-height: 1.1875rem;
+  padding: 0.3125rem;
+  margin: 0;
+}
+
+.newArticle a {
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+}
+
+.lessOp {
+  transition: opacity 0.15s ease-out 0s;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 600px) {
+  .newArticle {
+    min-width: 9rem;
+  }
+}

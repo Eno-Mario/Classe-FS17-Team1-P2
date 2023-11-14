@@ -1,0 +1,24 @@
+.product-characteristics-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 20px;
+  scroll-snap-align: start;
+}
+
+.container-product-characteristics-card-title {
+  padding-top: 20px;
+  margin-bottom: 15px;
+}
+
+.product-characteristics-card-title {
+  font-size: var(--font-size-s2);
+  line-height: var(--line-height-s2);
+  margin: 0px;
+}
+
+.product-characteristics-card-description {
+  margin: 0px;
+  font-size: var(--font-size-sm1);
+  line-height: var(--line-height-sm1);
+}

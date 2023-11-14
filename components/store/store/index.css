@@ -1,0 +1,12 @@
+@import url(/assets/CSS/style.css);
+
+main {
+  position: relative;
+  width: 100vw;
+  max-width: 100rem;
+  margin: auto;
+}
+
+.store {
+  display: flex;
+}

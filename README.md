@@ -1,22 +1,50 @@
 # Classe-FS17-Team1-P2
+
 Progetto #2 LEGO
 
-Creazione della HomePage di JustEat, e della pagina di ricerca
+Clonare pagina ufficiale della LEGO.
 
-Membri:
+# Membri:
 
-* Eno Mario Piselli
-* Stefano Sala
-* Bjorn Agbalog
-* Adolfo Gomez
-* Stefan Petrea
+- Eno Mario Piselli
+- Stefano Sala
+- Bjorn Agbalog
+- Adolfo Gomez
+- Stefan Petrea
 
-Bacheca:
+# Bacheca:
 
+<https://trello.com/b/vo525mKA/team-1-lego>
 
+# Presentazione:
 
-Presentazione:
+# Branch Naming:
 
+- atom-component/”nome componente atomo”
+- component/”nome componente”
+- bugfix/”nome componente da fixare”
+- docu/”nome file modificato”
+- style/”nome componente”
+- feature/”nome componente JS”
+- refactor/"nome componente"
 
+# Commit Naming:
 
-Come avviare il progetto
+- component: - in caso di creazione componente
+- style: - in caso di modifiche o creazioni solo su CSS
+- fix: - per bug fixing
+- docs: - in caso di modifica documentazione
+- feat: - in caso di creazione feature
+- refactor: - in caso di refactor del codice quando non c'è un bug
+
+# Class Naming:
+
+- In inglese
+- atom-nome componente
+- contenitore-nome componente
+
+# Component Naming:
+
+- “nome componente” (atom)
+- header/footer-”nome componente”
+- “nome pagina”-”nome componente”

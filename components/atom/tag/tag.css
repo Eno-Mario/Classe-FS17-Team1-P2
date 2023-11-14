@@ -1,0 +1,21 @@
+.atom-product-tag {
+  width: 100%;
+  max-width:fit-content;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: var(--font-size-sm1);
+}
+.atom-product-tag-yellow {
+  display: inline-block;
+  background-color: var(--header);
+  padding: 3.04px 10px;
+  margin: 0 4.32px 5px 0;
+}
+.atom-product-tag-red {
+  display: inline-block;
+  padding: 0 10px;
+  background-color: rgb(208, 2, 27);;
+  color: var(--white);
+  font-weight: var(--font-weight-bold);
+}

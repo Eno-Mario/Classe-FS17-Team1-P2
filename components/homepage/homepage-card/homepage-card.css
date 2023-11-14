@@ -1,0 +1,56 @@
+.atom-homepage-card {
+  min-width: calc(25% + 0.546875rem);
+  scroll-snap-align: start; /* Imposta l'allineamento snap sulla parte iniziale dell'elemento */
+  padding-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.img-container-card {
+  border: 1px solid lightgrey;
+  aspect-ratio: 1/1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.atom-homepage-card-img {
+  transform: scale(0.909) translateZ(0px);
+}
+
+.atom-homepage-card-img:hover,
+.atom-homepage-card-img {
+  transition: transform 600ms cubic-bezier(0, 0, 0.2, 1) 0s;
+  transition-duration: 600ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-delay: 0s;
+  transition-property: transform;
+}
+
+.atom-homepage-card-img:hover {
+  transform: scale(1) translateZ(0px);
+}
+
+.atom-homepage-card-content {
+  display: flex;
+  flex-direction: column;
+}
+.atom-homepage-card-title {
+  font-weight: var(--font-weight-semi-bold);
+
+  margin: 0;
+  margin-top: 10px;
+
+  text-align: left;
+}
+.atom-homepage-card-title:hover {
+  text-decoration: underline;
+}
+.atom-homepage-card-icons {
+  justify-content: left;
+}
+.atom-homepage-card-price {
+  justify-content: left;
+
+  font-weight: var(--font-weight-bold);
+}

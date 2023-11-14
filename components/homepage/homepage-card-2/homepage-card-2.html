@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/components/common.css" />
+    <link rel="stylesheet" href="homepage-card-2.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- DIV CONTENENTE TUTTE LE CARD -->
+    <div class="newCategory">
+      <!-- UL CHE APRE L'ELENCO DELLE CARD -->
+      <ul class="principalCard">
+        <!-- CARD DELLE NOVITA -->
+        <li class="newArticle">
+          <!-- USATE A HREF IN MODO DA RENDERE L'IMMAGINE UTILIZZABILE COME COLLEGAMENTO WEB -->
+          <a href="">
+            <img
+              srcset="
+                https://www.lego.com/cdn/cs/set/assets/blt413a72c966de5019/1812-Novelty-Homepage-202301-Quicklink.png?format=webply&amp;fit=crop&amp;quality=75&amp;width=120&amp;height=97&amp;dpr=1   1x,
+                https://www.lego.com/cdn/cs/set/assets/blt413a72c966de5019/1812-Novelty-Homepage-202301-Quicklink.png?format=webply&amp;fit=crop&amp;quality=60&amp;width=120&amp;height=97&amp;dpr=2   2x,
+                https://www.lego.com/cdn/cs/set/assets/blt413a72c966de5019/1812-Novelty-Homepage-202301-Quicklink.png?format=webply&amp;fit=crop&amp;quality=55&amp;width=120&amp;height=97&amp;dpr=3   3x,
+                https://www.lego.com/cdn/cs/set/assets/blt413a72c966de5019/1812-Novelty-Homepage-202301-Quicklink.png?format=webply&amp;fit=crop&amp;quality=70&amp;width=120&amp;height=97&amp;dpr=1.5 1.5x
+              "
+              media="(min-width: 900px)"
+              width="120"
+              height="97"
+              alt=""
+              decoding="async"
+              loading="lazy"
+              style="object-fit: fill"
+            />
+
+            <!-- DIV CONTENENTE LA SCRITTA "NOVITA" -->
+            <div aria-hidden="false" class="markup-container">
+              <!-- SPAN CONTENENTE LA SCRITTA "NOVITA" -->
+              <span data-test="markup" class="markup">Novità</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

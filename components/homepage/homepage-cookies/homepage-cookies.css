@@ -1,0 +1,119 @@
+.homepage-cookie-container {
+  margin-bottom: 30px;
+}
+.homepage-cookie-banner {
+  display: inline-flex;
+  background-color: rgb(230, 243, 255);
+  padding: var(--icon-sizing-4xs);
+  position: relative;
+  border-radius: 46px;
+}
+.homepage-cookie-img-circle {
+  border: 3px solid var(--white);
+  border-radius: 100px;
+  margin-right: 15px;
+  max-height: 6.25rem;
+}
+.homepage-cookie-img-circle img {
+  max-width: 6.25rem;
+}
+
+.homepage-cookie-text-img {
+  display: flex;
+}
+.homepage-cookie-text-img img {
+  height: 8.25rem;
+  margin-left: 0.9375rem;
+}
+.homepage-cookie-text-title {
+  font-size: var(--font-size-s1);
+  font-weight: 700;
+  display: block;
+}
+.homepage-cookie-text-paragraph {
+  font-size: var(--font-size-sm1);
+}
+.homepage-cookie-button {
+  margin-right: 20px;
+}
+.homepage-cookie-button,
+.homepage-cookie-links a {
+  font-size: var(--font-size-sm1);
+  color: #006db7;
+  text-decoration: underline;
+}
+.homepage-cookie-disabled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.homepage-cookie-disabled-container {
+  background-color: var(--white);
+  max-width: 37.5rem;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 15px;
+}
+.homepage-cookie-disabled-container-text h2 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.homepage-cookie-disabled-container-text p {
+  margin: 1em 0px;
+  font-size: 0.75rem;
+}
+.homepage-cookie-disabled-container-button {
+  width: 100%;
+  text-align: center;
+}
+.homepage-cookie-disabled-button-required {
+  width: 42%;
+  padding: 0.9375rem;
+  border-radius: 4px;
+  border: 1px solid rgb(0, 109, 183);
+}
+.homepage-cookie-disabled-button-required:hover {
+  background-color: rgb(230, 243, 255);
+}
+.homepage-cookie-disabled-button-all {
+  width: 42%;
+  padding: 0.9375rem;
+  border: 1px solid rgb(0, 109, 183);
+  background-color: rgb(0, 109, 183);
+  border-radius: 4px;
+  color: var(--white);
+  margin-left: 25px;
+}
+.homepage-cookie-disabled-button-all:hover {
+  color: black;
+  background-color: white;
+}
+.homepage-cookie-disabled-container-button-impostation {
+  font-size: 0.875rem;
+  color: rgb(0, 109, 183);
+  cursor: pointer;
+}
+.homepage-cookie-disabled-container-button-impostation:hover {
+  text-decoration: underline;
+}
+.homepage-cookie-displayed-none {
+  display: none;
+}
+
+@media screen and (max-width: 601px) {
+  .homepage-cookie-banner {
+    border-radius: 0px;
+  }
+  .homepage-cookie-text-img img {
+    display: none;
+  }
+}
