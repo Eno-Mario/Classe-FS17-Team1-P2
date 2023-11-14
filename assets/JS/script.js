@@ -3836,7 +3836,7 @@ function openStore() {
           </div>
           <div class="product-list-details-image">
             <img
-              src="https://www.lego.com/cdn/cs/set/assets/blt476547efc6c46393/10325_alt1.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+              src="${el.img1}"
               alt=""
             />
           </div>
