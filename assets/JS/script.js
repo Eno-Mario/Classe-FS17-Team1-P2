@@ -293,13 +293,16 @@ function openStore() {
 
   const cardDataArr = [
     {
-      title: "Calendario dell’Avvento 2023 LEGO® ",
+      title: "Calendario dell’Avvento 2023 LEGO® Star Wars",
       price: 37.99,
       rating: 4.0,
       pieces: 320,
-      age: "6+",
-      img1: "https://www.lego.com/cdn/cs/set/assets/blt8345f6a8fc46d84b/75366_alt1.png?format=webply&fit=bounds&quality=90&width=320&height=320&dpr=1.5",
-      img2: "https://www.lego.com/cdn/cs/set/assets/bltff8d93722741aaec/75366.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      age: 6,
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt8345f6a8fc46d84b/75366_alt1.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/bltff8d93722741aaec/75366.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img3: "https://www.lego.com/cdn/cs/set/assets/bltc80782a9abb9d13e/75366_alt2.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img4: "https://www.lego.com/cdn/cs/set/assets/bltf7f8b2ce7961b9de/75366_alt3.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img5: "https://www.lego.com/cdn/cs/set/assets/blt6a6a2202ddc3c309/75366_alt4.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
     },
 
     {
@@ -307,171 +310,281 @@ function openStore() {
       price: 679.99,
       rating: 4.6,
       pieces: 9090,
-      age: "18+",
-      img1: "https://www.lego.com/cdn/cs/set/assets/bltb94632aeb971eb91/10294.jpg?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-      img2: "https://www.lego.com/cdn/cs/set/assets/blt4970f39471f38330/10294_alt1.jpg?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      age: 18,
+      img1: "https://www.lego.com/cdn/cs/set/assets/bltb94632aeb971eb91/10294.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt4970f39471f38330/10294_alt1.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img3: "https://www.lego.com/cdn/cs/set/assets/blt106cc94abfc29747/10294_alt2.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img4: "https://www.lego.com/cdn/cs/set/assets/blte2a2360888017d69/10294_alt3.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img5: "https://www.lego.com/cdn/cs/set/assets/blt31ad7a24060bc1f8/10294_alt4.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img6: "https://www.lego.com/cdn/cs/set/assets/blt26b206b09edcbc0b/10294_alt5.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img7: "https://www.lego.com/cdn/cs/set/assets/bltbb9bc2c8fa5f5f3a/10294_alt6.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img8: "https://www.lego.com/cdn/cs/set/assets/blt3c7bc7c49bce90d9/10294_alt7.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
     },
     {
       title: "Baita alpina",
       price: 99.99,
       rating: 4.7,
       pieces: 1517,
-      age: "18+",
-      img1: "https://www.lego.com/cdn/cs/set/assets/blt2069f4aa0d3bb63a/10325.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-      img2: "https://www.lego.com/cdn/cs/set/assets/blt476547efc6c46393/10325_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      age: 18,
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt2069f4aa0d3bb63a/10325.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt476547efc6c46393/10325_alt1.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img3: "https://www.lego.com/cdn/cs/set/assets/blt293729cad317017b/10325_alt2.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img4: "https://www.lego.com/cdn/cs/set/assets/blt0b1d21d210bb34e6/10325_alt3.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img5: "https://www.lego.com/cdn/cs/set/assets/bltda6a600fc3e6ff2c/10325_alt4.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img6: "https://www.lego.com/cdn/cs/set/assets/blt5ffbad599e42d9cb/10325_alt5.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img7: "https://www.lego.com/cdn/cs/set/assets/blt3cffc4a5936374fb/10325_alt6.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img8: "https://www.lego.com/cdn/cs/set/assets/blt984515879600d5fc/10325_alt7.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
     },
     {
       title: "Mamma ho perso l'aereo LEGO® Ideas",
       price: 299.99,
       rating: 4.8,
       pieces: 3955,
-      age: "18+",
-      img1: "https://www.lego.com/cdn/cs/set/assets/blt0ba2da641d7f0426/21330_prod.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-      img2: "https://www.lego.com/cdn/cs/set/assets/blt9c69d4a46c794509/21330_box1.jpg?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      age: 18,
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt0ba2da641d7f0426/21330_prod.png?format=webply&fit=bounds&quality=70&width=640&height=640&dpr=1.5",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt9c69d4a46c794509/21330_box1.jpg?format=webply&fit=bounds&quality=70&width=640&height=640&dpr=1.5",
+      img3: "https://www.lego.com/cdn/cs/set/assets/blt758788523f96138b/21330_alt1.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img4: "https://www.lego.com/cdn/cs/set/assets/blt33395590760cfb8e/21330_alt2.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img5: "https://www.lego.com/cdn/cs/set/assets/bltda8c79f512f688ff/21330_alt3.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img6: "https://www.lego.com/cdn/cs/set/assets/bltb5a663dd115605cd/21330_alt4.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img7: "https://www.lego.com/cdn/cs/set/assets/bltdefeaac575b10c65/21330_alt5.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img8: "https://www.lego.com/cdn/cs/set/assets/bltcdee6511375f7f15/21330_alt6.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
     },
     {
-      title: "Diorama festivo Millennium Falcon™",
-      price: 29.99,
-      rating: 4.4,
-      pieces: 282,
-      age: "8+",
-      img1: "https://www.lego.com/cdn/cs/set/assets/blte9e3f43203ffb465/40658.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-      img2: "https://www.lego.com/cdn/cs/set/assets/bltb15db65de54cd0c1/40658_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      title: "Volo su Londra di Peter Pan e Wendy",
+      price: 64.99,
+      rating: 4.7,
+      pieces: 466,
+      age: 10,
+      img1: "https://www.lego.com/cdn/cs/set/assets/blta9cf728f7ec432e6/43232.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/bltd196340d0f239d16/43232_alt1.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img3: "https://www.lego.com/cdn/cs/set/assets/blt7470bafd19a26ad7/43232_alt2.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img4: "https://www.lego.com/cdn/cs/set/assets/blt28b53285cec055b5/43232_alt3.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img5: "https://www.lego.com/cdn/cs/set/assets/blt0fba5cb10b7c05e7/43232_alt4.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img6: "https://www.lego.com/cdn/cs/set/assets/blta443e6700dcc6c6a/43232_alt5.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img7: "https://www.lego.com/cdn/cs/set/assets/blt16000198565a6af7/43232_alt6.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img8: "https://www.lego.com/cdn/cs/set/assets/bltaa12293981b53677/43232_alt7.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
     },
     {
       title: "Villaggio vichingo",
       price: 139.99,
       rating: 5.0,
       pieces: 2103,
-      age: "18+",
-      img1: "https://www.lego.com/cdn/cs/set/assets/blt331198c8f34e2d7a/21343.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-      img2: "https://www.lego.com/cdn/cs/set/assets/blt0f02b0cd97117394/21343_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      age: 18,
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt331198c8f34e2d7a/21343.png?format=webply&fit=bounds&quality=70&width=640&height=640&dpr=1.5",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt0f02b0cd97117394/21343_alt1.png?format=webply&fit=bounds&quality=70&width=640&height=640&dpr=1.5",
+      img3: "https://www.lego.com/cdn/cs/set/assets/bltd3734359d5eaab89/21343_alt2.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img4: "https://www.lego.com/cdn/cs/set/assets/blt39fec5119b34b029/21343_alt3.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img5: "https://www.lego.com/cdn/cs/set/assets/blteac6c44051894a87/21343_alt4.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img6: "https://www.lego.com/cdn/cs/set/assets/blt9232ddd20240d8ed/21343_alt5.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img7: "https://www.lego.com/cdn/cs/set/assets/bltf4871e3d6901ce02/21343_alt6.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img8: "https://www.lego.com/cdn/cs/set/assets/blt662498e776508601/21343_alt7.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
     },
     {
-      title: "Calendario dell’Avvento 2023 LEGO® Harry Potter™",
-      price: 37.99,
-      rating: 4.1,
-      pieces: 227,
-      age: "7+",
-      img1: "https://www.lego.com/cdn/cs/set/assets/blt5bee6dfe45656c70/76418.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-      img2: "https://www.lego.com/cdn/cs/set/assets/blte0ec1fd42d23e74a/76418_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      title: "Icone dei cattivi Disney",
+      price: 139.99,
+      rating: 4.9,
+      pieces: 1540,
+      age: 18,
+      img1: "https://www.lego.com/cdn/cs/set/assets/bltb0a3100b328dfcb0/43227.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt4d1db96a8eaf5e22/43227_alt1.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img3: "https://www.lego.com/cdn/cs/set/assets/blt6a7e870aa27d422f/43227_alt2.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img4: "https://www.lego.com/cdn/cs/set/assets/blt86086006bff28b1b/43227_alt4.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img5: "https://www.lego.com/cdn/cs/set/assets/blt0213500d9432584a/43227_alt3.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img6: "https://www.lego.com/cdn/cs/set/assets/bltb7a7ad4615afb413/43227_alt5.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img7: "https://www.lego.com/cdn/cs/set/assets/blt5a7b7f84207ed58a/43227_alt7.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img8: "https://www.lego.com/cdn/cs/set/assets/bltf9cf8b13ab4df635/43227_alt8.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
     },
     {
-      title: "Ornamenti di pan di zenzero ",
-      price: 12.99,
+      title: "Ghost e Phantom II",
+      price: 169.99,
+      rating: 4.6,
+      pieces: 1394,
+      age: 10,
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt743223623ed6a485/75357.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/bltd1ab1e6e34719af9/75357_alt1.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img3: "https://www.lego.com/cdn/cs/set/assets/blt6871fb6aeaad8cea/75357_alt6.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img4: "https://www.lego.com/cdn/cs/set/assets/blt95e25d64852971b6/75357_alt7.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img5: "https://www.lego.com/cdn/cs/set/assets/blt0e5b86677e5c34ab/75357_alt8.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img6: "https://www.lego.com/cdn/cs/set/assets/blte1cf2aad7573af90/75357_alt9.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img7: "https://www.lego.com/cdn/cs/set/assets/blt20a751b605c83b38/75357_alt2.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img8: "https://www.lego.com/cdn/cs/set/assets/blt36d8729132a568ad/75357_alt3.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+    },
+    {
+      title: "Giardino botanico",
+      price: 84.99,
       rating: 5.0,
-      pieces: 190,
-      age: "6+",
-      img1: "https://www.lego.com/cdn/cs/set/assets/blt07583839482ebcd5/40642.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-      img2: "https://www.lego.com/cdn/cs/set/assets/blt661309b4a5cff5b9/40642_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-    },
-    {
-      title: "Collezione di insetti",
-      price: 79.99,
-      rating: 5.0,
-      pieces: 1111,
-      age: "18+",
-      img1: "https://www.lego.com/cdn/cs/set/assets/blte32d946cf23b2e5c/21342.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-      img2: "https://www.lego.com/cdn/cs/set/assets/bltc49c2a0af0b77684/21342_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      pieces: 1072,
+      age: 12,
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt58d360250a7d0739/41757.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt2b1afe8e4740e27a/41757_alt1.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img3: "https://www.lego.com/cdn/cs/set/assets/blt89e882f601678843/41757_alt2.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img4: "https://www.lego.com/cdn/cs/set/assets/blt85099645adc501e3/41757_alt3.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img5: "https://www.lego.com/cdn/cs/set/assets/blt3c09b87e14d8a67a/41757_alt4.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img6: "https://www.lego.com/cdn/cs/set/assets/blt69a6984faf4c97d1/41757_alt5.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img7: "https://www.lego.com/cdn/cs/set/assets/bltbbc4e0e01aed3b29/41757_alt6.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img8: "https://www.lego.com/cdn/cs/set/assets/blt4e49e8b73e53cbfa/41757_alt7.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
     },
     {
       title: "Colosseo",
       price: 549.99,
       rating: 4.8,
       pieces: 9036,
-      age: "18+",
-      img1: "https://www.lego.com/cdn/cs/set/assets/blt7c4044f7aa529af3/10276_alt2.jpg?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-      img2: "https://www.lego.com/cdn/cs/set/assets/blt26cc4dd7f5cf656e/10276_alt1.jpg?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      age: 18,
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt7c4044f7aa529af3/10276_alt2.jpg?format=webply&fit=bounds&quality=70&width=640&height=640&dpr=1.5",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt26cc4dd7f5cf656e/10276_alt1.jpg?format=webply&fit=bounds&quality=70&width=640&height=640&dpr=1.5",
+      img3: "https://www.lego.com/cdn/cs/set/assets/blt5040546f8d1c4614/10276_alt3.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img4: "https://www.lego.com/cdn/cs/set/assets/blte647fb88e2bb38a8/10276_alt4.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img5: "https://www.lego.com/cdn/cs/set/assets/blt8008b5e0e006456f/10276_alt5.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img6: "https://www.lego.com/cdn/cs/set/assets/blt01997186cd4a3b00/10276_alt6.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img7: "https://www.lego.com/cdn/cs/set/assets/blt18442ec27e84b3bf/10276_alt7.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img8: "https://www.lego.com/cdn/cs/set/assets/blt61eba9a1c5d85895/10276_alt20.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
     },
     {
       title: "Incrociatore d'attacco della Repubblica classe Venator",
       price: 649.99,
       rating: 4.7,
       pieces: 5374,
-      age: "18+",
-      img1: "https://www.lego.com/cdn/cs/set/assets/blt06c6593d8e8d1c13/75367.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-      img2: "https://www.lego.com/cdn/cs/set/assets/blt266b40dfb46ff5de/75367_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      age: 18,
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt06c6593d8e8d1c13/75367.png?format=webply&fit=bounds&quality=70&width=640&height=640&dpr=1.5",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt266b40dfb46ff5de/75367_alt1.png?format=webply&fit=bounds&quality=70&width=640&height=640&dpr=1.5",
+      img3: "https://www.lego.com/cdn/cs/set/assets/bltcfe4c209d7b5b7d2/75367_alt2.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img4: "https://www.lego.com/cdn/cs/set/assets/blta6d35cf64688bd7e/75367_alt3.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img5: "https://www.lego.com/cdn/cs/set/assets/bltb2ff00084c4d3cd7/75367_alt4.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img6: "https://www.lego.com/cdn/cs/set/assets/blt27eb167889485630/75367_alt5.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img7: "https://www.lego.com/cdn/cs/set/assets/blt2128bb47bc840972/75367_alt6.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img8: "https://www.lego.com/cdn/cs/set/assets/bltcd81a6934554cb94/75367_alt7.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
     },
     {
       title: "Minifigure LEGO® a grandezza naturale",
       price: 49.99,
       rating: 5.0,
       pieces: 654,
-      age: "10+",
-      img1: "https://www.lego.com/cdn/cs/set/assets/blt742e8599eb5e8931/40649.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-      img2: "https://www.lego.com/cdn/cs/set/assets/blt78b39f5757ec88eb/40649_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1s",
+      age: 10,
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt742e8599eb5e8931/40649.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt78b39f5757ec88eb/40649_alt1.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img3: "https://www.lego.com/cdn/cs/set/assets/blt0d2ef6fe545c3593/40649_alt2.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img4: "https://www.lego.com/cdn/cs/set/assets/bltccebe33614fe17e1/40649_alt3.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img5: "https://www.lego.com/cdn/cs/set/assets/blt1081a8ad4ef0e935/40649_alt4.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img6: "https://www.lego.com/cdn/cs/set/assets/blt0c23adbc9d96a693/40649_alt5.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
     },
     {
       title: "Concorde",
       price: 199.99,
       rating: 4.9,
       pieces: 2083,
-      age: "18+",
-      img1: "https://www.lego.com/cdn/cs/set/assets/bltdc7097183ba14c89/10318.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-      img2: "https://www.lego.com/cdn/cs/set/assets/bltd56ac1c273e08f9f/10318_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      age: 18,
+      img1: "https://www.lego.com/cdn/cs/set/assets/bltdc7097183ba14c89/10318.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/bltd56ac1c273e08f9f/10318_alt1.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img3: "https://www.lego.com/cdn/cs/set/assets/bltfb105dece8087036/10318_alt2.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img4: "https://www.lego.com/cdn/cs/set/assets/blt80185e5c2d763534/10318_alt3.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img5: "https://www.lego.com/cdn/cs/set/assets/bltc368de600d3a8e3e/10318_alt4.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img6: "https://www.lego.com/cdn/cs/set/assets/blt8833c7dec6caac85/10318_alt5.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img7: "https://www.lego.com/cdn/cs/set/assets/bltfef4e2596c70f6ba/10318_alt6.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img8: "https://www.lego.com/cdn/cs/set/assets/blt8787c9d7d348f41c/10318_alt7.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
     },
     {
-      title: "Cinepresa omaggio a Walt Disney ",
+      title: "Stazione di Polizia",
       price: 99.99,
       rating: 4.8,
       pieces: 811,
-      age: "18+",
-      img1: "https://www.lego.com/cdn/cs/set/assets/blta0d2ef903df1c30c/43230.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-      img2: "https://www.lego.com/cdn/cs/set/assets/blt236dabe25eeb9c3a/43230_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      age: 18,
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt22867b1f8fba50b3/10278_Prod.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt9f8f222b4d6ddf9b/10278_alt1.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img3: "https://www.lego.com/cdn/cs/set/assets/blt9cb3c82fe7c9edda/10278_alt2.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img4: "https://www.lego.com/cdn/cs/set/assets/bltf3813c12f623b335/10278_alt3.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img5: "https://www.lego.com/cdn/cs/set/assets/bltfb27bf8272014d75/10278_alt4.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img6: "https://www.lego.com/cdn/cs/set/assets/blta351bc0ea28e0103/10278_alt5.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img7: "https://www.lego.com/cdn/cs/set/assets/blte3cea45d1d5b6091/10278_alt6.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img8: "https://www.lego.com/cdn/cs/set/assets/bltd329aa3485c8d454/10278_alt7.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
     },
     {
       title: "IL SIGNORE DEGLI ANELLI: GRAN BURRONE",
       price: 499.99,
       rating: 4.8,
       pieces: 6167,
-      age: "18+",
-      img1: "https://www.lego.com/cdn/cs/set/assets/bltec012c948c003fba/10316_alt16.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-      img2: "https://www.lego.com/cdn/cs/set/assets/blt33d693d46b4b5858/10316_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      age: 18,
+      img1: "https://www.lego.com/cdn/cs/set/assets/bltec012c948c003fba/10316_alt16.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt33d693d46b4b5858/10316_alt1.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1s",
+      img3: "https://www.lego.com/cdn/cs/set/assets/blt0a0c82506f8bd960/10316.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img4: "https://www.lego.com/cdn/cs/set/assets/bltf60debbc5b62ec15/10316_alt2.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img5: "https://www.lego.com/cdn/cs/set/assets/bltf6c63e58e6201b11/10316_alt3.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img6: "https://www.lego.com/cdn/cs/set/assets/blt7cda2452018985c3/10316_alt4.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img7: "https://www.lego.com/cdn/cs/set/assets/bltd90e31a939a87d8e/10316_alt5.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img8: "https://www.lego.com/cdn/cs/set/assets/blta9a57450a2f6820c/10316_alt6.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
     },
     {
       title: "Fortezza di Eldorado",
       price: 214.99,
       rating: 4.5,
       pieces: 2509,
-      age: "18+",
-      img1: "https://www.lego.com/cdn/cs/set/assets/bltde348ae9bd9b3de2/10320.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-      img2: "https://www.lego.com/cdn/cs/set/assets/bltbd0d2797d43ad684/10320_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      age: 18,
+      img1: "https://www.lego.com/cdn/cs/set/assets/bltde348ae9bd9b3de2/10320.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/bltbd0d2797d43ad684/10320_alt1.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img3: "https://www.lego.com/cdn/cs/set/assets/blt1909ea1188745ab8/10320_alt2.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img4: "https://www.lego.com/cdn/cs/set/assets/bltb92a0205d6c58747/10320_alt3.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img5: "https://www.lego.com/cdn/cs/set/assets/blt176bdc3fa37a39a3/10320_alt4.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img6: "https://www.lego.com/cdn/cs/set/assets/blt2caec37ddfd56167/10320_alt5.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img7: "https://www.lego.com/cdn/cs/set/assets/bltc5923c0f14725c70/10320_alt10.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img8: "https://www.lego.com/cdn/cs/set/assets/blt77e7f44388885031/10320_alt6.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
     },
     {
       title: "Banca dei Maghi Gringott™ – Edizione del Collezionista",
       price: 429.99,
       rating: 4.8,
       pieces: 4803,
-      age: "18+",
-      img1: "https://www.lego.com/cdn/cs/set/assets/bltfbd377eafb67041a/76417.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-      img2: "https://www.lego.com/cdn/cs/set/assets/blt3db77dbc731f5eeb/76417_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      age: 18,
+      img1: "https://www.lego.com/cdn/cs/set/assets/bltfbd377eafb67041a/76417.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt3db77dbc731f5eeb/76417_alt1.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img3: "https://www.lego.com/cdn/cs/set/assets/blt5ea33eb6eb515925/76417_alt2.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img4: "https://www.lego.com/cdn/cs/set/assets/blt8b282234ad44638e/76417_alt3.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img5: "https://www.lego.com/cdn/cs/set/assets/bltb06c34f4bda992f4/76417_alt4.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img6: "https://www.lego.com/cdn/cs/set/assets/bltb0fd43c41129ac09/76417_alt5.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img7: "https://www.lego.com/cdn/cs/set/assets/bltfc8f664168673602/76417_alt6.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img8: "https://www.lego.com/cdn/cs/set/assets/blt80ec055086a3919e/76417_alt7.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
     },
     {
       title: "Castello e parco di Hogwarts™",
       price: 169.99,
       rating: 4.6,
       pieces: 2660,
-      age: "18+",
-      img1: "https://www.lego.com/cdn/cs/set/assets/blte09f96efc93d5c1d/76419.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-      img2: "https://www.lego.com/cdn/cs/set/assets/blt5a988358a6267b58/76419_alt1.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      age: 18,
+      img1: "https://www.lego.com/cdn/cs/set/assets/blte09f96efc93d5c1d/76419.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt5a988358a6267b58/76419_alt1.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img3: "https://www.lego.com/cdn/cs/set/assets/blt5b733a63c312a4bf/76419_alt4.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img4: "https://www.lego.com/cdn/cs/set/assets/blt784b4fd602b82f77/76419_alt5.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img5: "https://www.lego.com/cdn/cs/set/assets/bltba664ed2c46ac574/76419_alt6.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img6: "https://www.lego.com/cdn/cs/set/assets/blt82938990cc9e4385/76419_alt7.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img7: "https://www.lego.com/cdn/cs/set/assets/blt4046fec53a66c3ab/76419_alt8.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img8: "https://www.lego.com/cdn/cs/set/assets/bltdca84860ceac737c/76419_alt9.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
     },
     {
-      title: "La slitta di Babbo Natale",
-      price: 39.99,
-      rating: 4.6,
-      pieces: 343,
-      age: "9+",
-      img1: "https://www.lego.com/cdn/cs/set/assets/bltb7d457aa2ce9f859/40499_Prod.png?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-      img2: "https://www.lego.com/cdn/cs/set/assets/blt2e970dc39af8ba0e/40499_alt1.jpg?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      title: "La visita di Babbo Natale",
+      price: 99.99,
+      rating: 4.8,
+      pieces: 1445,
+      age: 18,
+      img1: "https://www.lego.com/cdn/cs/set/assets/bltb148945c2bb2f149/10293.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/blt00f50f1154bdd4a9/10293_alt1.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img3: "https://www.lego.com/cdn/cs/set/assets/blt59ebc420cdbc4ed8/10293_alt2.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img4: "https://www.lego.com/cdn/cs/set/assets/blt06d96795199f4be3/10293_alt3.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img5: "https://www.lego.com/cdn/cs/set/assets/blt29187c9488cf3bdc/10293_alt4.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img6: "https://www.lego.com/cdn/cs/set/assets/blt097b217d1d989782/10293_alt5.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img7: "https://www.lego.com/cdn/cs/set/assets/blt13645451aff30e1e/10293_alt6.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img8: "https://www.lego.com/cdn/cs/set/assets/blt8a026fe8a152d6dc/10293_alt7.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
     },
     {
       title: "LEGO® House ",
       price: 49.99,
       rating: 4.0,
       pieces: 774,
-      age: "12+",
-      img1: "https://www.lego.com/cdn/cs/set/assets/blt4ec90da36b68ebcf/21037.jpg?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
-      img2: "https://www.lego.com/cdn/cs/set/assets/bltc5d88a7042c458d2/21037_alt1.jpg?format=webply&fit=bounds&quality=100&width=320&height=320&dpr=1",
+      age: 12,
+      img1: "https://www.lego.com/cdn/cs/set/assets/blt4ec90da36b68ebcf/21037.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img2: "https://www.lego.com/cdn/cs/set/assets/bltc5d88a7042c458d2/21037_alt1.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img3: "https://www.lego.com/cdn/cs/set/assets/blt23af934c5c312577/21037_alt2.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img4: "https://www.lego.com/cdn/cs/set/assets/bltfddbc2e5e2ac86ce/21037_alt3.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img5: "https://www.lego.com/cdn/cs/set/assets/bltc165bf5bf61f94eb/21037_alt4.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
+      img6: "https://www.lego.com/cdn/cs/set/assets/blt44d99dc3775b2b75/21037_alt5.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1",
     },
   ];
 
@@ -1661,6 +1774,2965 @@ function openStore() {
       </div>
     </div>
 
+        <div class="product-details-container">
+      <!-- Primo accordion tab -->
+      <div class="product-details-accordion-holder">
+        <button class="product-details-accordion-button">
+          <div class="content-accordion-button">
+            <h2>Caratteristiche</h2>
+          </div>
+          <div>
+            <img
+              src="https://www.svgrepo.com/show/2087/plus.svg"
+              width="15px"
+            />
+          </div>
+        </button>
+      </div>
+
+      <!-- Content inside first tab -->
+      <div class="product-details-accordion-panel">
+        <div class="product-details-accordion-video-content" name="DIV1">
+          <!-- VIDEO LOCATION -->
+          <video
+            autoplay
+            loop
+            muted
+            src="https://www.lego.com/cdn/cs/set/assets/blt331f679eafe7505f/10325_AID2303845P1GL_ShopperVideo_30s_16x9_WoText.mp4"
+          ></video>
+        </div>
+
+        <div class="product-details-accordion-text-content" name="DIV2">
+          <div class="product-detail-accordion-text">
+            <span class="product-detail-text-holder">
+              <span>Crea un'accogliente rifugio innevato</span>
+              <br />
+              <span
+                >Dalle camere degli ospiti decorate a festa ai caminetti
+                illuminati, una pista di pattinaggio all'aperto e persino una
+                cabina-WC, il set Baita alpina LEGO® Icons è un'aggiunta
+                divertente e gratificante alla tua collezione Villaggio
+                invernale LEGO Icons.
+              </span>
+            </span>
+          </div>
+        </div>
+
+        <div class="product-details-accordion-content accordion-bottom-image">
+          <img
+            src="https://www.lego.com/cdn/cs/set/assets/blt9351c9f3b7f526dd/10325-202310-PDP-Hero-Short-Large.jpg?fit=crop&format=jpg&quality=80&width=1600&height=200&dpr=1"
+            alt=""
+          />
+        </div>
+        <div
+          class="product-details-accordion-content accordion-side-text"
+          name="DIV4"
+        >
+          <img
+            src="https://www.lego.com/cdn/cs/set/assets/blt237d4d81bbadb2a5/10325-202310-PDP-Hero-Carousel-Large-1.jpg?fit=crop&format=jpg&quality=80&width=1600&height=500&dpr=1"
+            alt=""
+          />
+          <div class="product-detail-accordion-right-side-content">
+            <h2>Fai un giro sulla pista di pattinaggio all'aperto</h2>
+          </div>
+        </div>
+        <div
+          class="product-details-accordion-content accordion-left-side-text"
+          name="DIV5"
+        >
+          <img
+            src="https://www.lego.com/cdn/cs/set/assets/blt606ce6afeece8661/10325-202310-PDP-Hero-Carousel-Large-2.jpg?fit=crop&format=jpg&quality=80&width=1600&height=500&dpr=1"
+            alt=""
+          />
+          <div class="product-detail-accordion-left-side-content">
+            <h2>Salta sulla motoslitta e consegna l'albero di Natale</h2>
+          </div>
+        </div>
+        <!-- DIV 6 -->
+        <div
+          class="product-details-accordion-content accordion-red-bg"
+          name="DIV6"
+        >
+          <div class="accordion-card-holder">
+            <div class="accordion-card">
+              <img
+                src="https://www.lego.com/cdn/cs/set/assets/blt7baad072a18a4c09/10325-202310-PDP-Block-Standard-1.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1"
+                alt=""
+              />
+              <span>Sorprendi un amico nella cabina-WC</span>
+            </div>
+            <div class="accordion-card">
+              <img
+                src="https://www.lego.com/cdn/cs/set/assets/blt432beb8c81613613/10325-202310-PDP-Block-Standard-2.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1"
+                alt=""
+              />
+              <span>Sistemati per la notte nell'accogliente loft</span>
+            </div>
+            <div class="accordion-card">
+              <img
+                src="https://www.lego.com/cdn/cs/set/assets/blt7c0ea79ae08e7277/10325-202310-PDP-Block-Standard-3.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1"
+                alt=""
+              />
+              <span>
+                Condividi una cioccolata calda accanto al fuoco(mattoncino
+                nuvoloso)
+              </span>
+            </div>
+            <div class="accordion-card">
+              <img
+                src="https://www.lego.com/cdn/cs/set/assets/blte2cdcee09afa9caf/10325-202310-PDP-Block-Standard-4.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1"
+                alt=""
+              />
+              <span>Scambiatevi i regali accanto all'albero decorato</span>
+            </div>
+          </div>
+          <div class="accordion-card-holder-carousel">
+            <div class="carousel-accordion-container">
+              <!-- Actual Carousel component -->
+              <div class="carousel-container">
+                <div class="carousel">
+                  <div class="atom-homepage-card">
+                    <div class="img-container-card">
+                      <img
+                        src="https://www.lego.com/cdn/cs/set/assets/bltfb3ccae42fc241c7/10308.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                        alt="main image of the card"
+                        class="atom-homepage-card-img"
+                      />
+                    </div>
+
+                    <div class="atom-homepage-card-content">
+                      <h3 class="atom-homepage-card-title">
+                        Natale nella strada principale
+                      </h3>
+                      <div class="atom-homepage-card-icons">
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/halfStar.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                      </div>
+                      <p class="atom-homepage-card-price">99,99€</p>
+                      <!--       SPAZIO BOTTONE         -->
+
+                      <button
+                        class="standard-button standard-button-square button-red"
+                      >
+                        <div class="spinner-container hidden">
+                          <svg class="spinner" viewBox="0 0 66 66">
+                            <circle
+                              cx="33"
+                              cy="33"
+                              r="20"
+                              fill="none"
+                              stroke="#000000"
+                              class="spinner-circle"
+                            ></circle>
+                          </svg>
+                        </div>
+                        <div class="container-content-standard-button">
+                          <div class="testo">Su ordinazione</div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="atom-homepage-card">
+                    <div class="img-container-card">
+                      <img
+                        src="https://www.lego.com/cdn/cs/set/assets/blte9e3f43203ffb465/40658.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                        alt="main image of the card"
+                        class="atom-homepage-card-img"
+                      />
+                    </div>
+
+                    <div class="atom-homepage-card-content">
+                      <h3 class="atom-homepage-card-title">
+                        Diorama Millenium falcon™
+                      </h3>
+                      <div class="atom-homepage-card-icons">
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/halfStar.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                      </div>
+                      <p class="atom-homepage-card-price">29,99€</p>
+                      <!--       SPAZIO BOTTONE         -->
+
+                      <button
+                        class="standard-button standard-button-square button-red"
+                      >
+                        <div class="spinner-container hidden">
+                          <svg class="spinner" viewBox="0 0 66 66">
+                            <circle
+                              cx="33"
+                              cy="33"
+                              r="20"
+                              fill="none"
+                              stroke="#000000"
+                              class="spinner-circle"
+                            ></circle>
+                          </svg>
+                        </div>
+                        <div class="container-content-standard-button">
+                          <div class="testo">Su ordinazione</div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="atom-homepage-card">
+                    <div class="img-container-card">
+                      <img
+                        src="https://www.lego.com/cdn/cs/set/assets/bltb148945c2bb2f149/10293.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1"
+                        alt="main image of the card"
+                        class="atom-homepage-card-img"
+                      />
+                    </div>
+
+                    <div class="atom-homepage-card-content">
+                      <h3 class="atom-homepage-card-title">
+                        La visita di Babbo Natale
+                      </h3>
+                      <div class="atom-homepage-card-icons">
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/halfStar.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                      </div>
+                      <p class="atom-homepage-card-price">99,99€</p>
+                      <!--       SPAZIO BOTTONE         -->
+
+                      <button
+                        class="standard-button standard-button-square button-red"
+                      >
+                        <div class="spinner-container hidden">
+                          <svg class="spinner" viewBox="0 0 66 66">
+                            <circle
+                              cx="33"
+                              cy="33"
+                              r="20"
+                              fill="none"
+                              stroke="#000000"
+                              class="spinner-circle"
+                            ></circle>
+                          </svg>
+                        </div>
+                        <div class="container-content-standard-button">
+                          <div class="testo">Su ordinazione</div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="atom-homepage-card">
+                    <div class="img-container-card">
+                      <img
+                        src="https://www.lego.com/cdn/cs/set/assets/blt331198c8f34e2d7a/21343.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                        alt="main image of the card"
+                        class="atom-homepage-card-img"
+                      />
+                    </div>
+
+                    <div class="atom-homepage-card-content">
+                      <h3 class="atom-homepage-card-title">
+                        Villaggio vichingo
+                      </h3>
+                      <div class="atom-homepage-card-icons">
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                      </div>
+                      <p class="atom-homepage-card-price">139,99€</p>
+                      <!--       SPAZIO BOTTONE         -->
+
+                      <button
+                        class="standard-button standard-button-square button-red"
+                      >
+                        <div class="spinner-container hidden">
+                          <svg class="spinner" viewBox="0 0 66 66">
+                            <circle
+                              cx="33"
+                              cy="33"
+                              r="20"
+                              fill="none"
+                              stroke="#000000"
+                              class="spinner-circle"
+                            ></circle>
+                          </svg>
+                        </div>
+                        <div class="container-content-standard-button">
+                          <div class="testo">Su ordinazione</div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="atom-homepage-card">
+                    <div class="img-container-card">
+                      <img
+                        src="https://www.lego.com/cdn/cs/set/assets/bltb7d457aa2ce9f859/40499_Prod.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                        alt="main image of the card"
+                        class="atom-homepage-card-img"
+                      />
+                    </div>
+
+                    <div class="atom-homepage-card-content">
+                      <h3 class="atom-homepage-card-title">
+                        La slitta di Babbo Natale
+                      </h3>
+                      <div class="atom-homepage-card-icons">
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                      </div>
+                      <p class="atom-homepage-card-price">44,99€</p>
+                      <!--       SPAZIO BOTTONE         -->
+
+                      <button
+                        class="standard-button standard-button-square button-red"
+                      >
+                        <div class="spinner-container hidden">
+                          <svg class="spinner" viewBox="0 0 66 66">
+                            <circle
+                              cx="33"
+                              cy="33"
+                              r="20"
+                              fill="none"
+                              stroke="#000000"
+                              class="spinner-circle"
+                            ></circle>
+                          </svg>
+                        </div>
+                        <div class="container-content-standard-button">
+                          <div class="testo">Su ordinazione</div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="atom-homepage-card">
+                    <div class="img-container-card">
+                      <img
+                        src="https://www.lego.com/cdn/cs/set/assets/blt3d62bb5d68e6dbd7/10295.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1"
+                        alt="main image of the card"
+                        class="atom-homepage-card-img"
+                      />
+                    </div>
+
+                    <div class="atom-homepage-card-content">
+                      <h3 class="atom-homepage-card-title">Porsche 911</h3>
+                      <div class="atom-homepage-card-icons">
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/halfStar.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                      </div>
+                      <p class="atom-homepage-card-price">169,99€</p>
+                      <!--       SPAZIO BOTTONE         -->
+
+                      <button
+                        class="standard-button standard-button-square button-red"
+                      >
+                        <div class="spinner-container hidden">
+                          <svg class="spinner" viewBox="0 0 66 66">
+                            <circle
+                              cx="33"
+                              cy="33"
+                              r="20"
+                              fill="none"
+                              stroke="#000000"
+                              class="spinner-circle"
+                            ></circle>
+                          </svg>
+                        </div>
+                        <div class="container-content-standard-button">
+                          <div class="testo">Su ordinazione</div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="atom-homepage-card">
+                    <div class="img-container-card">
+                      <img
+                        src="https://www.lego.com/cdn/cs/set/assets/blt2564f1fe0e59bb78/10321.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                        alt="main image of the card"
+                        class="atom-homepage-card-img"
+                      />
+                    </div>
+
+                    <div class="atom-homepage-card-content">
+                      <h3 class="atom-homepage-card-title">Corvette</h3>
+                      <div class="atom-homepage-card-icons">
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                      </div>
+                      <p class="atom-homepage-card-price">149,99€</p>
+                      <!--       SPAZIO BOTTONE         -->
+
+                      <button
+                        class="standard-button standard-button-square button-red"
+                      >
+                        <div class="spinner-container hidden">
+                          <svg class="spinner" viewBox="0 0 66 66">
+                            <circle
+                              cx="33"
+                              cy="33"
+                              r="20"
+                              fill="none"
+                              stroke="#000000"
+                              class="spinner-circle"
+                            ></circle>
+                          </svg>
+                        </div>
+                        <div class="container-content-standard-button">
+                          <div class="testo">Su ordinazione</div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="atom-homepage-card">
+                    <div class="img-container-card">
+                      <img
+                        src="https://www.lego.com/cdn/cs/set/assets/blte09f96efc93d5c1d/76419.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                        alt="main image of the card"
+                        class="atom-homepage-card-img"
+                      />
+                    </div>
+
+                    <div class="atom-homepage-card-content">
+                      <h3 class="atom-homepage-card-title">
+                        Castello e parco di Hogwarts™
+                      </h3>
+                      <div class="atom-homepage-card-icons">
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                      </div>
+                      <p class="atom-homepage-card-price">169,99€</p>
+                      <!--       SPAZIO BOTTONE         -->
+
+                      <button
+                        class="standard-button standard-button-square button-red"
+                      >
+                        <div class="spinner-container hidden">
+                          <svg class="spinner" viewBox="0 0 66 66">
+                            <circle
+                              cx="33"
+                              cy="33"
+                              r="20"
+                              fill="none"
+                              stroke="#000000"
+                              class="spinner-circle"
+                            ></circle>
+                          </svg>
+                        </div>
+                        <div class="container-content-standard-button">
+                          <div class="testo">Su ordinazione</div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="atom-homepage-card">
+                    <div class="img-container-card">
+                      <img
+                        src="https://www.lego.com/cdn/cs/set/assets/blte780055922ecc267/60366.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                        alt="main image of the card"
+                        class="atom-homepage-card-img"
+                      />
+                    </div>
+
+                    <div class="atom-homepage-card-content">
+                      <h3 class="atom-homepage-card-title">
+                        Centro sci e arrampicata
+                      </h3>
+                      <div class="atom-homepage-card-icons">
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                      </div>
+                      <p class="atom-homepage-card-price">104,99€</p>
+                      <!--       SPAZIO BOTTONE         -->
+
+                      <button
+                        class="standard-button standard-button-square button-red"
+                      >
+                        <div class="spinner-container hidden">
+                          <svg class="spinner" viewBox="0 0 66 66">
+                            <circle
+                              cx="33"
+                              cy="33"
+                              r="20"
+                              fill="none"
+                              stroke="#000000"
+                              class="spinner-circle"
+                            ></circle>
+                          </svg>
+                        </div>
+                        <div class="container-content-standard-button">
+                          <div class="testo">Su ordinazione</div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="atom-homepage-card">
+                    <div class="img-container-card">
+                      <img
+                        src="https://www.lego.com/cdn/cs/set/assets/blt08ba1f2bb5e8f2fb/10326.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                        alt="main image of the card"
+                        class="atom-homepage-card-img"
+                      />
+                    </div>
+
+                    <div class="atom-homepage-card-content">
+                      <h3 class="atom-homepage-card-title">
+                        Museo di Storia Naturale
+                      </h3>
+                      <div class="atom-homepage-card-icons">
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                      </div>
+                      <p class="atom-homepage-card-price">299,99€</p>
+                      <!--       SPAZIO BOTTONE         -->
+
+                      <button
+                        class="standard-button standard-button-square button-red"
+                      >
+                        <div class="spinner-container hidden">
+                          <svg class="spinner" viewBox="0 0 66 66">
+                            <circle
+                              cx="33"
+                              cy="33"
+                              r="20"
+                              fill="none"
+                              stroke="#000000"
+                              class="spinner-circle"
+                            ></circle>
+                          </svg>
+                        </div>
+                        <div class="container-content-standard-button">
+                          <div class="testo">Su ordinazione</div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="atom-homepage-card">
+                    <div class="img-container-card">
+                      <img
+                        src="https://www.lego.com/cdn/cs/set/assets/blt729f7a96490ebf6f/10304.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                        alt="main image of the card"
+                        class="atom-homepage-card-img"
+                      />
+                    </div>
+
+                    <div class="atom-homepage-card-content">
+                      <h3 class="atom-homepage-card-title">
+                        Chevrolet Camaro Z28
+                      </h3>
+                      <div class="atom-homepage-card-icons">
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                      </div>
+                      <p class="atom-homepage-card-price">169,99€</p>
+                      <!--       SPAZIO BOTTONE         -->
+
+                      <button
+                        class="standard-button standard-button-square button-red"
+                      >
+                        <div class="spinner-container hidden">
+                          <svg class="spinner" viewBox="0 0 66 66">
+                            <circle
+                              cx="33"
+                              cy="33"
+                              r="20"
+                              fill="none"
+                              stroke="#000000"
+                              class="spinner-circle"
+                            ></circle>
+                          </svg>
+                        </div>
+                        <div class="container-content-standard-button">
+                          <div class="testo">Su ordinazione</div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="atom-homepage-card">
+                    <div class="img-container-card">
+                      <img
+                        src="https://www.lego.com/cdn/cs/set/assets/bltc1a3afc5b5af3287/10315.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                        alt="main image of the card"
+                        class="atom-homepage-card-img"
+                      />
+                    </div>
+
+                    <div class="atom-homepage-card-content">
+                      <h3 class="atom-homepage-card-title">
+                        Il giardino Tranquillo
+                      </h3>
+                      <div class="atom-homepage-card-icons">
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                        <img
+                          src="/assets/icons/star.svg"
+                          alt="stellina gialla"
+                          width="15px"
+                        />
+                      </div>
+                      <p class="atom-homepage-card-price">104,99€</p>
+                      <!--       SPAZIO BOTTONE         -->
+
+                      <button
+                        class="standard-button standard-button-square button-red"
+                      >
+                        <div class="spinner-container hidden">
+                          <svg class="spinner" viewBox="0 0 66 66">
+                            <circle
+                              cx="33"
+                              cy="33"
+                              r="20"
+                              fill="none"
+                              stroke="#000000"
+                              class="spinner-circle"
+                            ></circle>
+                          </svg>
+                        </div>
+                        <div class="container-content-standard-button">
+                          <div class="testo">Su ordinazione</div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="prev-button">
+                  <svg viewBox="0 0 40 40" class="next round-butt">
+                    <g fill="none" fill-rule="evenodd">
+                      <rect opacity="1" width="38" height="38" rx="20"></rect>
+                      <path
+                        d="M16.42 9L29 20 16.42 31 15 29.653 26.042 20 15 10.347z"
+                        class="next"
+                      ></path>
+                    </g>
+                  </svg>
+                </button>
+                <button class="next-button">
+                  <svg viewBox="0 0 40 40" class="next round-butt">
+                    <g fill="none" fill-rule="evenodd">
+                      <rect opacity="1"></rect>
+                      <path
+                        d="M16.42 9L29 20 16.42 31 15 29.653 26.042 20 15 10.347z"
+                        class="next"
+                      ></path>
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-details-accordion-content accordion-side-button">
+          <img
+            src="https://www.lego.com/cdn/cs/set/assets/blt7d86a498a23b97f2/10325-202310-PDP-Hero-Carousel-Large-3.jpg?fit=crop&format=jpg&quality=80&width=1600&height=500&dpr=1"
+            alt=""
+          />
+          <div class="product-detail-accordion-left-side-content">
+            <h2>
+              Un'aggiunta festosa a qualsiasi collezione Villagio invernale
+            </h2>
+            <button class="accordion-button">
+              Compra ora
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 18 28"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                class="homepage-subscription-button-svg"
+              >
+                <path
+                  d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="product-details-accordion-content accordion-double-div">
+          <div class="left-side-accordion-content">
+            <img
+              src="https://www.lego.com/cdn/cs/set/assets/blt450376755b8f5e1a/10325-PDP-202310-Sidekick-Standard.jpg?fit=crop&format=jpg&quality=80&width=800&height=426&dpr=1"
+              alt=""
+            />
+          </div>
+          <div class="right-side-accordion-content accordion-side-button2">
+            <div class="product-detail-accordion-right-side-content">
+              <h2>Leggi tutto sulla collezione Villaggio invernale LEGO®</h2>
+              <button class="accordion-button">
+                Iscriviti ora
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 18 28"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="homepage-subscription-button-svg"
+                >
+                  <path
+                    d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- CAROUSEL DIV -->
+        <div class="product-details-accordion-content">
+          <!-- Carousel space here -->
+          <div class="carousel-accordion-container">
+            <div class="carousel-title">
+              <h1>Scopri altri set stagionali</h1>
+              <p>Visualizza tutti</p>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 18 28"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                class="carousel-link-svg"
+              >
+                <path
+                  d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <!-- Actual Carousel component -->
+            <div class="carousel-container">
+              <div class="carousel">
+                <div class="atom-homepage-card">
+                  <div class="img-container-card">
+                    <img
+                      src="https://www.lego.com/cdn/cs/set/assets/bltfb3ccae42fc241c7/10308.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                      alt="main image of the card"
+                      class="atom-homepage-card-img"
+                    />
+                  </div>
+
+                  <div class="atom-homepage-card-content">
+                    <h3 class="atom-homepage-card-title">
+                      Natale nella strada principale
+                    </h3>
+                    <div class="atom-homepage-card-icons">
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/halfStar.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                    </div>
+                    <p class="atom-homepage-card-price">99,99€</p>
+                    <!--       SPAZIO BOTTONE         -->
+
+                    <button
+                      class="standard-button standard-button-square button-red"
+                    >
+                      <div class="spinner-container hidden">
+                        <svg class="spinner" viewBox="0 0 66 66">
+                          <circle
+                            cx="33"
+                            cy="33"
+                            r="20"
+                            fill="none"
+                            stroke="#000000"
+                            class="spinner-circle"
+                          ></circle>
+                        </svg>
+                      </div>
+                      <div class="container-content-standard-button">
+                        <div class="testo">Su ordinazione</div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="atom-homepage-card">
+                  <div class="img-container-card">
+                    <img
+                      src="https://www.lego.com/cdn/cs/set/assets/blte9e3f43203ffb465/40658.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                      alt="main image of the card"
+                      class="atom-homepage-card-img"
+                    />
+                  </div>
+
+                  <div class="atom-homepage-card-content">
+                    <h3 class="atom-homepage-card-title">
+                      Diorama Millenium falcon™
+                    </h3>
+                    <div class="atom-homepage-card-icons">
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/halfStar.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                    </div>
+                    <p class="atom-homepage-card-price">29,99€</p>
+                    <!--       SPAZIO BOTTONE         -->
+
+                    <button
+                      class="standard-button standard-button-square button-red"
+                    >
+                      <div class="spinner-container hidden">
+                        <svg class="spinner" viewBox="0 0 66 66">
+                          <circle
+                            cx="33"
+                            cy="33"
+                            r="20"
+                            fill="none"
+                            stroke="#000000"
+                            class="spinner-circle"
+                          ></circle>
+                        </svg>
+                      </div>
+                      <div class="container-content-standard-button">
+                        <div class="testo">Su ordinazione</div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="atom-homepage-card">
+                  <div class="img-container-card">
+                    <img
+                      src="https://www.lego.com/cdn/cs/set/assets/bltb148945c2bb2f149/10293.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1"
+                      alt="main image of the card"
+                      class="atom-homepage-card-img"
+                    />
+                  </div>
+
+                  <div class="atom-homepage-card-content">
+                    <h3 class="atom-homepage-card-title">
+                      La visita di Babbo Natale
+                    </h3>
+                    <div class="atom-homepage-card-icons">
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/halfStar.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                    </div>
+                    <p class="atom-homepage-card-price">99,99€</p>
+                    <!--       SPAZIO BOTTONE         -->
+
+                    <button
+                      class="standard-button standard-button-square button-red"
+                    >
+                      <div class="spinner-container hidden">
+                        <svg class="spinner" viewBox="0 0 66 66">
+                          <circle
+                            cx="33"
+                            cy="33"
+                            r="20"
+                            fill="none"
+                            stroke="#000000"
+                            class="spinner-circle"
+                          ></circle>
+                        </svg>
+                      </div>
+                      <div class="container-content-standard-button">
+                        <div class="testo">Su ordinazione</div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="atom-homepage-card">
+                  <div class="img-container-card">
+                    <img
+                      src="https://www.lego.com/cdn/cs/set/assets/blt331198c8f34e2d7a/21343.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                      alt="main image of the card"
+                      class="atom-homepage-card-img"
+                    />
+                  </div>
+
+                  <div class="atom-homepage-card-content">
+                    <h3 class="atom-homepage-card-title">Villaggio vichingo</h3>
+                    <div class="atom-homepage-card-icons">
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                    </div>
+                    <p class="atom-homepage-card-price">139,99€</p>
+                    <!--       SPAZIO BOTTONE         -->
+
+                    <button
+                      class="standard-button standard-button-square button-red"
+                    >
+                      <div class="spinner-container hidden">
+                        <svg class="spinner" viewBox="0 0 66 66">
+                          <circle
+                            cx="33"
+                            cy="33"
+                            r="20"
+                            fill="none"
+                            stroke="#000000"
+                            class="spinner-circle"
+                          ></circle>
+                        </svg>
+                      </div>
+                      <div class="container-content-standard-button">
+                        <div class="testo">Su ordinazione</div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="atom-homepage-card">
+                  <div class="img-container-card">
+                    <img
+                      src="https://www.lego.com/cdn/cs/set/assets/bltb7d457aa2ce9f859/40499_Prod.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                      alt="main image of the card"
+                      class="atom-homepage-card-img"
+                    />
+                  </div>
+
+                  <div class="atom-homepage-card-content">
+                    <h3 class="atom-homepage-card-title">
+                      La slitta di Babbo Natale
+                    </h3>
+                    <div class="atom-homepage-card-icons">
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                    </div>
+                    <p class="atom-homepage-card-price">44,99€</p>
+                    <!--       SPAZIO BOTTONE         -->
+
+                    <button
+                      class="standard-button standard-button-square button-red"
+                    >
+                      <div class="spinner-container hidden">
+                        <svg class="spinner" viewBox="0 0 66 66">
+                          <circle
+                            cx="33"
+                            cy="33"
+                            r="20"
+                            fill="none"
+                            stroke="#000000"
+                            class="spinner-circle"
+                          ></circle>
+                        </svg>
+                      </div>
+                      <div class="container-content-standard-button">
+                        <div class="testo">Su ordinazione</div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="atom-homepage-card">
+                  <div class="img-container-card">
+                    <img
+                      src="https://www.lego.com/cdn/cs/set/assets/blt3d62bb5d68e6dbd7/10295.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1"
+                      alt="main image of the card"
+                      class="atom-homepage-card-img"
+                    />
+                  </div>
+
+                  <div class="atom-homepage-card-content">
+                    <h3 class="atom-homepage-card-title">Porsche 911</h3>
+                    <div class="atom-homepage-card-icons">
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/halfStar.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                    </div>
+                    <p class="atom-homepage-card-price">169,99€</p>
+                    <!--       SPAZIO BOTTONE         -->
+
+                    <button
+                      class="standard-button standard-button-square button-red"
+                    >
+                      <div class="spinner-container hidden">
+                        <svg class="spinner" viewBox="0 0 66 66">
+                          <circle
+                            cx="33"
+                            cy="33"
+                            r="20"
+                            fill="none"
+                            stroke="#000000"
+                            class="spinner-circle"
+                          ></circle>
+                        </svg>
+                      </div>
+                      <div class="container-content-standard-button">
+                        <div class="testo">Su ordinazione</div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="atom-homepage-card">
+                  <div class="img-container-card">
+                    <img
+                      src="https://www.lego.com/cdn/cs/set/assets/blt2564f1fe0e59bb78/10321.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                      alt="main image of the card"
+                      class="atom-homepage-card-img"
+                    />
+                  </div>
+
+                  <div class="atom-homepage-card-content">
+                    <h3 class="atom-homepage-card-title">Corvette</h3>
+                    <div class="atom-homepage-card-icons">
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                    </div>
+                    <p class="atom-homepage-card-price">149,99€</p>
+                    <!--       SPAZIO BOTTONE         -->
+
+                    <button
+                      class="standard-button standard-button-square button-red"
+                    >
+                      <div class="spinner-container hidden">
+                        <svg class="spinner" viewBox="0 0 66 66">
+                          <circle
+                            cx="33"
+                            cy="33"
+                            r="20"
+                            fill="none"
+                            stroke="#000000"
+                            class="spinner-circle"
+                          ></circle>
+                        </svg>
+                      </div>
+                      <div class="container-content-standard-button">
+                        <div class="testo">Su ordinazione</div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="atom-homepage-card">
+                  <div class="img-container-card">
+                    <img
+                      src="https://www.lego.com/cdn/cs/set/assets/blte09f96efc93d5c1d/76419.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                      alt="main image of the card"
+                      class="atom-homepage-card-img"
+                    />
+                  </div>
+
+                  <div class="atom-homepage-card-content">
+                    <h3 class="atom-homepage-card-title">
+                      Castello e parco di Hogwarts™
+                    </h3>
+                    <div class="atom-homepage-card-icons">
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                    </div>
+                    <p class="atom-homepage-card-price">169,99€</p>
+                    <!--       SPAZIO BOTTONE         -->
+
+                    <button
+                      class="standard-button standard-button-square button-red"
+                    >
+                      <div class="spinner-container hidden">
+                        <svg class="spinner" viewBox="0 0 66 66">
+                          <circle
+                            cx="33"
+                            cy="33"
+                            r="20"
+                            fill="none"
+                            stroke="#000000"
+                            class="spinner-circle"
+                          ></circle>
+                        </svg>
+                      </div>
+                      <div class="container-content-standard-button">
+                        <div class="testo">Su ordinazione</div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="atom-homepage-card">
+                  <div class="img-container-card">
+                    <img
+                      src="https://www.lego.com/cdn/cs/set/assets/blte780055922ecc267/60366.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                      alt="main image of the card"
+                      class="atom-homepage-card-img"
+                    />
+                  </div>
+
+                  <div class="atom-homepage-card-content">
+                    <h3 class="atom-homepage-card-title">
+                      Centro sci e arrampicata
+                    </h3>
+                    <div class="atom-homepage-card-icons">
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                    </div>
+                    <p class="atom-homepage-card-price">104,99€</p>
+                    <!--       SPAZIO BOTTONE         -->
+
+                    <button
+                      class="standard-button standard-button-square button-red"
+                    >
+                      <div class="spinner-container hidden">
+                        <svg class="spinner" viewBox="0 0 66 66">
+                          <circle
+                            cx="33"
+                            cy="33"
+                            r="20"
+                            fill="none"
+                            stroke="#000000"
+                            class="spinner-circle"
+                          ></circle>
+                        </svg>
+                      </div>
+                      <div class="container-content-standard-button">
+                        <div class="testo">Su ordinazione</div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="atom-homepage-card">
+                  <div class="img-container-card">
+                    <img
+                      src="https://www.lego.com/cdn/cs/set/assets/blt08ba1f2bb5e8f2fb/10326.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                      alt="main image of the card"
+                      class="atom-homepage-card-img"
+                    />
+                  </div>
+
+                  <div class="atom-homepage-card-content">
+                    <h3 class="atom-homepage-card-title">
+                      Museo di Storia Naturale
+                    </h3>
+                    <div class="atom-homepage-card-icons">
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                    </div>
+                    <p class="atom-homepage-card-price">299,99€</p>
+                    <!--       SPAZIO BOTTONE         -->
+
+                    <button
+                      class="standard-button standard-button-square button-red"
+                    >
+                      <div class="spinner-container hidden">
+                        <svg class="spinner" viewBox="0 0 66 66">
+                          <circle
+                            cx="33"
+                            cy="33"
+                            r="20"
+                            fill="none"
+                            stroke="#000000"
+                            class="spinner-circle"
+                          ></circle>
+                        </svg>
+                      </div>
+                      <div class="container-content-standard-button">
+                        <div class="testo">Su ordinazione</div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="atom-homepage-card">
+                  <div class="img-container-card">
+                    <img
+                      src="https://www.lego.com/cdn/cs/set/assets/blt729f7a96490ebf6f/10304.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                      alt="main image of the card"
+                      class="atom-homepage-card-img"
+                    />
+                  </div>
+
+                  <div class="atom-homepage-card-content">
+                    <h3 class="atom-homepage-card-title">
+                      Chevrolet Camaro Z28
+                    </h3>
+                    <div class="atom-homepage-card-icons">
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                    </div>
+                    <p class="atom-homepage-card-price">169,99€</p>
+                    <!--       SPAZIO BOTTONE         -->
+
+                    <button
+                      class="standard-button standard-button-square button-red"
+                    >
+                      <div class="spinner-container hidden">
+                        <svg class="spinner" viewBox="0 0 66 66">
+                          <circle
+                            cx="33"
+                            cy="33"
+                            r="20"
+                            fill="none"
+                            stroke="#000000"
+                            class="spinner-circle"
+                          ></circle>
+                        </svg>
+                      </div>
+                      <div class="container-content-standard-button">
+                        <div class="testo">Su ordinazione</div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="atom-homepage-card">
+                  <div class="img-container-card">
+                    <img
+                      src="https://www.lego.com/cdn/cs/set/assets/bltc1a3afc5b5af3287/10315.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                      alt="main image of the card"
+                      class="atom-homepage-card-img"
+                    />
+                  </div>
+
+                  <div class="atom-homepage-card-content">
+                    <h3 class="atom-homepage-card-title">
+                      Il giardino Tranquillo
+                    </h3>
+                    <div class="atom-homepage-card-icons">
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                      <img
+                        src="/assets/icons/star.svg"
+                        alt="stellina gialla"
+                        width="15px"
+                      />
+                    </div>
+                    <p class="atom-homepage-card-price">104,99€</p>
+                    <!--       SPAZIO BOTTONE         -->
+
+                    <button
+                      class="standard-button standard-button-square button-red"
+                    >
+                      <div class="spinner-container hidden">
+                        <svg class="spinner" viewBox="0 0 66 66">
+                          <circle
+                            cx="33"
+                            cy="33"
+                            r="20"
+                            fill="none"
+                            stroke="#000000"
+                            class="spinner-circle"
+                          ></circle>
+                        </svg>
+                      </div>
+                      <div class="container-content-standard-button">
+                        <div class="testo">Su ordinazione</div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <button class="prev-button">
+                <svg viewBox="0 0 40 40" class="next round-butt">
+                  <g fill="none" fill-rule="evenodd">
+                    <rect opacity="1" width="38" height="38" rx="20"></rect>
+                    <path
+                      d="M16.42 9L29 20 16.42 31 15 29.653 26.042 20 15 10.347z"
+                      class="next"
+                    ></path>
+                  </g>
+                </svg>
+              </button>
+              <button class="next-button">
+                <svg viewBox="0 0 40 40" class="next round-butt">
+                  <g fill="none" fill-rule="evenodd">
+                    <rect opacity="1"></rect>
+                    <path
+                      d="M16.42 9L29 20 16.42 31 15 29.653 26.042 20 15 10.347z"
+                      class="next"
+                    ></path>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Secondo accordion tab -->
+      <div class="product-details-accordion-holder">
+        <button class="product-details-accordion-button">
+          <div class="content-accordion-button">
+            <h2>Dettagli del prodotto</h2>
+          </div>
+          <div>
+            <img
+              src="https://www.svgrepo.com/show/2087/plus.svg"
+              width="15px"
+            />
+          </div>
+        </button>
+      </div>
+      <!-- Content inside second tab -->
+      <div class="product-details-accordion-panel">
+        <div class="product-details-list-container">
+          <div class="detail-list-main-content">
+            <p>
+              Benvenuto alla Baita alpina LEGO® Icons (10325), l’ultima novità
+              nella popolare collezione Villaggio invernale LEGO. Prenditi una
+              pausa e realizza un accogliente bed and breakfast innevato con
+              camere confortevoli e caminetti accesi.
+            </p>
+            <p>
+              Dettagli fantastici <br />
+              Questo modello di baita a 3 livelli contiene una reception
+              arredata con bancone del check-in, caminetto illuminato e macchina
+              per il caffè, una camera per gli ospiti al secondo piano con
+              caminetto illuminato e 2 letti, e una camera da letto soppalcata
+              al terzo piano. Le caratteristiche esterne includono un negozio di
+              legna, un box per gli sci, un’area di pattinaggio e cabina-WC, più
+              una motoslitta, un albero di Natale, 5 minifigure e uccelli, gatti
+              e scoiattoli.
+            </p>
+            <p>
+              Un modello festivo per tutta la famiglia <br />Scopri uno spazio
+              per il relax con questo set LEGO di alta qualità, una fantastica
+              idea regalo per i fan della collezione Villaggio invernale LEGO
+              con istruzioni per la costruzione separate per bambini e adulti.
+            </p>
+            <ul>
+              <li>
+                Un festoso progetto di costruzione in famiglia: trascorri del
+                tempo di qualità realizzando tutti i dettagli della Baita alpina
+                LEGO® Icons (10325)
+              </li>
+              <li>
+                Cosa c’è nella scatola? Tutto il necessario per costruire la
+                baita alpina a 3 piani, l’area di pattinaggio all’aperto, la
+                cabina-WC, la motoslitta e il rimorchio, più un albero di
+                Natale, 5 minifigure e un gatto, uno scoiattolo e un uccello
+              </li>
+              <li>
+                Caratteristiche e funzioni: premi il comignolo per accendere i
+                caminetti nella reception e nella camera degli ospiti al secondo
+                piano
+              </li>
+              <li>
+                Un regalo LEGO®: regala questo set da costruzione per il
+                compleanno, il Natale o qualsiasi altra occasione a un fan
+                adulto dei set da costruzione LEGO e della collezione Villaggio
+                invernale LEGO
+              </li>
+              <li>
+                Dimensioni: il modello della baita misura 21 cm di altezza, 24
+                cm di larghezza e 16 cm di profondità
+              </li>
+              <li>
+                Accessori: il set include un albero di Natale, decorazioni per
+                l’albero di Natale e un libro degli ospiti
+              </li>
+              <li>
+                Istruzioni per la costruzione digitale: l’app LEGO® Builder
+                contiene una versione digitale delle istruzioni di montaggio
+                incluse in questo set
+              </li>
+              <li>
+                Progetti LEGO® pieni di mindfulness per gli adulti e le
+                famiglie: questo set da costruzione fa parte di una gamma di
+                modelli avanzati progettati per gli adulti, le famiglie e gli
+                amici
+              </li>
+              <li>
+                Materiali di qualità: dal 1958, i mattoncini da costruzione
+                LEGO® sono prodotti con materiali di prima qualità. Sono sempre
+                uniformi e compatibili e si montano e si smontano facilmente
+              </li>
+              <li>
+                Garanzia di sicurezza: con i pezzi LEGO®, la sicurezza e la
+                qualità sono una priorità. Sono infatti rigorosamente testati,
+                per assicurare che questo modello di hotel sia tanto sicuro e
+                robusto
+              </li>
+            </ul>
+          </div>
+          <div class="product-list-details-image">
+            <img
+              src="https://www.lego.com/cdn/cs/set/assets/blt476547efc6c46393/10325_alt1.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Terzo accordion tab -->
+      <div class="product-details-accordion-holder">
+        <button class="product-details-accordion-button">
+          <div class="content-accordion-button">
+            <h2>Recensioni di Prodotti</h2>
+            <div class="content-accordion-review-extra">
+              <img src="/assets/icons/star.svg" width="15px" alt="" />
+              <img src="/assets/icons/star.svg" width="15px" alt="" />
+              <img src="/assets/icons/star.svg" width="15px" alt="" />
+              <img src="/assets/icons/star.svg" width="15px" alt="" />
+              <img src="/assets/icons/star.svg" width="15px" alt="" />
+            </div>
+            <span>9 Recensioni</span>
+          </div>
+          <div>
+            <img
+              src="https://www.svgrepo.com/show/2087/plus.svg"
+              width="15px"
+            />
+          </div>
+        </button>
+      </div>
+      <!-- Content inside third tab -->
+      <div class="product-details-accordion-panel">
+        <div class="accordion-review-header">
+          <div class="full-review-content">
+            <p>Valutazione complessiva</p>
+            <div class="full-review-content-title">
+              <img src="/assets/icons/star.svg" width="15px" alt="" />
+              <img src="/assets/icons/star.svg" width="15px" alt="" />
+              <img src="/assets/icons/star.svg" width="15px" alt="" />
+              <img src="/assets/icons/star.svg" width="15px" alt="" />
+              <img src="/assets/icons/star.svg" width="15px" alt="" />
+              <p>4.8</p>
+              <p>(9 recensioni)</p>
+            </div>
+
+            <div>
+              <span>96% degli autori consiglierebbe questo prodotto</span>
+            </div>
+            <div class="full-review-doublediv">
+              <div class="full-review-left">
+                <h3>Valutazione</h3>
+                <div class="review-left-content">
+                  <div class="left-content-button">
+                    5 stelle
+                    <div class="left-content-buttons-bar">
+                      <div class="buttons-bar-100"></div>
+                    </div>
+                    109 recensioni
+                  </div>
+                  <div class="left-content-button">
+                    4 stelle
+                    <div class="left-content-buttons-bar">
+                      <div class="buttons-bar-100"></div>
+                    </div>
+                    17 recensioni
+                  </div>
+                  <div class="left-content-button">
+                    3 stelle
+                    <div class="left-content-buttons-bar">
+                      <div class="buttons-bar-44"></div>
+                    </div>
+                    3 recensioni
+                  </div>
+                  <div class="left-content-button">
+                    2 stelle
+                    <div class="left-content-buttons-bar">
+                      <div class="buttons-bar-11"></div>
+                    </div>
+                    0 recensioni
+                  </div>
+                  <div class="left-content-button">
+                    1 stelle
+                    <div class="left-content-buttons-bar">
+                      <div class="buttons-bar-0"></div>
+                    </div>
+                    0 recensioni
+                  </div>
+                </div>
+              </div>
+              <div class="full-review-right">
+                <p>Esperienza complessiva</p>
+                <p>Esperienza di gioco</p>
+                <div class="review-right-icons">
+                  <img
+                    class="review-icon-legobrick"
+                    src="https://www.lego.com/_next/static/images/brickActive-bdeb6d559725fa0f969db49dc6f55a39.svg"
+                    alt=""
+                    width="15px"
+                  /><img
+                    class="review-icon-legobrick"
+                    src="https://www.lego.com/_next/static/images/brickActive-bdeb6d559725fa0f969db49dc6f55a39.svg"
+                    alt=""
+                    width="15px"
+                  /><img
+                    class="review-icon-legobrick"
+                    src="https://www.lego.com/_next/static/images/brickActive-bdeb6d559725fa0f969db49dc6f55a39.svg"
+                    alt=""
+                    width="15px"
+                  /><img
+                    class="review-icon-legobrick"
+                    src="https://www.lego.com/_next/static/images/brickActive-bdeb6d559725fa0f969db49dc6f55a39.svg"
+                    alt=""
+                    width="15px"
+                  /><img
+                    class="review-icon-legobrick"
+                    src="https://www.lego.com/_next/static/images/halfBrick-fdb4b33287fe96ad9a098eda517dcd1c.svg"
+                    alt=""
+                    width="15px"
+                  />
+                  4.5
+                </div>
+                <p>Rapporto qualità prezzo</p>
+                <div class="review-right-icons">
+                  <img
+                    class="review-icon-legobrick"
+                    src="https://www.lego.com/_next/static/images/brickActive-bdeb6d559725fa0f969db49dc6f55a39.svg"
+                    alt=""
+                    width="15px"
+                  /><img
+                    class="review-icon-legobrick"
+                    src="https://www.lego.com/_next/static/images/brickActive-bdeb6d559725fa0f969db49dc6f55a39.svg"
+                    alt=""
+                    width="15px"
+                  /><img
+                    class="review-icon-legobrick"
+                    src="https://www.lego.com/_next/static/images/brickActive-bdeb6d559725fa0f969db49dc6f55a39.svg"
+                    alt=""
+                    width="15px"
+                  /><img
+                    class="review-icon-legobrick"
+                    src="https://www.lego.com/_next/static/images/brickActive-bdeb6d559725fa0f969db49dc6f55a39.svg"
+                    alt=""
+                    width="15px"
+                  /><img
+                    class="review-icon-legobrick"
+                    src="https://www.lego.com/_next/static/images/halfBrick-fdb4b33287fe96ad9a098eda517dcd1c.svg"
+                    alt=""
+                    width="15px"
+                  />
+                  4.6
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="full-review-button">
+            <button class="review-button">Invia recensione</button>
+          </div>
+          <div class="full-review-message">
+            <span
+              ><i
+                >Quando si esprime un voto sull'utilità di una recensione,
+                l'indirizzo IP viene rilevato e memorizzato dal nostro fornitore
+                di servizi di fiducia al fine di evitare l'inserimento di
+                molteplici voti dallo stesso indirizzo IP. Per informazioni su
+                come controllare i propri dati personali, vedere la nostra
+              </i></span
+            >
+          </div>
+        </div>
+        <!-- Review container/s -->
+        <div class="container-review">
+          <p class="markup-date">
+            <span class="date">December 6th, 2022</span>
+          </p>
+          <div class="container-stars">
+            <div class="markup-star">
+              <img
+                src="https://www.lego.com/_next/static/images/starActive-8f24279ea4ef0bb5bb5e8af9fbab2aab.svg"
+                class="star"
+              />
+            </div>
+            <div class="markup-star">
+              <img
+                src="https://www.lego.com/_next/static/images/starActive-8f24279ea4ef0bb5bb5e8af9fbab2aab.svg"
+                class="star"
+              />
+            </div>
+            <div class="markup-star">
+              <img
+                src="https://www.lego.com/_next/static/images/starActive-8f24279ea4ef0bb5bb5e8af9fbab2aab.svg"
+                class="star"
+              />
+            </div>
+            <div class="markup-star">
+              <img
+                src="https://www.lego.com/_next/static/images/starActive-8f24279ea4ef0bb5bb5e8af9fbab2aab.svg"
+                class="star"
+              />
+            </div>
+            <div class="markup-star">
+              <img
+                src="https://www.lego.com/_next/static/images/starActive-8f24279ea4ef0bb5bb5e8af9fbab2aab.svg"
+                class="star"
+              />
+            </div>
+            <span class="vote">5.0</span>
+          </div>
+          <p class="markup-title">
+            <span class="title">Speciale!</span>
+          </p>
+          <span class="userID">
+            <p class="ID">gianlucam1</p>
+          </span>
+          <p class="first-comment">Sì, consiglio questo prodotto.</p>
+          <p class="gift">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="39"
+              viewBox="0 0 26 39"
+              aria-hidden="true"
+              class="gift-svg"
+            >
+              <g
+                fill="#FFF"
+                stroke="#006DB7"
+                stroke-width="1.339"
+                fill-rule="evenodd"
+              >
+                <path
+                  d="M11.644 5.478l-.735 3.21-3.232-.634-.493.32-.342 1.49.282.433 5.53 1.085.001-.004h.004l1.239-5.405-.35-.54-1.41-.276zM5.358 18.307l-.097.597 2.014 3.1.554.16.61-.39 6.564-4.263-2.498-3.845zM14.752 12.207l2.497 3.845 7.18-4.663.113-.5L22.5 7.743l-.58-.19zM17.964 25.676v11.92h6.577l.566-.553V25.676zM8.143 25.676V37.09l.534.506h6.609V25.676z"
+                ></path>
+              </g>
+            </svg>
+            <span class="gift-text"
+              >Prodotto ricevuto in omaggio da LEGO Group</span
+            >
+          </p>
+          <div class="comment">
+            <div class="text-photo">
+              <div class="container-reviewText">
+                <span class="review-text"
+                  >Sono molto contento di avere questo pezzo da collezione tra
+                  le mie mani! Per gli appasionati di videogiochi questo può
+                  essere un regalo bellissimo! É così bello che non voglio ne
+                  anche tirarlo fuori dalla scatola. Lo consiglio
+                  vivamente</span
+                >
+              </div>
+              <div class="container-photo">
+                <button class="photo-button">
+                  <div class="photo-div">
+                    <img
+                      src="https://photos-eu.bazaarvoice.com/photo/2/cGhvdG86bGVnby1nbG9iYWw/86922092-a710-5107-9c44-71b833f9e414"
+                      class="photo"
+                    />
+                  </div>
+                </button>
+                <button class="photo-button">
+                  <div class="photo-div">
+                    <img
+                      src="https://photos-eu.bazaarvoice.com/photo/2/cGhvdG86bGVnby1nbG9iYWw/adf907d6-c203-53b7-8bb4-996dd0eade93"
+                      class="photo"
+                    />
+                  </div>
+                </button>
+                <button class="photo-button">
+                  <div class="photo-div">
+                    <img
+                      src="https://photos-eu.bazaarvoice.com/photo/2/cGhvdG86bGVnby1nbG9iYWw/81794f24-d3f2-576d-9b7d-168b44e59b10"
+                      class="photo"
+                    />
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="space"></div>
+          </div>
+          <p class="answer">É stato utile?</p>
+          <div class="opinion">
+            <div class="container-like">
+              <button class="like" onclick="pushLike()">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="likeSvg"
+                >
+                  <path
+                    d="M.993 20h4V8H0l.993 12zm18.928-8.645l-1.737 6.535A2.727 2.727 0 0 1 15.519 20H5.993V8.021l1.719-6.196a2.152 2.152 0 0 1 4.28.328V8h5.264a2.739 2.739 0 0 1 2.665 3.355z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+                <span class="numLike"> 1</span>
+              </button>
+              <div class="container-dislike">
+                <button class="dislike" onclick="pushDislike()">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="dislikeSvg"
+                  >
+                    <g fill-rule="evenodd">
+                      <path
+                        d="M.993 0h4v12H0L.993 0zM19.92 8.645L18.184 2.11A2.727 2.727 0 0 0 15.519 0H5.993v11.979l1.719 6.196a2.152 2.152 0 0 0 4.28-.328V12h5.264a2.739 2.739 0 0 0 2.665-3.355z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <span class="numDislike"> 2 </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <div class="container-total-carousel">
+      <h2 class="header-carousel">Consigliati per te!</h2>
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="atom-homepage-card">
+            <div class="img-container-card">
+              <img
+                src="https://www.lego.com/cdn/cs/set/assets/bltfb3ccae42fc241c7/10308.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                alt="main image of the card"
+                class="atom-homepage-card-img"
+              />
+            </div>
+
+            <div class="atom-homepage-card-content">
+              <h3 class="atom-homepage-card-title">
+                Natale nella strada principale
+              </h3>
+              <div class="atom-homepage-card-icons">
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/halfStar.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+              </div>
+              <p class="atom-homepage-card-price">99,99€</p>
+              <!--       SPAZIO BOTTONE         -->
+
+              <button class="standard-button standard-button-square button-red">
+                <div class="spinner-container hidden">
+                  <svg class="spinner" viewBox="0 0 66 66">
+                    <circle
+                      cx="33"
+                      cy="33"
+                      r="20"
+                      fill="none"
+                      stroke="#000000"
+                      class="spinner-circle"
+                    ></circle>
+                  </svg>
+                </div>
+                <div class="container-content-standard-button">
+                  <div class="testo">Su ordinazione</div>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="atom-homepage-card">
+            <div class="img-container-card">
+              <img
+                src="https://www.lego.com/cdn/cs/set/assets/blte9e3f43203ffb465/40658.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                alt="main image of the card"
+                class="atom-homepage-card-img"
+              />
+            </div>
+
+            <div class="atom-homepage-card-content">
+              <h3 class="atom-homepage-card-title">
+                Diorama Millenium falcon™
+              </h3>
+              <div class="atom-homepage-card-icons">
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/halfStar.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+              </div>
+              <p class="atom-homepage-card-price">29,99€</p>
+              <!--       SPAZIO BOTTONE         -->
+
+              <button class="standard-button standard-button-square button-red">
+                <div class="spinner-container hidden">
+                  <svg class="spinner" viewBox="0 0 66 66">
+                    <circle
+                      cx="33"
+                      cy="33"
+                      r="20"
+                      fill="none"
+                      stroke="#000000"
+                      class="spinner-circle"
+                    ></circle>
+                  </svg>
+                </div>
+                <div class="container-content-standard-button">
+                  <div class="testo">Su ordinazione</div>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="atom-homepage-card">
+            <div class="img-container-card">
+              <img
+                src="https://www.lego.com/cdn/cs/set/assets/bltb148945c2bb2f149/10293.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1"
+                alt="main image of the card"
+                class="atom-homepage-card-img"
+              />
+            </div>
+
+            <div class="atom-homepage-card-content">
+              <h3 class="atom-homepage-card-title">
+                La visita di Babbo Natale
+              </h3>
+              <div class="atom-homepage-card-icons">
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/halfStar.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+              </div>
+              <p class="atom-homepage-card-price">99,99€</p>
+              <!--       SPAZIO BOTTONE         -->
+
+              <button class="standard-button standard-button-square button-red">
+                <div class="spinner-container hidden">
+                  <svg class="spinner" viewBox="0 0 66 66">
+                    <circle
+                      cx="33"
+                      cy="33"
+                      r="20"
+                      fill="none"
+                      stroke="#000000"
+                      class="spinner-circle"
+                    ></circle>
+                  </svg>
+                </div>
+                <div class="container-content-standard-button">
+                  <div class="testo">Su ordinazione</div>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="atom-homepage-card">
+            <div class="img-container-card">
+              <img
+                src="https://www.lego.com/cdn/cs/set/assets/blt331198c8f34e2d7a/21343.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                alt="main image of the card"
+                class="atom-homepage-card-img"
+              />
+            </div>
+
+            <div class="atom-homepage-card-content">
+              <h3 class="atom-homepage-card-title">Villaggio vichingo</h3>
+              <div class="atom-homepage-card-icons">
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+              </div>
+              <p class="atom-homepage-card-price">139,99€</p>
+              <!--       SPAZIO BOTTONE         -->
+
+              <button class="standard-button standard-button-square button-red">
+                <div class="spinner-container hidden">
+                  <svg class="spinner" viewBox="0 0 66 66">
+                    <circle
+                      cx="33"
+                      cy="33"
+                      r="20"
+                      fill="none"
+                      stroke="#000000"
+                      class="spinner-circle"
+                    ></circle>
+                  </svg>
+                </div>
+                <div class="container-content-standard-button">
+                  <div class="testo">Su ordinazione</div>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="atom-homepage-card">
+            <div class="img-container-card">
+              <img
+                src="https://www.lego.com/cdn/cs/set/assets/bltb7d457aa2ce9f859/40499_Prod.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                alt="main image of the card"
+                class="atom-homepage-card-img"
+              />
+            </div>
+
+            <div class="atom-homepage-card-content">
+              <h3 class="atom-homepage-card-title">
+                La slitta di Babbo Natale
+              </h3>
+              <div class="atom-homepage-card-icons">
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+              </div>
+              <p class="atom-homepage-card-price">44,99€</p>
+              <!--       SPAZIO BOTTONE         -->
+
+              <button class="standard-button standard-button-square button-red">
+                <div class="spinner-container hidden">
+                  <svg class="spinner" viewBox="0 0 66 66">
+                    <circle
+                      cx="33"
+                      cy="33"
+                      r="20"
+                      fill="none"
+                      stroke="#000000"
+                      class="spinner-circle"
+                    ></circle>
+                  </svg>
+                </div>
+                <div class="container-content-standard-button">
+                  <div class="testo">Su ordinazione</div>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="atom-homepage-card">
+            <div class="img-container-card">
+              <img
+                src="https://www.lego.com/cdn/cs/set/assets/blt3d62bb5d68e6dbd7/10295.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1"
+                alt="main image of the card"
+                class="atom-homepage-card-img"
+              />
+            </div>
+
+            <div class="atom-homepage-card-content">
+              <h3 class="atom-homepage-card-title">Porsche 911</h3>
+              <div class="atom-homepage-card-icons">
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/halfStar.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+              </div>
+              <p class="atom-homepage-card-price">169,99€</p>
+              <!--       SPAZIO BOTTONE         -->
+
+              <button class="standard-button standard-button-square button-red">
+                <div class="spinner-container hidden">
+                  <svg class="spinner" viewBox="0 0 66 66">
+                    <circle
+                      cx="33"
+                      cy="33"
+                      r="20"
+                      fill="none"
+                      stroke="#000000"
+                      class="spinner-circle"
+                    ></circle>
+                  </svg>
+                </div>
+                <div class="container-content-standard-button">
+                  <div class="testo">Su ordinazione</div>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="atom-homepage-card">
+            <div class="img-container-card">
+              <img
+                src="https://www.lego.com/cdn/cs/set/assets/blt2564f1fe0e59bb78/10321.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                alt="main image of the card"
+                class="atom-homepage-card-img"
+              />
+            </div>
+
+            <div class="atom-homepage-card-content">
+              <h3 class="atom-homepage-card-title">Corvette</h3>
+              <div class="atom-homepage-card-icons">
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+              </div>
+              <p class="atom-homepage-card-price">149,99€</p>
+              <!--       SPAZIO BOTTONE         -->
+
+              <button class="standard-button standard-button-square button-red">
+                <div class="spinner-container hidden">
+                  <svg class="spinner" viewBox="0 0 66 66">
+                    <circle
+                      cx="33"
+                      cy="33"
+                      r="20"
+                      fill="none"
+                      stroke="#000000"
+                      class="spinner-circle"
+                    ></circle>
+                  </svg>
+                </div>
+                <div class="container-content-standard-button">
+                  <div class="testo">Su ordinazione</div>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="atom-homepage-card">
+            <div class="img-container-card">
+              <img
+                src="https://www.lego.com/cdn/cs/set/assets/blte09f96efc93d5c1d/76419.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                alt="main image of the card"
+                class="atom-homepage-card-img"
+              />
+            </div>
+
+            <div class="atom-homepage-card-content">
+              <h3 class="atom-homepage-card-title">
+                Castello e parco di Hogwarts™
+              </h3>
+              <div class="atom-homepage-card-icons">
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+              </div>
+              <p class="atom-homepage-card-price">169,99€</p>
+              <!--       SPAZIO BOTTONE         -->
+
+              <button class="standard-button standard-button-square button-red">
+                <div class="spinner-container hidden">
+                  <svg class="spinner" viewBox="0 0 66 66">
+                    <circle
+                      cx="33"
+                      cy="33"
+                      r="20"
+                      fill="none"
+                      stroke="#000000"
+                      class="spinner-circle"
+                    ></circle>
+                  </svg>
+                </div>
+                <div class="container-content-standard-button">
+                  <div class="testo">Su ordinazione</div>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="atom-homepage-card">
+            <div class="img-container-card">
+              <img
+                src="https://www.lego.com/cdn/cs/set/assets/blte780055922ecc267/60366.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                alt="main image of the card"
+                class="atom-homepage-card-img"
+              />
+            </div>
+
+            <div class="atom-homepage-card-content">
+              <h3 class="atom-homepage-card-title">Centro sci e arrampicata</h3>
+              <div class="atom-homepage-card-icons">
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+              </div>
+              <p class="atom-homepage-card-price">104,99€</p>
+              <!--       SPAZIO BOTTONE         -->
+
+              <button class="standard-button standard-button-square button-red">
+                <div class="spinner-container hidden">
+                  <svg class="spinner" viewBox="0 0 66 66">
+                    <circle
+                      cx="33"
+                      cy="33"
+                      r="20"
+                      fill="none"
+                      stroke="#000000"
+                      class="spinner-circle"
+                    ></circle>
+                  </svg>
+                </div>
+                <div class="container-content-standard-button">
+                  <div class="testo">Su ordinazione</div>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="atom-homepage-card">
+            <div class="img-container-card">
+              <img
+                src="https://www.lego.com/cdn/cs/set/assets/blt08ba1f2bb5e8f2fb/10326.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                alt="main image of the card"
+                class="atom-homepage-card-img"
+              />
+            </div>
+
+            <div class="atom-homepage-card-content">
+              <h3 class="atom-homepage-card-title">Museo di Storia Naturale</h3>
+              <div class="atom-homepage-card-icons">
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+              </div>
+              <p class="atom-homepage-card-price">299,99€</p>
+              <!--       SPAZIO BOTTONE         -->
+
+              <button class="standard-button standard-button-square button-red">
+                <div class="spinner-container hidden">
+                  <svg class="spinner" viewBox="0 0 66 66">
+                    <circle
+                      cx="33"
+                      cy="33"
+                      r="20"
+                      fill="none"
+                      stroke="#000000"
+                      class="spinner-circle"
+                    ></circle>
+                  </svg>
+                </div>
+                <div class="container-content-standard-button">
+                  <div class="testo">Su ordinazione</div>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="atom-homepage-card">
+            <div class="img-container-card">
+              <img
+                src="https://www.lego.com/cdn/cs/set/assets/blt729f7a96490ebf6f/10304.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                alt="main image of the card"
+                class="atom-homepage-card-img"
+              />
+            </div>
+
+            <div class="atom-homepage-card-content">
+              <h3 class="atom-homepage-card-title">Chevrolet Camaro Z28</h3>
+              <div class="atom-homepage-card-icons">
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+              </div>
+              <p class="atom-homepage-card-price">169,99€</p>
+              <!--       SPAZIO BOTTONE         -->
+
+              <button class="standard-button standard-button-square button-red">
+                <div class="spinner-container hidden">
+                  <svg class="spinner" viewBox="0 0 66 66">
+                    <circle
+                      cx="33"
+                      cy="33"
+                      r="20"
+                      fill="none"
+                      stroke="#000000"
+                      class="spinner-circle"
+                    ></circle>
+                  </svg>
+                </div>
+                <div class="container-content-standard-button">
+                  <div class="testo">Su ordinazione</div>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="atom-homepage-card">
+            <div class="img-container-card">
+              <img
+                src="https://www.lego.com/cdn/cs/set/assets/bltc1a3afc5b5af3287/10315.png?fit=bounds&format=png&width=320&height=320&dpr=1"
+                alt="main image of the card"
+                class="atom-homepage-card-img"
+              />
+            </div>
+
+            <div class="atom-homepage-card-content">
+              <h3 class="atom-homepage-card-title">Il giardino Tranquillo</h3>
+              <div class="atom-homepage-card-icons">
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+                <img
+                  src="/assets/icons/star.svg"
+                  alt="stellina gialla"
+                  width="15px"
+                />
+              </div>
+              <p class="atom-homepage-card-price">104,99€</p>
+              <!--       SPAZIO BOTTONE         -->
+
+              <button class="standard-button standard-button-square button-red">
+                <div class="spinner-container hidden">
+                  <svg class="spinner" viewBox="0 0 66 66">
+                    <circle
+                      cx="33"
+                      cy="33"
+                      r="20"
+                      fill="none"
+                      stroke="#000000"
+                      class="spinner-circle"
+                    ></circle>
+                  </svg>
+                </div>
+                <div class="container-content-standard-button">
+                  <div class="testo">Su ordinazione</div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <button class="prev-button">
+          <svg viewBox="0 0 40 40" class="next round-butt">
+            <g fill="none" fill-rule="evenodd">
+              <rect opacity="1" width="38" height="38" rx="20"></rect>
+              <path
+                d="M16.42 9L29 20 16.42 31 15 29.653 26.042 20 15 10.347z"
+                class="next"
+              ></path>
+            </g>
+          </svg>
+        </button>
+        <button class="next-button">
+          <svg viewBox="0 0 40 40" class="next round-butt">
+            <g fill="none" fill-rule="evenodd">
+              <rect opacity="1"></rect>
+              <path
+                d="M16.42 9L29 20 16.42 31 15 29.653 26.042 20 15 10.347z"
+                class="next"
+              ></path>
+            </g>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+
 `;
           /* -----------------------
     FASE DI PREPARAZIONE
@@ -2506,18 +5578,16 @@ divForButton2.appendChild(buttonXPopUpMenu2);
 
 const containerPopMenu = document.createElement("div");
 const containerForMenuPopUp = document.createElement("div");
-containerForMenuPopUp.classList.add("container-for-menu-pop-up-header")
+containerForMenuPopUp.classList.add("container-for-menu-pop-up-header");
 containerForMenuPopUp.innerHTML = "";
 // Crea il contenuto di containerForMenuPopUp
 acquista.addEventListener("click", () => {
   if (!menuPopUpCreated) {
-   
     // Crea il container per il menu pop-up
     containerPopMenu.classList.add("not-visible-element-atom-header");
 
     // Crea il container per il contenuto del menu pop-up
-    
-    
+
     containerPopMenu.classList.add("general-container-pop-up-menu");
     containerPopMenu.classList.remove("not-visible-element-atom-header");
     containerForMenuPopUp.innerHTML = `
@@ -2562,7 +5632,9 @@ acquista.addEventListener("click", () => {
 
   // Rimuovi il menu quando la finestra viene ridimensionata
   window.addEventListener("resize", () => {
-    const containerPopMenu = document.querySelector(".general-container-pop-up-menu");
+    const containerPopMenu = document.querySelector(
+      ".general-container-pop-up-menu"
+    );
     if (window.innerWidth < 901) {
       containerPopMenu.remove();
       menuPopUpCreated = false;
@@ -2580,7 +5652,6 @@ scopri.addEventListener("click", () => {
 
     // Crea il container per il contenuto del menu pop-up
 
-   
     containerPopMenu.classList.add("general-container-pop-up-menu");
     containerPopMenu.classList.remove("not-visible-element-atom-header");
     containerForMenuPopUp.innerHTML = `
@@ -2641,7 +5712,6 @@ aiuto.addEventListener("click", () => {
 
     // Crea il container per il contenuto del menu pop-up
 
-    
     containerPopMenu.classList.add("general-container-pop-up-menu");
     containerPopMenu.classList.remove("not-visible-element-atom-header");
     containerForMenuPopUp.innerHTML = `
