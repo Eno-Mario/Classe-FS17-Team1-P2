@@ -19,18 +19,15 @@
   overflow: hidden;
   position: relative;
   gap: 10px;
-
   height: 85%;
-
-  padding-bottom: 3rem;
+  padding: 40px 20px 40px 20px;
 }
 
 .carousel {
-  width: 87.5%;
+  width: 92%;
   display: flex;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
-  /*   max-height: 550px; */
   transition: all 0.3s ease;
   scroll-behavior: smooth;
   gap: 5px;
