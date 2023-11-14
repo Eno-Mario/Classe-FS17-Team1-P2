@@ -216,7 +216,7 @@ function openStore() {
               </li>
               <li class="news">
                 <span class="markup-news">
-                  <a href="">Novità</a>
+                  <a onclick="openStore()">Novità</a>
                 </span>
                 <div class="icon-container">
                   <svg
@@ -283,7 +283,181 @@ function openStore() {
 
         <!-- card container -->
         <div class="container-store-card"></div>
-      </div>`;
+      </div>
+      
+             <div class="container-total-carousel">
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="atom-homepage-post">
+              <img
+                src="https://www.lego.com/cdn/cs/set/assets/blt96924d13aaf44bca/10318-Page-202309-Block-Standard-2.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1"
+                alt="airplain" class="atom-homepage-post-img" />
+              <h3 class="atom-homepage-post-title">
+                Nuovo set Concorde LEGO<sup>®</sup> Icons
+              </h3>
+              <p class="atom-homepage-post-paragraph">
+                Fai volare la tua creatività a velocità supersonica con una
+                nuova fantastica replica
+              </p>
+              <div class="atom-homepage-post-buy-now-arrow">
+                <span class="atom-homepage-post-buy-now">Compra ora</span>
+                <svg width="18" height="28" viewBox="0 0 18 28" aria-hidden="true" class="atom-homepage-post-arrow">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"
+                    class="atom-homepage-post-arrow"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="atom-homepage-post">
+              <img
+              src="https://www.lego.com/cdn/cs/set/assets/blt94cbfc52253bb9c8/Hero_Banner_-_Mobile.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1"
+                alt="airplain" class="atom-homepage-post-img" />
+              <h3 class="atom-homepage-post-title">
+                Nuovo set LEGO<sup>®</sup> Harry Potter™ per il Black Friday
+              </h3>
+              <p class="atom-homepage-post-paragraph">
+                Questo Black Friday preparati a partire per un'avventura magica con tutti i tuoi personaggi preferiti di Harry Potter™.
+              </p>
+              <div class="atom-homepage-post-buy-now-arrow">
+                <span class="atom-homepage-post-buy-now">Compra ora</span>
+                <svg width="18" height="28" viewBox="0 0 18 28" aria-hidden="true" class="atom-homepage-post-arrow">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"
+                    class="atom-homepage-post-arrow"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="atom-homepage-post">
+              <img
+                src="https://www.lego.com/cdn/cs/set/assets/bltfad86521402ae341/230710_Design_brief_Christmas_Decorations_Card_Content.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1"
+                alt="airplain" class="atom-homepage-post-img" />
+              <h3 class="atom-homepage-post-title">
+                Come decorare la casa per il Natale con i mattoncini LEGO<sup>®</sup>
+              </h3>
+              <p class="atom-homepage-post-paragraph">
+                Cercate idee per le decorazioni natalizie? Abbiamo pensato ai modi migliori per decorare casa vostra per le feste...
+              </p>
+              <div class="atom-homepage-post-buy-now-arrow">
+                <span class="atom-homepage-post-buy-now">Compra ora</span>
+                <svg width="18" height="28" viewBox="0 0 18 28" aria-hidden="true" class="atom-homepage-post-arrow">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"
+                    class="atom-homepage-post-arrow"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="atom-homepage-post">
+              <img
+                src="https://www.lego.com/cdn/cs/set/assets/blt4b2b1165f5012299/vehicles_OG.png?fit=crop&format=png&width=635&height=440&dpr=1"
+                alt="airplain" class="atom-homepage-post-img" />
+              <h3 class="atom-homepage-post-title">
+                I 12 migliori veicoli giocattolo per Natale
+              </h3>
+              <p class="atom-homepage-post-paragraph">
+
+  Dai vita al mondo virtuale di Minecraft questo Black Friday con la nostra vasta collezione di giocattoli LEGO® Minecraft®
+              </p>
+              <div class="atom-homepage-post-buy-now-arrow">
+                <span class="atom-homepage-post-buy-now">Compra ora</span>
+                <svg width="18" height="28" viewBox="0 0 18 28" aria-hidden="true" class="atom-homepage-post-arrow">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"
+                    class="atom-homepage-post-arrow"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="atom-homepage-post">
+              <img
+                src="https://www.lego.com/cdn/cs/set/assets/blt96924d13aaf44bca/10318-Page-202309-Block-Standard-2.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1"
+                alt="airplain" class="atom-homepage-post-img" />
+              <h3 class="atom-homepage-post-title">
+                Nuovo set Concorde LEGO<sup>®</sup> Icons
+              </h3>
+              <p class="atom-homepage-post-paragraph">
+                Fai volare la tua creatività a velocità supersonica con una
+                nuova fantastica replica
+              </p>
+              <div class="atom-homepage-post-buy-now-arrow">
+                <span class="atom-homepage-post-buy-now">Compra ora</span>
+                <svg width="18" height="28" viewBox="0 0 18 28" aria-hidden="true" class="atom-homepage-post-arrow">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"
+                    class="atom-homepage-post-arrow"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="atom-homepage-post">
+              <img
+              src="https://www.lego.com/cdn/cs/set/assets/blt94cbfc52253bb9c8/Hero_Banner_-_Mobile.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1"
+                alt="airplain" class="atom-homepage-post-img" />
+              <h3 class="atom-homepage-post-title">
+                Nuovo set LEGO<sup>®</sup> Harry Potter™ per il Black Friday
+              </h3>
+              <p class="atom-homepage-post-paragraph">
+                Questo Black Friday preparati a partire per un'avventura magica con tutti i tuoi personaggi preferiti di Harry Potter™.
+              </p>
+              <div class="atom-homepage-post-buy-now-arrow">
+                <span class="atom-homepage-post-buy-now">Compra ora</span>
+                <svg width="18" height="28" viewBox="0 0 18 28" aria-hidden="true" class="atom-homepage-post-arrow">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"
+                    class="atom-homepage-post-arrow"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="atom-homepage-post">
+              <img
+                src="https://www.lego.com/cdn/cs/set/assets/bltfad86521402ae341/230710_Design_brief_Christmas_Decorations_Card_Content.jpg?fit=crop&format=jpg&quality=80&width=635&height=440&dpr=1"
+                alt="airplain" class="atom-homepage-post-img" />
+              <h3 class="atom-homepage-post-title">
+                Come decorare la casa per il Natale con i mattoncini LEGO<sup>®</sup>
+              </h3>
+              <p class="atom-homepage-post-paragraph">
+                Cercate idee per le decorazioni natalizie? Abbiamo pensato ai modi migliori per decorare casa vostra per le feste...
+              </p>
+              <div class="atom-homepage-post-buy-now-arrow">
+                <span class="atom-homepage-post-buy-now">Compra ora</span>
+                <svg width="18" height="28" viewBox="0 0 18 28" aria-hidden="true" class="atom-homepage-post-arrow">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"
+                    class="atom-homepage-post-arrow"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="atom-homepage-post">
+              <img
+                src="https://www.lego.com/cdn/cs/set/assets/blt4b2b1165f5012299/vehicles_OG.png?fit=crop&format=png&width=635&height=440&dpr=1"
+                alt="airplain" class="atom-homepage-post-img" />
+              <h3 class="atom-homepage-post-title">
+                I 12 migliori veicoli giocattolo per Natale
+              </h3>
+              <p class="atom-homepage-post-paragraph">
+
+  Dai vita al mondo virtuale di Minecraft questo Black Friday con la nostra vasta collezione di giocattoli LEGO® Minecraft®
+              </p>
+              <div class="atom-homepage-post-buy-now-arrow">
+                <span class="atom-homepage-post-buy-now">Compra ora</span>
+                <svg width="18" height="28" viewBox="0 0 18 28" aria-hidden="true" class="atom-homepage-post-arrow">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"
+                    class="atom-homepage-post-arrow"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <button class="prev-button">
+            <svg viewBox="0 0 40 40" class="next round-butt">
+              <g fill="none" fill-rule="evenodd">
+                <rect opacity="1" width="38" height="38" rx="20"></rect>
+                <path d="M16.42 9L29 20 16.42 31 15 29.653 26.042 20 15 10.347z" class="next"></path>
+              </g>
+            </svg>
+          </button>
+          <button class="next-button">
+            <svg viewBox="0 0 40 40" class="next round-butt">
+              <g fill="none" fill-rule="evenodd">
+                <rect opacity="1"></rect>
+                <path d="M16.42 9L29 20 16.42 31 15 29.653 26.042 20 15 10.347z" class="next"></path>
+              </g>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+      `;
   /* -----------------------
     FASE DI PREPARAZIONE
 -------------------------- */
@@ -769,39 +943,49 @@ function openStore() {
           const main = document.querySelector("main");
 
           main.innerHTML = `    <div class="product-card-container">
-      <ul class="product-card-list">
-        <li>
-          <a href="">Home</a
-          ><svg
-            width="18"
-            height="28"
-            viewBox="0 0 18 28"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z"
-              fill="currentColor"
-            ></path>
-          </svg>
-        </li>
-        <li>
-          <a href="#">Novità</a
-          ><svg
-            width="18"
-            height="28"
-            viewBox="0 0 18 28"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z"
-              fill="currentColor"
-            ></path>
-          </svg>
-        </li>
-        <li>${el.title}</li>
-      </ul>
+            <div class="top-links">
+        <nav>
+          <ol class="links">
+            <li class="home">
+              <span class="markup-home">
+                <a href="">Home</a>
+              </span>
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 40 40"
+                  fill="currentColor"
+                >
+                  <path
+                    d="m13.357 37.587 16.845-16.303A2.489 2.489 0 0 0 31 19.473c0-.679-.287-1.33-.798-1.811L13.26 2.373A1.42 1.42 0 0 0 12.293 2c-.362 0-.71.134-.967.374L9.406 4.21c-.129.12-.23.261-.3.418a1.214 1.214 0 0 0 0 .988c.07.156.171.299.3.418l14.952 13.553-14.952 14.44c-.256.241-.4.567-.4.906 0 .34.144.665.4.906l1.975 1.786c.13.122.287.218.458.282a1.454 1.454 0 0 0 1.073-.021 1.36 1.36 0 0 0 .444-.3Z"
+                    class="icon-arrow"
+                  ></path>
+                </svg>
+              </div>
+            </li>
+            <li class="news">
+              <span class="markup-news">
+                <a onclick="openStore()">Novità</a>
+              </span>
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 40 40"
+                  fill="currentColor"
+                >
+                  <path
+                    d="m13.357 37.587 16.845-16.303A2.489 2.489 0 0 0 31 19.473c0-.679-.287-1.33-.798-1.811L13.26 2.373A1.42 1.42 0 0 0 12.293 2c-.362 0-.71.134-.967.374L9.406 4.21c-.129.12-.23.261-.3.418a1.214 1.214 0 0 0 0 .988c.07.156.171.299.3.418l14.952 13.553-14.952 14.44c-.256.241-.4.567-.4.906 0 .34.144.665.4.906l1.975 1.786c.13.122.287.218.458.282a1.454 1.454 0 0 0 1.073-.021 1.36 1.36 0 0 0 .444-.3Z"
+                    class="icon-arrow"
+                  ></path>
+                </svg>
+              </div>
+            </li>
+            <li class="new-set">
+              <span class="markup-newSet"> ${el.title}</span>
+            </li>
+          </ol>
+        </nav>
+      </div>
 
       <div class="product-card">
         <div class="product-card-left">
@@ -5529,7 +5713,7 @@ menu.addEventListener("click", () => {
                 class="arrow-header">${areaGiochi.textContent}</a></div></li> 
                 <li><div class="all-button-upperCase-humb-menu button-natale-hamb-menu">${natale.textContent}</div></li>
                 <li><div class="all-button-upperCase-humb-menu"><span>HOME</span></div></li>
-                <li><div class="all-button-upperCase-humb-menu all-arrow-flex-button">${acquista.textContent} <img src="/components/atom/atom-header/arrow.svg" class="arrow-header-humb-menu"></img></div></li>
+                <li><div class="all-button-upperCase-humb-menu all-arrow-flex-button" onclick="openStore()">${acquista.textContent} <img src="/components/atom/atom-header/arrow.svg" class="arrow-header-humb-menu"></img></div></li>
                 <li><div class="all-button-upperCase-humb-menu all-arrow-flex-button">${scopri.textContent}<img src="/components/atom/atom-header/arrow.svg" class="arrow-header-humb-menu"></img></div></li>
                 <li><div class="all-button-upperCase-humb-menu all-arrow-flex-button">${aiuto.textContent}<img src="/components/atom/atom-header/arrow.svg" class="arrow-header-humb-menu"></img></div></li>
                 <li><div class="button-hamb-menu">${legoHead.innerHTML}</div></li>
@@ -5600,7 +5784,7 @@ acquista.addEventListener("click", () => {
             <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Interessi</span><img src="/components/atom/atom-header/arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
             <li><button><div class="all-arrow-flex-button"><span class="span-arrow-button-pop-up-menu">Pick and Build</span><img src="/components/atom/atom-header/arrow.svg" class="arrow-header-pop-up-menu"></img></div></button></li>
             <li><div class="button-without-arrow-button"><a href="#">Set Esclusivi</a></div></li>
-            <li><div class="button-without-arrow-button"><a href="#">Novità</a></div></li>
+            <li><div class="button-without-arrow-button"><a href="#" onclick="openStore()">Novità</a></div></li>
             <li><div class="button-without-arrow-button"><a href="#">I più venduti</a></div></li>
             <li><div class="button-without-arrow-button"><a href="#">Home decor</a></div></li>
             <li><div class="button-without-arrow-button"><a href="#">Sconti e offerte</a></div></li>
